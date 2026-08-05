@@ -5,6 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nasr City Ops</title>
 <style>
+/* ── PASSWORD GATE ── */
+#pw-gate {
+  position:fixed; inset:0; z-index:9999;
+  background: linear-gradient(160deg,#c84b00,#8b2e00,#4a1800,#1a0a00);
+  display:flex; align-items:center; justify-content:center;
+}
+#pw-gate .pw-box {
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:20px;
+  padding:48px 40px;
+  width:340px;
+  text-align:center;
+  backdrop-filter:blur(12px);
+}
+#pw-gate .pw-logo {
+  font-size:38px; margin-bottom:8px;
+}
+#pw-gate h2 {
+  color:#fff; font-size:20px; font-weight:700;
+  margin-bottom:4px; letter-spacing:0.3px;
+}
+#pw-gate p {
+  color:rgba(255,255,255,0.5); font-size:13px; margin-bottom:28px;
+}
+#pw-gate input {
+  width:100%; padding:13px 16px;
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:10px;
+  color:#fff; font-size:15px;
+  outline:none; margin-bottom:14px;
+  letter-spacing:2px;
+}
+#pw-gate input::placeholder { letter-spacing:0; color:rgba(255,255,255,0.35); }
+#pw-gate input:focus { border-color:rgba(255,140,0,0.7); }
+#pw-gate button {
+  width:100%; padding:13px;
+  background:linear-gradient(135deg,#ff6b00,#e05000);
+  border:none; border-radius:10px;
+  color:#fff; font-size:15px; font-weight:700;
+  cursor:pointer; transition:opacity .2s;
+}
+#pw-gate button:hover { opacity:.88; }
+#pw-gate .pw-err {
+  color:#ff8c8c; font-size:13px; margin-top:10px;
+  min-height:18px;
+}
 :root { color-scheme: light; }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#1a1200; min-height:100vh; }
@@ -315,45 +363,58 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
   background:rgba(0,0,0,.15); border-top:1px solid rgba(255,255,255,.08);
 }
 
-/* ── PASSWORD GATE ── */
-#pw-gate {
-  position:fixed; inset:0; z-index:9999;
-  background: linear-gradient(160deg,#c84b00,#8b2e00,#4a1800,#1a0a00);
-  display:flex; align-items:center; justify-content:center;
+/* ── OFFENDERS TAB ── */
+.off-controls { display:flex; align-items:center; gap:12px; margin:16px 24px 10px; flex-wrap:wrap; }
+.off-zone-btns { display:flex; gap:6px; }
+.off-zone-btn {
+  padding:6px 18px; border-radius:20px; font-size:12px; font-weight:700;
+  cursor:pointer; border:1.5px solid rgba(255,255,255,.2);
+  background:rgba(0,0,0,.2); color:rgba(255,255,255,.5); transition:all .15s;
 }
-#pw-gate .pw-box {
-  background:rgba(255,255,255,0.07);
-  border:1px solid rgba(255,255,255,0.15);
-  border-radius:20px;
-  padding:48px 40px;
-  width:340px;
-  text-align:center;
-  backdrop-filter:blur(12px);
+.off-zone-btn.active {
+  background:rgba(255,100,0,.25); color:#ff9966; border-color:rgba(255,100,0,.5);
 }
-#pw-gate .pw-logo { font-size:38px; margin-bottom:8px; }
-#pw-gate h2 { color:#fff; font-size:20px; font-weight:700; margin-bottom:4px; }
-#pw-gate p { color:rgba(255,255,255,0.5); font-size:13px; margin-bottom:28px; }
-#pw-gate input {
-  width:100%; padding:13px 16px;
-  background:rgba(255,255,255,0.1);
-  border:1px solid rgba(255,255,255,0.2);
-  border-radius:10px;
-  color:#fff; font-size:15px;
-  outline:none; margin-bottom:14px;
-  letter-spacing:2px;
+.off-zone-btn:hover:not(.active) { background:rgba(255,255,255,.06); color:rgba(255,255,255,.8); }
+.off-date-sel {
+  padding:6px 32px 6px 14px; border-radius:20px; font-size:12px; font-weight:700;
+  cursor:pointer; border:1.5px solid rgba(255,255,255,.2); background:rgba(0,0,0,.25);
+  color:rgba(255,255,255,.75); appearance:none; -webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(255,255,255,0.5)'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 10px center;
+  outline:none; transition:all .15s;
 }
-#pw-gate input::placeholder { letter-spacing:0; color:rgba(255,255,255,0.35); }
-#pw-gate input:focus { border-color:rgba(255,140,0,0.7); }
-#pw-gate button {
-  width:100%; padding:13px;
-  background:linear-gradient(135deg,#ff6b00,#e05000);
-  border:none; border-radius:10px;
-  color:#fff; font-size:15px; font-weight:700;
-  cursor:pointer; transition:opacity .2s;
+.off-date-sel:focus { border-color:rgba(255,100,0,.5); }
+.off-date-sel option { background:#2a0f00; color:white; }
+.off-table-wrap { margin:0 24px 24px; overflow:auto; max-height:65vh; border-radius:10px; }
+.off-table { width:100%; border-collapse:collapse; font-size:12px; }
+.off-table thead th {
+  text-align:left; padding:10px 14px; font-size:10px; font-weight:700;
+  text-transform:uppercase; letter-spacing:.6px; color:rgba(255,255,255,.35);
+  border-bottom:1px solid rgba(255,255,255,.1); position:sticky; top:0;
+  background:#2a0f00; cursor:pointer; user-select:none; white-space:nowrap;
+  transition:color .15s;
 }
-#pw-gate button:hover { opacity:.88; }
-#pw-gate .pw-err { color:#ff8c8c; font-size:13px; margin-top:10px; min-height:18px; }
-
+.off-table thead th:hover { color:rgba(255,255,255,.75); }
+.off-table thead th.sorted { color:#ff9966; }
+.off-table thead th .sort-arrow { font-size:9px; margin-left:4px; opacity:.5; }
+.off-table thead th.sorted .sort-arrow { opacity:1; }
+.off-table thead th.r { text-align:right; }
+.off-table tbody tr { border-bottom:1px solid rgba(255,255,255,.04); transition:background .15s; }
+.off-table tbody tr:hover { background:rgba(255,255,255,.04); }
+.off-table td { padding:9px 14px; vertical-align:middle; }
+.off-rank { font-size:11px; color:rgba(255,255,255,.3); font-weight:600; width:30px; }
+.off-id { font-size:13px; font-weight:800; color:#ff9966; font-family:monospace; }
+.off-id a { color:inherit; text-decoration:none; }
+.off-id a:hover { text-decoration:underline; }
+.off-num { text-align:right; font-weight:700; font-size:13px; color:rgba(255,255,255,.8); }
+.off-num.hi { color:#ff6b6b; }
+.off-num.md { color:#ffd166; }
+.off-num.lo { color:rgba(255,255,255,.5); }
+.off-count { padding:2px 7px; border-radius:4px; font-size:12px; font-weight:800; }
+.off-count.r { background:rgba(222,53,11,.2); color:#ff9090; }
+.off-count.y { background:rgba(255,171,0,.15); color:#ffd166; }
+.off-count.g { color:rgba(255,255,255,.35); }
+.off-empty { text-align:center; padding:48px; color:rgba(255,255,255,.3); font-size:14px; }
 </style>
 </head>
 <body>
@@ -369,9 +430,10 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
     <div class="pw-err" id="pw-err"></div>
   </div>
 </div>
+
 <script>
 (function(){
-  const HASH = 'bae3a9d8907dbcedc51bfe3373e44f2696c8c603';
+  const HASH = 'bae3a9d8907dbcedc51bfe3373e44f2696c8c603'; // SHA1 of password
   async function sha1(str){
     const buf = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(str));
     return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
@@ -388,9 +450,11 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
       document.getElementById('pw-input').focus();
     }
   };
+  // Auto-unlock if already authenticated this session
   if(sessionStorage.getItem('nc_auth')==='1'){
     document.addEventListener('DOMContentLoaded',()=>{
-      const g=document.getElementById('pw-gate'); if(g) g.style.display='none';
+      const g=document.getElementById('pw-gate');
+      if(g) g.style.display='none';
     });
   }
 })();
@@ -409,8 +473,9 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 
 <!-- PAGE TABS -->
 <div class="page-tabs">
-  <button class="page-tab active" id="ptab-zone"  onclick="setPage('zone')">📊 Zone Overview</button>
-  <button class="page-tab"        id="ptab-3pl"   onclick="setPage('3pl')">🚚 3PL Performance</button>
+  <button class="page-tab active" id="ptab-zone"      onclick="setPage('zone')">📊 Zone Overview</button>
+  <button class="page-tab"        id="ptab-3pl"       onclick="setPage('3pl')">🚚 3PL Performance</button>
+  <button class="page-tab"        id="ptab-offenders" onclick="setPage('offenders')">🚨 Offenders</button>
 </div>
 
 <!-- ══ ZONE OVERVIEW PAGE ══ -->
@@ -822,24 +887,24 @@ function card(zone, z, cz){
 
     <div>
       <div class="m-sec">Rider Supply</div>
-      ${row('Active Riders',      z.riders,                           null,                                 fi(z.riders),          cz?.riders,                      x=>fi(x),              true)}
-      ${row('Orders Completed',   z.orders,                           null,                                 fi(z.orders),          cz?.orders,                      x=>fi(x),              true)}
-      ${row('Delivery Completed', z.delivComp,                        null,                                 fi(z.delivComp),       cz?.delivComp,                   x=>fi(x),              true)}
+      ${row('Active Riders',      z.riders,                           null,                                 fi(z.riders),          cz?.riders,                       x=>fi(x),              true)}
+      ${row('Orders Completed',   z.orders,                           null,                                 fi(z.orders),          cz?.orders,                        x=>fi(x),              true)}
+      ${row('Delivery Completed', z.delivComp,                        null,                                 fi(z.delivComp),       cz?.delivComp,                    x=>fi(x),              true)}
       ${row('Fill Rate %',        z.fill!=null?z.fill*100:null,       z.fill!=null?[z.fill*100,75,85]:null, fp(z.fill),            cz?.fill!=null?cz.fill*100:null, x=>x.toFixed(1)+'%',  true)}
-      ${row('Avg Working Hrs',    z.avgHrs,                                z.avgHrs!=null?[z.avgHrs,6,7.5]:null,                    ff(z.avgHrs,1,' hrs'),          cz?.avgHrs,                              x=>x.toFixed(1)+'h',  true)}
-      ${row('Planned Hrs',        z.plannedHrs,                            null,                                                     fi(z.plannedHrs),               cz?.plannedHrs,                          x=>fi(x),             true)}
-      ${row('Break %',            bp,                                       bp!=null?[bp,10,20,true]:null,                            ff(bp,1,'%'),                   cBp,                                     x=>x.toFixed(1)+'%',  false)}
+      ${row('Avg Working Hrs',    z.avgHrs,                                z.avgHrs!=null?[z.avgHrs,6,7.5]:null,                    ff(z.avgHrs,1,' hrs'),          cz?.avgHrs,                               x=>x.toFixed(1)+'h',  true)}
+      ${row('Planned Hrs',        z.plannedHrs,                            null,                                                     fi(z.plannedHrs),               cz?.plannedHrs,                            x=>fi(x),             true)}
+      ${row('Break %',            bp,                                       bp!=null?[bp,10,20,true]:null,                            ff(bp,1,'%'),                   cBp,                                       x                =>x.toFixed(1)+'%',  false)}
       ${row('Acceptance Rate %',  z.acceptRate!=null?z.acceptRate*100:null, z.acceptRate!=null?[z.acceptRate*100,95,99]:null,         fp(z.acceptRate),               cz?.acceptRate!=null?cz.acceptRate*100:null, x=>x.toFixed(1)+'%', true)}
 
       <div class="m-sec">Rider Journey to Vendor</div>
-      ${row('RAT (Accepting Time)',  z.rat,      z.rat!=null?[z.rat,5,8,true]:null,           ff(z.rat,1,' min'),     cz?.rat,      x=>x.toFixed(1)+' min', false)}
+      ${row('RAT (Accepting Time)',  z.rat,      x.rat!=null?[z.rat,5,8,true]:null,             ff(z.rat,1,' min'),     cz?.rat,      x=>x.toFixed(1)+' min', false)}
       ${row('To Vendor Time',        z.toVendor, z.toVendor!=null?[z.toVendor,2,4,true]:null, ff(z.toVendor,1,' min'),cz?.toVendor, x=>x.toFixed(1)+' min', false)}
       ${row('RRV (RAT + To Vendor)', rrv,        rrv!=null?[rrv,8,12,true]:null,               ff(rrv,1,' min'),       cRrv,         x=>x.toFixed(1)+' min', false)}
 
       <div class="m-sec">Delivery Quality</div>
-      ${row('Avg Delivery Time',  z.delivTime,                              z.delivTime!=null?[z.delivTime,25,28,true]:null, ff(z.delivTime,1,' min'),  cz?.delivTime,                             x=>x.toFixed(1)+' min', false)}
-      ${row('On-Time Delivery %', z.onTime!=null?z.onTime*100:null,         z.onTime!=null?[z.onTime*100,75,85]:null,        fp(z.onTime),              cz?.onTime!=null?cz.onTime*100:null,       x=>x.toFixed(1)+'%',    true)}
-      ${row('Transport Fail Rate',z.failRate!=null?z.failRate*100:null,     z.failRate!=null?[z.failRate*100,3,5,true]:null, fp(z.failRate),            cz?.failRate!=null?cz.failRate*100:null,   x=>x.toFixed(1)+'%',    false)}
+      ${row('Avg Delivery Time',  z.delivTime,                             z.delivTime!=null?[z.delivTime,25,28,true]:null, ff(z.delivTime,1,' min'),  cz?.delivTime,                               x=>x.toFixed(1)+' min', false)}
+      ${row('On-Time Delivery %', z.onTime!=null?z.onTime*100:null,        z.onTime!=null?[z.onTime*100,75,85]:null,        fp(z.onTime),              cz?.onTime!=null?cz.onTime*100:null,       x=>x.toFixed(1)+'%',    true)}
+      ${row('Transport Fail Rate',z.failRate!=null?z.failRate*100:null,     z.failRate!=null?[z.failRate*100,3,5,true]:null, fp(z.failRate),            cz?.failRate!=null?cz.faixed(1)+'%',    false)}
 
       <div class="m-sec">Attendance</div>
       ${row('Late Login %', z.lateLogin!=null?z.lateLogin*100:null, z.lateLogin!=null?[z.lateLogin*100,6,10,true]:null, fp(z.lateLogin), cz?.lateLogin!=null?cz.lateLogin*100:null, x=>x.toFixed(1)+'%', false)}
@@ -914,11 +979,14 @@ populateSel(); render();
    PAGE NAVIGATION
    ════════════════════════════════ */
 function setPage(p){
-  ['zone','3pl'].forEach(id=>{
-    document.getElementById('page-'+id).style.display = id===p?'':'none';
-    document.getElementById('ptab-'+id).classList.toggle('active', id===p);
+  ['zone','3pl','offenders'].forEach(id=>{
+    const pg = document.getElementById('page-'+id);
+    const tb = document.getElementById('ptab-'+id);
+    if(pg) pg.style.display = id===p?'':'none';
+    if(tb) tb.classList.toggle('active', id===p);
   });
   if(p==='3pl') render3PL();
+  if(p==='offenders') initOffenders();
 }
 
 /* ════════════════════════════════
@@ -1045,7 +1113,7 @@ function render3PL(){
     zRows.forEach(t=>{
       const key = `${t.z}|${t.n}`;
       const yday=TLP_YDAY[key]??null, w7=TLP_W7[key]??null, month=TLP_MONTH[key]??null, mtd=TLP_MTD[key]??null;
-      const w7avg=w7!=null?w7/7:null, monthavg=month!=null?month/CFG_LAST_MONTH_DAYS:null;
+      const w7avg=w7!=null?w7/7:null, monthavg(month!=null?month/CFG_LAST_MONTH_DAYS:null;
       const pct=(t.tgt>0&&mtd!=null)?Math.round((mtd/CFG_MTD_DAYS)/t.tgt*100):null;
       const pc=pctClr(pct);
       const disp=t.disp||t.n;
@@ -1083,6 +1151,163 @@ function render3PL(){
 
 applyLabels();
 init3PLDropdown();
+</script>
+
+<!-- ══ OFFENDERS PAGE ══ -->
+<div id="page-offenders" style="display:none">
+  <div class="sync-bar" style="margin-top:12px">
+    <div class="sync-left">
+      <div class="sync-dot" style="background:#36b37e"></div>
+      <span id="off-sync-label">Top 50 No-Show Offenders — MTD from start of month</span>
+    </div>
+  </div>
+
+  <div class="off-controls">
+    <div class="off-zone-btns">
+      <button class="off-zone-btn active" onclick="setOffZone('Nasr city')" id="offz-nasr">Nasr City</button>
+      <button class="off-zone-btn" onclick="setOffZone('Heliopolis')"       id="offz-helio">Heliopolis</button>
+      <button class="off-zone-btn" onclick="setOffZone('Ain shams')"        id="offz-ain">Ain Shams</button>
+    </div>
+    <select class="off-date-sel" id="off-date-sel" onchange="renderOffenders()">
+      <option value="mtd">All Month (MTD)</option>
+    </select>
+    <span style="font-size:11px;color:rgba(255,255,255,.3);margin-left:auto" id="off-count-label"></span>
+  </div>
+
+  <div class="off-table-wrap">
+    <table class="off-table">
+      <thead>
+        <tr>
+          <th class="off-rank">#</th>
+          <th onclick="sortOff('id')"      id="offh-id">RIDER ID <span class="sort-arrow">↕</span></th>
+          <th onclick="sortOff('noShow')"  id="offh-noShow" class="r sorted">NO SHOW <span class="sort-arrow">↓</span></th>
+          <th onclick="sortOff('late')"    id="offh-late"   class="r">LATE <span class="sort-arrow">↕</span></th>
+          <th onclick="sortOff('breaks')"  id="offh-breaks" class="r">BREAKS (h) <span class="sort-arrow">↕</span></th>
+          <th onclick="sortOff('avp')"     id="offh-avp"    class="r">AVP% <span class="sort-arrow">↕</span></th>
+          <th onclick="sortOff('days')"    id="offh-days"   class="r">DAYS <span class="sort-arrow">↕</span></th>
+        </tr>
+      </thead>
+      <tbody id="off-tbody">
+        <tr><td colspan="7" class="off-empty">Loading…</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+/* ════════════════════════════════
+   OFFENDERS DATA
+   @@OFFENDERS_DATA_START@@ — auto-updated daily, do not edit manually
+   ════════════════════════════════ */
+const OFFENDERS = {"2026-08":{"label":"Aug 2026","mtd":{"Heliopolis":[{"id":4691830,"zone":"Heliopolis","noShow":5,"late":0,"breaks":2.21,"avp":0.23,"days":1},{"id":4285630,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4133861,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4171396,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4769846,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4784197,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1390508,"zone":"Heliopolis","noShow":4,"late":5,"breaks":6.53,"avp":34.35,"days":8},{"id":2458884,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4780407,"zone":"Heliopolis","noShow":4,"late":1,"breaks":0.0,"avp":13.75,"days":1},{"id":4763853,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2407523,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2127179,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4657024,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4258544,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4409100,"zone":"Heliopolis","noShow":4,"late":3,"breaks":15.92,"avp":22.39,"days":9},{"id":2222699,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1929761,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783648,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1352533,"zone":"Heliopolis","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":866141,"zone":"Heliopolis","noShow":3,"late":0,"breaks":5.53,"avp":27.5,"days":3},{"id":4802338,"zone":"Heliopolis","noShow":3,"late":0,"breaks":2.05,"avp":26.86,"days":1},{"id":1486723,"zone":"Heliopolis","noShow":3,"late":0,"breaks":7.95,"avp":0.13,"days":2},{"id":2402774,"zone":"Heliopolis","noShow":3,"late":1,"breaks":0.03,"avp":27.48,"days":2},{"id":4765618,"zone":"Heliopolis","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4777114,"zone":"Heliopolis","noShow":3,"late":1,"breaks":0.86,"avp":12.46,"days":1},{"id":1684340,"zone":"Heliopolis","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3895772,"zone":"Heliopolis","noShow":3,"late":0,"breaks":3.14,"avp":24.65,"days":1},{"id":4633855,"zone":"Heliopolis","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2537145,"zone":"Heliopolis","noShow":3,"late":2,"breaks":1.02,"avp":35.36,"days":2},{"id":2274346,"zone":"Heliopolis","noShow":3,"late":0,"breaks":2.03,"avp":37.03,"days":3},{"id":3968316,"zone":"Heliopolis","noShow":3,"late":1,"breaks":7.77,"avp":22.01,"days":2},{"id":4777790,"zone":"Heliopolis","noShow":3,"late":0,"breaks":4.4,"avp":51.15,"days":8},{"id":4780468,"zone":"Heliopolis","noShow":3,"late":0,"breaks":0.94,"avp":41.87,"days":2},{"id":4783167,"zone":"Heliopolis","noShow":3,"late":1,"breaks":0.0,"avp":10.95,"days":1},{"id":1523419,"zone":"Heliopolis","noShow":3,"late":1,"breaks":1.57,"avp":21.54,"days":1},{"id":2366868,"zone":"Heliopolis","noShow":3,"late":0,"breaks":2.82,"avp":27.33,"days":2},{"id":4654039,"zone":"Heliopolis","noShow":3,"late":2,"breaks":0.27,"avp":50.15,"days":3},{"id":4789395,"zone":"Heliopolis","noShow":3,"late":2,"breaks":0.78,"avp":21.41,"days":2},{"id":4681894,"zone":"Heliopolis","noShow":3,"late":2,"breaks":1.04,"avp":35.35,"days":5},{"id":4699329,"zone":"Heliopolis","noShow":3,"late":1,"breaks":0.5,"avp":17.73,"days":1},{"id":3884095,"zone":"Heliopolis","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4491547,"zone":"Heliopolis","noShow":3,"late":2,"breaks":9.43,"avp":29.43,"days":3},{"id":4743512,"zone":"Heliopolis","noShow":3,"late":0,"breaks":7.8,"avp":10.59,"days":2},{"id":1235541,"zone":"Heliopolis","noShow":3,"late":0,"breaks":3.68,"avp":33.14,"days":4},{"id":951040,"zone":"Heliopolis","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":907631,"zone":"Heliopolis","noShow":3,"late":1,"breaks":6.74,"avp":29.97,"days":4},{"id":2172819,"zone":"Heliopolis","noShow":3,"late":0,"breaks":3.56,"avp":1.86,"days":2},{"id":2209629,"zone":"Heliopolis","noShow":3,"late":0,"breaks":6.03,"avp":45.18,"days":5},{"id":1459332,"zone":"Heliopolis","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1834889,"zone":"Heliopolis","noShow":2,"late":0,"breaks":3.74,"avp":36.79,"days":2}],"Nasr city":[{"id":2497581,"zone":"Nasr city","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2654871,"zone":"Nasr city","noShow":4,"late":2,"breaks":2.07,"avp":9.86,"days":2},{"id":2269368,"zone":"Nasr city","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4761336,"zone":"Nasr city","noShow":4,"late":0,"breaks":5.02,"avp":25.93,"days":5},{"id":4730363,"zone":"Nasr city","noShow":4,"late":1,"breaks":4.47,"avp":33.9,"days":3},{"id":1997466,"zone":"Nasr city","noShow":3,"late":0,"breaks":5.05,"avp":17.83,"days":1},{"id":2659438,"zone":"Nasr city","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4803108,"zone":"Nasr city","noShow":3,"late":1,"breaks":4.63,"avp":16.53,"days":1},{"id":4570915,"zone":"Nasr city","noShow":3,"late":0,"breaks":2.4,"avp":34.32,"days":3},{"id":4691976,"zone":"Nasr city","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1159093,"zone":"Nasr city","noShow":3,"late":2,"breaks":3.48,"avp":41.15,"days":5},{"id":4616204,"zone":"Nasr city","noShow":3,"late":1,"breaks":0.0,"avp":13.66,"days":1},{"id":4802380,"zone":"Nasr city","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1760212,"zone":"Nasr city","noShow":3,"late":0,"breaks":13.42,"avp":34.94,"days":7},{"id":4724926,"zone":"Nasr city","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1653982,"zone":"Nasr city","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2491690,"zone":"Nasr city","noShow":3,"late":0,"breaks":11.38,"avp":10.46,"days":3},{"id":2483167,"zone":"Nasr city","noShow":3,"late":0,"breaks":3.36,"avp":23.55,"days":1},{"id":1814663,"zone":"Nasr city","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3926637,"zone":"Nasr city","noShow":3,"late":0,"breaks":1.02,"avp":31.25,"days":1},{"id":1203878,"zone":"Nasr city","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4015566,"zone":"Nasr city","noShow":3,"late":0,"breaks":3.5,"avp":43.01,"days":6},{"id":4676118,"zone":"Nasr city","noShow":3,"late":0,"breaks":4.21,"avp":50.93,"days":7},{"id":2160437,"zone":"Nasr city","noShow":3,"late":2,"breaks":0.0,"avp":7.14,"days":2},{"id":4763858,"zone":"Nasr city","noShow":3,"late":5,"breaks":8.99,"avp":50.26,"days":11},{"id":4715947,"zone":"Nasr city","noShow":3,"late":2,"breaks":2.39,"avp":51.46,"days":5},{"id":4409659,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4189036,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2471618,"zone":"Nasr city","noShow":2,"late":3,"breaks":4.96,"avp":22.88,"days":3},{"id":4159265,"zone":"Nasr city","noShow":2,"late":2,"breaks":0.0,"avp":45.1,"days":2},{"id":2814385,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.62,"avp":24.65,"days":1},{"id":4754402,"zone":"Nasr city","noShow":2,"late":8,"breaks":5.7,"avp":46.37,"days":8},{"id":2123699,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2655400,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783301,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4780358,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4773336,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4722464,"zone":"Nasr city","noShow":2,"late":1,"breaks":1.72,"avp":48.6,"days":2},{"id":4361688,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4710477,"zone":"Nasr city","noShow":2,"late":3,"breaks":8.36,"avp":33.25,"days":5},{"id":4761209,"zone":"Nasr city","noShow":2,"late":3,"breaks":7.87,"avp":27.23,"days":3},{"id":3916564,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.08,"avp":61.2,"days":4},{"id":4729706,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2021652,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1695202,"zone":"Nasr city","noShow":2,"late":0,"breaks":6.27,"avp":18.95,"days":1},{"id":3435626,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":65.54,"days":4},{"id":899489,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.02,"avp":33.9,"days":1},{"id":2148556,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2822272,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4565167,"zone":"Nasr city","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0}],"Ain shams":[{"id":4655897,"zone":"Ain shams","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802570,"zone":"Ain shams","noShow":4,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4280168,"zone":"Ain shams","noShow":3,"late":0,"breaks":1.9,"avp":22.19,"days":1},{"id":4783214,"zone":"Ain shams","noShow":3,"late":2,"breaks":7.75,"avp":9.62,"days":2},{"id":4555472,"zone":"Ain shams","noShow":3,"late":0,"breaks":0.29,"avp":36.3,"days":3},{"id":4783169,"zone":"Ain shams","noShow":3,"late":1,"breaks":3.81,"avp":21.62,"days":4},{"id":4048692,"zone":"Ain shams","noShow":3,"late":3,"breaks":10.62,"avp":13.01,"days":3},{"id":4807028,"zone":"Ain shams","noShow":3,"late":0,"breaks":0.0,"avp":9.9,"days":1},{"id":4803250,"zone":"Ain shams","noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4752314,"zone":"Ain shams","noShow":3,"late":0,"breaks":0.0,"avp":31.93,"days":4},{"id":2654773,"zone":"Ain shams","noShow":3,"late":1,"breaks":0.46,"avp":0.22,"days":1},{"id":2659130,"zone":"Ain shams","noShow":3,"late":0,"breaks":0.0,"avp":27.16,"days":1},{"id":4602629,"zone":"Ain shams","noShow":2,"late":0,"breaks":5.16,"avp":43.41,"days":4},{"id":4192776,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2381788,"zone":"Ain shams","noShow":2,"late":0,"breaks":9.62,"avp":40.24,"days":4},{"id":4631382,"zone":"Ain shams","noShow":2,"late":1,"breaks":2.57,"avp":45.13,"days":4},{"id":4614833,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4680599,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4746793,"zone":"Ain shams","noShow":2,"late":3,"breaks":0.0,"avp":53.35,"days":3},{"id":1417543,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":39.4,"days":1},{"id":4758494,"zone":"Ain shams","noShow":2,"late":0,"breaks":1.1,"avp":47.44,"days":4},{"id":4703587,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4046863,"zone":"Ain shams","noShow":2,"late":2,"breaks":2.33,"avp":44.78,"days":3},{"id":4642949,"zone":"Ain shams","noShow":2,"late":2,"breaks":0.79,"avp":62.55,"days":2},{"id":4630817,"zone":"Ain shams","noShow":2,"late":0,"breaks":3.32,"avp":29.71,"days":2},{"id":4802394,"zone":"Ain shams","noShow":2,"late":0,"breaks":4.67,"avp":27.69,"days":3},{"id":2657052,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.27,"avp":66.34,"days":9},{"id":4711170,"zone":"Ain shams","noShow":2,"late":0,"breaks":6.12,"avp":24.13,"days":2},{"id":2185940,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.4,"avp":16.33,"days":2},{"id":4764373,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4785704,"zone":"Ain shams","noShow":2,"late":2,"breaks":2.87,"avp":28.6,"days":3},{"id":4649963,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4760807,"zone":"Ain shams","noShow":2,"late":4,"breaks":2.03,"avp":52.54,"days":5},{"id":4383927,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4740446,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4768597,"zone":"Ain shams","noShow":2,"late":1,"breaks":2.08,"avp":34.77,"days":3},{"id":4765304,"zone":"Ain shams","noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4738787,"zone":"Ain shams","noShow":1,"late":0,"breaks":2.07,"avp":71.4,"days":4},{"id":4737157,"zone":"Ain shams","noShow":1,"late":3,"breaks":0.78,"avp":88.9,"days":7},{"id":4001748,"zone":"Ain shams","noShow":1,"late":0,"breaks":0.65,"avp":26.86,"days":1},{"id":4530302,"zone":"Ain shams","noShow":1,"late":2,"breaks":1.99,"avp":52.5,"days":5},{"id":4769880,"zone":"Ain shams","noShow":1,"late":2,"breaks":6.07,"avp":30.31,"days":2},{"id":4744848,"zone":"Ain shams","noShow":1,"late":0,"breaks":6.43,"avp":25.94,"days":1},{"id":2152385,"zone":"Ain shams","noShow":1,"late":0,"breaks":8.7,"avp":34.36,"days":2},{"id":4616379,"zone":"Ain shams","noShow":1,"late":0,"breaks":3.02,"avp":71.3,"days":3},{"id":2194381,"zone":"Ain shams","noShow":1,"late":0,"breaks":0.0,"avp":28.38,"days":1},{"id":4175686,"zone":"Ain shams","noShow":1,"late":2,"breaks":0.0,"avp":32.17,"days":3},{"id":2652199,"zone":"Ain shams","noShow":1,"late":5,"breaks":6.94,"avp":60.17,"days":5},{"id":4396198,"zone":"Ain shams","noShow":1,"late":0,"breaks":2.3,"avp":47.53,"days":1},{"id":4725350,"zone":"Ain shams","noShow":1,"late":2,"breaks":11.0,"avp":18.71,"days":2}]},"days":{"2026-08-01":{"Heliopolis":[{"id":4786293,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4769846,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2222699,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4707165,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1536851,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4771919,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4461093,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4602656,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4691830,"noShow":1,"late":0,"breaks":2.21,"avp":0.79,"days":1},{"id":1762458,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4743168,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4777289,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2521478,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4707236,"noShow":1,"late":0,"breaks":2.1,"avp":46.21,"days":2},{"id":4756732,"noShow":1,"late":1,"breaks":0.87,"avp":13.63,"days":1},{"id":4783648,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2032729,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4302853,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":918458,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4647914,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4407035,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":891800,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3895772,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4738989,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4567569,"noShow":1,"late":0,"breaks":1.33,"avp":25.63,"days":1},{"id":1929761,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4700747,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4777790,"noShow":1,"late":0,"breaks":0.85,"avp":47.73,"days":2},{"id":4765297,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4780338,"noShow":1,"late":1,"breaks":2.58,"avp":60.38,"days":1},{"id":4760738,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4768571,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2493548,"noShow":1,"late":0,"breaks":1.5,"avp":4.65,"days":1},{"id":4699329,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3503957,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1560606,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1825207,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4711340,"noShow":1,"late":0,"breaks":0.53,"avp":26.63,"days":1},{"id":4783252,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4739100,"noShow":1,"late":1,"breaks":0.0,"avp":57.72,"days":1},{"id":4764401,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2127179,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4763853,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4491547,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2094038,"noShow":1,"late":1,"breaks":0.0,"avp":52.14,"days":1},{"id":4726348,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4703455,"noShow":1,"late":0,"breaks":0.71,"avp":0.37,"days":1},{"id":4755163,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4657024,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783167,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}],"Ain shams":[{"id":4768597,"noShow":1,"late":0,"breaks":0.98,"avp":16.06,"days":1},{"id":4725350,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4280168,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4764373,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4642949,"noShow":1,"late":1,"breaks":0.22,"avp":201.72,"days":1},{"id":2654773,"noShow":1,"late":1,"breaks":0.46,"avp":0.62,"days":1},{"id":4602629,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4765304,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4614833,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4803250,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4530302,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4655897,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4012215,"noShow":1,"late":1,"breaks":2.44,"avp":5.51,"days":1},{"id":4693213,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4703587,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4788022,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4705628,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2381788,"noShow":1,"late":0,"breaks":8.13,"avp":29.59,"days":2},{"id":4711170,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4785704,"noShow":1,"late":0,"breaks":0.48,"avp":6.62,"days":1},{"id":4048692,"noShow":1,"late":1,"breaks":2.75,"avp":16.13,"days":1},{"id":4740446,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783214,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2185940,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4582248,"noShow":1,"late":0,"breaks":0.27,"avp":49.35,"days":1},{"id":4383927,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4689330,"noShow":1,"late":0,"breaks":0.0,"avp":0.19,"days":1},{"id":4649963,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2659130,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}],"Nasr city":[{"id":4743218,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3853686,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4780323,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4761203,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1806733,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4183889,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4046834,"noShow":1,"late":0,"breaks":0.08,"avp":51.78,"days":2},{"id":4773336,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4006502,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4788272,"noShow":1,"late":0,"breaks":0.0,"avp":1.83,"days":1},{"id":4760895,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4761209,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2021652,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4679136,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4446636,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2524991,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4780358,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802455,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2134855,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1690337,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2655400,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4228713,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4221096,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2659438,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1614655,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2471618,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1368650,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4773361,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4346976,"noShow":1,"late":0,"breaks":0.0,"avp":63.48,"days":1},{"id":4719898,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4719914,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4616204,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3493679,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4150983,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4691976,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1760212,"noShow":1,"late":0,"breaks":2.25,"avp":28.48,"days":1},{"id":2269368,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4694205,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2096039,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4758469,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4728628,"noShow":1,"late":1,"breaks":0.07,"avp":39.28,"days":1},{"id":4780799,"noShow":1,"late":0,"breaks":2.6,"avp":17.69,"days":1},{"id":4008960,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4804615,"noShow":1,"late":1,"breaks":0.0,"avp":83.36,"days":1},{"id":2131679,"noShow":1,"late":0,"breaks":2.08,"avp":8.76,"days":1},{"id":4755965,"noShow":1,"late":2,"breaks":0.0,"avp":28.33,"days":2},{"id":4752436,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4765814,"noShow":1,"late":1,"breaks":0.82,"avp":2.96,"days":1},{"id":4722464,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2458855,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}]},"2026-08-02":{"Nasr city":[{"id":4730363,"noShow":3,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4715947,"noShow":2,"late":1,"breaks":0.0,"avp":10.25,"days":1},{"id":1159093,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2814385,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2654871,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4569692,"noShow":1,"late":0,"breaks":0.0,"avp":16.64,"days":1},{"id":4691976,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783220,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783207,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4752436,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783328,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":899489,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4719854,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4729752,"noShow":1,"late":0,"breaks":1.8,"avp":26.79,"days":1},{"id":4719914,"noShow":1,"late":0,"breaks":4.22,"avp":32.66,"days":1},{"id":4689190,"noShow":1,"late":1,"breaks":0.72,"avp":17.68,"days":1},{"id":4803171,"noShow":1,"late":0,"breaks":0.75,"avp":29.81,"days":1},{"id":2097871,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2127148,"noShow":1,"late":1,"breaks":4.78,"avp":1.82,"days":1},{"id":4729706,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2105616,"noShow":1,"late":0,"breaks":0.0,"avp":31.46,"days":1},{"id":1780112,"noShow":1,"late":0,"breaks":0.0,"avp":45.57,"days":1},{"id":4409659,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2148556,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2812756,"noShow":1,"late":1,"breaks":4.35,"avp":29.73,"days":2},{"id":2123699,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3662411,"noShow":1,"late":0,"breaks":0.0,"avp":53.19,"days":1},{"id":4716748,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1052863,"noShow":1,"late":1,"breaks":0.0,"avp":52.94,"days":1},{"id":4570915,"noShow":1,"late":0,"breaks":0.67,"avp":36.99,"days":1},{"id":4783196,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4361688,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783293,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4710477,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4328969,"noShow":1,"late":0,"breaks":0.85,"avp":73.31,"days":2},{"id":1997466,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4761209,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2822272,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4056083,"noShow":1,"late":1,"breaks":2.45,"avp":73.57,"days":2},{"id":2834196,"noShow":1,"late":0,"breaks":2.96,"avp":0.45,"days":1},{"id":2497581,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4140034,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4729672,"noShow":1,"late":0,"breaks":0.57,"avp":15.4,"days":1},{"id":4803108,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4559589,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4139635,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4555461,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4755104,"noShow":1,"late":0,"breaks":3.77,"avp":36.75,"days":2},{"id":2471618,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4688659,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}],"Heliopolis":[{"id":4681894,"noShow":2,"late":0,"breaks":1.04,"avp":9.41,"days":1},{"id":4479765,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1366287,"noShow":2,"late":0,"breaks":1.21,"avp":3.49,"days":1},{"id":2222699,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1835046,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1352533,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1868470,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4036451,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1535322,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802907,"noShow":1,"late":0,"breaks":0.49,"avp":49.28,"days":2},{"id":4664535,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4603931,"noShow":1,"late":1,"breaks":4.53,"avp":4.82,"days":1},{"id":4633855,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4777114,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4567391,"noShow":1,"late":0,"breaks":0.0,"avp":45.58,"days":1},{"id":2495115,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2103750,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4352244,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4776992,"noShow":1,"late":0,"breaks":0.0,"avp":83.0,"days":1},{"id":2499231,"noShow":1,"late":0,"breaks":3.98,"avp":0.3,"days":1},{"id":4728829,"noShow":1,"late":1,"breaks":1.55,"avp":26.67,"days":1},{"id":2458884,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4759345,"noShow":1,"late":0,"breaks":0.0,"avp":39.08,"days":1},{"id":2529005,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2495705,"noShow":1,"late":0,"breaks":0.0,"avp":26.15,"days":1},{"id":4777294,"noShow":1,"late":0,"breaks":3.07,"avp":43.65,"days":1},{"id":4773388,"noShow":1,"late":0,"breaks":0.0,"avp":65.78,"days":2},{"id":2013358,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4780508,"noShow":1,"late":1,"breaks":0.74,"avp":14.13,"days":1},{"id":1486723,"noShow":1,"late":0,"breaks":1.48,"avp":0.42,"days":1},{"id":4264541,"noShow":1,"late":0,"breaks":5.55,"avp":14.17,"days":2},{"id":2089955,"noShow":1,"late":1,"breaks":6.15,"avp":18.96,"days":2},{"id":4133861,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4235255,"noShow":1,"late":0,"breaks":3.66,"avp":32.8,"days":2},{"id":4669708,"noShow":1,"late":0,"breaks":0.88,"avp":8.18,"days":1},{"id":4788079,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4185689,"noShow":1,"late":0,"breaks":0.33,"avp":51.55,"days":2},{"id":2838137,"noShow":1,"late":0,"breaks":0.96,"avp":27.76,"days":1},{"id":1523419,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2407523,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4326896,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4699329,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1459332,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2058668,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4687115,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783371,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4691830,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1897503,"noShow":1,"late":1,"breaks":1.35,"avp":12.6,"days":1},{"id":4743512,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4716292,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}],"Ain shams":[{"id":4765304,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4758494,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4768597,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4649963,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2185940,"noShow":1,"late":0,"breaks":0.14,"avp":8.5,"days":1},{"id":4555472,"noShow":1,"late":0,"breaks":0.25,"avp":46.01,"days":2},{"id":4785704,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3925170,"noShow":1,"late":0,"breaks":0.0,"avp":22.74,"days":2},{"id":4783214,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1706018,"noShow":1,"late":1,"breaks":2.36,"avp":1.42,"days":1},{"id":4280168,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3908765,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4680599,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4642949,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4740446,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4764373,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4630817,"noShow":1,"late":0,"breaks":2.88,"avp":5.49,"days":1},{"id":4040961,"noShow":1,"late":0,"breaks":0.0,"avp":9.39,"days":1},{"id":4738787,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4737157,"noShow":1,"late":1,"breaks":0.0,"avp":59.8,"days":1},{"id":4655897,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2654773,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}]},"2026-08-03":{"Heliopolis":[{"id":4691830,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4807866,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4308764,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4285630,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1684340,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1400348,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4060285,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802404,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2272649,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1929761,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2402774,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4396286,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3900164,"noShow":1,"late":0,"breaks":0.0,"avp":45.7,"days":1},{"id":4421282,"noShow":1,"late":0,"breaks":0.0,"avp":17.94,"days":1},{"id":4807242,"noShow":1,"late":0,"breaks":0.25,"avp":44.2,"days":1},{"id":4777790,"noShow":1,"late":0,"breaks":1.52,"avp":43.39,"days":2},{"id":2015850,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4614846,"noShow":1,"late":1,"breaks":1.72,"avp":25.74,"days":1},{"id":4681894,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2258673,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1285640,"noShow":1,"late":0,"breaks":1.18,"avp":9.89,"days":1},{"id":4542744,"noShow":1,"late":1,"breaks":4.25,"avp":4.56,"days":1},{"id":2018547,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4489101,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1570835,"noShow":1,"late":0,"breaks":0.27,"avp":17.46,"days":1},{"id":4759345,"noShow":1,"late":0,"breaks":0.35,"avp":37.54,"days":2},{"id":4746869,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4699329,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4623887,"noShow":1,"late":0,"breaks":2.48,"avp":0.33,"days":1},{"id":1118488,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1560606,"noShow":1,"late":0,"breaks":0.71,"avp":0.64,"days":1},{"id":2209629,"noShow":1,"late":0,"breaks":0.0,"avp":35.52,"days":1},{"id":4679188,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3877444,"noShow":1,"late":0,"breaks":0.0,"avp":15.0,"days":1},{"id":2595134,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4009067,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2127179,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2049517,"noShow":1,"late":0,"breaks":0.0,"avp":49.51,"days":2},{"id":4802495,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783167,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4222761,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4525661,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4491547,"noShow":1,"late":1,"breaks":2.41,"avp":36.26,"days":1},{"id":4785493,"noShow":1,"late":1,"breaks":2.81,"avp":2.01,"days":1},{"id":2222301,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4784197,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4778903,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1457717,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2375225,"noShow":1,"late":0,"breaks":0.58,"avp":19.56,"days":1},{"id":4568407,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}],"Nasr city":[{"id":4711573,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4601924,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4326801,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4587819,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2096134,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2377345,"noShow":1,"late":0,"breaks":0.69,"avp":49.14,"days":2},{"id":691762,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2160437,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4638885,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1997466,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4616204,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4150600,"noShow":1,"late":0,"breaks":0.4,"avp":56.18,"days":1},{"id":4008960,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4781192,"noShow":1,"late":0,"breaks":0.0,"avp":37.63,"days":1},{"id":3818712,"noShow":1,"late":0,"breaks":0.27,"avp":32.29,"days":1},{"id":1817492,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2491690,"noShow":1,"late":0,"breaks":2.45,"avp":16.77,"days":1},{"id":4015566,"noShow":1,"late":0,"breaks":0.55,"avp":43.26,"days":2},{"id":4251325,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3671288,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4518137,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4133722,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4159265,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1637063,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4565167,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4631091,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802328,"noShow":1,"late":0,"breaks":3.01,"avp":16.64,"days":1},{"id":2459056,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4772264,"noShow":1,"late":0,"breaks":0.8,"avp":20.13,"days":1},{"id":2080620,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4777548,"noShow":1,"late":0,"breaks":1.04,"avp":52.8,"days":2},{"id":4676118,"noShow":1,"late":0,"breaks":0.27,"avp":10.77,"days":1},{"id":4628292,"noShow":1,"late":0,"breaks":2.85,"avp":1.38,"days":1},{"id":4739108,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2269368,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802380,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1617852,"noShow":1,"late":0,"breaks":4.25,"avp":8.48,"days":1},{"id":2070739,"noShow":1,"late":0,"breaks":2.15,"avp":8.25,"days":1},{"id":4807635,"noShow":1,"late":0,"breaks":0.0,"avp":7.24,"days":1},{"id":4605237,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4747803,"noShow":1,"late":0,"breaks":4.3,"avp":6.5,"days":1},{"id":4801847,"noShow":1,"late":0,"breaks":4.57,"avp":8.46,"days":1},{"id":4302681,"noShow":1,"late":0,"breaks":0.9,"avp":49.56,"days":2},{"id":4806351,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1891072,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4773157,"noShow":1,"late":0,"breaks":0.5,"avp":52.0,"days":2},{"id":4725585,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2213181,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3782518,"noShow":1,"late":0,"breaks":0.0,"avp":97.45,"days":1},{"id":4295078,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}],"Ain shams":[{"id":4280168,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802394,"noShow":1,"late":0,"breaks":2.38,"avp":1.17,"days":1},{"id":3786409,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4703587,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2112975,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2659130,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4767226,"noShow":1,"late":1,"breaks":2.81,"avp":20.5,"days":4},{"id":4807028,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4061553,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802570,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4655897,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4746793,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2657052,"noShow":1,"late":0,"breaks":0.27,"avp":45.21,"days":2},{"id":4783169,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4046863,"noShow":1,"late":1,"breaks":0.0,"avp":28.72,"days":1}]},"2026-08-04":{"Ain shams":[{"id":4711170,"noShow":1,"late":0,"breaks":4.1,"avp":8.94,"days":1},{"id":4807897,"noShow":1,"late":0,"breaks":0.58,"avp":4.9,"days":1},{"id":4783169,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802570,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4783214,"noShow":1,"late":1,"breaks":4.31,"avp":1.86,"days":1},{"id":4802394,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4771979,"noShow":1,"late":0,"breaks":4.54,"avp":53.24,"days":3},{"id":4048692,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4555472,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2654773,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4602629,"noShow":1,"late":0,"breaks":0.46,"avp":0.73,"days":1},{"id":4631382,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4778771,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4760807,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2652199,"noShow":1,"late":1,"breaks":0.0,"avp":7.07,"days":1},{"id":4655897,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4752314,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4558466,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4807059,"noShow":1,"late":0,"breaks":0.5,"avp":5.44,"days":1},{"id":4489502,"noShow":1,"late":0,"breaks":0.0,"avp":5.65,"days":1},{"id":2381788,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4737309,"noShow":1,"late":1,"breaks":0.0,"avp":10.76,"days":1},{"id":4804616,"noShow":1,"late":0,"breaks":0.0,"avp":17.44,"days":1},{"id":4192776,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1417543,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2194381,"noShow":1,"late":0,"breaks":0.0,"avp":28.38,"days":1},{"id":4807028,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4175686,"noShow":1,"late":1,"breaks":0.0,"avp":46.87,"days":2},{"id":4762009,"noShow":1,"late":0,"breaks":0.0,"avp":0.14,"days":1},{"id":4630817,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4758475,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}],"Heliopolis":[{"id":4773173,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4409100,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1235541,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2527473,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3529074,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4414483,"noShow":1,"late":0,"breaks":3.96,"avp":0.45,"days":1},{"id":2089955,"noShow":1,"late":0,"breaks":4.6,"avp":5.15,"days":1},{"id":4243762,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2537145,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1368677,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4726043,"noShow":1,"late":0,"breaks":2.31,"avp":16.32,"days":1},{"id":4752277,"noShow":1,"late":0,"breaks":0.08,"avp":9.61,"days":1},{"id":4802439,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1254643,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4730085,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4035298,"noShow":1,"late":0,"breaks":2.54,"avp":34.32,"days":2},{"id":3862421,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4629919,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4807190,"noShow":1,"late":0,"breaks":4.96,"avp":0.49,"days":1},{"id":4700694,"noShow":1,"late":0,"breaks":4.98,"avp":0.31,"days":1},{"id":3884095,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1615387,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2516497,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2158883,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4574579,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1329204,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4562325,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2118511,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3831965,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4538238,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4769846,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4740380,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2035145,"noShow":1,"late":0,"breaks":1.33,"avp":2.44,"days":1},{"id":4691830,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1301845,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2407523,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1837182,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1878123,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4392454,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3856685,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":771358,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4805482,"noShow":1,"late":0,"breaks":0.27,"avp":21.4,"days":1},{"id":4611674,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4326896,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4657024,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2201056,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4780407,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":907631,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":743587,"noShow":1,"late":0,"breaks":0.52,"avp":10.76,"days":1},{"id":4784197,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0}],"Nasr city":[{"id":4676118,"noShow":2,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4763858,"noShow":2,"late":2,"breaks":1.69,"avp":28.06,"days":2},{"id":4804608,"noShow":2,"late":0,"breaks":0.0,"avp":15.93,"days":1},{"id":2491690,"noShow":1,"late":0,"breaks":2.96,"avp":0.45,"days":1},{"id":1814663,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2428692,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4159265,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4015566,"noShow":1,"late":0,"breaks":1.01,"avp":43.89,"days":2},{"id":4553907,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4724926,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4778006,"noShow":1,"late":0,"breaks":1.9,"avp":1.06,"days":1},{"id":4237061,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4807266,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4464176,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4760776,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2663237,"noShow":1,"late":0,"breaks":0.0,"avp":7.63,"days":1},{"id":1918174,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4724687,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1473856,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1377609,"noShow":1,"late":0,"breaks":1.76,"avp":37.73,"days":2},{"id":4760953,"noShow":1,"late":1,"breaks":4.33,"avp":6.81,"days":1},{"id":4177198,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4773165,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4725217,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4510873,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4747803,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":903035,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3435626,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4761336,"noShow":1,"late":0,"breaks":3.15,"avp":22.18,"days":2},{"id":1137193,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1760212,"noShow":1,"late":0,"breaks":5.01,"avp":19.23,"days":2},{"id":4809259,"noShow":1,"late":0,"breaks":0.5,"avp":5.87,"days":1},{"id":4210079,"noShow":1,"late":0,"breaks":2.46,"avp":30.11,"days":1},{"id":1858957,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4803108,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4786524,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4802380,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4023545,"noShow":1,"late":0,"breaks":0.0,"avp":0.16,"days":1},{"id":3916564,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4479701,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4604088,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4761064,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4150983,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":4719875,"noShow":1,"late":1,"breaks":2.96,"avp":0.46,"days":1},{"id":2442042,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2497581,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":1695202,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":2290937,"noShow":1,"late":0,"breaks":0.0,"avp":0,"days":0},{"id":3868714,"noShow":1,"late":0,"breaks":1.0,"avp":28.28,"days":1},{"id":4780889,"noShow":1,"late":0,"breaks":0.91,"avp":27.55,"days":1}]}}}};
+/* @@OFFENDERS_DATA_END@@ */
+
+// ── Offenders state
+let offZone = 'Nasr city';
+let offSortCol = 'noShow';
+let offSortAsc = false;
+
+function getOffMonth(){
+  const now = new Date();
+  return now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0');
+}
+
+let offInit = false;
+function initOffenders(){
+  if(!offInit){
+    offInit = true;
+    const sel = document.getElementById('off-date-sel');
+    const mKey = getOffMonth();
+    const mo = OFFENDERS[mKey];
+    if(mo){
+      const days = Object.keys(mo.days||{}).sort();
+      days.forEach(d=>{
+        const opt = document.createElement('option');
+        opt.value = d;
+        const dt = new Date(d+'T00:00:00');
+        opt.textContent = dt.toLocaleDateString('en',{month:'short',day:'numeric'});
+        sel.appendChild(opt);
+      });
+    }
+  }
+  renderOffenders();
+}
+
+function setOffZone(z){
+  offZone = z;
+  document.querySelectorAll('.off-zone-btn').forEach(b=>b.classList.remove('active'));
+  const map = {'Nasr city':'offz-nasr','Heliopolis':'offz-helio','Ain shams':'offz-ain'};
+  document.getElementById(map[z])?.classList.add('active');
+  renderOffenders();
+}
+
+function sortOff(col){
+  if(offSortCol === col){
+    offSortAsc = !offSortAsc;
+  } else {
+    offSortCol = col;
+    offSortAsc = col === 'id';
+  }
+  // Update header arrows
+  ['id','noShow','late','breaks','avp','days'].forEach(c=>{
+    const th = document.getElementById('offh-'+c);
+    if(!th) return;
+    th.classList.toggle('sorted', c===offSortCol);
+    const arrow = th.querySelector('.sort-arrow');
+    if(arrow) arrow.textContent = c===offSortCol ? (offSortAsc?'↑':'↓') : '↕';
+  });
+  renderOffenders();
+}
+
+function renderOffenders(){
+  const mKey = getOffMonth();
+  const mo = OFFENDERS[mKey];
+  if(!mo){ document.getElementById('off-tbody').innerHTML='<tr><td colspan="7" class="off-empty">No data for this month.</td></tr>'; return; }
+
+  const dateVal = document.getElementById('off-date-sel').value;
+  let riders;
+  if(dateVal === 'mtd'){
+    riders = (mo.mtd||{})[offZone] || [];
+  } else {
+    riders = ((mo.days||{})[dateVal]||{})[offZone] || [];
+  }
+
+  // Sort
+  const sorted = [...riders].sort((a,b)=>{
+    const av = a[offSortCol]??0, bv = b[offSortCol]??0;
+    return offSortAsc ? av-bv : bv-av;
+  });
+
+  // Label
+  const mLabel = mo.label || mKey;
+  const dateLabel = dateVal==='mtd' ? `All Month (${mLabel})` : (() => {
+    const dt = new Date(dateVal+'T00:00:00');
+    return dt.toLocaleDateString('en',{month:'short',day:'numeric',year:'numeric'});
+  })();
+  document.getElementById('off-sync-label').textContent = `Top ${sorted.length} offenders · ${offZone} · ${dateLabel}`;
+  document.getElementById('off-count-label').textContent = `${sorted.length} riders`;
+
+  if(!sorted.length){
+    document.getElementById('off-tbody').innerHTML='<tr><td colspan="7" class="off-empty">No offenders found for selected filters.</td></tr>';
+    return;
+  }
+
+  const rows = sorted.map((r,i)=>{
+    const ns = r.noShow||0, lt = r.late||0, br = r.breaks??0, av = r.avp??0, dy = r.days||0;
+    const nsCls = ns>=3?'r':ns>=1?'y':'g';
+    const ltCls = lt>=5?'r':lt>=2?'y':'g';
+    return `<tr>
+      <td class="off-rank">${i+1}</td>
+      <td class="off-id">${r.id}</td>
+      <td class="off-num r"><span class="off-count ${nsCls}">${ns}</span></td>
+      <td class="off-num r"><span class="off-count ${ltCls}">${lt}</span></td>
+      <td class="off-num r">${br>0?br.toFixed(1)+'h':'—'}</td>
+      <td class="off-num r">${av>0?av.toFixed(1)+'%':'—'}</td>
+      <td class="off-num r">${dy||'—'}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('off-tbody').innerHTML = rows;
+}
 </script>
 </body>
 </html>
