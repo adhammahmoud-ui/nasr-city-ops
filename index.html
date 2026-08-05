@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nasr City Ops</title>
+<style>
+:root { color-scheme: light; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:#1a1200; min-height:100vh; }
+
+/* ── ANIMATED BACKGROUND ── */
+.app-shell {
+  min-height:100vh;
+  background: linear-gradient(160deg,#c84b00,#8b2e00,#4a1800,#1a0a00,#8b2e00);
+  background-size: 400% 400%;
+  animation: bgShift 18s ease infinite;
+}
+@keyframes bgShift {
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+
+/* ── HEADER ── */
+.top-bar {
+  padding:18px 24px 14px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.brand { display:flex; align-items:center; gap:14px; }
+.t-logo {
+  width:52px; height:52px;
+  background:linear-gradient(145deg,#ff8c00,#e05000);
+  border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  font-size:24px; font-weight:900; color:white; font-style:italic;
+  box-shadow:0 4px 16px rgba(0,0,0,0.4),inset 0 1px 0 rgba(255,255,255,0.2);
+  border:2px solid rgba(255,255,255,0.15);
+  flex-shrink:0;
+  animation: logoGlow 4s ease-in-out infinite;
+}
+@keyframes logoGlow {
+  0%,100%{box-shadow:0 4px 16px rgba(0,0,0,0.4),0 0 0 0 rgba(255,140,0,0)}
+  50%{box-shadow:0 4px 16px rgba(0,0,0,0.4),0 0 20px 6px rgba(255,140,0,0.3)}
+}
+.brand-text .title { font-size:26px; font-weight:800; color:white; letter-spacing:-0.3px; }
+.brand-text .subtitle { font-size:11px; font-weight:600; color:rgba(255,255,255,0.5); letter-spacing:1.8px; text-transform:uppercase; margin-top:2px; }
+
+/* ── SUMMARY ── */
+.summary-row {
+  margin:0 24px 16px;
+  background:rgba(0,0,0,0.28);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:14px;
+  padding:16px 24px;
+  display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+}
+.sum-col { padding:0 20px; border-right:1px solid rgba(255,255,255,0.08); }
+.sum-col:first-child { padding-left:0; }
+.sum-col:last-child  { border-right:none; }
+.sum-label { font-size:10px; font-weight:700; color:rgba(255,255,255,0.45); text-transform:uppercase; letter-spacing:.8px; }
+.sum-val   { font-size:30px; font-weight:900; color:white; margin-top:4px; line-height:1; }
+.sum-delta { font-size:12px; font-weight:700; margin-top:4px; }
+.d-up   { color:#7dffb0; }
+.d-down { color:#ff9090; }
+
+/* ── CONTROLS ── */
+.controls-row {
+  margin:0 24px 14px;
+  display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+}
+.tab-group {
+  background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.15);
+  border-radius:10px; padding:3px; display:flex; gap:2px;
+}
+.tab-btn {
+  padding:7px 18px; border-radius:8px; border:none;
+  font-size:13px; font-weight:600; cursor:pointer;
+  transition:all .2s; background:transparent; color:rgba(255,255,255,0.5);
+  display:flex; align-items:center; gap:6px;
+}
+.tab-btn.active { background:white; color:#1a0a00; box-shadow:0 2px 8px rgba(0,0,0,.3); }
+.tab-btn:hover:not(.active) { color:white; background:rgba(255,255,255,.1); }
+.sel-label { font-size:12px; color:rgba(255,255,255,.5); font-weight:600; }
+.period-select {
+  background:rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.2);
+  border-radius:8px; color:white; padding:7px 28px 7px 12px;
+  font-size:13px; font-weight:600; cursor:pointer; appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(255,255,255,0.5)'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 10px center;
+  transition: border-color .2s;
+}
+.period-select:hover { border-color:rgba(255,255,255,.4); }
+.period-select option { background:#3a1500; color:white; }
+.vs-text { font-size:12px; color:rgba(255,255,255,.35); font-weight:600; }
+.btn-swap {
+  background:rgba(0,0,0,.2); border:1px solid rgba(255,255,255,.2);
+  border-radius:8px; color:rgba(255,255,255,.7); padding:7px 14px;
+  font-size:12px; font-weight:600; cursor:pointer; transition:all .2s;
+}
+.btn-swap:hover { background:rgba(255,255,255,.1); color:white; }
+
+/* ── SYNC BAR ── */
+.sync-bar {
+  margin:0 24px 18px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.sync-left { display:flex; align-items:center; gap:6px; font-size:12px; color:rgba(255,255,255,.5); }
+.sync-dot  { width:8px; height:8px; border-radius:50%; background:#36b37e; animation: syncPulse 2.5s ease infinite; }
+@keyframes syncPulse {
+  0%,100%{box-shadow:0 0 0 0 rgba(54,179,126,0.5)}
+  60%{box-shadow:0 0 0 6px rgba(54,179,126,0)}
+}
+.sync-time { color:rgba(255,255,255,.75); font-weight:600; }
+.btn-sync {
+  background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.2);
+  border-radius:6px; color:rgba(255,255,255,.7); padding:5px 12px;
+  font-size:12px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:5px;
+}
+
+/* ── ZONES ── */
+.zones-wrap { margin:0 24px 20px; }
+.view-label { font-size:10px; font-weight:700; color:rgba(255,255,255,.3); text-transform:uppercase; letter-spacing:1px; margin-bottom:10px; }
+.zones-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+
+/* ── ZONE CARD ── */
+.zone-card {
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:14px; overflow:hidden;
+  backdrop-filter:blur(6px);
+  transition: border-color .5s, box-shadow .5s;
+}
+.zone-card.hg { border-color:rgba(54,179,126,0.45); animation: cardGlowGreen 4s ease-in-out infinite; }
+.zone-card.hy { border-color:rgba(255,171,0,0.4);   animation: cardGlowYellow 4s ease-in-out infinite; }
+.zone-card.hr { border-color:rgba(222,53,11,0.5);   animation: cardGlowRed 3s ease-in-out infinite; }
+@keyframes cardGlowGreen  { 0%,100%{box-shadow:0 0 0 rgba(54,179,126,0)} 50%{box-shadow:0 0 22px rgba(54,179,126,0.18)} }
+@keyframes cardGlowYellow { 0%,100%{box-shadow:0 0 0 rgba(255,171,0,0)} 50%{box-shadow:0 0 22px rgba(255,171,0,0.16)} }
+@keyframes cardGlowRed    { 0%,100%{box-shadow:0 0 0 rgba(222,53,11,0)} 50%{box-shadow:0 0 26px rgba(222,53,11,0.22)} }
+
+.zc-header {
+  padding:14px 16px 12px;
+  display:flex; align-items:flex-start; justify-content:space-between;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.zc-name { font-size:16px; font-weight:800; color:white; }
+.zc-meta { font-size:10px; color:rgba(255,255,255,.4); margin-top:3px; }
+.health-pill { text-align:center; padding:6px 10px; border-radius:8px; min-width:62px; }
+.health-pill.g { background:rgba(54,179,126,.15); border:1px solid rgba(54,179,126,.3); }
+.health-pill.y { background:rgba(255,171,0,.12); border:1px solid rgba(255,171,0,.25); }
+.health-pill.r { background:rgba(222,53,11,.15); border:1px solid rgba(222,53,11,.3); }
+.hp-num { font-size:20px; font-weight:900; line-height:1; }
+.hp-num.g { color:#5fdb8e; }
+.hp-num.y { color:#ffd166; }
+.hp-num.r { color:#ff7070; }
+.hp-lbl { font-size:8px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; margin-top:2px; }
+.hp-lbl.g { color:#5fdb8e; }
+.hp-lbl.y { color:#ffd166; }
+.hp-lbl.r { color:#ff7070; }
+
+/* UTR ROW */
+.utr-row {
+  padding:12px 16px; display:flex; align-items:center; justify-content:space-between;
+  border-bottom:1px solid rgba(255,255,255,.07);
+  background:rgba(0,0,0,.14);
+}
+.utr-tag { font-size:9px; font-weight:700; color:rgba(255,255,255,.4); text-transform:uppercase; letter-spacing:.6px; }
+.utr-main { display:flex; align-items:baseline; gap:8px; margin-top:4px; }
+.utr-num { font-size:30px; font-weight:900; line-height:1; }
+.utr-num.g { color:#5fdb8e; }
+.utr-num.y { color:#ffd166; }
+.utr-num.r { color:#ff7070; animation: numPulseRed 2s ease-in-out infinite; }
+@keyframes numPulseRed { 0%,100%{opacity:1} 50%{opacity:.7} }
+.utr-badge { font-size:11px; font-weight:700; padding:2px 7px; border-radius:5px; }
+.utr-badge.g { background:rgba(54,179,126,.2); color:#7dffb0; }
+.utr-badge.y { background:rgba(255,171,0,.2); color:#ffd166; }
+.utr-badge.r { background:rgba(222,53,11,.2); color:#ff9090; }
+.utr-vs { font-size:10px; color:rgba(255,255,255,.3); }
+.utr-tgt { text-align:right; }
+.utr-tgt-lbl { font-size:9px; color:rgba(255,255,255,.3); }
+.utr-tgt-val { font-size:13px; font-weight:700; color:rgba(255,255,255,.55); margin-top:2px; }
+
+/* METRICS */
+.m-sec { padding:5px 16px 4px; font-size:9px; font-weight:700; color:rgba(255,255,255,.3); text-transform:uppercase; letter-spacing:.7px; background:rgba(0,0,0,.1); border-top:1px solid rgba(255,255,255,.05); border-bottom:1px solid rgba(255,255,255,.05); }
+.m-row { display:flex; align-items:center; justify-content:space-between; padding:7px 16px; border-bottom:1px solid rgba(255,255,255,.04); }
+.m-row:last-child { border-bottom:none; }
+.m-left { display:flex; align-items:center; gap:8px; }
+
+/* ANIMATED METRIC DOTS */
+.m-dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; position:relative; }
+.m-dot.g { background:#36b37e; animation: dotBreathGreen 3s ease-in-out infinite; }
+.m-dot.y { background:#ffab00; animation: dotBreathYellow 2.5s ease-in-out infinite; }
+.m-dot.r { background:#de350b; animation: dotPulseRed 1.8s ease-in-out infinite; }
+.m-dot.n { background:rgba(255,255,255,.2); }
+@keyframes dotBreathGreen  { 0%,100%{box-shadow:0 0 0 0 rgba(54,179,126,0)} 50%{box-shadow:0 0 0 4px rgba(54,179,126,0.2)} }
+@keyframes dotBreathYellow { 0%,100%{box-shadow:0 0 0 0 rgba(255,171,0,0)} 50%{box-shadow:0 0 0 4px rgba(255,171,0,0.2)} }
+@keyframes dotPulseRed     { 0%,100%{box-shadow:0 0 0 0 rgba(222,53,11,0.7)} 60%{box-shadow:0 0 0 6px rgba(222,53,11,0)} }
+
+.m-name { font-size:12px; color:rgba(255,255,255,.6); }
+.m-rhs  { display:flex; align-items:center; gap:6px; }
+.m-val  { font-size:12px; font-weight:700; }
+.m-val.g { color:#7dffb0; }
+.m-val.y { color:#ffd166; }
+.m-val.r { color:#ff9090; animation: valBreath 2s ease-in-out infinite; }
+.m-val.n { color:rgba(255,255,255,.5); }
+@keyframes valBreath { 0%,100%{opacity:1} 50%{opacity:.65} }
+.m-cmpv { font-size:11px; color:rgba(255,255,255,.35); font-weight:600; }
+.m-pct  { font-size:11px; font-weight:800; padding:1px 6px; border-radius:4px; }
+.m-pct.up { color:#7dffb0; background:rgba(54,179,126,.15); }
+.m-pct.dn { color:#ff9090; background:rgba(222,53,11,.13); }
+.m-pct.eq { color:rgba(255,255,255,.25); }
+
+/* RUN RATE BLOCK */
+.rr-block {
+  margin:0 10px 10px;
+  border-radius:10px;
+  padding:10px 14px;
+  display:flex; align-items:center; justify-content:space-between;
+  border:1px solid transparent;
+  position:relative; overflow:hidden;
+}
+.rr-block.g { background:rgba(54,179,126,.12); border-color:rgba(54,179,126,.3); animation: rrGlowG 3.5s ease-in-out infinite; }
+.rr-block.y { background:rgba(255,171,0,.10);  border-color:rgba(255,171,0,.28);  animation: rrGlowY 3s ease-in-out infinite; }
+.rr-block.r { background:rgba(222,53,11,.14);  border-color:rgba(222,53,11,.35);  animation: rrGlowR 2s ease-in-out infinite; }
+@keyframes rrGlowG { 0%,100%{box-shadow:0 0 0 rgba(54,179,126,0)} 50%{box-shadow:0 0 14px rgba(54,179,126,0.22)} }
+@keyframes rrGlowY { 0%,100%{box-shadow:0 0 0 rgba(255,171,0,0)} 50%{box-shadow:0 0 14px rgba(255,171,0,0.2)} }
+@keyframes rrGlowR { 0%,100%{box-shadow:0 0 0 rgba(222,53,11,0)} 50%{box-shadow:0 0 18px rgba(222,53,11,0.28)} }
+.rr-label-area .rr-title { font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:1px; color:rgba(255,255,255,.45); }
+.rr-val-area  { display:flex; align-items:center; gap:10px; }
+.rr-num { font-size:34px; font-weight:900; line-height:1; }
+.rr-num.g { color:#5fdb8e; }
+.rr-num.y { color:#ffd166; animation: numPulseY 3s ease-in-out infinite; }
+.rr-num.r { color:#ff7070; animation: numPulseRed 1.8s ease-in-out infinite; }
+@keyframes numPulseY { 0%,100%{opacity:1} 50%{opacity:.7} }
+.rr-cmp { display:flex; flex-direction:column; align-items:flex-start; gap:3px; }
+.rr-cmp-val { font-size:12px; color:rgba(255,255,255,.35); font-weight:600; }
+.rr-cmp-pct { font-size:12px; font-weight:800; padding:1px 6px; border-radius:4px; }
+.rr-cmp-pct.up { color:#7dffb0; background:rgba(54,179,126,.15); }
+.rr-cmp-pct.dn { color:#ff9090; background:rgba(222,53,11,.13); }
+.rr-cmp-pct.eq { color:rgba(255,255,255,.25); }
+
+/* LEGEND */
+.legend-row {
+  margin:8px 24px 0;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+  font-size:11px; color:rgba(255,255,255,.4);
+}
+.leg-item { display:flex; align-items:center; gap:5px; }
+.ld { width:9px; height:9px; border-radius:50%; }
+
+/* PAGE-LEVEL TABS */
+.page-tabs {
+  display:flex; gap:4px; padding:14px 24px 0;
+}
+.page-tab {
+  padding:8px 20px; border-radius:8px 8px 0 0;
+  font-size:13px; font-weight:700; cursor:pointer;
+  border:1px solid rgba(255,255,255,.12); border-bottom:none;
+  background:rgba(0,0,0,.2); color:rgba(255,255,255,.45);
+  transition:all .2s;
+}
+.page-tab.active {
+  background:rgba(255,255,255,.08); color:white;
+  border-color:rgba(255,255,255,.2);
+}
+.page-tab:hover:not(.active) { background:rgba(255,255,255,.05); color:rgba(255,255,255,.7); }
+
+/* 3PL PERFORMANCE TAB */
+.tpl-wrap { margin:0 24px 24px; }
+.tpl-filters { display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+.tpl-filter-btn {
+  padding:6px 16px; border-radius:6px; font-size:12px; font-weight:700;
+  cursor:pointer; border:1px solid rgba(255,255,255,.15);
+  background:rgba(0,0,0,.2); color:rgba(255,255,255,.5); transition:all .15s;
+}
+.tpl-filter-btn.active {
+  background:rgba(255,171,0,.2); color:#ffd166; border-color:rgba(255,171,0,.4);
+}
+.tpl-filter-btn:hover:not(.active) { background:rgba(255,255,255,.06); color:rgba(255,255,255,.75); }
+.tpl-table { width:100%; border-collapse:collapse; font-size:12px; }
+.tpl-table thead th {
+  text-align:left; padding:8px 12px; font-size:10px; font-weight:700;
+  text-transform:uppercase; letter-spacing:.6px; color:rgba(255,255,255,.35);
+  border-bottom:1px solid rgba(255,255,255,.1); position:sticky; top:0;
+  background:#2a0f00;
+}
+.tpl-table thead th.r { text-align:right; }
+.tpl-table tbody tr {
+  border-bottom:1px solid rgba(255,255,255,.05);
+  transition:background .15s;
+}
+.tpl-table tbody tr:hover { background:rgba(255,255,255,.04); }
+.tpl-table td { padding:9px 12px; vertical-align:middle; }
+.tpl-name { font-weight:700; color:white; font-size:13px; }
+.tpl-zone { font-size:11px; color:rgba(255,255,255,.4); }
+.tpl-num { text-align:right; font-weight:700; font-size:13px; color:rgba(255,255,255,.75); }
+.tpl-tgt { text-align:right; font-size:12px; color:rgba(255,255,255,.4); }
+.tpl-pct { text-align:right; font-size:12px; font-weight:800; padding:2px 8px; border-radius:5px; }
+.tpl-pct.g { color:#7dffb0; background:rgba(54,179,126,.15); }
+.tpl-pct.y { color:#ffd166; background:rgba(255,171,0,.13); }
+.tpl-pct.r { color:#ff9090; background:rgba(222,53,11,.13); }
+.tpl-pct.n { color:rgba(255,255,255,.3); }
+.tpl-name-sel {
+  padding:6px 32px 6px 14px; border-radius:20px; font-size:12px; font-weight:700;
+  cursor:pointer; border:1.5px solid rgba(255,255,255,.25); background:rgba(0,0,0,.25);
+  color:rgba(255,255,255,.75); appearance:none; -webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(255,255,255,0.5)'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 10px center;
+  transition:all .15s; outline:none; margin-left:4px;
+}
+.tpl-name-sel:focus { border-color:rgba(255,171,0,.5); }
+.tpl-name-sel option { background:#2a0f00; color:white; }
+.tpl-section-hdr td {
+  padding:6px 12px; font-size:10px; font-weight:800; text-transform:uppercase;
+  letter-spacing:.7px; color:rgba(255,255,255,.3);
+  background:rgba(0,0,0,.15); border-top:1px solid rgba(255,255,255,.08);
+}
+</style>
+</head>
+<body>
+<div class="app-shell">
+
+<div class="top-bar">
+  <div class="brand">
+    <div class="t-logo">t</div>
+    <div class="brand-text">
+      <div class="title">Nasr City Ops</div>
+      <div class="subtitle">Talabat · Operations Control Tower</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE TABS -->
+<div class="page-tabs">
+  <button class="page-tab active" id="ptab-zone"  onclick="setPage('zone')">📊 Zone Overview</button>
+  <button class="page-tab"        id="ptab-3pl"   onclick="setPage('3pl')">🚚 3PL Performance</button>
+</div>
+
+<!-- ══ ZONE OVERVIEW PAGE ══ -->
+<div id="page-zone">
+
+<!-- SUMMARY BAR -->
+<div class="summary-row">
+  <div class="sum-col">
+    <div class="sum-label">Total Deliveries</div>
+    <div class="sum-val" id="s-orders">—</div>
+    <div class="sum-delta" id="s-orders-d"></div>
+  </div>
+  <div class="sum-col">
+    <div class="sum-label">Active Riders</div>
+    <div class="sum-val" id="s-riders">—</div>
+    <div class="sum-delta" id="s-riders-d"></div>
+  </div>
+  <div class="sum-col">
+    <div class="sum-label">Working Hours</div>
+    <div class="sum-val" id="s-hours">—</div>
+    <div class="sum-delta" id="s-hours-d"></div>
+  </div>
+  <div class="sum-col">
+    <div class="sum-label">Avg On-Time</div>
+    <div class="sum-val" id="s-ontime">—</div>
+    <div class="sum-delta" id="s-ontime-d"></div>
+  </div>
+</div>
+
+<!-- CONTROLS -->
+<div class="controls-row">
+  <div class="tab-group">
+    <button class="tab-btn active" id="tab-day"   onclick="setView('day')">📅 Day</button>
+    <button class="tab-btn"        id="tab-week"  onclick="setView('week')">📅 Week</button>
+    <button class="tab-btn"        id="tab-month" onclick="setView('month')">🗓 Month</button>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px">
+    <span class="sel-label">Main:</span>
+    <select class="period-select" id="main-sel" onchange="onMainChange()"></select>
+    <span class="vs-text">vs</span>
+    <span class="sel-label">Compare:</span>
+    <select class="period-select" id="cmp-sel" onchange="render()"></select>
+    <button class="btn-swap" onclick="swapP()">⇄</button>
+  </div>
+</div>
+
+<!-- SYNC -->
+<div class="sync-bar">
+  <div class="sync-left">
+    <div class="sync-dot" id="sync-dot"></div>
+    <span>Last sync: <span class="sync-time" id="sync-t">—</span></span>
+  </div>
+  <button class="btn-sync" id="sync-btn" onclick="doRefresh()">↻ Refresh</button>
+</div>
+
+<!-- ZONE GRID -->
+<div class="zones-wrap">
+  <div class="view-label" id="view-lbl">—</div>
+  <div class="zones-grid" id="grid">Loading…</div>
+</div>
+
+<!-- LEGEND -->
+<div class="legend-row">
+  <div class="leg-item"><div class="ld" style="background:#36b37e"></div>On Target</div>
+  <div class="leg-item"><div class="ld" style="background:#ffab00"></div>Watch</div>
+  <div class="leg-item"><div class="ld" style="background:#de350b"></div>Needs Action</div>
+  <div class="leg-item"><div class="ld" style="background:rgba(255,255,255,.2)"></div>Info</div>
+  <span style="margin-left:auto;font-size:11px;color:rgba(255,255,255,.15)">UTR above target = overloaded · Built with Claude Cowork</span>
+</div>
+<div style="height:22px"></div>
+
+</div><!-- end page-zone -->
+
+<!-- ══ 3PL PERFORMANCE PAGE ══ -->
+<div id="page-3pl" style="display:none">
+  <div class="sync-bar" style="margin-top:12px">
+    <div class="sync-left">
+      <div class="sync-dot"></div>
+      <span id="tpl-sync-label">Data: Yesterday (Aug 3) · Last 7 Days (Jul 28–Aug 3) · Last Month (Jul Avg/day) · MTD (Aug 1–3)</span>
+    </div>
+  </div>
+  <div class="tpl-wrap">
+    <div class="tpl-filters">
+      <button class="tpl-filter-btn active" onclick="filter3PL('all')">🌐 Overall</button>
+      <button class="tpl-filter-btn" onclick="filter3PL('Nasr city')">Nasr City</button>
+      <button class="tpl-filter-btn" onclick="filter3PL('Heliopolis')">Heliopolis</button>
+      <button class="tpl-filter-btn" onclick="filter3PL('Ain shams')">Ain Shams</button>
+      <select id="tpl-name-sel" class="tpl-name-sel" onchange="filterBy3PLName(this.value)">
+        <option value="">All 3PLs</option>
+      </select>
+    </div>
+    <table class="tpl-table">
+      <thead>
+        <tr>
+          <th>3PL</th>
+          <th>Zone</th>
+          <th class="r">Riders<br><span style="font-weight:400;font-size:9px">Yesterday</span></th>
+          <th class="r">Target<br><span style="font-weight:400;font-size:9px">Daily (h)</span></th>
+          <th class="r">Yesterday<br><span id="tpl-hdr-yday" style="font-weight:400;font-size:9px">Aug 3 (h)</span></th>
+          <th class="r">Last 7 Days<br><span style="font-weight:400;font-size:9px">Avg/day (h)</span></th>
+          <th class="r">Last Month<br><span id="tpl-hdr-month" style="font-weight:400;font-size:9px">Jul Avg/day (h)</span></th>
+          <th class="r">vs Target<br><span id="tpl-hdr-mtd" style="font-weight:400;font-size:9px">Aug MTD %</span></th>
+        </tr>
+      </thead>
+      <tbody id="tpl-tbody"></tbody>
+    </table>
+  </div>
+</div><!-- end page-3pl -->
+
+</div>
+<script>
+/* ══════════════════════════════════════════════════════
+   DATA  (Looker · Logistics_PU · Aug 2026)
+   z = { utr, riders, orders, delivComp, sumHrs, avgHrs,
+          lateLogin, noShow, breakMin, fill, acceptRate,
+          plannedHrs, delivTime, rat, toVendor, onTime, failRate }
+   ══════════════════════════════════════════════════════ */
+const ZONES = ['Nasr city','Heliopolis','Ain shams'];
+const ZL    = { 'Nasr city':'Nasr City', 'Heliopolis':'Heliopolis', 'Ain shams':'Ain Shams' };
+const TGT   = { 'Nasr city':1.93, 'Heliopolis':1.86, 'Ain shams':1.73 };
+
+const DAY = {
+  "2026-08-04":{ label:"Aug 4, 2026", zones:{
+    "Nasr city": { utr:2.0716, riders:1767, orders:31365, delivComp:32432, sumHrs:15140.35, avgHrs:7.84, lateLogin:0.0795, noShow:0.0356, breakMin:60.47, fill:0.8548, acceptRate:0.9827, plannedHrs:17712.17, delivTime:25.51, rat:6.68, toVendor:3.36, onTime:0.8563, failRate:0.0168 },
+    "Heliopolis":{ utr:2.0658, riders:1845, orders:29893, delivComp:30589, sumHrs:14470.58, avgHrs:6.95, lateLogin:0.0869, noShow:0.0680, breakMin:61.31, fill:0.8165, acceptRate:0.9850, plannedHrs:17721.75, delivTime:24.21, rat:5.53, toVendor:3.16, onTime:0.8501, failRate:0.0141 },
+    "Ain shams": { utr:1.9294, riders:369,  orders:4755,  delivComp:4838,  sumHrs:2464.54,  avgHrs:5.92, lateLogin:0.0766, noShow:0.0475, breakMin:42.66, fill:0.8332, acceptRate:0.9700, plannedHrs:2957.77, delivTime:26.44, rat:5.67, toVendor:4.21, onTime:0.8127, failRate:0.0397 },
+  }},
+  "2026-08-03":{ label:"Aug 3, 2026", zones:{
+    "Nasr city": { utr:2.1636, riders:1731, orders:30091, delivComp:31285, sumHrs:13907.9, avgHrs:7.29, lateLogin:0.0772, noShow:0.0400, breakMin:68.53, fill:0.8279, acceptRate:0.9798, plannedHrs:16799.3, delivTime:27.09, rat:7.94, toVendor:3.59, onTime:0.8365, failRate:0.0250 },
+    "Heliopolis":{ utr:2.2487, riders:1778, orders:29476, delivComp:30262, sumHrs:13108.1, avgHrs:6.28, lateLogin:0.0859, noShow:0.0822, breakMin:63.98, fill:0.7830, acceptRate:0.9811, plannedHrs:16741.7, delivTime:27.90, rat:8.53, toVendor:3.46, onTime:0.8187, failRate:0.0223 },
+    "Ain shams": { utr:1.9319, riders:347,  orders:4439,  delivComp:4532,  sumHrs:2297.8,  avgHrs:5.70, lateLogin:0.0704, noShow:0.0556, breakMin:52.10, fill:0.8136, acceptRate:0.9683, plannedHrs:2824.3,  delivTime:28.27, rat:7.01, toVendor:4.24, onTime:0.7725, failRate:0.0371 },
+  }},
+  "2026-08-02":{ label:"Aug 2, 2026", zones:{
+    "Nasr city": { utr:2.0563, riders:1803, orders:32173, delivComp:32813, sumHrs:15646.0, avgHrs:7.96, lateLogin:0.0821, noShow:0.0371, breakMin:63.00, fill:0.8547, delivTime:25.84, rat:7.26, toVendor:3.34, onTime:0.8493, failRate:0.0241 },
+    "Heliopolis":{ utr:2.0378, riders:1857, orders:30001, delivComp:30524, sumHrs:14722.1, avgHrs:7.01, lateLogin:0.0927, noShow:0.0669, breakMin:60.98, fill:0.8159, delivTime:23.87, rat:5.58, toVendor:3.06, onTime:0.8460, failRate:0.0213 },
+    "Ain shams": { utr:1.9749, riders:374,  orders:5028,  delivComp:5118,  sumHrs:2545.9,  avgHrs:5.98, lateLogin:0.0824, noShow:0.0626, breakMin:53.09, fill:0.8046, delivTime:26.85, rat:6.19, toVendor:3.94, onTime:0.8060, failRate:0.0315 },
+  }},
+  "2026-08-01":{ label:"Aug 1, 2026", zones:{
+    "Nasr city": { utr:2.1243, riders:1727, orders:31255, delivComp:32344, sumHrs:14713.1, avgHrs:7.74, lateLogin:0.0814, noShow:0.0444, breakMin:55.47, fill:0.8548, delivTime:25.57, rat:6.82, toVendor:3.29, onTime:0.8502, failRate:0.0238 },
+    "Heliopolis":{ utr:2.0428, riders:1679, orders:26513, delivComp:27001, sumHrs:12979.1, avgHrs:6.85, lateLogin:0.0933, noShow:0.0590, breakMin:61.21, fill:0.8116, delivTime:23.39, rat:5.25, toVendor:3.04, onTime:0.8504, failRate:0.0202 },
+    "Ain shams": { utr:2.0350, riders:382,  orders:5192,  delivComp:5363,  sumHrs:2551.4,  avgHrs:6.07, lateLogin:0.0789, noShow:0.0584, breakMin:46.95, fill:0.8275, delivTime:29.22, rat:7.02, toVendor:4.01, onTime:0.7791, failRate:0.0332 },
+  }},
+  "2026-07-31":{ label:"Jul 31, 2026", zones:{
+    "Nasr city": { utr:2.1657, riders:1699, orders:31112, delivComp:31878, sumHrs:14365.9, avgHrs:7.66, lateLogin:0.0789, noShow:0.0342, breakMin:55.51, fill:0.8683, delivTime:25.93, rat:7.60, toVendor:3.39, onTime:0.8447, failRate:0.0261 },
+    "Heliopolis":{ utr:2.1302, riders:1671, orders:26521, delivComp:26957, sumHrs:12450.3, avgHrs:6.61, lateLogin:0.0872, noShow:0.0487, breakMin:61.10, fill:0.8257, delivTime:24.37, rat:6.38, toVendor:3.22, onTime:0.8431, failRate:0.0208 },
+    "Ain shams": { utr:1.9953, riders:350,  orders:5033,  delivComp:5035,  sumHrs:2522.5,  avgHrs:6.29, lateLogin:0.0911, noShow:0.0534, breakMin:50.35, fill:0.8312, delivTime:28.30, rat:6.89, toVendor:4.01, onTime:0.7859, failRate:0.0384 },
+  }},
+  "2026-07-30":{ label:"Jul 30, 2026", zones:{
+    "Nasr city": { utr:2.0000, riders:1903, orders:32166, delivComp:33806, sumHrs:16083.8, avgHrs:7.78, lateLogin:0.0747, noShow:0.0320, breakMin:57.68, fill:0.8650, delivTime:25.34, rat:6.90, toVendor:3.31, onTime:0.8514, failRate:0.0906 },
+    "Heliopolis":{ utr:2.0875, riders:1939, orders:30793, delivComp:31852, sumHrs:14750.9, avgHrs:6.91, lateLogin:0.0881, noShow:0.0522, breakMin:56.65, fill:0.8396, delivTime:24.59, rat:5.76, toVendor:3.31, onTime:0.8483, failRate:0.0215 },
+    "Ain shams": { utr:1.8966, riders:392,  orders:5132,  delivComp:5214,  sumHrs:2705.9,  avgHrs:6.22, lateLogin:0.0856, noShow:0.0596, breakMin:49.65, fill:0.8197, delivTime:27.19, rat:5.43, toVendor:3.76, onTime:0.8220, failRate:0.0351 },
+  }},
+  "2026-07-29":{ label:"Jul 29, 2026", zones:{
+    "Nasr city": { utr:1.9470, riders:1876, orders:31413, delivComp:32439, sumHrs:16134.4, avgHrs:7.89, lateLogin:0.0785, noShow:0.0353, breakMin:60.09, fill:0.8622, delivTime:24.71, rat:5.89, toVendor:3.35, onTime:0.8701, failRate:0.0240 },
+    "Heliopolis":{ utr:2.0703, riders:1926, orders:30385, delivComp:31068, sumHrs:14676.8, avgHrs:6.86, lateLogin:0.0925, noShow:0.0583, breakMin:62.91, fill:0.8199, delivTime:24.41, rat:5.45, toVendor:3.53, onTime:0.8574, failRate:0.0194 },
+    "Ain shams": { utr:1.8623, riders:385,  orders:4754,  delivComp:4964,  sumHrs:2552.7,  avgHrs:5.83, lateLogin:0.0771, noShow:0.0611, breakMin:52.51, fill:0.8065, delivTime:27.17, rat:6.71, toVendor:3.85, onTime:0.7528, failRate:0.0339 },
+  }},
+};
+
+const WEEK = {
+  "2026-08-02":{ label:"Wk 32 · Aug 3–9 (current)", short:"Wk 32", zones:{
+    "Nasr city": { utr:1.9635, riders:2099, orders:62264,  delivComp:null, sumHrs:31710.9, avgHrs:6.50, lateLogin:0.0792, noShow:0.0331, breakMin:59.3, fill:0.8324, delivTime:26.28, rat:7.59, toVendor:3.46, onTime:0.8430, failRate:0.0245 },
+    "Heliopolis":{ utr:2.0175, riders:2197, orders:59477,  delivComp:null, sumHrs:29480.8, avgHrs:5.85, lateLogin:0.0885, noShow:0.0647, breakMin:57.6, fill:0.7948, delivTime:25.70, rat:7.05, toVendor:3.26, onTime:0.8324, failRate:0.0218 },
+    "Ain shams": { utr:1.8189, riders:452,  orders:9467,   delivComp:null, sumHrs:5204.9,  avgHrs:5.12, lateLogin:0.0781, noShow:0.0510, breakMin:47.2, fill:0.8066, delivTime:27.30, rat:6.58, toVendor:4.08, onTime:0.7903, failRate:0.0342 },
+  }},
+  "2026-07-26":{ label:"Wk 31 · Jul 27–Aug 2", short:"Wk 31", zones:{
+    "Nasr city": { utr:1.9965, riders:2582, orders:218145, delivComp:null, sumHrs:109264.6, avgHrs:7.76, lateLogin:0.0804, noShow:0.0353, breakMin:60.3, fill:0.8558, delivTime:24.94, rat:6.25, toVendor:3.25, onTime:0.8565, failRate:0.0526 },
+    "Heliopolis":{ utr:2.0275, riders:2709, orders:200777, delivComp:null, sumHrs:99027.6,  avgHrs:6.83, lateLogin:0.0923, noShow:0.0562, breakMin:60.3, fill:0.8221, delivTime:23.70, rat:5.10, toVendor:3.17, onTime:0.8536, failRate:0.0194 },
+    "Ain shams": { utr:1.9083, riders:556,  orders:34479,  delivComp:null, sumHrs:18068.0,  avgHrs:6.11, lateLogin:0.0910, noShow:0.0593, breakMin:52.1, fill:0.8153, delivTime:27.30, rat:6.05, toVendor:3.95, onTime:0.7883, failRate:0.0371 },
+  }},
+  "2026-07-19":{ label:"Wk 30 · Jul 20–26", short:"Wk 30", zones:{
+    "Nasr city": { utr:1.9971, riders:2615, orders:213865, delivComp:null, sumHrs:107089.4, avgHrs:7.59, lateLogin:0.0815, noShow:0.0368, breakMin:65.0, fill:0.8453, delivTime:24.86, rat:6.20, toVendor:3.32, onTime:0.8545, failRate:0.0416 },
+    "Heliopolis":{ utr:1.9844, riders:2747, orders:192435, delivComp:null, sumHrs:96973.4,  avgHrs:6.68, lateLogin:0.1045, noShow:0.0648, breakMin:64.4, fill:0.8054, delivTime:23.90, rat:5.45, toVendor:3.21, onTime:0.8462, failRate:0.0201 },
+    "Ain shams": { utr:1.9579, riders:547,  orders:35072,  delivComp:null, sumHrs:17912.8,  avgHrs:6.11, lateLogin:0.1077, noShow:0.0498, breakMin:55.4, fill:0.8106, delivTime:26.13, rat:5.62, toVendor:3.97, onTime:0.7927, failRate:0.0437 },
+  }},
+  "2026-07-12":{ label:"Wk 29 · Jul 13–19", short:"Wk 29", zones:{
+    "Nasr city": { utr:2.0084, riders:2532, orders:209541, delivComp:null, sumHrs:104332.9, avgHrs:7.63, lateLogin:0.0829, noShow:0.0373, breakMin:65.9, fill:0.8419, delivTime:24.26, rat:5.63, toVendor:3.32, onTime:0.8426, failRate:0.0217 },
+    "Heliopolis":{ utr:2.0590, riders:2678, orders:195086, delivComp:null, sumHrs:94745.8,  avgHrs:6.75, lateLogin:0.1100, noShow:0.0657, breakMin:67.4, fill:0.8009, delivTime:24.73, rat:6.03, toVendor:3.39, onTime:0.8233, failRate:0.0215 },
+    "Ain shams": { utr:1.9345, riders:572,  orders:34216,  delivComp:null, sumHrs:17687.1,  avgHrs:5.98, lateLogin:0.1078, noShow:0.0622, breakMin:55.0, fill:0.8010, delivTime:26.62, rat:5.96, toVendor:4.01, onTime:0.7821, failRate:0.0348 },
+  }},
+  "2026-07-05":{ label:"Wk 28 · Jul 6–12", short:"Wk 28", zones:{
+    "Nasr city": { utr:2.0440, riders:2552, orders:208814, delivComp:null, sumHrs:102162.0, avgHrs:7.58, lateLogin:0.0980, noShow:0.0476, breakMin:64.1, fill:0.8328, delivTime:25.77, rat:6.73, toVendor:3.60, onTime:0.8239, failRate:0.0242 },
+    "Heliopolis":{ utr:2.0569, riders:2683, orders:197147, delivComp:null, sumHrs:95844.7,  avgHrs:6.79, lateLogin:0.1228, noShow:0.0825, breakMin:66.0, fill:0.7862, delivTime:26.07, rat:6.93, toVendor:3.56, onTime:0.8144, failRate:0.0231 },
+    "Ain shams": { utr:1.8579, riders:584,  orders:35988,  delivComp:null, sumHrs:19370.5,  avgHrs:6.34, lateLogin:0.1092, noShow:0.0622, breakMin:53.4, fill:0.8105, delivTime:26.16, rat:5.16, toVendor:4.07, onTime:0.7970, failRate:0.0296 },
+  }},
+  "2026-06-28":{ label:"Wk 27 · Jun 29–Jul 5", short:"Wk 27", zones:{
+    "Nasr city": { utr:2.1186, riders:2480, orders:208406, delivComp:null, sumHrs:98370.3,  avgHrs:7.48, lateLogin:0.1023, noShow:0.0480, breakMin:60.8, fill:0.8336, delivTime:25.73, rat:6.83, toVendor:3.61, onTime:0.8466, failRate:0.0247 },
+    "Heliopolis":{ utr:2.0480, riders:2675, orders:194424, delivComp:null, sumHrs:94933.6,  avgHrs:6.68, lateLogin:0.1204, noShow:0.0778, breakMin:60.8, fill:0.7928, delivTime:24.16, rat:5.54, toVendor:3.38, onTime:0.8557, failRate:0.0212 },
+    "Ain shams": { utr:1.9608, riders:567,  orders:36494,  delivComp:null, sumHrs:18611.9,  avgHrs:6.02, lateLogin:0.1097, noShow:0.0699, breakMin:42.9, fill:0.8100, delivTime:27.25, rat:5.77, toVendor:4.28, onTime:0.7882, failRate:0.0335 },
+  }},
+  "2026-06-21":{ label:"Wk 26 · Jun 22–28", short:"Wk 26", zones:{
+    "Nasr city": { utr:2.1695, riders:2381, orders:201802, delivComp:null, sumHrs:93017.3,  avgHrs:7.39, lateLogin:0.0974, noShow:0.0465, breakMin:59.3, fill:0.8362, delivTime:25.30, rat:6.71, toVendor:3.64, onTime:0.8562, failRate:0.0233 },
+    "Heliopolis":{ utr:2.0627, riders:2614, orders:193457, delivComp:null, sumHrs:93790.1,  avgHrs:6.84, lateLogin:0.1175, noShow:0.0663, breakMin:58.9, fill:0.8109, delivTime:23.16, rat:4.83, toVendor:3.38, onTime:0.8677, failRate:0.0194 },
+    "Ain shams": { utr:2.0015, riders:536,  orders:33924,  delivComp:null, sumHrs:16949.6,  avgHrs:5.77, lateLogin:0.1206, noShow:0.0745, breakMin:48.5, fill:0.7885, delivTime:26.63, rat:5.59, toVendor:4.50, onTime:0.8042, failRate:0.0311 },
+  }},
+  "2026-06-14":{ label:"Wk 25 · Jun 15–21", short:"Wk 25", zones:{
+    "Nasr city": { utr:2.1722, riders:2248, orders:197344, delivComp:null, sumHrs:90849.1,  avgHrs:7.66, lateLogin:0.1031, noShow:0.0511, breakMin:71.6, fill:0.8115, delivTime:25.84, rat:7.28, toVendor:3.76, onTime:0.8513, failRate:0.0257 },
+    "Heliopolis":{ utr:1.9650, riders:2550, orders:186153, delivComp:null, sumHrs:94733.9,  avgHrs:7.06, lateLogin:0.1193, noShow:0.0769, breakMin:68.8, fill:0.7846, delivTime:23.62, rat:5.33, toVendor:3.30, onTime:0.8577, failRate:0.0206 },
+    "Ain shams": { utr:2.0158, riders:535,  orders:32988,  delivComp:null, sumHrs:16364.9,  avgHrs:5.89, lateLogin:0.1093, noShow:0.0730, breakMin:53.0, fill:0.7800, delivTime:26.67, rat:5.81, toVendor:4.55, onTime:0.7967, failRate:0.0338 },
+  }},
+  "2026-06-07":{ label:"Wk 24 · Jun 8–14", short:"Wk 24", zones:{
+    "Nasr city": { utr:2.2748, riders:2050, orders:199629, delivComp:null, sumHrs:87758.0,  avgHrs:7.95, lateLogin:0.1076, noShow:0.0542, breakMin:68.9, fill:0.8150, delivTime:27.06, rat:8.42, toVendor:3.80, onTime:0.8367, failRate:0.0251 },
+    "Heliopolis":{ utr:2.1149, riders:2443, orders:194632, delivComp:null, sumHrs:92030.0,  avgHrs:7.10, lateLogin:0.1320, noShow:0.0861, breakMin:69.8, fill:0.7735, delivTime:25.38, rat:6.68, toVendor:3.55, onTime:0.8369, failRate:0.0202 },
+    "Ain shams": { utr:2.0780, riders:521,  orders:32394,  delivComp:null, sumHrs:15589.0,  avgHrs:5.80, lateLogin:0.1089, noShow:0.0830, breakMin:50.9, fill:0.7775, delivTime:27.52, rat:6.80, toVendor:4.66, onTime:0.7703, failRate:0.0318 },
+  }},
+  "2026-05-31":{ label:"Wk 23 · Jun 1–7", short:"Wk 23", zones:{
+    "Nasr city": { utr:2.3803, riders:1951, orders:205025, delivComp:null, sumHrs:86132.6,  avgHrs:8.60, lateLogin:0.1167, noShow:0.0551, breakMin:61.5, fill:0.8332, delivTime:27.32, rat:8.57, toVendor:3.88, onTime:0.8330, failRate:0.0253 },
+    "Heliopolis":{ utr:2.1523, riders:2334, orders:199381, delivComp:null, sumHrs:92635.9,  avgHrs:7.58, lateLogin:0.1331, noShow:0.0768, breakMin:65.8, fill:0.7940, delivTime:25.36, rat:6.47, toVendor:3.48, onTime:0.8414, failRate:0.0212 },
+    "Ain shams": { utr:2.0719, riders:507,  orders:36949,  delivComp:null, sumHrs:17833.3,  avgHrs:6.68, lateLogin:0.1019, noShow:0.0600, breakMin:55.2, fill:0.8038, delivTime:26.36, rat:5.81, toVendor:4.30, onTime:0.7940, failRate:0.0311 },
+  }},
+};
+
+const MONTH = {
+  "2026-08":{ label:"Aug 2026 (MTD Aug 1–4)", zones:{
+    "Nasr city": { utr:2.1019, riders:2353, orders:124885,  delivComp:128677, sumHrs:59416.58, avgHrs:7.71, lateLogin:0.0801, noShow:0.0393, breakMin:61.96, fill:0.8484, acceptRate:0.9811, plannedHrs:70030.17 },
+    "Heliopolis":{ utr:2.0959, riders:2484, orders:115872,  delivComp:118809, sumHrs:55285.08, avgHrs:6.77, lateLogin:0.0897, noShow:0.0691, breakMin:61.95, fill:0.8072, acceptRate:0.9833, plannedHrs:68486.15 },
+    "Ain shams": { utr:1.9690, riders:522,  orders:19414,   delivComp:19735,  sumHrs:9859.63,  avgHrs:5.92, lateLogin:0.0772, noShow:0.0560, breakMin:48.69, fill:0.8196, acceptRate:0.9698, plannedHrs:12029.41 },
+  }},
+  "2026-07":{ label:"Jul 2026", zones:{
+    "Nasr city": { utr:2.0201, riders:3394, orders:937645,  delivComp:null, sumHrs:464158.3, avgHrs:7.62, lateLogin:0.0882, noShow:0.0404, breakMin:64.1, fill:0.8412, delivTime:25.09, rat:6.31, toVendor:3.40, onTime:0.8434, failRate:0.0345 },
+    "Heliopolis":{ utr:2.0311, riders:3518, orders:865449,  delivComp:null, sumHrs:426103.9, avgHrs:6.74, lateLogin:0.1104, noShow:0.0695, breakMin:64.7, fill:0.7999, delivTime:24.64, rat:5.92, toVendor:3.34, onTime:0.8351, failRate:0.0213 },
+    "Ain shams": { utr:1.9148, riders:765,  orders:156408,  delivComp:null, sumHrs:81684.3,  avgHrs:6.14, lateLogin:0.1060, noShow:0.0602, breakMin:53.2, fill:0.8081, delivTime:26.58, rat:5.65, toVendor:4.03, onTime:0.7910, failRate:0.0359 },
+  }},
+  "2026-06":{ label:"Jun 2026", zones:{
+    "Nasr city": { utr:2.2253, riders:3008, orders:864519,  delivComp:null, sumHrs:388493.9, avgHrs:7.78, lateLogin:0.1044, noShow:0.0502, breakMin:64.6, fill:0.8259, delivTime:26.22, rat:7.55, toVendor:3.76, onTime:0.8462, failRate:0.0247 },
+    "Heliopolis":{ utr:2.0687, riders:3305, orders:834409,  delivComp:null, sumHrs:403351.4, avgHrs:7.08, lateLogin:0.1232, noShow:0.0748, breakMin:64.9, fill:0.7930, delivTime:24.28, rat:5.73, toVendor:3.43, onTime:0.8531, failRate:0.0202 },
+    "Ain shams": { utr:2.0264, riders:709,  orders:144996,  delivComp:null, sumHrs:71552.9,  avgHrs:5.98, lateLogin:0.1107, noShow:0.0719, breakMin:50.4, fill:0.7900, delivTime:26.82, rat:5.96, toVendor:4.50, onTime:0.7903, failRate:0.0323 },
+  }},
+};
+
+/* ════════════════════════════════
+   HELPERS
+   ════════════════════════════════ */
+function getData(v){ return v==='day'?DAY:v==='week'?WEEK:MONTH; }
+function keys(v){ return Object.keys(getData(v)).sort().reverse(); }
+function fi(v){ return v==null?'—':Math.round(+v).toLocaleString(); }
+function ff(v,d=1,s=''){ return v==null?'—':(+v).toFixed(d)+s; }
+function fp(v){ return v==null?'—':((+v)*100).toFixed(1)+'%'; }
+
+/* UTR color: above target = bad */
+function utrClr(u, tgt){
+  if(u==null||!tgt) return 'n';
+  const r = u/tgt;
+  if(u > tgt){
+    /* above target = overloaded = bad */
+    const over = (u-tgt)/tgt; /* how much % above */
+    return over > 0.10 ? 'r' : 'y';
+  } else {
+    /* below target */
+    if(r >= 0.95) return 'g';
+    if(r >= 0.85) return 'y';
+    return 'r';
+  }
+}
+/* generic color */
+function clr(v, lo, hi, inv=false){
+  if(v==null) return 'n';
+  return inv
+    ? (v<=lo?'g':v<=hi?'y':'r')
+    : (v>=hi?'g':v>=lo?'y':'r');
+}
+/* break % from mins + hrs */
+function breakPct(z){
+  if(z.breakMin==null||!z.avgHrs||z.avgHrs===0) return null;
+  return z.breakMin / (z.avgHrs*60) * 100;
+}
+/* Run Rate % = actual sumHrs / needed hrs × 100
+   needed hrs = orders / target_utr */
+function runRate(z, tgt){
+  if(!z.sumHrs||!z.orders||!tgt) return null;
+  const needed = z.orders / tgt;
+  return (z.sumHrs / needed) * 100;
+}
+function rrColor(rr){
+  if(rr==null) return 'n';
+  if(rr>=90 && rr<=110) return 'g';
+  if(rr>=80 && rr<=120) return 'y';
+  return 'r';
+}
+/* health score (updated UTR logic) */
+function health(z, tgt){
+  let pts=0, mx=0;
+  function chk(v,lo,hi,inv=false){ if(v==null)return; mx+=10; const c=clr(v,lo,hi,inv); pts+=(c==='g'?10:c==='y'?5:0); }
+  /* UTR: near target = good, above/below = bad */
+  if(z.utr!=null && tgt){ mx+=10; const uc=utrClr(z.utr,tgt); pts+=(uc==='g'?10:uc==='y'?5:0); }
+  chk(z.onTime!=null?z.onTime*100:null,75,85);
+  if(z.failRate!=null){ mx+=10; pts+=(z.failRate*100<=3?10:z.failRate*100<=5?5:0); }
+  chk(z.delivTime,25,28,true);
+  chk(z.rat,5,8,true);
+  chk(z.lateLogin!=null?z.lateLogin*100:null,6,10,true);
+  chk(z.noShow!=null?z.noShow*100:null,4,7,true);
+  chk(z.fill!=null?z.fill*100:null,75,85);
+  chk(z.avgHrs,6,7.5);
+  const bp=breakPct(z); chk(bp,10,20,true);
+  if(!mx) return{p:0,c:'n'};
+  const p=Math.round(pts/mx*100);
+  return{p, c:p>=75?'g':p>=55?'y':'r'};
+}
+
+function cmpHtml(val, cmpVal, cmpFmt, bigUp=true){
+  if(val==null||cmpVal==null) return '';
+  const d=val-cmpVal, pct=cmpVal!==0?d/Math.abs(cmpVal)*100:0;
+  const isGood = bigUp ? d>0 : d<0;
+  const pctCls = Math.abs(pct)<0.1?'eq':isGood?'up':'dn';
+  const sign = pct>0?'+':'';
+  const pctStr = Math.abs(pct)<0.1?'–':sign+pct.toFixed(1)+'%';
+  return `<span class="m-cmpv">${cmpFmt(cmpVal)}</span><span class="m-pct ${pctCls}">${pctStr}</span>`;
+}
+
+/* ════════════════════════════════
+   SUMMARY
+   ════════════════════════════════ */
+function renderSummary(mD, cD){
+  let mOrd=0,mRid=0,mHrs=0,mOTn=0,mOTd=0;
+  let cOrd=0,cRid=0,cHrs=0;
+  ZONES.forEach(z=>{
+    const m=mD.zones[z]; if(!m)return;
+    mOrd+=(m.delivComp||m.orders||0);
+    mRid+=(m.riders||0);
+    mHrs+=(m.sumHrs||0);
+    if(m.onTime!=null){mOTn+=m.onTime;mOTd++;}
+  });
+  if(cD) ZONES.forEach(z=>{
+    const c=cD.zones[z]; if(!c)return;
+    cOrd+=(c.delivComp||c.orders||0);
+    cRid+=(c.riders||0);
+    cHrs+=(c.sumHrs||0);
+  });
+  document.getElementById('s-orders').textContent=fi(mOrd);
+  document.getElementById('s-riders').textContent=fi(mRid);
+  document.getElementById('s-hours').textContent=fi(Math.round(mHrs));
+  document.getElementById('s-ontime').textContent=mOTd>0?fp(mOTn/mOTd):'—';
+  function dTag(cur,prev,up){
+    if(!cD||!prev) return '';
+    const pct=(cur-prev)/Math.abs(prev)*100;
+    const good=up?pct>=0:pct<=0;
+    return `<span class="${good?'d-up':'d-down'}">${pct>=0?'▲':'▼'} ${Math.abs(pct).toFixed(1)}%</span>`;
+  }
+  document.getElementById('s-orders-d').innerHTML=cD?dTag(mOrd,cOrd,true):'';
+  document.getElementById('s-riders-d').innerHTML=cD?dTag(mRid,cRid,true):'';
+  document.getElementById('s-hours-d').innerHTML =cD?dTag(mHrs,cHrs,true):'';
+  document.getElementById('s-ontime-d').innerHTML='';
+}
+
+/* ════════════════════════════════
+   ZONE CARD
+   ════════════════════════════════ */
+function card(zone, z, cz){
+  const tgt=TGT[zone];
+  const h=health(z,tgt);
+  const uc=utrClr(z.utr,tgt);
+  const delta=z.utr!=null?(z.utr-tgt).toFixed(2):null;
+  const bp=breakPct(z);
+  const cBp=cz?breakPct(cz):null;
+  const rrv=(z.rat!=null&&z.toVendor!=null)?z.rat+z.toVendor:null;
+  const cRrv=(cz&&cz.rat!=null&&cz.toVendor!=null)?cz.rat+cz.toVendor:null;
+  const rr=runRate(z,tgt);
+  const rrc=rrColor(rr);
+  const cRr=cz?runRate(cz,tgt):null;
+  const neededHrs=z.orders&&tgt?(z.orders/tgt).toFixed(0):null;
+  const rrStatus=rr==null?'':rr>=90&&rr<=110?'✓ On Track':rr>110?'↑ Over Staffed':'↓ Under Staffed';
+
+  /* val & cmpVal must be same numeric scale; cmpFmt formats the compare value for display */
+  function row(name,val,clrArgs,valStr,cmpVal=null,cmpFmt=null,bigUp=true){
+    const c=clrArgs?clr(...clrArgs):'n';
+    const dh=cmpVal!=null&&val!=null?cmpHtml(val,cmpVal,cmpFmt||(x=>x.toFixed(1)),bigUp):'';
+    return `<div class="m-row">
+      <div class="m-left"><div class="m-dot ${c}"></div><div class="m-name">${name}</div></div>
+      <div class="m-rhs"><span class="m-val ${c}">${valStr}</span>${dh}</div>
+    </div>`;
+  }
+
+  /* UTR badge sign */
+  const dSign = delta!=null ? (parseFloat(delta)>=0?'+':'') : '';
+  const dBadge = delta!=null ? `<span class="utr-badge ${uc}">${dSign}${delta}</span>` : '';
+  const vsStr  = cz&&cz.utr!=null ? `<span class="utr-vs">vs ${cz.utr.toFixed(2)}</span>` : '';
+
+  return `<div class="zone-card">
+    <div class="zc-header">
+      <div>
+        <div class="zc-name">${ZL[zone]}</div>
+        <div class="zc-meta">Cairo · Target UTR ${tgt}${z.utr>tgt?' ⚠ Overloaded':''}</div>
+      </div>
+    </div>
+
+    <div class="utr-row">
+      <div>
+        <div class="utr-tag">UTR — Orders / Hour ${z.utr>tgt?'(Above target = overloaded)':''}</div>
+        <div class="utr-main">
+          <div class="utr-num ${uc}">${z.utr!=null?z.utr.toFixed(2):'—'}</div>
+          ${dBadge}${vsStr}
+        </div>
+      </div>
+      <div class="utr-tgt"><div class="utr-tgt-lbl">Target</div><div class="utr-tgt-val">${tgt}</div></div>
+    </div>
+
+    <div class="rr-block ${rrc}">
+      <div class="rr-label-area">
+        <div class="rr-title">⚡ Run Rate</div>
+      </div>
+      <div class="rr-val-area">
+        <div class="rr-num ${rrc}">${rr!=null?rr.toFixed(1)+'%':'—'}</div>
+        ${(cRr!=null&&rr!=null)?`<div class="rr-cmp">
+          <span class="rr-cmp-val">${cRr.toFixed(1)}%</span>
+          <span class="rr-cmp-pct ${Math.abs(rr-cRr)<0.1?'eq':rr>cRr?'up':'dn'}">${Math.abs(rr-cRr)<0.1?'–':(rr>cRr?'+':'')+((rr-cRr)/Math.abs(cRr)*100).toFixed(1)+'%'}</span>
+        </div>`:''}
+      </div>
+    </div>
+
+    <div>
+      <div class="m-sec">Rider Supply</div>
+      ${row('Active Riders',      z.riders,                           null,                                 fi(z.riders),          cz?.riders,                      x=>fi(x),              true)}
+      ${row('Orders Completed',   z.orders,                           null,                                 fi(z.orders),          cz?.orders,                      x=>fi(x),              true)}
+      ${row('Delivery Completed', z.delivComp,                        null,                                 fi(z.delivComp),       cz?.delivComp,                   x=>fi(x),              true)}
+      ${row('Fill Rate %',        z.fill!=null?z.fill*100:null,       z.fill!=null?[z.fill*100,75,85]:null, fp(z.fill),            cz?.fill!=null?cz.fill*100:null, x=>x.toFixed(1)+'%',  true)}
+      ${row('Avg Working Hrs',    z.avgHrs,                                z.avgHrs!=null?[z.avgHrs,6,7.5]:null,                    ff(z.avgHrs,1,' hrs'),          cz?.avgHrs,                              x=>x.toFixed(1)+'h',  true)}
+      ${row('Planned Hrs',        z.plannedHrs,                            null,                                                     fi(z.plannedHrs),               cz?.plannedHrs,                          x=>fi(x),             true)}
+      ${row('Break %',            bp,                                       bp!=null?[bp,10,20,true]:null,                            ff(bp,1,'%'),                   cBp,                                     x=>x.toFixed(1)+'%',  false)}
+      ${row('Acceptance Rate %',  z.acceptRate!=null?z.acceptRate*100:null, z.acceptRate!=null?[z.acceptRate*100,95,99]:null,         fp(z.acceptRate),               cz?.acceptRate!=null?cz.acceptRate*100:null, x=>x.toFixed(1)+'%', true)}
+
+      <div class="m-sec">Rider Journey to Vendor</div>
+      ${row('RAT (Accepting Time)',  z.rat,      z.rat!=null?[z.rat,5,8,true]:null,           ff(z.rat,1,' min'),     cz?.rat,      x=>x.toFixed(1)+' min', false)}
+      ${row('To Vendor Time',        z.toVendor, z.toVendor!=null?[z.toVendor,2,4,true]:null, ff(z.toVendor,1,' min'),cz?.toVendor, x=>x.toFixed(1)+' min', false)}
+      ${row('RRV (RAT + To Vendor)', rrv,        rrv!=null?[rrv,8,12,true]:null,               ff(rrv,1,' min'),       cRrv,         x=>x.toFixed(1)+' min', false)}
+
+      <div class="m-sec">Delivery Quality</div>
+      ${row('Avg Delivery Time',  z.delivTime,                              z.delivTime!=null?[z.delivTime,25,28,true]:null, ff(z.delivTime,1,' min'),  cz?.delivTime,                             x=>x.toFixed(1)+' min', false)}
+      ${row('On-Time Delivery %', z.onTime!=null?z.onTime*100:null,         z.onTime!=null?[z.onTime*100,75,85]:null,        fp(z.onTime),              cz?.onTime!=null?cz.onTime*100:null,       x=>x.toFixed(1)+'%',    true)}
+      ${row('Transport Fail Rate',z.failRate!=null?z.failRate*100:null,     z.failRate!=null?[z.failRate*100,3,5,true]:null, fp(z.failRate),            cz?.failRate!=null?cz.failRate*100:null,   x=>x.toFixed(1)+'%',    false)}
+
+      <div class="m-sec">Attendance</div>
+      ${row('Late Login %', z.lateLogin!=null?z.lateLogin*100:null, z.lateLogin!=null?[z.lateLogin*100,6,10,true]:null, fp(z.lateLogin), cz?.lateLogin!=null?cz.lateLogin*100:null, x=>x.toFixed(1)+'%', false)}
+      ${row('No Show %',    z.noShow!=null?z.noShow*100:null,       z.noShow!=null?[z.noShow*100,4,7,true]:null,        fp(z.noShow),    cz?.noShow!=null?cz.noShow*100:null,       x=>x.toFixed(1)+'%', false)}
+    </div>
+  </div>`;
+}
+
+/* ════════════════════════════════
+   RENDER
+   ════════════════════════════════ */
+let ST = { view:'day', main:'2026-08-04', cmp:'2026-08-03' };
+
+function render(){
+  ST.main = document.getElementById('main-sel').value;
+  ST.cmp  = document.getElementById('cmp-sel').value;
+  const d   = getData(ST.view);
+  const mD  = d[ST.main];
+  const cD  = ST.cmp && ST.cmp!==ST.main ? d[ST.cmp] : null;
+  if(!mD){ document.getElementById('grid').innerHTML='<div style="color:rgba(255,255,255,.4);padding:20px">No data.</div>'; return; }
+  renderSummary(mD, cD);
+  const names={day:'Day View',week:'Week View',month:'Month View'};
+  document.getElementById('view-lbl').textContent = `${names[ST.view]} — ${mD.label}${cD?' vs '+cD.label:''}`;
+  document.getElementById('grid').innerHTML = ZONES.map(z=>card(z,mD.zones[z]||{},cD?cD.zones[z]:null)).join('');
+  document.getElementById('sync-t').textContent = new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+}
+
+function populateSel(){
+  const d=getData(ST.view), ks=keys(ST.view);
+  document.getElementById('main-sel').innerHTML=ks.map(k=>`<option value="${k}"${k===ST.main?' selected':''}>${d[k].label||d[k].short||k}</option>`).join('');
+  document.getElementById('cmp-sel').innerHTML =ks.map(k=>`<option value="${k}"${k===ST.cmp?' selected':''}>${d[k].label||d[k].short||k}</option>`).join('');
+}
+
+function setView(v){
+  ST.view=v;
+  ['day','week','month'].forEach(t=>document.getElementById('tab-'+t).classList.toggle('active',t===v));
+  const ks=keys(v);
+  ST.main=ks[0]||''; ST.cmp=ks[1]||'';
+  populateSel(); render();
+}
+function onMainChange(){
+  const ks=keys(ST.view), idx=ks.indexOf(document.getElementById('main-sel').value);
+  if(idx>=0&&idx+1<ks.length) document.getElementById('cmp-sel').value=ks[idx+1];
+  render();
+}
+function swapP(){
+  const m=document.getElementById('main-sel').value, c=document.getElementById('cmp-sel').value;
+  document.getElementById('main-sel').value=c; document.getElementById('cmp-sel').value=m; render();
+}
+
+function doRefresh(){
+  const btn=document.getElementById('sync-btn');
+  const dot=document.getElementById('sync-dot');
+  btn.disabled=true;
+  btn.textContent='↻ Refreshing…';
+  btn.style.opacity='0.6';
+  dot.style.background='#ffab00';
+  dot.style.animation='none';
+  setTimeout(()=>{
+    render();
+    btn.disabled=false;
+    btn.textContent='↻ Refresh';
+    btn.style.opacity='1';
+    dot.style.background='#36b37e';
+    dot.style.animation='syncPulse 2.5s ease infinite';
+  }, 600);
+}
+
+populateSel(); render();
+
+/* ════════════════════════════════
+   PAGE NAVIGATION
+   ════════════════════════════════ */
+function setPage(p){
+  ['zone','3pl'].forEach(id=>{
+    document.getElementById('page-'+id).style.display = id===p?'':'none';
+    document.getElementById('ptab-'+id).classList.toggle('active', id===p);
+  });
+  if(p==='3pl') render3PL();
+}
+
+/* ════════════════════════════════
+   3PL DATA
+   ════════════════════════════════ */
+const TLP_TGT = [
+  {n:"Top delivery",z:"Heliopolis",tgt:1450},{n:"Full Speed",z:"Ain shams",tgt:100},
+  {n:"BeCool",z:"Heliopolis",tgt:230},{n:"Speedo",z:"Heliopolis",tgt:930},
+  {n:"Superspeed",z:"Heliopolis",tgt:330,disp:"Super Speed"},
+  {n:"Ebad El rahman",z:"Nasr city",tgt:4190},
+  {n:"Courier for delivery",z:"Ain shams",tgt:50},
+  {n:"El Ezz",z:"Heliopolis",tgt:800},
+  {n:"Team Mh for delivery",z:"Heliopolis",tgt:1290,disp:"Team mh for Delivery"},
+  {n:"Jasson",z:"Heliopolis",tgt:880},{n:"El Tohami",z:"Heliopolis",tgt:500},
+  {n:"MR Delivery",z:"Heliopolis",tgt:310},{n:"Stop Car",z:"Heliopolis",tgt:330},
+  {n:"El Abtal",z:"Nasr city",tgt:1910},{n:"MTA",z:"Ain shams",tgt:279},
+  {n:"Tanta Car",z:"Heliopolis",tgt:280},{n:"El Abtal",z:"Heliopolis",tgt:980},
+  {n:"Al Alamia",z:"Nasr city",tgt:1150},
+  {n:"Ebad El rahman",z:"Heliopolis",tgt:3330},
+  {n:"Team Mh for delivery",z:"Nasr city",tgt:1320,disp:"Team mh for Delivery"},
+  {n:"Barg",z:"Heliopolis",tgt:780},{n:"Speedo",z:"Nasr city",tgt:1220},
+  {n:"Al Alamia",z:"Heliopolis",tgt:1470},{n:"Jasson",z:"Ain shams",tgt:230},
+  {n:"Al Alamia",z:"Ain shams",tgt:640},{n:"Tanta Car",z:"Ain shams",tgt:110},
+  {n:"Top delivery",z:"Ain shams",tgt:410},{n:"Stop Car",z:"Nasr city",tgt:1150},
+  {n:"El Ezz",z:"Nasr city",tgt:700},{n:"El Tohami",z:"Nasr city",tgt:630},
+  {n:"Tanta",z:"Nasr city",tgt:580},{n:"Full Speed",z:"Heliopolis",tgt:790},
+  {n:"MTA",z:"Heliopolis",tgt:780},
+  {n:"Superspeed",z:"Nasr city",tgt:530,disp:"Super Speed"},
+  {n:"Top delivery",z:"Nasr city",tgt:450},{n:"Full Speed",z:"Nasr city",tgt:450},
+  {n:"Barg",z:"Nasr city",tgt:450},{n:"Tanta Car",z:"Nasr city",tgt:450},
+  {n:"Jasson",z:"Nasr city",tgt:400},{n:"Stop Car",z:"Ain shams",tgt:300},
+  {n:"MTA",z:"Nasr city",tgt:400},{n:"Apache",z:"Heliopolis",tgt:310},
+  {n:"Barg",z:"Ain shams",tgt:120},{n:"Ebad El rahman",z:"Ain shams",tgt:180},
+  {n:"Apache",z:"Nasr city",tgt:300},{n:"El Tohami",z:"Ain shams",tgt:100},
+  {n:"Courier for delivery",z:"Heliopolis",tgt:330},
+  {n:"MR Delivery",z:"Nasr city",tgt:250},{n:"Wakeel",z:"Heliopolis",tgt:160},
+  {n:"SOG",z:"Nasr city",tgt:220},{n:"Noot",z:"Heliopolis",tgt:190},
+  {n:"Courier for delivery",z:"Nasr city",tgt:380},
+  {n:"Zero Zero Seven",z:"Nasr city",tgt:150},{n:"Noot",z:"Nasr city",tgt:150},
+  {n:"Apache",z:"Ain shams",tgt:230},{n:"Bedaya",z:"Nasr city",tgt:170},
+  {n:"El Ezz",z:"Ain shams",tgt:100},{n:"BeCool",z:"Nasr city",tgt:100},
+  {n:"Tanta",z:"Heliopolis",tgt:130},{n:"el Dawlya",z:"Heliopolis",tgt:130},
+  {n:"Speedo",z:"Ain shams",tgt:130},
+  {n:"Team Mh for delivery",z:"Ain shams",tgt:100,disp:"Team mh for Delivery"},
+  {n:"Wakeel",z:"Nasr city",tgt:100},{n:"Gearz",z:"Nasr city",tgt:0},
+  {n:"Noot",z:"Ain shams",tgt:50},{n:"MR Delivery",z:"Ain shams",tgt:50},
+  {n:"Wakeel",z:"Ain shams",tgt:100},{n:"Bedaya",z:"Heliopolis",tgt:130},
+  {n:"Zero Zero Seven",z:"Ain shams",tgt:0},{n:"Zero Zero Seven",z:"Heliopolis",tgt:80},
+  {n:"Gearz",z:"Heliopolis",tgt:0},{n:"Bedaya",z:"Ain shams",tgt:0},
+  {n:"BeCool",z:"Ain shams",tgt:0},
+];
+
+/* @@NASR_3PL_DATA_START@@ — auto-updated daily at 12:00 PM, do not edit manually */
+// Date config (updated each run)
+const CFG_YDAY_LBL       = 'Aug 4';         // yesterday display label
+const CFG_W7_LBL         = 'Jul 29–Aug 4';  // last-7-days range label
+const CFG_MTD_LBL        = 'Aug 1–4';       // MTD range label
+const CFG_MTD_DAYS       = 4;               // days elapsed in current month (up to yesterday)
+const CFG_LAST_MONTH_LBL = 'Jul';           // last full month abbreviation
+const CFG_LAST_MONTH_DAYS = 31;             // days in last full month
+const CFG_CUR_MONTH_LBL  = 'Aug';           // current month abbreviation
+
+const TLP_YDAY = {"Ain shams|Al Alamia": 573.73, "Ain shams|Apache": 117.46, "Ain shams|Barg": 77.76, "Ain shams|Courier for delivery": 39.34, "Ain shams|Ebad El rahman": 138.32, "Ain shams|El Ezz": 49.79, "Ain shams|El Tohami": 82.87, "Ain shams|Full Speed": 58.81, "Ain shams|Jasson": 197.24, "Ain shams|MR Delivery": 42.59, "Ain shams|MTA": 259.67, "Ain shams|Noot": 36.34, "Ain shams|Speedo": 105.77, "Ain shams|Stop Car": 147.81, "Ain shams|Tanta Car": 86.23, "Ain shams|Team Mh for delivery": 69.34, "Ain shams|Top delivery": 319.4, "Ain shams|Wakeel": 62.06, "Heliopolis|Al Alamia": 1462.59, "Heliopolis|Apache": 281.56, "Heliopolis|Barg": 538.16, "Heliopolis|BeCool": 171.11, "Heliopolis|Bedaya": 28.26, "Heliopolis|Courier for delivery": 272.17, "Heliopolis|Ebad El rahman": 3132.44, "Heliopolis|El Abtal": 742.96, "Heliopolis|El Ezz": 630.59, "Heliopolis|El Tohami": 489.45, "Heliopolis|Full Speed": 668.43, "Heliopolis|Jasson": 760.44, "Heliopolis|MR Delivery": 258.1, "Heliopolis|MTA": 822.0, "Heliopolis|Noot": 158.52, "Heliopolis|Speedo": 780.3, "Heliopolis|Stop Car": 192.53, "Heliopolis|Superspeed": 235.32, "Heliopolis|Tanta": 52.82, "Heliopolis|Tanta Car": 251.05, "Heliopolis|Team Mh for delivery": 1210.83, "Heliopolis|Top delivery": 1213.03, "Heliopolis|Wakeel": 89.49, "Heliopolis|Zero Zero Seven": 7.99, "Heliopolis|el Dawlya": 20.44, "Nasr city|Al Alamia": 803.84, "Nasr city|Apache": 229.29, "Nasr city|Barg": 400.44, "Nasr city|BeCool": 101.26, "Nasr city|Bedaya": 136.7, "Nasr city|Courier for delivery": 405.62, "Nasr city|Ebad El rahman": 3629.85, "Nasr city|El Abtal": 1850.73, "Nasr city|El Ezz": 490.96, "Nasr city|El Tohami": 613.31, "Nasr city|Full Speed": 363.97, "Nasr city|Jasson": 342.31, "Nasr city|MR Delivery": 152.11, "Nasr city|MTA": 366.25, "Nasr city|Noot": 160.62, "Nasr city|SOG": 160.92, "Nasr city|Speedo": 1057.74, "Nasr city|Stop Car": 944.37, "Nasr city|Superspeed": 462.54, "Nasr city|Tanta": 477.89, "Nasr city|Tanta Car": 304.43, "Nasr city|Team Mh for delivery": 1146.1, "Nasr city|Top delivery": 393.93, "Nasr city|Wakeel": 46.04, "Nasr city|Zero Zero Seven": 94.39};
+const TLP_W7 = {"Ain shams|Al Alamia": 4233.03, "Ain shams|Apache": 865.31, "Ain shams|Barg": 635.73, "Ain shams|Courier for delivery": 325.41, "Ain shams|Ebad El rahman": 996.66, "Ain shams|El Ezz": 288.98, "Ain shams|El Tohami": 553.93, "Ain shams|Full Speed": 479.6, "Ain shams|Jasson": 1220.66, "Ain shams|MR Delivery": 236.5, "Ain shams|MTA": 1642.77, "Ain shams|Noot": 235.43, "Ain shams|Speedo": 554.45, "Ain shams|Stop Car": 1476.16, "Ain shams|Tanta Car": 641.8, "Ain shams|Team Mh for delivery": 464.38, "Ain shams|Top delivery": 2401.51, "Ain shams|Wakeel": 388.42, "Heliopolis|Al Alamia": 9781.35, "Heliopolis|Apache": 1625.11, "Heliopolis|Barg": 3806.54, "Heliopolis|BeCool": 1149.74, "Heliopolis|Bedaya": 246.21, "Heliopolis|Courier for delivery": 1763.94, "Heliopolis|Ebad El rahman": 21565.04, "Heliopolis|El Abtal": 5049.45, "Heliopolis|El Ezz": 4500.45, "Heliopolis|El Tohami": 3092.34, "Heliopolis|Full Speed": 4773.27, "Heliopolis|Jasson": 5002.6, "Heliopolis|MR Delivery": 1878.24, "Heliopolis|MTA": 4459.81, "Heliopolis|Noot": 1031.74, "Heliopolis|Speedo": 5294.32, "Heliopolis|Stop Car": 1163.77, "Heliopolis|Superspeed": 1535.41, "Heliopolis|Tanta": 334.25, "Heliopolis|Tanta Car": 1427.16, "Heliopolis|Team Mh for delivery": 8224.27, "Heliopolis|Top delivery": 8607.53, "Heliopolis|Wakeel": 633.67, "Heliopolis|Zero Zero Seven": 91.38, "Heliopolis|el Dawlya": 125.54, "Nasr city|Al Alamia": 5909.45, "Nasr city|Apache": 1442.45, "Nasr city|Barg": 2664.12, "Nasr city|BeCool": 757.23, "Nasr city|Bedaya": 1004.42, "Nasr city|Courier for delivery": 2570.63, "Nasr city|Ebad El rahman": 26022.71, "Nasr city|El Abtal": 12580.34, "Nasr city|El Ezz": 3119.99, "Nasr city|El Tohami": 4312.59, "Nasr city|Full Speed": 2392.68, "Nasr city|Jasson": 2336.2, "Nasr city|MR Delivery": 1252.92, "Nasr city|MTA": 2813.59, "Nasr city|Noot": 1048.23, "Nasr city|SOG": 1225.95, "Nasr city|Speedo": 7705.37, "Nasr city|Stop Car": 6286.81, "Nasr city|Superspeed": 3284.43, "Nasr city|Tanta": 3040.36, "Nasr city|Tanta Car": 1801.4, "Nasr city|Team Mh for delivery": 8596.19, "Nasr city|Top delivery": 2717.21, "Nasr city|Wakeel": 402.98, "Nasr city|Zero Zero Seven": 707.68};
+const TLP_MTD = {"Ain shams|Al Alamia": 2307.04, "Ain shams|Apache": 473.57, "Ain shams|Barg": 346.84, "Ain shams|Courier for delivery": 176.89, "Ain shams|Ebad El rahman": 543.91, "Ain shams|El Ezz": 156.92, "Ain shams|El Tohami": 293.74, "Ain shams|Full Speed": 255.86, "Ain shams|Jasson": 672.13, "Ain shams|MR Delivery": 149.0, "Ain shams|MTA": 1085.26, "Ain shams|Noot": 125.97, "Ain shams|Speedo": 278.94, "Ain shams|Stop Car": 782.66, "Ain shams|Tanta Car": 379.7, "Ain shams|Team Mh for delivery": 253.5, "Ain shams|Top delivery": 1341.02, "Ain shams|Wakeel": 236.69, "Heliopolis|Al Alamia": 5528.31, "Heliopolis|Apache": 923.84, "Heliopolis|Barg": 2096.91, "Heliopolis|BeCool": 624.4, "Heliopolis|Bedaya": 141.43, "Heliopolis|Courier for delivery": 937.07, "Heliopolis|Ebad El rahman": 12357.13, "Heliopolis|El Abtal": 2766.67, "Heliopolis|El Ezz": 2671.62, "Heliopolis|El Tohami": 1742.66, "Heliopolis|Full Speed": 2562.53, "Heliopolis|Jasson": 2903.14, "Heliopolis|MR Delivery": 1062.51, "Heliopolis|MTA": 2720.2, "Heliopolis|Noot": 604.02, "Heliopolis|Speedo": 3012.5, "Heliopolis|Stop Car": 694.49, "Heliopolis|Superspeed": 899.9, "Heliopolis|Tanta": 196.37, "Heliopolis|Tanta Car": 891.5, "Heliopolis|Team Mh for delivery": 4699.88, "Heliopolis|Top delivery": 4773.15, "Heliopolis|Wakeel": 372.58, "Heliopolis|Zero Zero Seven": 52.64, "Heliopolis|el Dawlya": 49.62, "Nasr city|Al Alamia": 3260.66, "Nasr city|Apache": 780.32, "Nasr city|Barg": 1433.13, "Nasr city|BeCool": 394.48, "Nasr city|Bedaya": 548.34, "Nasr city|Courier for delivery": 1602.7, "Nasr city|Ebad El rahman": 14759.62, "Nasr city|El Abtal": 7005.66, "Nasr city|El Ezz": 1675.48, "Nasr city|El Tohami": 2490.46, "Nasr city|Full Speed": 1325.07, "Nasr city|Jasson": 1258.78, "Nasr city|MR Delivery": 663.1, "Nasr city|MTA": 1556.74, "Nasr city|Noot": 629.92, "Nasr city|SOG": 641.98, "Nasr city|Speedo": 4296.27, "Nasr city|Stop Car": 3613.79, "Nasr city|Superspeed": 1869.86, "Nasr city|Tanta": 1723.27, "Nasr city|Tanta Car": 996.74, "Nasr city|Team Mh for delivery": 4685.01, "Nasr city|Top delivery": 1599.35, "Nasr city|Wakeel": 194.48, "Nasr city|Zero Zero Seven": 406.64};
+const TLP_MONTH = {"Ain shams|Al Alamia": 18813.35, "Ain shams|Apache": 3539.65, "Ain shams|Barg": 3241.93, "Ain shams|Courier for delivery": 1405.34, "Ain shams|Ebad El rahman": 4412.97, "Ain shams|El Ezz": 976.72, "Ain shams|El Tohami": 2994.97, "Ain shams|Full Speed": 2818.18, "Ain shams|Jasson": 6247.73, "Ain shams|MR Delivery": 1038.18, "Ain shams|MTA": 7437.44, "Ain shams|Noot": 969.12, "Ain shams|Speedo": 2437.32, "Ain shams|Stop Car": 6958.36, "Ain shams|Tanta Car": 2756.32, "Ain shams|Team Mh for delivery": 1943.77, "Ain shams|Top delivery": 12118.08, "Ain shams|Wakeel": 1574.81, "Heliopolis|Al Alamia": 41806.05, "Heliopolis|Apache": 6456.44, "Heliopolis|Barg": 18272.53, "Heliopolis|BeCool": 4734.33, "Heliopolis|Bedaya": 942.04, "Heliopolis|Courier for delivery": 8138.69, "Heliopolis|Ebad El rahman": 90177.54, "Heliopolis|El Abtal": 23610.52, "Heliopolis|El Ezz": 20064.51, "Heliopolis|El Tohami": 13674.69, "Heliopolis|Full Speed": 20890.24, "Heliopolis|Jasson": 23192.58, "Heliopolis|MR Delivery": 7980.46, "Heliopolis|MTA": 19349.97, "Heliopolis|Noot": 4010.94, "Heliopolis|Speedo": 25698.08, "Heliopolis|Stop Car": 5163.45, "Heliopolis|Superspeed": 6734.72, "Heliopolis|Tanta": 1500.9, "Heliopolis|Tanta Car": 6248.51, "Heliopolis|Team Mh for delivery": 35123.0, "Heliopolis|Top delivery": 38026.17, "Heliopolis|Wakeel": 2790.54, "Heliopolis|Zero Zero Seven": 403.68, "Heliopolis|el Dawlya": 1064.82, "Nasr city|Al Alamia": 26474.19, "Nasr city|Apache": 6356.69, "Nasr city|Barg": 12117.66, "Nasr city|BeCool": 3448.86, "Nasr city|Bedaya": 3794.68, "Nasr city|Courier for delivery": 8421.01, "Nasr city|Ebad El rahman": 112391.64, "Nasr city|El Abtal": 53254.39, "Nasr city|El Ezz": 15755.35, "Nasr city|El Tohami": 17668.6, "Nasr city|Full Speed": 11003.82, "Nasr city|Jasson": 11392.62, "Nasr city|MR Delivery": 6154.45, "Nasr city|MTA": 12143.62, "Nasr city|Noot": 4195.33, "Nasr city|SOG": 5523.22, "Nasr city|Speedo": 32081.14, "Nasr city|Stop Car": 29780.3, "Nasr city|Superspeed": 14510.6, "Nasr city|Tanta": 14359.86, "Nasr city|Tanta Car": 8719.71, "Nasr city|Team Mh for delivery": 37567.17, "Nasr city|Top delivery": 11086.82, "Nasr city|Wakeel": 1868.35, "Nasr city|Zero Zero Seven": 4184.08};
+const TLP_RIDERS_MTD_SUM = {"Ain shams|Al Alamia": 297, "Ain shams|Apache": 84, "Ain shams|Barg": 45, "Ain shams|Courier for delivery": 30, "Ain shams|Ebad El rahman": 96, "Ain shams|El Ezz": 27, "Ain shams|El Tohami": 54, "Ain shams|Full Speed": 44, "Ain shams|Jasson": 105, "Ain shams|MR Delivery": 21, "Ain shams|MTA": 143, "Ain shams|Noot": 15, "Ain shams|Speedo": 55, "Ain shams|Stop Car": 111, "Ain shams|Tanta Car": 58, "Ain shams|Team Mh for delivery": 52, "Ain shams|Top delivery": 199, "Ain shams|Wakeel": 36, "Heliopolis|Al Alamia": 694, "Heliopolis|Apache": 138, "Heliopolis|Barg": 266, "Heliopolis|BeCool": 91, "Heliopolis|Bedaya": 19, "Heliopolis|Courier for delivery": 141, "Heliopolis|Ebad El rahman": 1569, "Heliopolis|El Abtal": 394, "Heliopolis|El Ezz": 350, "Heliopolis|El Tohami": 245, "Heliopolis|Full Speed": 336, "Heliopolis|Jasson": 377, "Heliopolis|MR Delivery": 173, "Heliopolis|MTA": 357, "Heliopolis|Noot": 82, "Heliopolis|Speedo": 424, "Heliopolis|Stop Car": 86, "Heliopolis|Superspeed": 119, "Heliopolis|Tanta": 29, "Heliopolis|Tanta Car": 125, "Heliopolis|Team Mh for delivery": 491, "Heliopolis|Top delivery": 588, "Heliopolis|Wakeel": 48, "Heliopolis|Zero Zero Seven": 8, "Heliopolis|el Dawlya": 8, "Nasr city|Al Alamia": 342, "Nasr city|Apache": 111, "Nasr city|Barg": 172, "Nasr city|BeCool": 57, "Nasr city|Bedaya": 63, "Nasr city|Courier for delivery": 195, "Nasr city|Ebad El rahman": 1765, "Nasr city|El Abtal": 782, "Nasr city|El Ezz": 201, "Nasr city|El Tohami": 280, "Nasr city|Full Speed": 170, "Nasr city|Jasson": 143, "Nasr city|MR Delivery": 109, "Nasr city|MTA": 200, "Nasr city|Noot": 78, "Nasr city|SOG": 93, "Nasr city|Speedo": 525, "Nasr city|Stop Car": 469, "Nasr city|Superspeed": 218, "Nasr city|Tanta": 179, "Nasr city|Tanta Car": 122, "Nasr city|Team Mh for delivery": 484, "Nasr city|Top delivery": 182, "Nasr city|Wakeel": 26, "Nasr city|Zero Zero Seven": 60};
+const TLP_RIDERS_YDAY = {"Ain shams|Al Alamia": 74, "Ain shams|Apache": 19, "Ain shams|Barg": 10, "Ain shams|Courier for delivery": 7, "Ain shams|Ebad El rahman": 24, "Ain shams|El Ezz": 8, "Ain shams|El Tohami": 16, "Ain shams|Full Speed": 10, "Ain shams|Jasson": 29, "Ain shams|MR Delivery": 5, "Ain shams|MTA": 38, "Ain shams|Noot": 4, "Ain shams|Speedo": 18, "Ain shams|Stop Car": 20, "Ain shams|Tanta Car": 14, "Ain shams|Team Mh for delivery": 15, "Ain shams|Top delivery": 48, "Ain shams|Wakeel": 10, "Heliopolis|Al Alamia": 182, "Heliopolis|Apache": 42, "Heliopolis|Barg": 66, "Heliopolis|BeCool": 23, "Heliopolis|Bedaya": 4, "Heliopolis|Courier for delivery": 38, "Heliopolis|Ebad El rahman": 392, "Heliopolis|El Abtal": 102, "Heliopolis|El Ezz": 85, "Heliopolis|El Tohami": 69, "Heliopolis|Full Speed": 86, "Heliopolis|Jasson": 99, "Heliopolis|MR Delivery": 43, "Heliopolis|MTA": 100, "Heliopolis|Noot": 20, "Heliopolis|Speedo": 114, "Heliopolis|Stop Car": 24, "Heliopolis|Superspeed": 30, "Heliopolis|Tanta": 9, "Heliopolis|Tanta Car": 33, "Heliopolis|Team Mh for delivery": 123, "Heliopolis|Top delivery": 148, "Heliopolis|Wakeel": 9, "Heliopolis|Zero Zero Seven": 1, "Heliopolis|el Dawlya": 3, "Nasr city|Al Alamia": 85, "Nasr city|Apache": 31, "Nasr city|Barg": 46, "Nasr city|BeCool": 15, "Nasr city|Bedaya": 16, "Nasr city|Courier for delivery": 47, "Nasr city|Ebad El rahman": 436, "Nasr city|El Abtal": 199, "Nasr city|El Ezz": 56, "Nasr city|El Tohami": 70, "Nasr city|Full Speed": 45, "Nasr city|Jasson": 38, "Nasr city|MR Delivery": 24, "Nasr city|MTA": 48, "Nasr city|Noot": 20, "Nasr city|SOG": 23, "Nasr city|Speedo": 128, "Nasr city|Stop Car": 123, "Nasr city|Superspeed": 53, "Nasr city|Tanta": 50, "Nasr city|Tanta Car": 36, "Nasr city|Team Mh for delivery": 115, "Nasr city|Top delivery": 42, "Nasr city|Wakeel": 5, "Nasr city|Zero Zero Seven": 14};
+const TLP_AWH_YDAY = {"Ain shams|Al Alamia": 7.17, "Ain shams|Apache": 5.87, "Ain shams|Barg": 7.07, "Ain shams|Courier for delivery": 4.37, "Ain shams|Ebad El rahman": 5.53, "Ain shams|El Ezz": 6.22, "Ain shams|El Tohami": 4.87, "Ain shams|Full Speed": 4.9, "Ain shams|Jasson": 6.16, "Ain shams|MR Delivery": 8.52, "Ain shams|MTA": 5.77, "Ain shams|Noot": 9.08, "Ain shams|Speedo": 5.29, "Ain shams|Stop Car": 4.62, "Ain shams|Tanta Car": 5.39, "Ain shams|Team Mh for delivery": 4.08, "Ain shams|Top delivery": 6.26, "Ain shams|Wakeel": 5.17, "Heliopolis|Al Alamia": 7.1, "Heliopolis|Apache": 6.55, "Heliopolis|Barg": 7.27, "Heliopolis|BeCool": 6.11, "Heliopolis|Bedaya": 7.07, "Heliopolis|Courier for delivery": 5.92, "Heliopolis|Ebad El rahman": 7.07, "Heliopolis|El Abtal": 6.46, "Heliopolis|El Ezz": 6.64, "Heliopolis|El Tohami": 6.7, "Heliopolis|Full Speed": 6.96, "Heliopolis|Jasson": 6.79, "Heliopolis|MR Delivery": 5.61, "Heliopolis|MTA": 6.79, "Heliopolis|Noot": 6.6, "Heliopolis|Speedo": 5.78, "Heliopolis|Stop Car": 8.02, "Heliopolis|Superspeed": 7.13, "Heliopolis|Tanta": 5.87, "Heliopolis|Tanta Car": 6.44, "Heliopolis|Team Mh for delivery": 8.97, "Heliopolis|Top delivery": 7.35, "Heliopolis|Wakeel": 7.46, "Heliopolis|Zero Zero Seven": 7.99, "Heliopolis|el Dawlya": 6.81, "Nasr city|Al Alamia": 8.46, "Nasr city|Apache": 6.55, "Nasr city|Barg": 7.7, "Nasr city|BeCool": 6.33, "Nasr city|Bedaya": 8.54, "Nasr city|Courier for delivery": 7.65, "Nasr city|Ebad El rahman": 7.61, "Nasr city|El Abtal": 8.81, "Nasr city|El Ezz": 8.32, "Nasr city|El Tohami": 7.97, "Nasr city|Full Speed": 7.28, "Nasr city|Jasson": 7.96, "Nasr city|MR Delivery": 5.25, "Nasr city|MTA": 6.91, "Nasr city|Noot": 7.3, "Nasr city|SOG": 5.55, "Nasr city|Speedo": 7.66, "Nasr city|Stop Car": 6.79, "Nasr city|Superspeed": 7.71, "Nasr city|Tanta": 9.37, "Nasr city|Tanta Car": 8.23, "Nasr city|Team Mh for delivery": 9.1, "Nasr city|Top delivery": 9.16, "Nasr city|Wakeel": 7.67, "Nasr city|Zero Zero Seven": 6.74};
+const TLP_AWH_W7 = {"Ain shams|Al Alamia": 7.31, "Ain shams|Apache": 5.44, "Ain shams|Barg": 6.23, "Ain shams|Courier for delivery": 4.65, "Ain shams|Ebad El rahman": 5.36, "Ain shams|El Ezz": 5.45, "Ain shams|El Tohami": 5.28, "Ain shams|Full Speed": 4.57, "Ain shams|Jasson": 6.16, "Ain shams|MR Delivery": 6.39, "Ain shams|MTA": 5.89, "Ain shams|Noot": 6.92, "Ain shams|Speedo": 4.7, "Ain shams|Stop Car": 5.86, "Ain shams|Tanta Car": 6.23, "Ain shams|Team Mh for delivery": 4.47, "Ain shams|Top delivery": 6.27, "Ain shams|Wakeel": 5.39, "Heliopolis|Al Alamia": 7.31, "Heliopolis|Apache": 6.13, "Heliopolis|Barg": 7.04, "Heliopolis|BeCool": 5.87, "Heliopolis|Bedaya": 6.48, "Heliopolis|Courier for delivery": 5.73, "Heliopolis|Ebad El rahman": 6.93, "Heliopolis|El Abtal": 6.21, "Heliopolis|El Ezz": 6.91, "Heliopolis|El Tohami": 6.52, "Heliopolis|Full Speed": 6.86, "Heliopolis|Jasson": 6.77, "Heliopolis|MR Delivery": 5.56, "Heliopolis|MTA": 5.83, "Heliopolis|Noot": 6.25, "Heliopolis|Speedo": 5.84, "Heliopolis|Stop Car": 6.69, "Heliopolis|Superspeed": 6.32, "Heliopolis|Tanta": 6.69, "Heliopolis|Tanta Car": 6.18, "Heliopolis|Team Mh for delivery": 8.62, "Heliopolis|Top delivery": 7.22, "Heliopolis|Wakeel": 6.6, "Heliopolis|Zero Zero Seven": 5.71, "Heliopolis|el Dawlya": 6.61, "Nasr city|Al Alamia": 8.87, "Nasr city|Apache": 5.75, "Nasr city|Barg": 7.44, "Nasr city|BeCool": 6.88, "Nasr city|Bedaya": 8.51, "Nasr city|Courier for delivery": 7.0, "Nasr city|Ebad El rahman": 7.76, "Nasr city|El Abtal": 8.34, "Nasr city|El Ezz": 8.02, "Nasr city|El Tohami": 8.28, "Nasr city|Full Speed": 7.34, "Nasr city|Jasson": 8.03, "Nasr city|MR Delivery": 5.97, "Nasr city|MTA": 6.41, "Nasr city|Noot": 7.04, "Nasr city|SOG": 6.49, "Nasr city|Speedo": 7.47, "Nasr city|Stop Car": 6.51, "Nasr city|Superspeed": 8.01, "Nasr city|Tanta": 8.92, "Nasr city|Tanta Car": 7.51, "Nasr city|Team Mh for delivery": 8.99, "Nasr city|Top delivery": 8.31, "Nasr city|Wakeel": 6.72, "Nasr city|Zero Zero Seven": 6.26};
+const TLP_AWH_MTD = {"Ain shams|Al Alamia": 7.16, "Ain shams|Apache": 5.04, "Ain shams|Barg": 6.8, "Ain shams|Courier for delivery": 4.66, "Ain shams|Ebad El rahman": 5.23, "Ain shams|El Ezz": 5.6, "Ain shams|El Tohami": 4.82, "Ain shams|Full Speed": 4.41, "Ain shams|Jasson": 5.7, "Ain shams|MR Delivery": 6.48, "Ain shams|MTA": 6.31, "Ain shams|Noot": 7.87, "Ain shams|Speedo": 4.16, "Ain shams|Stop Car": 5.71, "Ain shams|Tanta Car": 6.03, "Ain shams|Team Mh for delivery": 4.22, "Ain shams|Top delivery": 6.36, "Ain shams|Wakeel": 5.64, "Heliopolis|Al Alamia": 7.25, "Heliopolis|Apache": 6.0, "Heliopolis|Barg": 6.99, "Heliopolis|BeCool": 5.89, "Heliopolis|Bedaya": 6.15, "Heliopolis|Courier for delivery": 5.71, "Heliopolis|Ebad El rahman": 6.85, "Heliopolis|El Abtal": 6.18, "Heliopolis|El Ezz": 7.01, "Heliopolis|El Tohami": 6.45, "Heliopolis|Full Speed": 6.73, "Heliopolis|Jasson": 6.75, "Heliopolis|MR Delivery": 5.51, "Heliopolis|MTA": 6.03, "Heliopolis|Noot": 6.43, "Heliopolis|Speedo": 5.9, "Heliopolis|Stop Car": 7.09, "Heliopolis|Superspeed": 6.52, "Heliopolis|Tanta": 6.77, "Heliopolis|Tanta Car": 6.32, "Heliopolis|Team Mh for delivery": 8.62, "Heliopolis|Top delivery": 7.19, "Heliopolis|Wakeel": 6.42, "Heliopolis|Zero Zero Seven": 5.85, "Heliopolis|el Dawlya": 5.51, "Nasr city|Al Alamia": 8.74, "Nasr city|Apache": 5.87, "Nasr city|Barg": 7.35, "Nasr city|BeCool": 6.57, "Nasr city|Bedaya": 8.57, "Nasr city|Courier for delivery": 7.49, "Nasr city|Ebad El rahman": 7.67, "Nasr city|El Abtal": 8.37, "Nasr city|El Ezz": 7.79, "Nasr city|El Tohami": 8.33, "Nasr city|Full Speed": 7.36, "Nasr city|Jasson": 7.77, "Nasr city|MR Delivery": 5.67, "Nasr city|MTA": 6.49, "Nasr city|Noot": 7.16, "Nasr city|SOG": 5.94, "Nasr city|Speedo": 7.43, "Nasr city|Stop Car": 6.72, "Nasr city|Superspeed": 7.89, "Nasr city|Tanta": 8.93, "Nasr city|Tanta Car": 7.61, "Nasr city|Team Mh for delivery": 8.86, "Nasr city|Top delivery": 8.37, "Nasr city|Wakeel": 6.08, "Nasr city|Zero Zero Seven": 6.26};
+const TLP_AWH_MONTH = {"Ain shams|Al Alamia": 7.34, "Ain shams|Apache": 5.5, "Ain shams|Barg": 6.97, "Ain shams|Courier for delivery": 5.36, "Ain shams|Ebad El rahman": 5.54, "Ain shams|El Ezz": 5.22, "Ain shams|El Tohami": 5.55, "Ain shams|Full Speed": 5.17, "Ain shams|Jasson": 6.55, "Ain shams|MR Delivery": 6.29, "Ain shams|MTA": 5.87, "Ain shams|Noot": 6.17, "Ain shams|Speedo": 4.92, "Ain shams|Stop Car": 5.39, "Ain shams|Tanta Car": 5.61, "Ain shams|Team Mh for delivery": 4.8, "Ain shams|Top delivery": 6.74, "Ain shams|Wakeel": 5.51, "Heliopolis|Al Alamia": 7.37, "Heliopolis|Apache": 5.82, "Heliopolis|Barg": 7.01, "Heliopolis|BeCool": 5.92, "Heliopolis|Bedaya": 7.72, "Heliopolis|Courier for delivery": 6.05, "Heliopolis|Ebad El rahman": 6.82, "Heliopolis|El Abtal": 6.4, "Heliopolis|El Ezz": 6.79, "Heliopolis|El Tohami": 6.3, "Heliopolis|Full Speed": 6.92, "Heliopolis|Jasson": 6.8, "Heliopolis|MR Delivery": 5.71, "Heliopolis|MTA": 5.68, "Heliopolis|Noot": 6.38, "Heliopolis|Speedo": 6.02, "Heliopolis|Stop Car": 5.78, "Heliopolis|Superspeed": 6.28, "Heliopolis|Tanta": 6.85, "Heliopolis|Tanta Car": 5.69, "Heliopolis|Team Mh for delivery": 8.37, "Heliopolis|Top delivery": 7.27, "Heliopolis|Wakeel": 6.09, "Heliopolis|Zero Zero Seven": 5.94, "Heliopolis|el Dawlya": 7.24, "Nasr city|Al Alamia": 8.68, "Nasr city|Apache": 5.95, "Nasr city|Barg": 7.58, "Nasr city|BeCool": 6.35, "Nasr city|Bedaya": 7.87, "Nasr city|Courier for delivery": 6.89, "Nasr city|Ebad El rahman": 7.79, "Nasr city|El Abtal": 7.91, "Nasr city|El Ezz": 7.72, "Nasr city|El Tohami": 7.66, "Nasr city|Full Speed": 7.28, "Nasr city|Jasson": 8.38, "Nasr city|MR Delivery": 6.29, "Nasr city|MTA": 5.92, "Nasr city|Noot": 6.7, "Nasr city|SOG": 6.36, "Nasr city|Speedo": 7.32, "Nasr city|Stop Car": 6.75, "Nasr city|Superspeed": 7.75, "Nasr city|Tanta": 9.15, "Nasr city|Tanta Car": 7.88, "Nasr city|Team Mh for delivery": 8.62, "Nasr city|Top delivery": 7.59, "Nasr city|Wakeel": 7.08, "Nasr city|Zero Zero Seven": 6.74};
+
+function applyLabels(){
+  const g=id=>document.getElementById(id);
+  if(g('tpl-sync-label')) g('tpl-sync-label').textContent=`Data: Yesterday (${CFG_YDAY_LBL}) · Last 7 Days (${CFG_W7_LBL}) · Last Month (${CFG_LAST_MONTH_LBL} Avg/day) · MTD (${CFG_MTD_LBL})`;
+  if(g('tpl-hdr-yday'))   g('tpl-hdr-yday').textContent=`${CFG_YDAY_LBL} (h)`;
+  if(g('tpl-hdr-month'))  g('tpl-hdr-month').textContent=`${CFG_LAST_MONTH_LBL} Avg/day (h)`;
+  if(g('tpl-hdr-mtd'))    g('tpl-hdr-mtd').textContent=`${CFG_CUR_MONTH_LBL} MTD %`;
+}
+/* @@NASR_3PL_DATA_END@@ */
+
+let cur3PLZone = 'all';
+let cur3PLName = '';
+
+function init3PLDropdown(){
+  const sel = document.getElementById('tpl-name-sel');
+  if(!sel) return;
+  const names = [...new Set(TLP_TGT.map(t=>t.disp||t.n))].sort((a,b)=>a.localeCompare(b));
+  names.forEach(n=>{ const o=document.createElement('option'); o.value=n; o.textContent=n; sel.appendChild(o); });
+}
+
+function filterBy3PLName(name){
+  cur3PLName = name;
+  if(name){
+    // when a specific 3PL selected, show all zones
+    cur3PLZone = 'all';
+    document.querySelectorAll('.tpl-filter-btn').forEach((b,i)=>b.classList.toggle('active',i===0));
+  }
+  render3PL();
+}
+
+function filter3PL(zone){
+  cur3PLZone = zone;
+  cur3PLName = ''; // reset 3PL name filter
+  const sel=document.getElementById('tpl-name-sel'); if(sel) sel.value='';
+  document.querySelectorAll('.tpl-filter-btn').forEach(b=>b.classList.remove('active'));
+  const map={'all':0,'Nasr city':1,'Heliopolis':2,'Ain shams':3};
+  const btns=document.querySelectorAll('.tpl-filter-btn');
+  if(btns[map[zone]]) btns[map[zone]].classList.add('active');
+  render3PL();
+}
+function fh(v){ return v==null?'—':Math.round(v).toLocaleString()+'h'; }
+function pctClr(p){ return p==null?'n':p>=100?'g':p>=80?'y':'r'; }
+function render3PL(){
+  const zones = ['Nasr city','Heliopolis','Ain shams'];
+  const zonesInView = cur3PLZone==='all' ? zones : [cur3PLZone];
+  const zLabel = {'Nasr city':'Nasr City','Heliopolis':'Heliopolis','Ain shams':'Ain Shams'};
+  let html = '';
+  zonesInView.forEach(zone=>{
+    const zRows = TLP_TGT.filter(t=>t.z===zone && (!cur3PLName || (t.disp||t.n)===cur3PLName));
+    if(!zRows.length) return;
+    if(cur3PLZone==='all') html += `<tr class="tpl-section-hdr"><td colspan="8">📍 ${zLabel[zone]}</td></tr>`;
+    zRows.forEach(t=>{
+      const key = `${t.z}|${t.n}`;
+      const yday=TLP_YDAY[key]??null, w7=TLP_W7[key]??null, month=TLP_MONTH[key]??null, mtd=TLP_MTD[key]??null;
+      const w7avg=w7!=null?w7/7:null, monthavg=month!=null?month/CFG_LAST_MONTH_DAYS:null;
+      const pct=(t.tgt>0&&mtd!=null)?Math.round((mtd/CFG_MTD_DAYS)/t.tgt*100):null;
+      const pc=pctClr(pct);
+      const disp=t.disp||t.n;
+      // per-column achievement %
+      const ydayPct=t.tgt>0&&yday!=null?Math.round(yday/t.tgt*100):null;
+      const w7Pct  =t.tgt>0&&w7avg!=null?Math.round(w7avg/t.tgt*100):null;
+      const moPct  =t.tgt>0&&monthavg!=null?Math.round(monthavg/t.tgt*100):null;
+      const riders = TLP_RIDERS_YDAY[key]??null;
+      const ridersMtdSum = TLP_RIDERS_MTD_SUM[key]??null;
+      const ridersMtdAvg = ridersMtdSum!=null ? Math.round(ridersMtdSum/CFG_MTD_DAYS) : null;
+      const awhYday = TLP_AWH_YDAY[key]??null;
+      const awhW7   = TLP_AWH_W7[key]??null;
+      const awhMtd  = TLP_AWH_MTD[key]??null;
+      const awhMo   = TLP_AWH_MONTH[key]??null;
+      const awhFmt = v => v!=null?`<div style="font-size:10px;color:rgba(255,255,255,.35);margin-top:2px">AWH ${v.toFixed(1)}h</div>`:'';
+      const badge=(val,p,awh)=>{
+        const hrs=val!=null?`<span style="color:rgba(255,255,255,.9);font-weight:700">${fh(val)}</span>`:`<span style="color:rgba(255,255,255,.55)">—</span>`;
+        const pBadge=p!=null?` <span style="font-size:10px;font-weight:800;padding:1px 5px;border-radius:4px" class="tpl-pct ${pctClr(p)}">${p}%</span>`:'';
+        return `<div>${hrs}${pBadge}${awhFmt(awh)}</div>`;
+      };
+      html += `<tr>
+        <td><div class="tpl-name">${disp}</div></td>
+        <td><div class="tpl-zone">${zLabel[t.z]}</div></td>
+        <td class="tpl-tgt" style="text-align:right"><div style="font-size:13px;font-weight:700;color:rgba(255,255,255,.75)">${riders!=null?riders.toLocaleString():'—'}</div>${ridersMtdAvg!=null?`<div style="font-size:10px;color:rgba(255,255,255,.35);margin-top:2px">MTD ${ridersMtdAvg}/day</div>`:''}</td>
+        <td class="tpl-tgt">${t.tgt>0?t.tgt.toLocaleString()+'h':'—'}</td>
+        <td class="tpl-num">${badge(yday,ydayPct,awhYday)}</td>
+        <td class="tpl-num">${badge(w7avg,w7Pct,awhW7)}</td>
+        <td class="tpl-num">${badge(monthavg,moPct,awhMo)}</td>
+        <td style="text-align:right"><span class="tpl-pct ${pc}">${pct!=null?pct+'%':'—'}</span></td>
+      </tr>`;
+    });
+  });
+  document.getElementById('tpl-tbody').innerHTML = html;
+}
+
+applyLabels();
+init3PLDropdown();
+</script>
+</body>
+</html>
