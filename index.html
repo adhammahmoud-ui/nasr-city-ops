@@ -314,9 +314,87 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
   letter-spacing:.7px; color:rgba(255,255,255,.3);
   background:rgba(0,0,0,.15); border-top:1px solid rgba(255,255,255,.08);
 }
+
+/* ── PASSWORD GATE ── */
+#pw-gate {
+  position:fixed; inset:0; z-index:9999;
+  background: linear-gradient(160deg,#c84b00,#8b2e00,#4a1800,#1a0a00);
+  display:flex; align-items:center; justify-content:center;
+}
+#pw-gate .pw-box {
+  background:rgba(255,255,255,0.07);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:20px;
+  padding:48px 40px;
+  width:340px;
+  text-align:center;
+  backdrop-filter:blur(12px);
+}
+#pw-gate .pw-logo { font-size:38px; margin-bottom:8px; }
+#pw-gate h2 { color:#fff; font-size:20px; font-weight:700; margin-bottom:4px; }
+#pw-gate p { color:rgba(255,255,255,0.5); font-size:13px; margin-bottom:28px; }
+#pw-gate input {
+  width:100%; padding:13px 16px;
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:10px;
+  color:#fff; font-size:15px;
+  outline:none; margin-bottom:14px;
+  letter-spacing:2px;
+}
+#pw-gate input::placeholder { letter-spacing:0; color:rgba(255,255,255,0.35); }
+#pw-gate input:focus { border-color:rgba(255,140,0,0.7); }
+#pw-gate button {
+  width:100%; padding:13px;
+  background:linear-gradient(135deg,#ff6b00,#e05000);
+  border:none; border-radius:10px;
+  color:#fff; font-size:15px; font-weight:700;
+  cursor:pointer; transition:opacity .2s;
+}
+#pw-gate button:hover { opacity:.88; }
+#pw-gate .pw-err { color:#ff8c8c; font-size:13px; margin-top:10px; min-height:18px; }
+
 </style>
 </head>
 <body>
+
+<!-- PASSWORD GATE -->
+<div id="pw-gate">
+  <div class="pw-box">
+    <div class="pw-logo">🔒</div>
+    <h2>Nasr City Ops</h2>
+    <p>Enter password to access the dashboard</p>
+    <input id="pw-input" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')checkPw()" autofocus />
+    <button onclick="checkPw()">Enter</button>
+    <div class="pw-err" id="pw-err"></div>
+  </div>
+</div>
+<script>
+(function(){
+  const HASH = 'bae3a9d8907dbcedc51bfe3373e44f2696c8c603';
+  async function sha1(str){
+    const buf = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  }
+  window.checkPw = async function(){
+    const val = document.getElementById('pw-input').value;
+    const h = await sha1(val);
+    if(h === HASH){
+      document.getElementById('pw-gate').style.display='none';
+      sessionStorage.setItem('nc_auth','1');
+    } else {
+      document.getElementById('pw-err').textContent = 'Incorrect password. Try again.';
+      document.getElementById('pw-input').value='';
+      document.getElementById('pw-input').focus();
+    }
+  };
+  if(sessionStorage.getItem('nc_auth')==='1'){
+    document.addEventListener('DOMContentLoaded',()=>{
+      const g=document.getElementById('pw-gate'); if(g) g.style.display='none';
+    });
+  }
+})();
+</script>
 <div class="app-shell">
 
 <div class="top-bar">
