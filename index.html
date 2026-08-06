@@ -1258,6 +1258,7 @@ init3PLDropdown();
     <button class="dtc-view-btn" id="dtcv-wtd"    onclick="setDTCView('wtd')">WTD</button>
     <select class="dtc-week-sel" id="dtc-week-sel" onchange="renderDTC()"></select>
     <button class="dtc-view-btn" id="dtcv-mtd"    onclick="setDTCView('mtd')">MTD</button>
+    <button class="dtc-view-btn" id="dtcv-l7d"    onclick="setDTCView('l7d')">Last 7 Days</button>
     <button class="dtc-view-btn" id="dtcv-lm"     onclick="setDTCView('lm')">Last Month</button>
   </div>
 
@@ -1408,6 +1409,12 @@ function renderDTC() {
     DTC_MARTS.forEach(m => { data[m.id] = dtcAvg(days, m.id); });
     const now = new Date();
     viewLabel = now.toLocaleDateString('en',{month:'long',year:'numeric'}) + ' MTD avg · ' + days.length + ' days';
+  } else if (dtcView === 'l7d') {
+    const allDays = Object.keys(DTC_DAYS).sort();
+    const last7 = allDays.slice(-7);
+    DTC_MARTS.forEach(m => { data[m.id] = dtcAvg(last7, m.id); });
+    const fmtD = d => new Date(d+'T00:00:00').toLocaleDateString('en',{month:'short',day:'numeric'});
+    viewLabel = `Last 7 Days avg · ${fmtD(last7[0])}–${fmtD(last7[last7.length-1])} (${last7.length} days)`;
   } else if (dtcView === 'lm') {
     const lm = DTC_MONTHLY[lmKey];
     if (!lm) { tbody.innerHTML='<tr><td colspan="4" class="off-empty">No last month data.</td></tr>'; return; }
