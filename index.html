@@ -660,6 +660,12 @@ const DAY = {
     "Heliopolis":{ utr:2.0378, riders:1857, orders:30001, delivComp:30524, sumHrs:14722.1, avgHrs:7.01, lateLogin:0.0927, noShow:0.0669, breakMin:60.98, fill:0.8159, delivTime:23.87, rat:5.58, toVendor:3.06, onTime:0.8460, failRate:0.0213 },
     "Ain shams": { utr:1.9749, riders:374,  orders:5028,  delivComp:5118,  sumHrs:2545.9,  avgHrs:5.98, lateLogin:0.0824, noShow:0.0626, breakMin:53.09, fill:0.8046, delivTime:26.85, rat:6.19, toVendor:3.94, onTime:0.8060, failRate:0.0315 },
   }},
+  "2026-07-26":{hegaz:[74.53,1340,1798],masaken_sh:[64.84,1145,1766],ard_golf:[76.1,1076,1414],omarat:[69.0,710,1029],hay8:[52.38,1154,2203],tayaran:[58.63,1407,2400],shorouk:[76.89,1424,1852],hadeeqa:[80.83,1501,1857],matareya:[42.79,775,1811]},
+  "2026-07-27":{hegaz:[65.34,1167,1786],masaken_sh:[60.49,1093,1807],ard_golf:[76.03,1072,1410],omarat:[54.87,546,995],hay8:[52.55,1155,2198],tayaran:[56.07,1362,2429],shorouk:[77.07,1398,1814],hadeeqa:[81.61,1575,1930],matareya:[35.41,562,1587]},
+  "2026-07-28":{hegaz:[61.25,1100,1796],masaken_sh:[54.08,980,1812],ard_golf:[70.97,946,1333],omarat:[50.2,513,1022],hay8:[44.39,970,2185],tayaran:[55.19,1314,2381],shorouk:[75.53,1398,1851],hadeeqa:[78.51,1586,2020],matareya:[41.93,730,1741]},
+  "2026-07-29":{hegaz:[56.06,1032,1841],masaken_sh:[54.17,1000,1846],ard_golf:[72.55,986,1359],omarat:[51.56,561,1088],hay8:[50.63,1088,2149],tayaran:[54.62,1331,2437],shorouk:[81.56,1544,1893],hadeeqa:[84.15,1710,2032],matareya:[41.24,727,1763]},
+  "2026-07-30":{hegaz:[60.2,1104,1834],masaken_sh:[59.61,1064,1785],ard_golf:[81.36,1100,1352],omarat:[50.88,549,1079],hay8:[54.65,1229,2249],tayaran:[53.88,1271,2359],shorouk:[81.87,1522,1859],hadeeqa:[85.5,1787,2090],matareya:[42.61,801,1880]},
+  "2026-07-31":{hegaz:[64.61,1214,1879],masaken_sh:[58.85,948,1611],ard_golf:[84.88,960,1131],omarat:[57.02,605,1061],hay8:[47.7,1130,2369],tayaran:[47.58,1142,2400],shorouk:[82.42,1585,1923],hadeeqa:[80.39,1718,2137],matareya:[21.1,392,1858]},
   "2026-08-01":{ label:"Aug 1, 2026", zones:{
     "Nasr city": { utr:2.1243, riders:1727, orders:31255, delivComp:32344, sumHrs:14713.1, avgHrs:7.74, lateLogin:0.0814, noShow:0.0444, breakMin:55.47, fill:0.8548, delivTime:25.57, rat:6.82, toVendor:3.29, onTime:0.8502, failRate:0.0238 },
     "Heliopolis":{ utr:2.0428, riders:1679, orders:26513, delivComp:27001, sumHrs:12979.1, avgHrs:6.85, lateLogin:0.0933, noShow:0.0590, breakMin:61.21, fill:0.8116, delivTime:23.39, rat:5.25, toVendor:3.04, onTime:0.8504, failRate:0.0202 },
@@ -1258,6 +1264,7 @@ init3PLDropdown();
     <button class="dtc-view-btn" id="dtcv-wtd"    onclick="setDTCView('wtd')">WTD</button>
     <select class="dtc-week-sel" id="dtc-week-sel" onchange="renderDTC()"></select>
     <button class="dtc-view-btn" id="dtcv-mtd"    onclick="setDTCView('mtd')">MTD</button>
+    <button class="dtc-view-btn" id="dtcv-l7d"    onclick="setDTCView('l7d')">Last 7 Days</button>
     <button class="dtc-view-btn" id="dtcv-lm"     onclick="setDTCView('lm')">Last Month</button>
   </div>
 
@@ -1408,6 +1415,17 @@ function renderDTC() {
     DTC_MARTS.forEach(m => { data[m.id] = dtcAvg(days, m.id); });
     const now = new Date();
     viewLabel = now.toLocaleDateString('en',{month:'long',year:'numeric'}) + ' MTD avg · ' + days.length + ' days';
+  } else if (dtcView === 'l7d') {
+    const yday = new Date(); yday.setDate(yday.getDate()-1);
+    const last7 = [];
+    for (let i=6;i>=0;i--){
+      const d=new Date(yday); d.setDate(d.getDate()-i);
+      const key=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+      if(DTC_DAYS[key]) last7.push(key);
+    }
+    DTC_MARTS.forEach(m => { data[m.id] = dtcAvg(last7, m.id); });
+    const fmtD = d => new Date(d+'T00:00:00').toLocaleDateString('en',{month:'short',day:'numeric'});
+    viewLabel = `Last 7 Days · ${fmtD(last7[0])}–${fmtD(last7[last7.length-1])} (${last7.length} days)`;
   } else if (dtcView === 'lm') {
     const lm = DTC_MONTHLY[lmKey];
     if (!lm) { tbody.innerHTML='<tr><td colspan="4" class="off-empty">No last month data.</td></tr>'; return; }
