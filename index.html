@@ -415,6 +415,48 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 .off-count.y { background:rgba(255,171,0,.15); color:#ffd166; }
 .off-count.g { color:rgba(255,255,255,.35); }
 .off-empty { text-align:center; padding:48px; color:rgba(255,255,255,.3); font-size:14px; }
+
+/* ── DT COMPLIANCE TAB ── */
+.dtc-controls { display:flex; align-items:center; gap:10px; margin:16px 24px 10px; flex-wrap:wrap; }
+.dtc-view-btn {
+  padding:7px 18px; border-radius:20px; font-size:12px; font-weight:700;
+  cursor:pointer; border:1.5px solid rgba(255,255,255,.2);
+  background:rgba(0,0,0,.2); color:rgba(255,255,255,.5); transition:all .15s;
+}
+.dtc-view-btn.active { background:rgba(255,100,0,.25); color:#ff9966; border-color:rgba(255,100,0,.5); }
+.dtc-view-btn:hover:not(.active) { background:rgba(255,255,255,.06); color:rgba(255,255,255,.8); }
+.dtc-week-sel {
+  padding:6px 28px 6px 12px; border-radius:20px; font-size:12px; font-weight:700;
+  cursor:pointer; border:1.5px solid rgba(255,255,255,.2); background:rgba(0,0,0,.25);
+  color:rgba(255,255,255,.75); appearance:none; -webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(255,255,255,0.5)'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 10px center; outline:none;
+  display:none;
+}
+.dtc-week-sel.visible { display:inline-block; }
+.dtc-week-sel option { background:#2a0f00; color:white; }
+.dtc-table-wrap { margin:0 24px 24px; overflow:auto; border-radius:10px; }
+.dtc-table { width:100%; border-collapse:collapse; font-size:13px; }
+.dtc-table thead th {
+  text-align:left; padding:10px 16px; font-size:10px; font-weight:700;
+  text-transform:uppercase; letter-spacing:.6px; color:rgba(255,255,255,.35);
+  border-bottom:1px solid rgba(255,255,255,.1); background:#2a0f00;
+  white-space:nowrap;
+}
+.dtc-table thead th.r { text-align:right; }
+.dtc-table tbody tr { border-bottom:1px solid rgba(255,255,255,.05); transition:background .15s; }
+.dtc-table tbody tr:hover { background:rgba(255,255,255,.04); }
+.dtc-table td { padding:13px 16px; vertical-align:middle; }
+.dtc-mart-name { font-size:13px; font-weight:700; color:rgba(255,255,255,.85); }
+.dtc-pct-wrap { display:flex; align-items:center; gap:10px; justify-content:flex-end; }
+.dtc-pct { font-size:22px; font-weight:800; }
+.dtc-pct.g { color:#36b37e; }
+.dtc-pct.y { color:#ffd166; }
+.dtc-pct.r { color:#ff6b6b; }
+.dtc-bar-wrap { width:80px; height:6px; background:rgba(255,255,255,.1); border-radius:3px; overflow:hidden; flex-shrink:0; }
+.dtc-bar-fill { height:100%; border-radius:3px; transition:width .4s ease; }
+.dtc-orders { font-size:11px; color:rgba(255,255,255,.3); text-align:right; }
+.dtc-subtitle { font-size:11px; color:rgba(255,255,255,.3); margin:0 24px 12px; }
 </style>
 </head>
 <body>
@@ -476,6 +518,7 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
   <button class="page-tab active" id="ptab-zone"      onclick="setPage('zone')">📊 Zone Overview</button>
   <button class="page-tab"        id="ptab-3pl"       onclick="setPage('3pl')">🚚 3PL Performance</button>
   <button class="page-tab"        id="ptab-offenders" onclick="setPage('offenders')">🚨 Offenders</button>
+  <button class="page-tab"        id="ptab-dtc"       onclick="setPage('dtc')">📦 DT Compliance</button>
 </div>
 
 <!-- ══ ZONE OVERVIEW PAGE ══ -->
@@ -983,7 +1026,7 @@ populateSel(); render();
    PAGE NAVIGATION
    ════════════════════════════════ */
 function setPage(p){
-  ['zone','3pl','offenders'].forEach(id=>{
+  ['zone','3pl','offenders','dtc'].forEach(id=>{
     const pg = document.getElementById('page-'+id);
     const tb = document.getElementById('ptab-'+id);
     if(pg) pg.style.display = id===p?'':'none';
@@ -991,6 +1034,7 @@ function setPage(p){
   });
   if(p==='3pl') render3PL();
   if(p==='offenders') initOffenders();
+  if(p==='dtc') initDTC();
 }
 
 /* ════════════════════════════════
@@ -1197,6 +1241,204 @@ init3PLDropdown();
     </table>
   </div>
 </div>
+
+
+<!-- ══ DT COMPLIANCE PAGE ══ -->
+<div id="page-dtc" style="display:none">
+  <div class="sync-bar" style="margin-top:12px">
+    <div class="sync-left">
+      <div class="sync-dot" style="background:#36b37e"></div>
+      <span id="dtc-sync-label">DT Compliance · Orders delivered in ≤15 mins</span>
+    </div>
+  </div>
+  <p class="dtc-subtitle">% of eligible orders delivered in 15 minutes or less (2026 SLA threshold)</p>
+
+  <div class="dtc-controls">
+    <button class="dtc-view-btn" id="dtcv-yday"   onclick="setDTCView('yday')">Yesterday</button>
+    <button class="dtc-view-btn" id="dtcv-wtd"    onclick="setDTCView('wtd')">WTD</button>
+    <select class="dtc-week-sel" id="dtc-week-sel" onchange="renderDTC()"></select>
+    <button class="dtc-view-btn" id="dtcv-mtd"    onclick="setDTCView('mtd')">MTD</button>
+    <button class="dtc-view-btn" id="dtcv-lm"     onclick="setDTCView('lm')">Last Month</button>
+  </div>
+
+  <div class="dtc-table-wrap">
+    <table class="dtc-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Mart</th>
+          <th class="r" style="min-width:180px">DT ≤15 min</th>
+          <th class="r">Orders</th>
+        </tr>
+      </thead>
+      <tbody id="dtc-tbody">
+        <tr><td colspan="4" class="off-empty">Loading…</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+/* ════════════════════════════════
+   DT COMPLIANCE DATA
+   @@DTC_DATA_START@@ — auto-updated daily
+   ════════════════════════════════ */
+const DTC_MARTS = [
+  {id:"hegaz",      label:"Hegaz Square"},
+  {id:"masaken_sh", label:"Masaken Sheraton"},
+  {id:"ard_golf",   label:"Ard El Golf"},
+  {id:"omarat",     label:"Omarat El Tawfiq"},
+  {id:"hay8",       label:"Hay 8"},
+  {id:"tayaran",    label:"El Tayaran"},
+  {id:"shorouk",    label:"Masaken El Shorouk"},
+  {id:"hadeeqa",    label:"El Hadeeqa El Dawlia"},
+  {id:"matareya",   label:"Matareya"},
+];
+
+// Daily data: {date: {martId: [pct, compliant, eligible]}}
+const DTC_DAYS = {
+  "2026-08-01":{hegaz:[60.31,1076,1784],masaken_sh:[54.68,912,1668],ard_golf:[86.97,1055,1213],omarat:[58.96,599,1016],hay8:[41.87,943,2252],tayaran:[51.5,1219,2367],shorouk:[81.95,1553,1895],hadeeqa:[85.6,1765,2062],matareya:[23.15,461,1991]},
+  "2026-08-02":{hegaz:[63.49,1224,1928],masaken_sh:[53.94,1060,1965],ard_golf:[83.47,1212,1452],omarat:[57.35,640,1116],hay8:[46.3,1070,2311],tayaran:[55.79,1316,2359],shorouk:[75.56,1456,1927],hadeeqa:[84.17,1851,2199],matareya:[29.42,531,1805]},
+  "2026-08-03":{hegaz:[46.72,861,1843],masaken_sh:[45.27,827,1827],ard_golf:[66.87,989,1479],omarat:[32.32,320,990],hay8:[35.99,826,2295],tayaran:[37.12,908,2446],shorouk:[67.79,1288,1900],hadeeqa:[79.44,1723,2169],matareya:[24.55,436,1776]},
+  "2026-08-04":{hegaz:[60.09,1069,1779],masaken_sh:[55.64,1021,1835],ard_golf:[84.4,1169,1385],omarat:[51.76,528,1020],hay8:[48.58,1044,2149],tayaran:[54.03,1254,2321],shorouk:[71.84,1329,1850],hadeeqa:[83.41,1714,2055],matareya:[35.34,633,1791]},
+  "2026-08-05":{hegaz:[60.2,1083,1799],masaken_sh:[57.87,1121,1937],ard_golf:[79.57,1176,1478],omarat:[53.3,566,1062],hay8:[51.01,1185,2323],tayaran:[53.72,1229,2288],shorouk:[77.76,1430,1839],hadeeqa:[86.6,1816,2097],matareya:[44.17,796,1802]},
+};
+
+// Monthly data: {YYYY-MM: {label, marts:{martId:[pct,compliant,eligible]}}}
+const DTC_MONTHLY = {
+  "2026-07":{label:"July 2026",marts:{hegaz:[63.01,34779,55192],masaken_sh:[58.05,30763,52991],ard_golf:[70.36,28158,40020],omarat:[55.5,16547,29815],hay8:[48.6,31838,65510],tayaran:[53.21,38772,72868],shorouk:[75.11,41906,55794],hadeeqa:[74.59,45279,60706],matareya:[36.25,20976,57858]}},
+};
+/* @@DTC_DATA_END@@ */
+
+// ── DTC State
+let dtcView = 'yday';
+let dtcInit = false;
+
+function getISOWeek(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00');
+  d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+  const y = new Date(d.getFullYear(), 0, 1);
+  return Math.ceil((((d - y) / 86400000) + 1) / 7);
+}
+
+function getCurrentMonthKey() {
+  const now = new Date();
+  return now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
+}
+
+function getLastMonthKey() {
+  const now = new Date();
+  const d = new Date(now.getFullYear(), now.getMonth()-1, 1);
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0');
+}
+
+function getDaysInCurrentMonth() {
+  const mKey = getCurrentMonthKey();
+  return Object.keys(DTC_DAYS).filter(d => d.startsWith(mKey)).sort();
+}
+
+function initDTC() {
+  if (!dtcInit) {
+    dtcInit = true;
+    // Build WTD week dropdown
+    const sel = document.getElementById('dtc-week-sel');
+    sel.innerHTML = '';
+    const days = getDaysInCurrentMonth();
+    const weeks = {};
+    days.forEach(d => {
+      const wk = getISOWeek(d);
+      if (!weeks[wk]) weeks[wk] = [];
+      weeks[wk].push(d);
+    });
+    Object.keys(weeks).sort((a,b)=>a-b).forEach(wk => {
+      const wdays = weeks[wk].sort();
+      const first = new Date(wdays[0]+'T00:00:00');
+      const last  = new Date(wdays[wdays.length-1]+'T00:00:00');
+      const fmt = d => d.toLocaleDateString('en',{month:'short',day:'numeric'});
+      const opt = document.createElement('option');
+      opt.value = wk;
+      opt.textContent = `W${wk}  ${fmt(first)}–${fmt(last)}`;
+      sel.appendChild(opt);
+      sel.value = wk; // default to last (most recent)
+    });
+  }
+  setDTCView(dtcView);
+}
+
+function setDTCView(v) {
+  dtcView = v;
+  document.querySelectorAll('.dtc-view-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('dtcv-' + v)?.classList.add('active');
+  const weekSel = document.getElementById('dtc-week-sel');
+  if (v === 'wtd') weekSel.classList.add('visible');
+  else weekSel.classList.remove('visible');
+  renderDTC();
+}
+
+function dtcAvg(dates, martId) {
+  const vals = dates.map(d => DTC_DAYS[d]?.[martId]).filter(x => x != null);
+  if (!vals.length) return null;
+  const totalC = vals.reduce((s,v)=>s+v[1],0);
+  const totalE = vals.reduce((s,v)=>s+v[2],0);
+  const pct = totalE ? totalC/totalE*100 : 0;
+  return [Math.round(pct*100)/100, totalC, totalE];
+}
+
+function renderDTC() {
+  const tbody = document.getElementById('dtc-tbody');
+  const mKey = getCurrentMonthKey();
+  const lmKey = getLastMonthKey();
+  const days = getDaysInCurrentMonth();
+
+  let data = {}; // {martId: [pct, compliant, eligible]}
+  let viewLabel = '';
+
+  if (dtcView === 'yday') {
+    const yesterday = days[days.length - 1];
+    if (!yesterday) { tbody.innerHTML='<tr><td colspan="4" class="off-empty">No data yet.</td></tr>'; return; }
+    DTC_MARTS.forEach(m => { data[m.id] = DTC_DAYS[yesterday]?.[m.id] || null; });
+    const dt = new Date(yesterday+'T00:00:00');
+    viewLabel = 'Yesterday · ' + dt.toLocaleDateString('en',{month:'short',day:'numeric',year:'numeric'});
+  } else if (dtcView === 'wtd') {
+    const selWk = parseInt(document.getElementById('dtc-week-sel').value);
+    const wdays = days.filter(d => getISOWeek(d) === selWk);
+    DTC_MARTS.forEach(m => { data[m.id] = dtcAvg(wdays, m.id); });
+    viewLabel = `Week ${selWk} avg · ${wdays.length} day${wdays.length!==1?'s':''}`;
+  } else if (dtcView === 'mtd') {
+    DTC_MARTS.forEach(m => { data[m.id] = dtcAvg(days, m.id); });
+    const now = new Date();
+    viewLabel = now.toLocaleDateString('en',{month:'long',year:'numeric'}) + ' MTD avg · ' + days.length + ' days';
+  } else if (dtcView === 'lm') {
+    const lm = DTC_MONTHLY[lmKey];
+    if (!lm) { tbody.innerHTML='<tr><td colspan="4" class="off-empty">No last month data.</td></tr>'; return; }
+    DTC_MARTS.forEach(m => { data[m.id] = lm.marts[m.id] || null; });
+    viewLabel = lm.label + ' · Full Month';
+  }
+
+  document.getElementById('dtc-sync-label').textContent = 'DT Compliance · ' + viewLabel;
+
+  const rows = DTC_MARTS.map((m, i) => {
+    const d = data[m.id];
+    if (!d) return `<tr><td>${i+1}</td><td class="dtc-mart-name">${m.label}</td><td colspan="2" class="dtc-orders" style="text-align:center">—</td></tr>`;
+    const [pct, comp, elig] = d;
+    const cls = pct >= 70 ? 'g' : pct >= 50 ? 'y' : 'r';
+    const barColor = pct >= 70 ? '#36b37e' : pct >= 50 ? '#ffd166' : '#ff6b6b';
+    const barW = Math.min(100, pct).toFixed(1);
+    return `<tr>
+      <td class="off-rank">${i+1}</td>
+      <td class="dtc-mart-name">${m.label}</td>
+      <td>
+        <div class="dtc-pct-wrap">
+          <div class="dtc-bar-wrap"><div class="dtc-bar-fill" style="width:${barW}%;background:${barColor}"></div></div>
+          <span class="dtc-pct ${cls}">${pct.toFixed(1)}%</span>
+        </div>
+      </td>
+      <td class="dtc-orders">${comp ? comp.toLocaleString() + ' / ' + elig.toLocaleString() : '—'}</td>
+    </tr>`;
+  }).join('');
+  tbody.innerHTML = rows;
+}
+</script>
 
 </div><!-- end app-shell -->
 
