@@ -598,6 +598,11 @@ const ZL    = { 'Nasr city':'Nasr City', 'Heliopolis':'Heliopolis', 'Ain shams':
 const TGT   = { 'Nasr city':1.93, 'Heliopolis':1.86, 'Ain shams':1.73 };
 
 const DAY = {
+  "2026-08-05":{ label:"Aug 5, 2026", zones:{
+    "Nasr city": { utr:2.1117, riders:1747, orders:32397, delivComp:31697, sumHrs:15341.71, avgHrs:7.26, lateLogin:0.0809, noShow:0.0450, breakMin:58.45, fill:0.8228, acceptRate:0.9784, plannedHrs:18646.70, delivTime:24.97, rat:6.21, toVendor:3.30, onTime:0.8592, failRate:0.0215 },
+    "Heliopolis":{ utr:2.1754, riders:1757, orders:31282, delivComp:30700, sumHrs:14379.80, avgHrs:6.50, lateLogin:0.0773, noShow:0.0841, breakMin:55.72, fill:0.7911, acceptRate:0.9814, plannedHrs:18177.89, delivTime:23.63, rat:5.19, toVendor:3.31, onTime:0.8576, failRate:0.0185 },
+    "Ain shams": { utr:1.9661, riders:357,  orders:5194,  delivComp:5011,  sumHrs:2641.88,  avgHrs:5.60, lateLogin:0.0932, noShow:0.0699, breakMin:45.51, fill:0.7987, acceptRate:0.9648, plannedHrs:3307.56, delivTime:25.41, rat:5.10, toVendor:3.94, onTime:0.8238, failRate:0.0352 },
+  }},
   "2026-08-04":{ label:"Aug 4, 2026", zones:{
     "Nasr city": { utr:2.0716, riders:1767, orders:31365, delivComp:32432, sumHrs:15140.35, avgHrs:7.84, lateLogin:0.0795, noShow:0.0356, breakMin:60.47, fill:0.8548, acceptRate:0.9827, plannedHrs:17712.17, delivTime:25.51, rat:6.68, toVendor:3.36, onTime:0.8563, failRate:0.0168 },
     "Heliopolis":{ utr:2.0658, riders:1845, orders:29893, delivComp:30589, sumHrs:14470.58, avgHrs:6.95, lateLogin:0.0869, noShow:0.0680, breakMin:61.31, fill:0.8165, acceptRate:0.9850, plannedHrs:17721.75, delivTime:24.21, rat:5.53, toVendor:3.16, onTime:0.8501, failRate:0.0141 },
@@ -916,7 +921,7 @@ function card(zone, z, cz){
 /* ════════════════════════════════
    RENDER
    ════════════════════════════════ */
-let ST = { view:'day', main:'2026-08-04', cmp:'2026-08-03' };
+let ST = { view:'day', main:'2026-08-05', cmp:'2026-08-04' };
 
 function render(){
   ST.main = document.getElementById('main-sel').value;
