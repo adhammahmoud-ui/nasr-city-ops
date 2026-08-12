@@ -143,13 +143,86 @@ with open(json_path) as f:
 
 print(f"Loaded {json_path}")
 
+# ── ENCODING SANITIZATION ────────────────────────────────────────────────────
+# These byte sequences occur when UTF-8 text is misread as Latin-1 and re-encoded
+# as UTF-8 (double-encoding). Fix them before decoding.
+DOUBLE_ENCODED_FIXES = [
+    # U+21C4 ⇄ (swap arrows used in the dashboard swap button)
+    (b'\xc3\xa2\xc2\x87\xc2\x84', '⇄'.encode('utf-8')),
+    # U+2500 ─ (box-drawing dash used in CSS comments)
+    (b'\xc3\xa2\xc2\x94\xc2\x80', '─'.encode('utf-8')),
+    # U+2014 — (em dash)
+    (b'\xc3\xa2\xc2\x80\xc2\x94', '—'.encode('utf-8')),
+    # U+2018 ' (left single quote)
+    (b'\xc3\xa2\xc2\x80\xc2\x98', '‘'.encode('utf-8')),
+    # U+2019 ' (right single quote)
+    (b'\xc3\xa2\xc2\x80\xc2\x99', '’'.encode('utf-8')),
+    # U+201C " (left double quote)
+    (b'\xc3\xa2\xc2\x80\xc2\x9c', '“'.encode('utf-8')),
+    # U+201D " (right double quote)
+    (b'\xc3\xa2\xc2\x80\xc2\x9d', '”'.encode('utf-8')),
+    # U+2026 … (ellipsis)
+    (b'\xc3\xa2\xc2\x80\xc2\xa6', '…'.encode('utf-8')),
+]
+
+# Text patterns that indicate double-encoding survived into the string
+BAD_TEXT_PATTERNS = [
+    ('â', '⇄'),   # double-encoded ⇄
+    ('â', '─'),   # double-encoded ─
+    ('â', '—'),   # double-encoded —
+    ('â', '‘'),
+    ('â', '’'),
+]
+
+def read_html_safe(path):
+    """Read HTML file as bytes, fix double-encoded UTF-8 sequences, decode as UTF-8."""
+    with open(path, 'rb') as f:
+        raw = f.read()
+    # Remove null bytes (can sneak in from bad writes)
+    raw = raw.replace(b'\x00', b'')
+    # Fix known double-encoded byte sequences
+    for bad_bytes, good_bytes in DOUBLE_ENCODED_FIXES:
+        raw = raw.replace(bad_bytes, good_bytes)
+    # Decode as UTF-8
+    text = raw.decode('utf-8', errors='replace')
+    # Fix any double-encoded sequences that survived as text
+    for bad_str, good_str in BAD_TEXT_PATTERNS:
+        text = text.replace(bad_str, good_str)
+    return text
+
+def write_html_safe(path, content):
+    """Write HTML as explicit UTF-8 bytes (no BOM, no encoding surprises)."""
+    # Final pass: ensure no null chars crept into the string
+    content = content.replace('\x00', '')
+    with open(path, 'wb') as f:
+        f.write(content.encode('utf-8'))
+
+def check_encoding_issues(content):
+    """Return list of any encoding problems found in the content."""
+    issues = []
+    # Check for double-encoded sequences as text
+    for bad_str, good_str in BAD_TEXT_PATTERNS:
+        count = content.count(bad_str)
+        if count:
+            issues.append(f"Double-encoded {repr(good_str)!r} found {count}× — auto-fixed")
+    # Check for null bytes
+    if '\x00' in content:
+        issues.append(f"Null bytes found: {content.count(chr(0))}")
+    # Check for replacement char (indicates data loss during decode)
+    repl_count = content.count('�')
+    if repl_count:
+        issues.append(f"Unicode replacement chars (U+FFFD) found: {repl_count} — possible encoding loss")
+    return issues
+
 # ── LOAD HTML ───────────────────────────────────────────────────────────────
 if not HTML_PATH.exists():
     print(f"ERROR: {HTML_PATH} not found — run: git clone ... /tmp/nasr-city-ops", file=sys.stderr)
     sys.exit(1)
 
-with open(HTML_PATH, 'r', errors='replace') as f:
-    html = f.read()
+html = read_html_safe(HTML_PATH)
+enc_issues = check_encoding_issues(html)
+for issue in enc_issues:
+    print(f"⚠ Encoding: {issue}")
 
 orig_len = len(html)
 errors   = []
@@ -568,8 +641,22 @@ else:
 
 
 # ── WRITE FILE ───────────────────────────────────────────────────────────────
-with open(HTML_PATH, 'w', encoding='utf-8') as f:
-    f.write(html)
+# Final encoding check before writing
+post_issues = check_encoding_issues(html)
+if post_issues:
+    print("⚠ Post-processing encoding issues (auto-fixed before write):")
+    for issue in post_issues:
+        print(f"   • {issue}")
+
+write_html_safe(HTML_PATH, html)
+
+# Verify the write: read back and confirm no encoding problems
+verify_bytes = HTML_PATH.read_bytes()
+if b'\x00' in verify_bytes:
+    errors.append(f"CRITICAL: null bytes found in written file ({verify_bytes.count(b'x00')})")
+    print("✗ CRITICAL: null bytes in written file!")
+else:
+    print("✓ Encoding clean — no null bytes, no garbled chars")
 
 print(f"\n✅ index.html written ({orig_len} → {len(html)} bytes, Δ{len(html)-orig_len:+d})")
 
