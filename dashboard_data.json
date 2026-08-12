@@ -1,0 +1,3433 @@
+{
+  "zone": {
+    "yday": {
+      "Nasr city": {
+        "riders": 1659,
+        "orders": 31736,
+        "sumHrs": 15060.01,
+        "plannedHrs": 18006.33,
+        "lateLogin": 0.2891,
+        "noShow": 0.04746,
+        "breakMin": 51.06,
+        "acceptRate": 0.978,
+        "delivTime": 25.83,
+        "rat": 7.36,
+        "toVendor": 3.454,
+        "onTime": 0.8391,
+        "failRate": 0.0201
+      },
+      "Heliopolis": {
+        "riders": 1603,
+        "orders": 29788,
+        "sumHrs": 13100.18,
+        "plannedHrs": 16514.76,
+        "lateLogin": 0.2949,
+        "noShow": 0.09182,
+        "breakMin": 51.15,
+        "acceptRate": 0.975,
+        "delivTime": 28.08,
+        "rat": 9.61,
+        "toVendor": 3.492,
+        "onTime": 0.7157,
+        "failRate": 0.0285
+      },
+      "Ain shams": {
+        "riders": 322,
+        "orders": 4555,
+        "sumHrs": 2351.68,
+        "plannedHrs": 2875.93,
+        "lateLogin": 0.2281,
+        "noShow": 0.05702,
+        "breakMin": 33.62,
+        "acceptRate": 0.965,
+        "delivTime": 28.4,
+        "rat": 8.1,
+        "toVendor": 3.812,
+        "onTime": 0.7027,
+        "failRate": 0.0307
+      }
+    },
+    "wtd": {
+      "Nasr city": {
+        "riders": 1959,
+        "orders": 62985,
+        "sumHrs": 29829.39,
+        "plannedHrs": 35468.07,
+        "lateLogin": 0.2909,
+        "noShow": 0.04578,
+        "breakMin": 52.38,
+        "acceptRate": 0.978,
+        "delivTime": 25.43,
+        "rat": 7.04,
+        "toVendor": 3.445,
+        "onTime": 0.8485,
+        "failRate": 0.0199
+      },
+      "Heliopolis": {
+        "riders": 1959,
+        "orders": 59774,
+        "sumHrs": 26011.47,
+        "plannedHrs": 32611.93,
+        "lateLogin": 0.295,
+        "noShow": 0.09226,
+        "breakMin": 52.85,
+        "acceptRate": 0.975,
+        "delivTime": 27.64,
+        "rat": 9.15,
+        "toVendor": 3.518,
+        "onTime": 0.7364,
+        "failRate": 0.0261
+      },
+      "Ain shams": {
+        "riders": 401,
+        "orders": 8841,
+        "sumHrs": 4552.42,
+        "plannedHrs": 5597.91,
+        "lateLogin": 0.2182,
+        "noShow": 0.05624,
+        "breakMin": 34.73,
+        "acceptRate": 0.965,
+        "delivTime": 28.52,
+        "rat": 8.25,
+        "toVendor": 3.837,
+        "onTime": 0.6977,
+        "failRate": 0.0358
+      }
+    },
+    "mtd": {
+      "Nasr city": {
+        "riders": 2831,
+        "orders": 346853,
+        "sumHrs": 162270.02,
+        "plannedHrs": 195052.98,
+        "lateLogin": 0.2734,
+        "noShow": 0.05369,
+        "breakMin": 56.79,
+        "acceptRate": 0.978,
+        "delivTime": 25.79,
+        "rat": 7.09,
+        "toVendor": 3.484,
+        "onTime": 0.8479,
+        "failRate": 0.0213
+      },
+      "Heliopolis": {
+        "riders": 2924,
+        "orders": 321527,
+        "sumHrs": 147814.78,
+        "plannedHrs": 186742.89,
+        "lateLogin": 0.3062,
+        "noShow": 0.08936,
+        "breakMin": 58.29,
+        "acceptRate": 0.975,
+        "delivTime": 25.26,
+        "rat": 6.84,
+        "toVendor": 3.35,
+        "onTime": 0.8175,
+        "failRate": 0.0205
+      },
+      "Ain shams": {
+        "riders": 607,
+        "orders": 55561,
+        "sumHrs": 27770.57,
+        "plannedHrs": 35050.33,
+        "lateLogin": 0.2116,
+        "noShow": 0.06658,
+        "breakMin": 39.94,
+        "acceptRate": 0.965,
+        "delivTime": 27.23,
+        "rat": 6.54,
+        "toVendor": 4.066,
+        "onTime": 0.7773,
+        "failRate": 0.0352
+      }
+    }
+  },
+  "dtc_yday": {
+    "hegaz": [
+      43.67,
+      783,
+      1793
+    ],
+    "masaken_sh": [
+      52.04,
+      1006,
+      1933
+    ],
+    "ard_golf": [
+      82.35,
+      1106,
+      1343
+    ],
+    "omarat": [
+      36.98,
+      392,
+      1060
+    ],
+    "hay8": [
+      47.84,
+      962,
+      2011
+    ],
+    "tayaran": [
+      44.59,
+      1079,
+      2420
+    ],
+    "shorouk": [
+      56.02,
+      935,
+      1669
+    ],
+    "hadeeqa": [
+      83.7,
+      1772,
+      2117
+    ],
+    "matareya": [
+      34.9,
+      618,
+      1771
+    ]
+  },
+  "dtc_mtd": {
+    "hegaz": [
+      48.49,
+      7861,
+      16210
+    ],
+    "masaken_sh": [
+      45.39,
+      7521,
+      16570
+    ],
+    "ard_golf": [
+      75.52,
+      9251,
+      12250
+    ],
+    "omarat": [
+      42.7,
+      4060,
+      9509
+    ],
+    "hay8": [
+      32.91,
+      7052,
+      21428
+    ],
+    "tayaran": [
+      38.28,
+      8597,
+      22456
+    ],
+    "shorouk": [
+      63.81,
+      11191,
+      17537
+    ],
+    "hadeeqa": [
+      74.59,
+      14569,
+      19533
+    ],
+    "matareya": [
+      26.66,
+      4900,
+      18379
+    ]
+  },
+  "offenders": {
+    "Heliopolis": [
+      {
+        "id": 4133861,
+        "noShow": 11,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 11
+      },
+      {
+        "id": 1929761,
+        "noShow": 10,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 10
+      },
+      {
+        "id": 1390508,
+        "noShow": 9,
+        "late": 6,
+        "breaks": 7.7,
+        "avp": 4.4,
+        "shifts": 15
+      },
+      {
+        "id": 2402774,
+        "noShow": 9,
+        "late": 2,
+        "breaks": 1.1,
+        "avp": 20.2,
+        "shifts": 11
+      },
+      {
+        "id": 951040,
+        "noShow": 9,
+        "late": 0,
+        "breaks": 0.2,
+        "avp": 18.5,
+        "shifts": 10
+      },
+      {
+        "id": 2172819,
+        "noShow": 9,
+        "late": 1,
+        "breaks": 3.6,
+        "avp": 0.0,
+        "shifts": 10
+      },
+      {
+        "id": 4783648,
+        "noShow": 9,
+        "late": 0,
+        "breaks": 4.0,
+        "avp": 13.4,
+        "shifts": 10
+      },
+      {
+        "id": 3968316,
+        "noShow": 9,
+        "late": 3,
+        "breaks": 16.2,
+        "avp": 11.9,
+        "shifts": 13
+      },
+      {
+        "id": 4746818,
+        "noShow": 8,
+        "late": 7,
+        "breaks": 15.5,
+        "avp": 8.2,
+        "shifts": 15
+      },
+      {
+        "id": 4780407,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 10
+      },
+      {
+        "id": 4784197,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 8
+      },
+      {
+        "id": 4802338,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 2.0,
+        "avp": 0.0,
+        "shifts": 9
+      },
+      {
+        "id": 4777040,
+        "noShow": 8,
+        "late": 3,
+        "breaks": 2.6,
+        "avp": 27.3,
+        "shifts": 11
+      },
+      {
+        "id": 4285630,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 8
+      },
+      {
+        "id": 4409100,
+        "noShow": 8,
+        "late": 7,
+        "breaks": 30.7,
+        "avp": 46.6,
+        "shifts": 22
+      },
+      {
+        "id": 4171396,
+        "noShow": 8,
+        "late": 4,
+        "breaks": 8.1,
+        "avp": 25.9,
+        "shifts": 12
+      },
+      {
+        "id": 3529074,
+        "noShow": 8,
+        "late": 3,
+        "breaks": 3.3,
+        "avp": 11.0,
+        "shifts": 11
+      },
+      {
+        "id": 4765618,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 8
+      },
+      {
+        "id": 4691830,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 8
+      },
+      {
+        "id": 2209629,
+        "noShow": 7,
+        "late": 2,
+        "breaks": 4.1,
+        "avp": 24.3,
+        "shifts": 10
+      },
+      {
+        "id": 2606954,
+        "noShow": 7,
+        "late": 1,
+        "breaks": 0.9,
+        "avp": 50.7,
+        "shifts": 9
+      },
+      {
+        "id": 2407523,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 9.2,
+        "avp": 37.4,
+        "shifts": 10
+      },
+      {
+        "id": 4614846,
+        "noShow": 7,
+        "late": 4,
+        "breaks": 23.2,
+        "avp": 11.0,
+        "shifts": 12
+      },
+      {
+        "id": 4756732,
+        "noShow": 7,
+        "late": 8,
+        "breaks": 19.3,
+        "avp": 30.6,
+        "shifts": 18
+      },
+      {
+        "id": 4743512,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 16.2,
+        "avp": 28.1,
+        "shifts": 10
+      },
+      {
+        "id": 4202995,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 5.0,
+        "avp": 14.9,
+        "shifts": 8
+      },
+      {
+        "id": 4406017,
+        "noShow": 7,
+        "late": 5,
+        "breaks": 4.3,
+        "avp": 17.3,
+        "shifts": 12
+      },
+      {
+        "id": 3503957,
+        "noShow": 7,
+        "late": 4,
+        "breaks": 19.8,
+        "avp": 14.9,
+        "shifts": 13
+      },
+      {
+        "id": 1352533,
+        "noShow": 7,
+        "late": 1,
+        "breaks": 0.4,
+        "avp": 18.8,
+        "shifts": 8
+      },
+      {
+        "id": 4414483,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 13.7,
+        "avp": 10.9,
+        "shifts": 10
+      },
+      {
+        "id": 2108245,
+        "noShow": 6,
+        "late": 5,
+        "breaks": 16.0,
+        "avp": 19.0,
+        "shifts": 11
+      },
+      {
+        "id": 2495115,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 8.8,
+        "avp": 35.9,
+        "shifts": 11
+      },
+      {
+        "id": 4802439,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 866141,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 15.7,
+        "avp": 50.8,
+        "shifts": 12
+      },
+      {
+        "id": 1366287,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 6.5,
+        "avp": 17.8,
+        "shifts": 9
+      },
+      {
+        "id": 2524025,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 2.3,
+        "avp": 19.5,
+        "shifts": 8
+      },
+      {
+        "id": 4242600,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 3895772,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 13.8,
+        "avp": 41.2,
+        "shifts": 10
+      },
+      {
+        "id": 2015850,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4789395,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 0.8,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 4654039,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 0.3,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 4549182,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 18.0,
+        "avp": 16.3,
+        "shifts": 9
+      },
+      {
+        "id": 4523344,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 2043710,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 11.5,
+        "avp": 23.4,
+        "shifts": 10
+      },
+      {
+        "id": 2089955,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 34.0,
+        "avp": 48.7,
+        "shifts": 15
+      },
+      {
+        "id": 4703440,
+        "noShow": 6,
+        "late": 5,
+        "breaks": 6.2,
+        "avp": 59.7,
+        "shifts": 12
+      },
+      {
+        "id": 4809245,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 4.6,
+        "avp": 17.7,
+        "shifts": 8
+      },
+      {
+        "id": 4777114,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 0,
+        "avp": 22.2,
+        "shifts": 7
+      },
+      {
+        "id": 4805482,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 1.0,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 1301845,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 10.6,
+        "avp": 27.1,
+        "shifts": 9
+      },
+      {
+        "id": 4700694,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 13.4,
+        "avp": 0.0,
+        "shifts": 10
+      },
+      {
+        "id": 4716674,
+        "noShow": 6,
+        "late": 7,
+        "breaks": 11.0,
+        "avp": 22.1,
+        "shifts": 13
+      },
+      {
+        "id": 1834889,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 9.5,
+        "avp": 1.6,
+        "shifts": 9
+      },
+      {
+        "id": 4421282,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 10
+      },
+      {
+        "id": 2127179,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 8.2,
+        "avp": 43.2,
+        "shifts": 9
+      },
+      {
+        "id": 2655972,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 4.2,
+        "avp": 49.3,
+        "shifts": 12
+      },
+      {
+        "id": 4775556,
+        "noShow": 6,
+        "late": 5,
+        "breaks": 3.4,
+        "avp": 39.8,
+        "shifts": 11
+      },
+      {
+        "id": 4805901,
+        "noShow": 5,
+        "late": 4,
+        "breaks": 6.8,
+        "avp": 42.1,
+        "shifts": 12
+      },
+      {
+        "id": 4729905,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 8.9,
+        "avp": 24.8,
+        "shifts": 9
+      },
+      {
+        "id": 2272649,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 7.0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 3833932,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4540226,
+        "noShow": 5,
+        "late": 5,
+        "breaks": 3.3,
+        "avp": 28.9,
+        "shifts": 10
+      },
+      {
+        "id": 4707236,
+        "noShow": 5,
+        "late": 4,
+        "breaks": 21.7,
+        "avp": 51.2,
+        "shifts": 12
+      },
+      {
+        "id": 2274346,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 3.6,
+        "avp": 77.1,
+        "shifts": 11
+      },
+      {
+        "id": 3871383,
+        "noShow": 5,
+        "late": 4,
+        "breaks": 3.6,
+        "avp": 11.4,
+        "shifts": 9
+      },
+      {
+        "id": 2458884,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 9
+      },
+      {
+        "id": 4264541,
+        "noShow": 5,
+        "late": 7,
+        "breaks": 20.7,
+        "avp": 43.3,
+        "shifts": 15
+      },
+      {
+        "id": 1719311,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 0.8,
+        "avp": 21.4,
+        "shifts": 8
+      },
+      {
+        "id": 4491547,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 14.7,
+        "avp": 35.3,
+        "shifts": 10
+      },
+      {
+        "id": 2113059,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 7.3,
+        "avp": 25.6,
+        "shifts": 9
+      },
+      {
+        "id": 4258544,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4807969,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 5.4,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 3671555,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 9.0,
+        "avp": 63.5,
+        "shifts": 12
+      },
+      {
+        "id": 4542744,
+        "noShow": 5,
+        "late": 4,
+        "breaks": 17.3,
+        "avp": 22.1,
+        "shifts": 10
+      },
+      {
+        "id": 4773174,
+        "noShow": 5,
+        "late": 10,
+        "breaks": 17.6,
+        "avp": 60.8,
+        "shifts": 17
+      },
+      {
+        "id": 4699329,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 0.6,
+        "avp": 70.3,
+        "shifts": 8
+      },
+      {
+        "id": 4681894,
+        "noShow": 5,
+        "late": 7,
+        "breaks": 13.7,
+        "avp": 50.7,
+        "shifts": 17
+      },
+      {
+        "id": 1235541,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 5.4,
+        "avp": 55.3,
+        "shifts": 9
+      },
+      {
+        "id": 4769846,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4777790,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 13.7,
+        "avp": 41.6,
+        "shifts": 11
+      },
+      {
+        "id": 4517903,
+        "noShow": 5,
+        "late": 6,
+        "breaks": 7.4,
+        "avp": 48.6,
+        "shifts": 12
+      },
+      {
+        "id": 3884095,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 3.6,
+        "avp": 68.4,
+        "shifts": 10
+      },
+      {
+        "id": 2199245,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 7.2,
+        "avp": 49.7,
+        "shifts": 12
+      },
+      {
+        "id": 4611674,
+        "noShow": 5,
+        "late": 5,
+        "breaks": 12.3,
+        "avp": 45.9,
+        "shifts": 11
+      },
+      {
+        "id": 1039740,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 2.9,
+        "avp": 13.0,
+        "shifts": 8
+      },
+      {
+        "id": 4804579,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 0.2,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 1581619,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 1.2,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4062792,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 9.0,
+        "avp": 14.2,
+        "shifts": 7
+      },
+      {
+        "id": 4633855,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4769673,
+        "noShow": 5,
+        "late": 4,
+        "breaks": 8.0,
+        "avp": 11.6,
+        "shifts": 10
+      },
+      {
+        "id": 1486723,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 7.9,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4387822,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 9.1,
+        "avp": 34.0,
+        "shifts": 8
+      },
+      {
+        "id": 4638882,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 2.3,
+        "avp": 18.1,
+        "shifts": 9
+      },
+      {
+        "id": 4242766,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 10.9,
+        "avp": 41.0,
+        "shifts": 11
+      },
+      {
+        "id": 4591723,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 9.0,
+        "avp": 49.5,
+        "shifts": 9
+      },
+      {
+        "id": 4489101,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 8.7,
+        "avp": 35.1,
+        "shifts": 9
+      },
+      {
+        "id": 4036451,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.4,
+        "avp": 54.4,
+        "shifts": 7
+      },
+      {
+        "id": 1878123,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 2.3,
+        "avp": 47.0,
+        "shifts": 9
+      },
+      {
+        "id": 4710568,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 5.5,
+        "avp": 34.7,
+        "shifts": 6
+      },
+      {
+        "id": 1684340,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 1.2,
+        "avp": 78.1,
+        "shifts": 6
+      },
+      {
+        "id": 3902256,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 996019,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 6.0,
+        "avp": 19.4,
+        "shifts": 8
+      },
+      {
+        "id": 1798369,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 5.2,
+        "avp": 37.5,
+        "shifts": 7
+      },
+      {
+        "id": 4380306,
+        "noShow": 4,
+        "late": 7,
+        "breaks": 9.9,
+        "avp": 54.2,
+        "shifts": 13
+      },
+      {
+        "id": 4222761,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 3.0,
+        "avp": 71.1,
+        "shifts": 12
+      },
+      {
+        "id": 1627104,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 15.2,
+        "avp": 11.4,
+        "shifts": 7
+      },
+      {
+        "id": 4769937,
+        "noShow": 4,
+        "late": 9,
+        "breaks": 21.3,
+        "avp": 38.7,
+        "shifts": 15
+      },
+      {
+        "id": 4813463,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 8.9,
+        "avp": 23.3,
+        "shifts": 7
+      },
+      {
+        "id": 1457717,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 0.3,
+        "avp": 63.6,
+        "shifts": 7
+      },
+      {
+        "id": 1660799,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 8.2,
+        "avp": 32.7,
+        "shifts": 11
+      },
+      {
+        "id": 2366868,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 4.4,
+        "avp": 88.8,
+        "shifts": 11
+      },
+      {
+        "id": 4787924,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 0.9,
+        "avp": 39.5,
+        "shifts": 7
+      },
+      {
+        "id": 2058668,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 20.6,
+        "avp": 36.7,
+        "shifts": 10
+      },
+      {
+        "id": 1523419,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 12.6,
+        "avp": 77.3,
+        "shifts": 12
+      },
+      {
+        "id": 4653313,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 13.5,
+        "avp": 32.1,
+        "shifts": 9
+      },
+      {
+        "id": 4468581,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 3.9,
+        "avp": 22.4,
+        "shifts": 7
+      },
+      {
+        "id": 3888166,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4689551,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.3,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4716133,
+        "noShow": 4,
+        "late": 9,
+        "breaks": 23.6,
+        "avp": 63.8,
+        "shifts": 19
+      },
+      {
+        "id": 4653485,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 6.4,
+        "avp": 17.4,
+        "shifts": 6
+      },
+      {
+        "id": 4800193,
+        "noShow": 4,
+        "late": 12,
+        "breaks": 7.3,
+        "avp": 82.4,
+        "shifts": 26
+      },
+      {
+        "id": 4326896,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 8.9,
+        "avp": 22.3,
+        "shifts": 7
+      },
+      {
+        "id": 1893457,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 16.2,
+        "avp": 30.8,
+        "shifts": 10
+      },
+      {
+        "id": 4288140,
+        "noShow": 4,
+        "late": 5,
+        "breaks": 15.4,
+        "avp": 55.0,
+        "shifts": 10
+      },
+      {
+        "id": 4321677,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 1.9,
+        "avp": 41.8,
+        "shifts": 9
+      },
+      {
+        "id": 2639837,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.2,
+        "avp": 38.5,
+        "shifts": 6
+      },
+      {
+        "id": 3831965,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4657024,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4759345,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 1.0,
+        "avp": 2.4,
+        "shifts": 7
+      },
+      {
+        "id": 2402693,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 0.7,
+        "avp": 24.6,
+        "shifts": 7
+      },
+      {
+        "id": 2537145,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 3.3,
+        "avp": 68.5,
+        "shifts": 8
+      },
+      {
+        "id": 4738989,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 4806991,
+        "noShow": 4,
+        "late": 5,
+        "breaks": 1.9,
+        "avp": 40.5,
+        "shifts": 10
+      },
+      {
+        "id": 2222699,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4802907,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 10.1,
+        "avp": 29.3,
+        "shifts": 9
+      },
+      {
+        "id": 4755163,
+        "noShow": 4,
+        "late": 5,
+        "breaks": 18.5,
+        "avp": 20.3,
+        "shifts": 10
+      },
+      {
+        "id": 4783167,
+        "noShow": 4,
+        "late": 8,
+        "breaks": 7.4,
+        "avp": 83.7,
+        "shifts": 14
+      },
+      {
+        "id": 4591657,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 5.2,
+        "avp": 46.4,
+        "shifts": 9
+      },
+      {
+        "id": 4700747,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 1.3,
+        "avp": 0.1,
+        "shifts": 9
+      },
+      {
+        "id": 4740380,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 3.4,
+        "avp": 54.0,
+        "shifts": 6
+      },
+      {
+        "id": 4729946,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 8.0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 1835046,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 4.2,
+        "avp": 49.8,
+        "shifts": 7
+      },
+      {
+        "id": 4687115,
+        "noShow": 4,
+        "late": 5,
+        "breaks": 7.4,
+        "avp": 44.6,
+        "shifts": 10
+      }
+    ],
+    "Nasr city": [
+      {
+        "id": 2160437,
+        "noShow": 10,
+        "late": 1,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 11
+      },
+      {
+        "id": 2497581,
+        "noShow": 10,
+        "late": 0,
+        "breaks": 2.8,
+        "avp": 15.5,
+        "shifts": 11
+      },
+      {
+        "id": 2654871,
+        "noShow": 9,
+        "late": 6,
+        "breaks": 6.8,
+        "avp": 36.4,
+        "shifts": 15
+      },
+      {
+        "id": 4761336,
+        "noShow": 8,
+        "late": 5,
+        "breaks": 20.3,
+        "avp": 21.2,
+        "shifts": 15
+      },
+      {
+        "id": 4803108,
+        "noShow": 8,
+        "late": 1,
+        "breaks": 4.6,
+        "avp": 0.0,
+        "shifts": 9
+      },
+      {
+        "id": 2070739,
+        "noShow": 8,
+        "late": 1,
+        "breaks": 14.0,
+        "avp": 33.5,
+        "shifts": 14
+      },
+      {
+        "id": 4754402,
+        "noShow": 8,
+        "late": 7,
+        "breaks": 13.4,
+        "avp": 33.2,
+        "shifts": 17
+      },
+      {
+        "id": 2269368,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 9.8,
+        "avp": 33.9,
+        "shifts": 11
+      },
+      {
+        "id": 4802380,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 8
+      },
+      {
+        "id": 2834196,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 6.3,
+        "avp": 0.0,
+        "shifts": 8
+      },
+      {
+        "id": 2659438,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 8
+      },
+      {
+        "id": 3926637,
+        "noShow": 7,
+        "late": 4,
+        "breaks": 3.8,
+        "avp": 41.4,
+        "shifts": 11
+      },
+      {
+        "id": 4810407,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 2.0,
+        "avp": 4.4,
+        "shifts": 7
+      },
+      {
+        "id": 4765718,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4724926,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 4.0,
+        "avp": 57.6,
+        "shifts": 11
+      },
+      {
+        "id": 4498025,
+        "noShow": 6,
+        "late": 4,
+        "breaks": 10.7,
+        "avp": 43.9,
+        "shifts": 19
+      },
+      {
+        "id": 1653982,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 3.2,
+        "avp": 30.2,
+        "shifts": 7
+      },
+      {
+        "id": 4812562,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4616204,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 7.3,
+        "avp": 27.9,
+        "shifts": 10
+      },
+      {
+        "id": 4764539,
+        "noShow": 6,
+        "late": 8,
+        "breaks": 12.9,
+        "avp": 41.7,
+        "shifts": 15
+      },
+      {
+        "id": 2471618,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 13.2,
+        "avp": 8.7,
+        "shifts": 9
+      },
+      {
+        "id": 2023378,
+        "noShow": 6,
+        "late": 8,
+        "breaks": 20.5,
+        "avp": 35.3,
+        "shifts": 14
+      },
+      {
+        "id": 4559589,
+        "noShow": 6,
+        "late": 5,
+        "breaks": 2.1,
+        "avp": 16.3,
+        "shifts": 11
+      },
+      {
+        "id": 4150983,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.5,
+        "avp": 24.3,
+        "shifts": 6
+      },
+      {
+        "id": 4760895,
+        "noShow": 5,
+        "late": 5,
+        "breaks": 32.8,
+        "avp": 19.2,
+        "shifts": 12
+      },
+      {
+        "id": 4591503,
+        "noShow": 5,
+        "late": 11,
+        "breaks": 16.7,
+        "avp": 34.1,
+        "shifts": 19
+      },
+      {
+        "id": 4740372,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 15.8,
+        "avp": 10.4,
+        "shifts": 10
+      },
+      {
+        "id": 4587819,
+        "noShow": 5,
+        "late": 4,
+        "breaks": 23.1,
+        "avp": 13.9,
+        "shifts": 10
+      },
+      {
+        "id": 4754642,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 10
+      },
+      {
+        "id": 4707745,
+        "noShow": 5,
+        "late": 6,
+        "breaks": 17.5,
+        "avp": 15.3,
+        "shifts": 11
+      },
+      {
+        "id": 4694205,
+        "noShow": 5,
+        "late": 5,
+        "breaks": 11.7,
+        "avp": 22.4,
+        "shifts": 11
+      },
+      {
+        "id": 4752344,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 20.7,
+        "avp": 32.9,
+        "shifts": 13
+      },
+      {
+        "id": 4764497,
+        "noShow": 5,
+        "late": 6,
+        "breaks": 19.9,
+        "avp": 25.3,
+        "shifts": 11
+      },
+      {
+        "id": 4809263,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 1.1,
+        "avp": 21.8,
+        "shifts": 6
+      },
+      {
+        "id": 4719875,
+        "noShow": 5,
+        "late": 4,
+        "breaks": 20.8,
+        "avp": 22.2,
+        "shifts": 13
+      },
+      {
+        "id": 4811704,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 2.3,
+        "avp": 6.8,
+        "shifts": 6
+      },
+      {
+        "id": 4722464,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 5.3,
+        "avp": 53.9,
+        "shifts": 11
+      },
+      {
+        "id": 4763858,
+        "noShow": 5,
+        "late": 13,
+        "breaks": 27.1,
+        "avp": 59.9,
+        "shifts": 23
+      },
+      {
+        "id": 4806413,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 0.5,
+        "avp": 30.0,
+        "shifts": 7
+      },
+      {
+        "id": 4804615,
+        "noShow": 5,
+        "late": 4,
+        "breaks": 3.8,
+        "avp": 5.9,
+        "shifts": 9
+      },
+      {
+        "id": 4710477,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 8.4,
+        "avp": 0.0,
+        "shifts": 9
+      },
+      {
+        "id": 3674158,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 7.9,
+        "avp": 25.2,
+        "shifts": 12
+      },
+      {
+        "id": 2491690,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 35.2,
+        "avp": 56.8,
+        "shifts": 12
+      },
+      {
+        "id": 4594352,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 5.6,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4807891,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 11.7,
+        "avp": 35.0,
+        "shifts": 10
+      },
+      {
+        "id": 4654155,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4765814,
+        "noShow": 4,
+        "late": 6,
+        "breaks": 25.2,
+        "avp": 55.4,
+        "shifts": 13
+      },
+      {
+        "id": 4555366,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 5.2,
+        "avp": 33.7,
+        "shifts": 14
+      },
+      {
+        "id": 4628239,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 4.1,
+        "avp": 48.0,
+        "shifts": 8
+      },
+      {
+        "id": 4631091,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 8.5,
+        "avp": 32.9,
+        "shifts": 10
+      },
+      {
+        "id": 4150600,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 4.3,
+        "avp": 50.4,
+        "shifts": 13
+      },
+      {
+        "id": 4752436,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 1.7,
+        "avp": 62.0,
+        "shifts": 8
+      },
+      {
+        "id": 4337254,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 19.1,
+        "avp": 32.0,
+        "shifts": 10
+      },
+      {
+        "id": 4811635,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 2.0,
+        "avp": 15.2,
+        "shifts": 6
+      },
+      {
+        "id": 2462535,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 1.7,
+        "avp": 1.1,
+        "shifts": 6
+      },
+      {
+        "id": 1760212,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 26.6,
+        "avp": 35.6,
+        "shifts": 11
+      },
+      {
+        "id": 4804726,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 4.8,
+        "avp": 15.7,
+        "shifts": 6
+      },
+      {
+        "id": 4159265,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 4.0,
+        "avp": 23.5,
+        "shifts": 7
+      },
+      {
+        "id": 4747803,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 13.1,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4730363,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 9.4,
+        "avp": 0.7,
+        "shifts": 6
+      },
+      {
+        "id": 2822272,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 1950193,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 9.2,
+        "avp": 27.8,
+        "shifts": 14
+      },
+      {
+        "id": 4565167,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 11.4,
+        "avp": 15.6,
+        "shifts": 8
+      },
+      {
+        "id": 4804608,
+        "noShow": 4,
+        "late": 9,
+        "breaks": 8.3,
+        "avp": 69.9,
+        "shifts": 15
+      },
+      {
+        "id": 4802477,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 6.8,
+        "avp": 10.4,
+        "shifts": 7
+      },
+      {
+        "id": 4520413,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 9.2,
+        "avp": 63.2,
+        "shifts": 16
+      },
+      {
+        "id": 4721720,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 17.1,
+        "avp": 51.8,
+        "shifts": 10
+      },
+      {
+        "id": 4786524,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 11.3,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 1780832,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4808104,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 3435626,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 0.2,
+        "avp": 56.1,
+        "shifts": 8
+      },
+      {
+        "id": 4008960,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 3.4,
+        "avp": 69.2,
+        "shifts": 8
+      },
+      {
+        "id": 4604088,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 4.6,
+        "avp": 61.5,
+        "shifts": 13
+      },
+      {
+        "id": 1052863,
+        "noShow": 4,
+        "late": 6,
+        "breaks": 1.5,
+        "avp": 53.8,
+        "shifts": 10
+      },
+      {
+        "id": 4807266,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 1.6,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 2483167,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 14.6,
+        "avp": 45.6,
+        "shifts": 9
+      },
+      {
+        "id": 4739108,
+        "noShow": 4,
+        "late": 7,
+        "breaks": 13.2,
+        "avp": 69.0,
+        "shifts": 11
+      },
+      {
+        "id": 1159093,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 6.3,
+        "avp": 0.5,
+        "shifts": 12
+      }
+    ],
+    "Ain shams": [
+      {
+        "id": 4783214,
+        "noShow": 8,
+        "late": 2,
+        "breaks": 12.2,
+        "avp": 31.9,
+        "shifts": 14
+      },
+      {
+        "id": 2659130,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 2.3,
+        "avp": 9.9,
+        "shifts": 9
+      },
+      {
+        "id": 2654773,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 8
+      },
+      {
+        "id": 4703587,
+        "noShow": 8,
+        "late": 1,
+        "breaks": 4.4,
+        "avp": 20.0,
+        "shifts": 12
+      },
+      {
+        "id": 4280168,
+        "noShow": 7,
+        "late": 3,
+        "breaks": 10.6,
+        "avp": 20.1,
+        "shifts": 10
+      },
+      {
+        "id": 4642949,
+        "noShow": 7,
+        "late": 4,
+        "breaks": 4.6,
+        "avp": 36.3,
+        "shifts": 11
+      },
+      {
+        "id": 4602629,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 5.2,
+        "avp": 0.0,
+        "shifts": 9
+      },
+      {
+        "id": 2381788,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 5.9,
+        "avp": 0.0,
+        "shifts": 9
+      },
+      {
+        "id": 4711170,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 6.1,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 4807028,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 2185940,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0.8,
+        "avp": 12.6,
+        "shifts": 8
+      },
+      {
+        "id": 4630817,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 3.3,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4802570,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 9
+      },
+      {
+        "id": 4802394,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 4.7,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 4760807,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 2.0,
+        "avp": 0.0,
+        "shifts": 7
+      },
+      {
+        "id": 4809195,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 2.3,
+        "avp": 29.5,
+        "shifts": 6
+      },
+      {
+        "id": 4655897,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4758475,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 9.6,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4703334,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 2823637,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 18.2,
+        "avp": 40.1,
+        "shifts": 19
+      },
+      {
+        "id": 4724626,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 2.7,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4752314,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 42.8,
+        "shifts": 9
+      },
+      {
+        "id": 1417543,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 0,
+        "avp": 81.9,
+        "shifts": 12
+      },
+      {
+        "id": 4783169,
+        "noShow": 4,
+        "late": 6,
+        "breaks": 25.3,
+        "avp": 55.3,
+        "shifts": 11
+      },
+      {
+        "id": 4614833,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 7.7,
+        "avp": 52.1,
+        "shifts": 7
+      },
+      {
+        "id": 4046863,
+        "noShow": 4,
+        "late": 6,
+        "breaks": 16.6,
+        "avp": 56.7,
+        "shifts": 11
+      },
+      {
+        "id": 4746793,
+        "noShow": 4,
+        "late": 7,
+        "breaks": 9.5,
+        "avp": 58.9,
+        "shifts": 12
+      },
+      {
+        "id": 3925170,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 1.2,
+        "avp": 52.2,
+        "shifts": 9
+      }
+    ]
+  },
+  "hybrid": {
+    "yday": {
+      "10186": {
+        "riders": 54,
+        "actHrs": 667.94,
+        "orders": 1348,
+        "dt": 11.369,
+        "rat": 0.403,
+        "tv": 0.451,
+        "tc": 5.415,
+        "onTime": 0.5289,
+        "planHrs": 671.6,
+        "noShow": 0.0,
+        "lateLogin": 0.3455,
+        "breakMin": 10.05
+      },
+      "10196": {
+        "riders": 61,
+        "actHrs": 729.41,
+        "orders": 1472,
+        "dt": 17.504,
+        "rat": 1.461,
+        "tv": 1.245,
+        "tc": 8.222,
+        "onTime": 0.8927,
+        "planHrs": 761.75,
+        "noShow": 0.04412,
+        "lateLogin": 0.25,
+        "breakMin": 8.82
+      },
+      "10198": {
+        "riders": 72,
+        "actHrs": 834.01,
+        "orders": 1682,
+        "dt": 12.618,
+        "rat": 0.798,
+        "tv": 0.743,
+        "tc": 6.12,
+        "onTime": 0.9298,
+        "planHrs": 901.75,
+        "noShow": 0.0125,
+        "lateLogin": 0.3625,
+        "breakMin": 21.74
+      },
+      "10216": {
+        "riders": 34,
+        "actHrs": 408.88,
+        "orders": 890,
+        "dt": 15.857,
+        "rat": 1.355,
+        "tv": 0.654,
+        "tc": 7.192,
+        "onTime": 0.8989,
+        "planHrs": 435.89,
+        "noShow": 0.0,
+        "lateLogin": 0.3243,
+        "breakMin": 9.29
+      },
+      "10218": {
+        "riders": 82,
+        "actHrs": 1023.46,
+        "orders": 2035,
+        "dt": 10.775,
+        "rat": 0.476,
+        "tv": 0.384,
+        "tc": 5.149,
+        "onTime": 0.9641,
+        "planHrs": 1052.76,
+        "noShow": 0.01176,
+        "lateLogin": 0.3765,
+        "breakMin": 11.68
+      },
+      "10219": {
+        "riders": 42,
+        "actHrs": 483.19,
+        "orders": 850,
+        "dt": 20.036,
+        "rat": 2.36,
+        "tv": 1.523,
+        "tc": 9.676,
+        "onTime": 0.8188,
+        "planHrs": 509.68,
+        "noShow": 0.01818,
+        "lateLogin": 0.4364,
+        "breakMin": 21.43
+      },
+      "10229": {
+        "riders": 19,
+        "actHrs": 213.64,
+        "orders": 386,
+        "dt": 18.503,
+        "rat": 2.489,
+        "tv": 1.585,
+        "tc": 7.75,
+        "onTime": 0.8756,
+        "planHrs": 278.99,
+        "noShow": 0.07143,
+        "lateLogin": 0.2143,
+        "breakMin": 21.94
+      },
+      "10230": {
+        "riders": 27,
+        "actHrs": 319.63,
+        "orders": 653,
+        "dt": 14.584,
+        "rat": 1.372,
+        "tv": 1.068,
+        "tc": 6.101,
+        "onTime": 0.908,
+        "planHrs": 344.37,
+        "noShow": 0.0,
+        "lateLogin": 0.4839,
+        "breakMin": 11.67
+      }
+    },
+    "wtd": {
+      "10186": {
+        "riders": 58,
+        "actHrs": 1282.53,
+        "orders": 2586,
+        "dt": 11.548,
+        "rat": 0.458,
+        "tv": 0.475,
+        "tc": 5.679,
+        "onTime": 0.5363,
+        "planHrs": 1289.85,
+        "noShow": 0.0,
+        "lateLogin": 0.33333,
+        "breakMin": 9.843
+      },
+      "10196": {
+        "riders": 71,
+        "actHrs": 1476.16,
+        "orders": 2992,
+        "dt": 16.69,
+        "rat": 1.229,
+        "tv": 1.201,
+        "tc": 7.849,
+        "onTime": 0.9068,
+        "planHrs": 1576.39,
+        "noShow": 0.05634,
+        "lateLogin": 0.29577,
+        "breakMin": 6.772
+      },
+      "10198": {
+        "riders": 76,
+        "actHrs": 1507.33,
+        "orders": 3310,
+        "dt": 12.765,
+        "rat": 0.922,
+        "tv": 0.981,
+        "tc": 6.124,
+        "onTime": 0.9299,
+        "planHrs": 1749.25,
+        "noShow": 0.02649,
+        "lateLogin": 0.3245,
+        "breakMin": 21.644
+      },
+      "10216": {
+        "riders": 35,
+        "actHrs": 750.4,
+        "orders": 1626,
+        "dt": 15.84,
+        "rat": 1.531,
+        "tv": 0.685,
+        "tc": 7.221,
+        "onTime": 0.9065,
+        "planHrs": 849.21,
+        "noShow": 0.06757,
+        "lateLogin": 0.24324,
+        "breakMin": 20.94
+      },
+      "10218": {
+        "riders": 87,
+        "actHrs": 1843.84,
+        "orders": 3958,
+        "dt": 10.91,
+        "rat": 0.56,
+        "tv": 0.472,
+        "tc": 5.177,
+        "onTime": 0.9565,
+        "planHrs": 1924.67,
+        "noShow": 0.01274,
+        "lateLogin": 0.33758,
+        "breakMin": 10.446
+      },
+      "10219": {
+        "riders": 43,
+        "actHrs": 857.81,
+        "orders": 1595,
+        "dt": 19.868,
+        "rat": 2.303,
+        "tv": 1.53,
+        "tc": 9.614,
+        "onTime": 0.8163,
+        "planHrs": 906.39,
+        "noShow": 0.0463,
+        "lateLogin": 0.37037,
+        "breakMin": 13.375
+      },
+      "10229": {
+        "riders": 25,
+        "actHrs": 458.6,
+        "orders": 840,
+        "dt": 17.849,
+        "rat": 1.93,
+        "tv": 1.657,
+        "tc": 7.755,
+        "onTime": 0.8893,
+        "planHrs": 616.49,
+        "noShow": 0.08333,
+        "lateLogin": 0.25,
+        "breakMin": 16.365
+      },
+      "10230": {
+        "riders": 29,
+        "actHrs": 618.35,
+        "orders": 1273,
+        "dt": 14.79,
+        "rat": 1.179,
+        "tv": 0.882,
+        "tc": 5.935,
+        "onTime": 0.9175,
+        "planHrs": 680.37,
+        "noShow": 0.03333,
+        "lateLogin": 0.5,
+        "breakMin": 14.435
+      }
+    },
+    "mtd": {
+      "10186": {
+        "riders": 70,
+        "actHrs": 6211.62,
+        "orders": 13708,
+        "dt": 11.722,
+        "rat": 0.525,
+        "tv": 0.783,
+        "tc": 5.699,
+        "onTime": 0.5505,
+        "planHrs": 6773.97,
+        "noShow": 0.04561,
+        "lateLogin": 0.22807,
+        "breakMin": 11.258
+      },
+      "10196": {
+        "riders": 97,
+        "actHrs": 7821.39,
+        "orders": 16367,
+        "dt": 16.89,
+        "rat": 1.221,
+        "tv": 1.205,
+        "tc": 7.745,
+        "onTime": 0.9003,
+        "planHrs": 8572.63,
+        "noShow": 0.05819,
+        "lateLogin": 0.29093,
+        "breakMin": 8.487
+      },
+      "10198": {
+        "riders": 107,
+        "actHrs": 7666.76,
+        "orders": 17140,
+        "dt": 13.176,
+        "rat": 1.037,
+        "tv": 1.055,
+        "tc": 6.16,
+        "onTime": 0.9282,
+        "planHrs": 8909.76,
+        "noShow": 0.03846,
+        "lateLogin": 0.33289,
+        "breakMin": 21.684
+      },
+      "10216": {
+        "riders": 45,
+        "actHrs": 3534.04,
+        "orders": 7936,
+        "dt": 15.863,
+        "rat": 1.334,
+        "tv": 0.808,
+        "tc": 7.29,
+        "onTime": 0.9118,
+        "planHrs": 4041.82,
+        "noShow": 0.06647,
+        "lateLogin": 0.21098,
+        "breakMin": 16.246
+      },
+      "10218": {
+        "riders": 101,
+        "actHrs": 8622.31,
+        "orders": 20823,
+        "dt": 11.306,
+        "rat": 0.716,
+        "tv": 0.713,
+        "tc": 5.277,
+        "onTime": 0.9572,
+        "planHrs": 9291.69,
+        "noShow": 0.03158,
+        "lateLogin": 0.35,
+        "breakMin": 12.185
+      },
+      "10219": {
+        "riders": 54,
+        "actHrs": 3901.16,
+        "orders": 7529,
+        "dt": 20.07,
+        "rat": 2.146,
+        "tv": 1.589,
+        "tc": 10.009,
+        "onTime": 0.8489,
+        "planHrs": 4370.65,
+        "noShow": 0.03233,
+        "lateLogin": 0.25,
+        "breakMin": 18.811
+      },
+      "10229": {
+        "riders": 42,
+        "actHrs": 2125.76,
+        "orders": 3652,
+        "dt": 16.597,
+        "rat": 1.37,
+        "tv": 1.65,
+        "tc": 7.223,
+        "onTime": 0.9184,
+        "planHrs": 3192.45,
+        "noShow": 0.14189,
+        "lateLogin": 0.34122,
+        "breakMin": 19.786
+      },
+      "10230": {
+        "riders": 41,
+        "actHrs": 3396.66,
+        "orders": 6862,
+        "dt": 16.988,
+        "rat": 1.519,
+        "tv": 1.095,
+        "tc": 6.385,
+        "onTime": 0.8949,
+        "planHrs": 3926.43,
+        "noShow": 0.07101,
+        "lateLogin": 0.39941,
+        "breakMin": 29.482
+      }
+    }
+  },
+  "perf": {
+    "yday": {
+      "620008": {
+        "orders_total": 1622,
+        "dt": 12.09,
+        "rat": 0.796,
+        "tv": 0.95,
+        "tc": 5.56,
+        "avtc": 3.367,
+        "fir": 3.937,
+        "ot": 0.5672,
+        "l10": 0.0161,
+        "l5": 0.036
+      },
+      "619849": {
+        "orders_total": 2127,
+        "dt": 19.05,
+        "rat": 2.741,
+        "tv": 3.356,
+        "tc": 8.843,
+        "avtc": 3.404,
+        "fir": 7.272,
+        "ot": 0.8068,
+        "l10": 0.0934,
+        "l5": 0.1891
+      },
+      "760059": {
+        "orders_total": 2286,
+        "dt": 17.96,
+        "rat": 2.616,
+        "tv": 1.88,
+        "tc": 7.88,
+        "avtc": 4.605,
+        "fir": 7.114,
+        "ot": 0.8758,
+        "l10": 0.1051,
+        "l5": 0.2105
+      },
+      "801850": {
+        "orders_total": 1272,
+        "dt": 20.56,
+        "rat": 3.453,
+        "tv": 3.491,
+        "tc": 7.692,
+        "avtc": 5.209,
+        "fir": 10.435,
+        "ot": 0.8514,
+        "l10": 0.1248,
+        "l5": 0.2306
+      },
+      "783048": {
+        "orders_total": 2522,
+        "dt": 11.76,
+        "rat": 0.72,
+        "tv": 0.972,
+        "tc": 5.566,
+        "avtc": 3.238,
+        "fir": 3.442,
+        "ot": 0.9544,
+        "l10": 0.0425,
+        "l5": 0.1167
+      },
+      "793636": {
+        "orders_total": 2208,
+        "dt": 13.36,
+        "rat": 0.912,
+        "tv": 1.477,
+        "tc": 6.249,
+        "avtc": 3.558,
+        "fir": 4.682,
+        "ot": 0.9207,
+        "l10": 0.0728,
+        "l5": 0.1656
+      },
+      "619844": {
+        "orders_total": 2920,
+        "dt": 19.22,
+        "rat": 1.624,
+        "tv": 2.686,
+        "tc": 8.694,
+        "avtc": 5.157,
+        "fir": 7.476,
+        "ot": 0.8842,
+        "l10": 0.1057,
+        "l5": 0.2234
+      },
+      "717765": {
+        "orders_total": 2675,
+        "dt": 18.45,
+        "rat": 1.457,
+        "tv": 2.459,
+        "tc": 8.948,
+        "avtc": 4.303,
+        "fir": 6.105,
+        "ot": 0.8849,
+        "l10": 0.0884,
+        "l5": 0.179
+      },
+      "655461": {
+        "orders_total": 2252,
+        "dt": 23.26,
+        "rat": 3.544,
+        "tv": 2.713,
+        "tc": 10.429,
+        "avtc": 5.623,
+        "fir": 9.75,
+        "ot": 0.786,
+        "l10": 0.1555,
+        "l5": 0.2615
+      }
+    },
+    "l3d": {
+      "620008": {
+        "orders_total": 5025,
+        "dt": 12.69,
+        "rat": 0.953,
+        "tv": 1.278,
+        "tc": 5.877,
+        "avtc": 3.308,
+        "fir": 4.319,
+        "ot": 0.6003,
+        "l10": 0.0185,
+        "l5": 0.041
+      },
+      "619849": {
+        "orders_total": 6387,
+        "dt": 18.01,
+        "rat": 2.352,
+        "tv": 3.003,
+        "tc": 8.55,
+        "avtc": 3.3,
+        "fir": 6.66,
+        "ot": 0.7979,
+        "l10": 0.0738,
+        "l5": 0.1515
+      },
+      "760059": {
+        "orders_total": 6949,
+        "dt": 17.62,
+        "rat": 2.296,
+        "tv": 2.044,
+        "tc": 7.796,
+        "avtc": 4.462,
+        "fir": 6.837,
+        "ot": 0.8881,
+        "l10": 0.0963,
+        "l5": 0.1962
+      },
+      "801850": {
+        "orders_total": 3739,
+        "dt": 19.38,
+        "rat": 2.599,
+        "tv": 3.644,
+        "tc": 7.463,
+        "avtc": 4.92,
+        "fir": 9.637,
+        "ot": 0.8846,
+        "l10": 0.0971,
+        "l5": 0.2004
+      },
+      "783048": {
+        "orders_total": 7541,
+        "dt": 12.48,
+        "rat": 0.951,
+        "tv": 1.294,
+        "tc": 5.781,
+        "avtc": 3.3,
+        "fir": 4.08,
+        "ot": 0.9433,
+        "l10": 0.0527,
+        "l5": 0.1371
+      },
+      "793636": {
+        "orders_total": 6707,
+        "dt": 14.04,
+        "rat": 1.133,
+        "tv": 1.971,
+        "tc": 6.338,
+        "avtc": 3.542,
+        "fir": 5.167,
+        "ot": 0.9145,
+        "l10": 0.0766,
+        "l5": 0.1782
+      },
+      "619844": {
+        "orders_total": 8844,
+        "dt": 18.54,
+        "rat": 1.481,
+        "tv": 2.731,
+        "tc": 8.359,
+        "avtc": 4.909,
+        "fir": 7.161,
+        "ot": 0.8953,
+        "l10": 0.0945,
+        "l5": 0.2154
+      },
+      "717765": {
+        "orders_total": 7782,
+        "dt": 19.67,
+        "rat": 1.475,
+        "tv": 2.597,
+        "tc": 8.813,
+        "avtc": 5.169,
+        "fir": 5.468,
+        "ot": 0.8907,
+        "l10": 0.0868,
+        "l5": 0.1922
+      },
+      "655461": {
+        "orders_total": 6857,
+        "dt": 22.75,
+        "rat": 3.341,
+        "tv": 2.716,
+        "tc": 10.367,
+        "avtc": 5.369,
+        "fir": 9.33,
+        "ot": 0.7909,
+        "l10": 0.1527,
+        "l5": 0.2643
+      }
+    },
+    "l7d": {
+      "620008": {
+        "orders_total": 11161,
+        "dt": 12.33,
+        "rat": 0.791,
+        "tv": 1.215,
+        "tc": 5.719,
+        "avtc": 3.343,
+        "fir": 4.267,
+        "ot": 0.5914,
+        "l10": 0.0166,
+        "l5": 0.0355
+      },
+      "619849": {
+        "orders_total": 14409,
+        "dt": 17.2,
+        "rat": 1.963,
+        "tv": 2.666,
+        "tc": 8.189,
+        "avtc": 3.462,
+        "fir": 5.823,
+        "ot": 0.8001,
+        "l10": 0.0589,
+        "l5": 0.1267
+      },
+      "760059": {
+        "orders_total": 15253,
+        "dt": 17.3,
+        "rat": 1.913,
+        "tv": 2.124,
+        "tc": 7.766,
+        "avtc": 4.459,
+        "fir": 6.537,
+        "ot": 0.8978,
+        "l10": 0.0896,
+        "l5": 0.1955
+      },
+      "801850": {
+        "orders_total": 8465,
+        "dt": 18.13,
+        "rat": 1.989,
+        "tv": 3.539,
+        "tc": 7.066,
+        "avtc": 4.81,
+        "fir": 8.81,
+        "ot": 0.906,
+        "l10": 0.0823,
+        "l5": 0.1823
+      },
+      "783048": {
+        "orders_total": 17377,
+        "dt": 12.66,
+        "rat": 1.006,
+        "tv": 1.348,
+        "tc": 5.831,
+        "avtc": 3.312,
+        "fir": 4.157,
+        "ot": 0.9416,
+        "l10": 0.0542,
+        "l5": 0.1376
+      },
+      "793636": {
+        "orders_total": 15516,
+        "dt": 14.46,
+        "rat": 1.306,
+        "tv": 2.089,
+        "tc": 6.431,
+        "avtc": 3.622,
+        "fir": 5.431,
+        "ot": 0.9119,
+        "l10": 0.0782,
+        "l5": 0.1801
+      },
+      "619844": {
+        "orders_total": 20570,
+        "dt": 18.92,
+        "rat": 1.625,
+        "tv": 2.769,
+        "tc": 8.352,
+        "avtc": 5.176,
+        "fir": 7.491,
+        "ot": 0.8884,
+        "l10": 0.1,
+        "l5": 0.2195
+      },
+      "717765": {
+        "orders_total": 18671,
+        "dt": 20.93,
+        "rat": 1.778,
+        "tv": 2.726,
+        "tc": 8.863,
+        "avtc": 5.796,
+        "fir": 5.385,
+        "ot": 0.8819,
+        "l10": 0.095,
+        "l5": 0.2042
+      },
+      "655461": {
+        "orders_total": 16518,
+        "dt": 21.77,
+        "rat": 2.727,
+        "tv": 2.644,
+        "tc": 10.395,
+        "avtc": 5.124,
+        "fir": 8.389,
+        "ot": 0.8236,
+        "l10": 0.13,
+        "l5": 0.2376
+      }
+    },
+    "l14d": {
+      "620008": {
+        "orders_total": 22022,
+        "dt": 12.57,
+        "rat": 0.775,
+        "tv": 1.26,
+        "tc": 5.844,
+        "avtc": 3.46,
+        "fir": 4.375,
+        "ot": 0.6005,
+        "l10": 0.0155,
+        "l5": 0.038
+      },
+      "619849": {
+        "orders_total": 29268,
+        "dt": 16.74,
+        "rat": 1.756,
+        "tv": 2.399,
+        "tc": 8.078,
+        "avtc": 3.544,
+        "fir": 5.447,
+        "ot": 0.7956,
+        "l10": 0.0515,
+        "l5": 0.113
+      },
+      "760059": {
+        "orders_total": 30171,
+        "dt": 17.27,
+        "rat": 1.705,
+        "tv": 2.072,
+        "tc": 7.833,
+        "avtc": 4.612,
+        "fir": 6.376,
+        "ot": 0.9033,
+        "l10": 0.0854,
+        "l5": 0.1927
+      },
+      "801850": {
+        "orders_total": 17149,
+        "dt": 17.76,
+        "rat": 1.682,
+        "tv": 3.292,
+        "tc": 7.056,
+        "avtc": 4.951,
+        "fir": 8.318,
+        "ot": 0.9173,
+        "l10": 0.0726,
+        "l5": 0.1735
+      },
+      "783048": {
+        "orders_total": 34700,
+        "dt": 12.3,
+        "rat": 0.927,
+        "tv": 1.262,
+        "tc": 5.68,
+        "avtc": 3.204,
+        "fir": 3.979,
+        "ot": 0.9486,
+        "l10": 0.047,
+        "l5": 0.1229
+      },
+      "793636": {
+        "orders_total": 31195,
+        "dt": 13.82,
+        "rat": 1.175,
+        "tv": 1.818,
+        "tc": 6.221,
+        "avtc": 3.518,
+        "fir": 5.041,
+        "ot": 0.9219,
+        "l10": 0.0678,
+        "l5": 0.1595
+      },
+      "619844": {
+        "orders_total": 40517,
+        "dt": 18.66,
+        "rat": 1.576,
+        "tv": 2.579,
+        "tc": 8.23,
+        "avtc": 5.239,
+        "fir": 7.323,
+        "ot": 0.8925,
+        "l10": 0.095,
+        "l5": 0.2076
+      },
+      "717765": {
+        "orders_total": 37952,
+        "dt": 20.2,
+        "rat": 1.713,
+        "tv": 2.497,
+        "tc": 8.887,
+        "avtc": 5.551,
+        "fir": 5.348,
+        "ot": 0.8887,
+        "l10": 0.0928,
+        "l5": 0.2009
+      },
+      "655461": {
+        "orders_total": 32965,
+        "dt": 22.72,
+        "rat": 2.891,
+        "tv": 2.638,
+        "tc": 10.458,
+        "avtc": 5.671,
+        "fir": 8.208,
+        "ot": 0.8274,
+        "l10": 0.1275,
+        "l5": 0.2405
+      }
+    },
+    "mtd": {
+      "620008": {
+        "orders_total": 17336,
+        "dt": 12.45,
+        "rat": 0.802,
+        "tv": 1.28,
+        "tc": 6.344,
+        "avtc": 4.15,
+        "fir": 5.54,
+        "ot": 0.5915,
+        "l10": 0.0289,
+        "l5": 0.0684
+      },
+      "619849": {
+        "orders_total": 22581,
+        "dt": 16.94,
+        "rat": 1.84,
+        "tv": 2.42,
+        "tc": 7.972,
+        "avtc": 3.201,
+        "fir": 4.92,
+        "ot": 0.7955,
+        "l10": 0.0403,
+        "l5": 0.0875
+      },
+      "760059": {
+        "orders_total": 23404,
+        "dt": 17.38,
+        "rat": 1.798,
+        "tv": 2.086,
+        "tc": 7.897,
+        "avtc": 4.316,
+        "fir": 5.807,
+        "ot": 0.8995,
+        "l10": 0.0715,
+        "l5": 0.1784
+      },
+      "801850": {
+        "orders_total": 13193,
+        "dt": 17.91,
+        "rat": 1.832,
+        "tv": 3.352,
+        "tc": 6.888,
+        "avtc": 4.798,
+        "fir": 7.792,
+        "ot": 0.9142,
+        "l10": 0.0665,
+        "l5": 0.165
+      },
+      "783048": {
+        "orders_total": 26952,
+        "dt": 12.39,
+        "rat": 0.938,
+        "tv": 1.288,
+        "tc": 6.097,
+        "avtc": 3.492,
+        "fir": 5.184,
+        "ot": 0.9473,
+        "l10": 0.0555,
+        "l5": 0.1419
+      },
+      "793636": {
+        "orders_total": 24147,
+        "dt": 14.23,
+        "rat": 1.263,
+        "tv": 1.971,
+        "tc": 5.976,
+        "avtc": 3.345,
+        "fir": 5.332,
+        "ot": 0.9164,
+        "l10": 0.0597,
+        "l5": 0.1447
+      },
+      "619844": {
+        "orders_total": 31144,
+        "dt": 18.79,
+        "rat": 1.606,
+        "tv": 2.661,
+        "tc": 8.06,
+        "avtc": 4.645,
+        "fir": 6.818,
+        "ot": 0.8886,
+        "l10": 0.0845,
+        "l5": 0.1904
+      },
+      "717765": {
+        "orders_total": 29202,
+        "dt": 20.7,
+        "rat": 1.773,
+        "tv": 2.627,
+        "tc": 8.803,
+        "avtc": 5.278,
+        "fir": 5.565,
+        "ot": 0.8832,
+        "l10": 0.0866,
+        "l5": 0.1978
+      },
+      "655461": {
+        "orders_total": 25027,
+        "dt": 22.53,
+        "rat": 2.907,
+        "tv": 2.726,
+        "tc": 10.536,
+        "avtc": 5.511,
+        "fir": 8.514,
+        "ot": 0.8231,
+        "l10": 0.1301,
+        "l5": 0.2423
+      }
+    },
+    "lm": {
+      "620008": {
+        "orders_total": 46665,
+        "dt": 14.52,
+        "rat": 1.107,
+        "tv": 1.824,
+        "tc": 6.344,
+        "avtc": 4.15,
+        "l10": 0.0289,
+        "l5": 0.0684
+      },
+      "619849": {
+        "orders_total": 63657,
+        "dt": 15.51,
+        "rat": 1.318,
+        "tv": 1.966,
+        "tc": 7.972,
+        "avtc": 3.201,
+        "l10": 0.0403,
+        "l5": 0.0875
+      },
+      "760059": {
+        "orders_total": 63092,
+        "dt": 16.55,
+        "rat": 1.328,
+        "tv": 1.949,
+        "tc": 7.897,
+        "avtc": 4.316,
+        "l10": 0.0715,
+        "l5": 0.1784
+      },
+      "801850": {
+        "orders_total": 35260,
+        "dt": 16.92,
+        "rat": 1.264,
+        "tv": 3.115,
+        "tc": 6.888,
+        "avtc": 4.798,
+        "l10": 0.0665,
+        "l5": 0.165
+      },
+      "783048": {
+        "orders_total": 71052,
+        "dt": 13.64,
+        "rat": 1.197,
+        "tv": 1.816,
+        "tc": 6.097,
+        "avtc": 3.492,
+        "l10": 0.0555,
+        "l5": 0.1419
+      },
+      "793636": {
+        "orders_total": 65931,
+        "dt": 13.42,
+        "rat": 1.051,
+        "tv": 2.02,
+        "tc": 5.976,
+        "avtc": 3.345,
+        "l10": 0.0597,
+        "l5": 0.1447
+      },
+      "619844": {
+        "orders_total": 87272,
+        "dt": 17.74,
+        "rat": 1.432,
+        "tv": 2.583,
+        "tc": 8.06,
+        "avtc": 4.645,
+        "l10": 0.0845,
+        "l5": 0.1904
+      },
+      "717765": {
+        "orders_total": 79374,
+        "dt": 18.79,
+        "rat": 1.291,
+        "tv": 2.049,
+        "tc": 8.803,
+        "avtc": 5.278,
+        "l10": 0.0866,
+        "l5": 0.1979
+      },
+      "655461": {
+        "orders_total": 73324,
+        "dt": 21.95,
+        "rat": 2.415,
+        "tv": 2.481,
+        "tc": 10.384,
+        "avtc": 5.628,
+        "l10": 0.1196,
+        "l5": 0.2283
+      }
+    }
+  },
+  "perf_shift": {
+    "yday": {
+      "10186": {
+        "l10": 0.07273,
+        "l5": 0.07273
+      },
+      "10196": {
+        "l10": 0.05882,
+        "l5": 0.08824
+      },
+      "10198": {
+        "l10": 0.0625,
+        "l5": 0.0875
+      },
+      "10216": {
+        "l10": 0.05405,
+        "l5": 0.05405
+      },
+      "10218": {
+        "l10": 0.04706,
+        "l5": 0.05882
+      },
+      "10219": {
+        "l10": 0.05455,
+        "l5": 0.07273
+      },
+      "10229": {
+        "l10": 0.14286,
+        "l5": 0.14286
+      },
+      "10230": {
+        "l10": 0.06452,
+        "l5": 0.06452
+      }
+    },
+    "l3d": {
+      "10186": {
+        "l10": 0.04545,
+        "l5": 0.05844
+      },
+      "10196": {
+        "l10": 0.06533,
+        "l5": 0.08543
+      },
+      "10198": {
+        "l10": 0.0566,
+        "l5": 0.08962
+      },
+      "10216": {
+        "l10": 0.08911,
+        "l5": 0.08911
+      },
+      "10218": {
+        "l10": 0.01869,
+        "l5": 0.04673
+      },
+      "10219": {
+        "l10": 0.02703,
+        "l5": 0.03378
+      },
+      "10229": {
+        "l10": 0.14815,
+        "l5": 0.16049
+      },
+      "10230": {
+        "l10": 0.04444,
+        "l5": 0.04444
+      }
+    },
+    "l7d": {
+      "10186": {
+        "l10": 0.04571,
+        "l5": 0.05429
+      },
+      "10196": {
+        "l10": 0.051,
+        "l5": 0.06874
+      },
+      "10198": {
+        "l10": 0.06652,
+        "l5": 0.08647
+      },
+      "10216": {
+        "l10": 0.07339,
+        "l5": 0.08257
+      },
+      "10218": {
+        "l10": 0.0276,
+        "l5": 0.04246
+      },
+      "10219": {
+        "l10": 0.03583,
+        "l5": 0.03909
+      },
+      "10229": {
+        "l10": 0.13772,
+        "l5": 0.16766
+      },
+      "10230": {
+        "l10": 0.05366,
+        "l5": 0.07317
+      }
+    },
+    "l14d": {
+      "10186": {
+        "l10": 0.04252,
+        "l5": 0.05213
+      },
+      "10196": {
+        "l10": 0.04692,
+        "l5": 0.06361
+      },
+      "10198": {
+        "l10": 0.05419,
+        "l5": 0.06544
+      },
+      "10216": {
+        "l10": 0.0531,
+        "l5": 0.05973
+      },
+      "10218": {
+        "l10": 0.02653,
+        "l5": 0.03776
+      },
+      "10219": {
+        "l10": 0.02886,
+        "l5": 0.03056
+      },
+      "10229": {
+        "l10": 0.1257,
+        "l5": 0.15084
+      },
+      "10230": {
+        "l10": 0.0446,
+        "l5": 0.06103
+      }
+    },
+    "mtd": {
+      "10186": {
+        "l10": 0.04211,
+        "l5": 0.05439
+      },
+      "10196": {
+        "l10": 0.04871,
+        "l5": 0.06495
+      },
+      "10198": {
+        "l10": 0.05172,
+        "l5": 0.06499
+      },
+      "10216": {
+        "l10": 0.05202,
+        "l5": 0.06069
+      },
+      "10218": {
+        "l10": 0.02632,
+        "l5": 0.03947
+      },
+      "10219": {
+        "l10": 0.03664,
+        "l5": 0.03879
+      },
+      "10229": {
+        "l10": 0.12162,
+        "l5": 0.15203
+      },
+      "10230": {
+        "l10": 0.04142,
+        "l5": 0.06213
+      }
+    },
+    "lm": {
+      "10186": {
+        "l10": 0.0288,
+        "l5": 0.036
+      },
+      "10196": {
+        "l10": 0.02738,
+        "l5": 0.0381
+      },
+      "10198": {
+        "l10": 0.03245,
+        "l5": 0.04387
+      },
+      "10216": {
+        "l10": 0.04348,
+        "l5": 0.0559
+      },
+      "10218": {
+        "l10": 0.03525,
+        "l5": 0.04532
+      },
+      "10219": {
+        "l10": 0.03247,
+        "l5": 0.04221
+      },
+      "10229": {
+        "l10": 0.05791,
+        "l5": 0.08241
+      },
+      "10230": {
+        "l10": 0.04889,
+        "l5": 0.05778
+      }
+    }
+  }
+}
