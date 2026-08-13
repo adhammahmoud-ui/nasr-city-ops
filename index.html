@@ -1159,6 +1159,11 @@ const DAY = {
     "Ain shams":  { utr:1.5111, riders:345, orders:4829, delivComp:4829, sumHrs:3195.77, avgHrs:9.263, lateLogin:0.2056, noShow:0.0, breakMin:35.52, fill:0.9126, acceptRate:0.9126, plannedHrs:3501.91, delivTime:27.47, rat:0.0, toVendor:4.06, onTime:0.7568, failRate:0.0268 }
   }},
   "2026-08-12":{ label:"Aug 12, 2026", zones:{
+    "Nasr city":  { utr:1.4244, riders:1795, orders:31535, delivComp:31535, sumHrs:22138.94, avgHrs:12.334, lateLogin:0.2918, noShow:0.0, breakMin:45.25, fill:0.9077, acceptRate:0.9077, plannedHrs:24390.34, delivTime:26.03, rat:0.0, toVendor:3.28, onTime:0.8219, failRate:0.0192 },
+    "Heliopolis": { utr:1.6564, riders:1745, orders:29430, delivComp:29430, sumHrs:17767.5, avgHrs:10.182, lateLogin:0.3221, noShow:0.0, breakMin:47.05, fill:0.9015, acceptRate:0.9015, plannedHrs:19709.05, delivTime:26.86, rat:0.0, toVendor:3.31, onTime:0.7394, failRate:0.0292 },
+    "Ain shams":  { utr:1.5111, riders:345, orders:4829, delivComp:4829, sumHrs:3195.77, avgHrs:9.263, lateLogin:0.2056, noShow:0.0, breakMin:35.52, fill:0.9126, acceptRate:0.9126, plannedHrs:3501.91, delivTime:27.47, rat:0.0, toVendor:4.06, onTime:0.7568, failRate:0.0268 }
+  }},
+  "2026-08-12":{ label:"Aug 12, 2026", zones:{
     "Nasr city":  { utr:2.0454, riders:1716, orders:31530, delivComp:31530, sumHrs:15414.73, avgHrs:8.983, lateLogin:0.2945, noShow:0.0478, breakMin:45.61, fill:0.8349, acceptRate:0.9816, plannedHrs:18463.19, delivTime:26.03, rat:2.5, toVendor:3.283, onTime:0.8201, failRate:0.0244 },
     "Heliopolis": { utr:2.1285, riders:1673, orders:29264, delivComp:29264, sumHrs:13748.46, avgHrs:8.218, lateLogin:0.3096, noShow:0.0907, breakMin:46.21, fill:0.7967, acceptRate:0.9817, plannedHrs:17257.07, delivTime:26.87, rat:3.27, toVendor:3.31, onTime:0.7396, failRate:0.0339 },
     "Ain shams":  { utr:1.9283, riders:336, orders:4847, delivComp:4847, sumHrs:2513.56, avgHrs:7.481, lateLogin:0.1816, noShow:0.0586, breakMin:34.07, fill:0.8038, acceptRate:0.9767, plannedHrs:3127.02, delivTime:27.5, rat:2.45, toVendor:4.062, onTime:0.7555, failRate:0.029 }
@@ -2115,34 +2120,34 @@ function renderOffenders(){
 const HYBRID_MARTS=[{id:10186,label:"Ard El Golf"},{id:10196,label:"El Tayaran"},{id:10198,label:"Masaken El Shorouk"},{id:10216,label:"Masaken Sheraton"},{id:10218,label:"El Hadeeka El Dawlya"},{id:10219,label:"Ain Shams"},{id:10229,label:"Omarat El Tawfiq"},{id:10230,label:"Hay 8"}];
 const HYBRID_DATA={
   yday:{
-10186:{utr:1.973,dt:11.3,onTime:0.5158,orders:1363,riders:54,acceptTime:0.38,toVendor:0.5,toCustomer:5.54,actHrs:690.8,planHrs:714.5,avgHrs:12.79,noShow:0.0351,lateLogin:0.2982,breakPct:0.0251},
-10196:{utr:1.906,dt:16.9,onTime:0.901,orders:1626,riders:72,acceptTime:1.04,toVendor:1.15,toCustomer:7.95,actHrs:853.0,planHrs:898.8,avgHrs:11.85,noShow:0.0132,lateLogin:0.3421,breakPct:0.0114},
-10198:{utr:1.996,dt:12.4,onTime:0.9319,orders:1717,riders:68,acceptTime:0.8,toVendor:0.69,toCustomer:5.98,actHrs:860.4,planHrs:946.7,avgHrs:12.65,noShow:0.0533,lateLogin:0.4933,breakPct:0.0184},
-10216:{utr:2.307,dt:15.7,onTime:0.9002,orders:882,riders:34,acceptTime:1.02,toVendor:0.74,toCustomer:7.2,actHrs:382.3,planHrs:420.4,avgHrs:11.24,noShow:0.0541,lateLogin:0.2703,breakPct:0.0166},
-10218:{utr:1.962,dt:10.1,onTime:0.9698,orders:2084,riders:83,acceptTime:0.37,toVendor:0.29,toCustomer:4.91,actHrs:1062.3,planHrs:1112.1,avgHrs:12.8,noShow:0.0225,lateLogin:0.4382,breakPct:0.0115},
-10219:{utr:1.886,dt:20.0,onTime:0.8582,orders:818,riders:36,acceptTime:1.99,toVendor:1.32,toCustomer:9.2,actHrs:433.7,planHrs:475.4,avgHrs:12.05,noShow:0.0,lateLogin:0.2264,breakPct:0.0217},
-10229:{utr:2.039,dt:17.2,onTime:0.8848,orders:495,riders:23,acceptTime:2.22,toVendor:1.5,toCustomer:7.19,actHrs:242.8,planHrs:326.5,avgHrs:10.56,noShow:0.1429,lateLogin:0.2857,breakPct:0.0617},
-10230:{utr:2.352,dt:14.4,onTime:0.9406,orders:707,riders:26,acceptTime:1.29,toVendor:1.16,toCustomer:5.96,actHrs:300.6,planHrs:338.3,avgHrs:11.56,noShow:0.0357,lateLogin:0.3571,breakPct:0.0394}
+10186:{utr:2.039,dt:11.3,onTime:0.5158,orders:1363,riders:55,acceptTime:0.38,toVendor:0.5,toCustomer:5.54,actHrs:668.5,planHrs:682.5,avgHrs:12.15,noShow:0.0235,lateLogin:0.0235,breakPct:0.0278},
+10196:{utr:1.931,dt:16.9,onTime:0.901,orders:1626,riders:72,acceptTime:1.04,toVendor:1.15,toCustomer:7.95,actHrs:841.9,planHrs:853.3,avgHrs:11.69,noShow:0.0103,lateLogin:0.0722,breakPct:0.0104},
+10198:{utr:2.099,dt:12.4,onTime:0.9319,orders:1717,riders:70,acceptTime:0.8,toVendor:0.69,toCustomer:5.98,actHrs:818.2,planHrs:876.7,avgHrs:11.69,noShow:0.04,lateLogin:0.06,breakPct:0.0247},
+10216:{utr:2.267,dt:15.7,onTime:0.9002,orders:882,riders:33,acceptTime:1.02,toVendor:0.74,toCustomer:7.2,actHrs:389.1,planHrs:417.4,avgHrs:11.79,noShow:0.0417,lateLogin:0.125,breakPct:0.0158},
+10218:{utr:2.004,dt:10.1,onTime:0.9698,orders:2084,riders:83,acceptTime:0.37,toVendor:0.29,toCustomer:4.91,actHrs:1039.8,planHrs:1059.0,avgHrs:12.53,noShow:0.0156,lateLogin:0.0703,breakPct:0.0146},
+10219:{utr:1.954,dt:20.0,onTime:0.8582,orders:818,riders:35,acceptTime:1.99,toVendor:1.32,toCustomer:9.2,actHrs:418.6,planHrs:449.4,avgHrs:11.96,noShow:0.0,lateLogin:0.0164,breakPct:0.0302},
+10229:{utr:2.051,dt:17.2,onTime:0.8848,orders:495,riders:23,acceptTime:2.22,toVendor:1.5,toCustomer:7.19,actHrs:241.3,planHrs:324.0,avgHrs:10.49,noShow:0.1429,lateLogin:0.2857,breakPct:0.0585},
+10230:{utr:2.38,dt:14.4,onTime:0.9406,orders:707,riders:26,acceptTime:1.29,toVendor:1.16,toCustomer:5.96,actHrs:297.1,planHrs:323.0,avgHrs:11.43,noShow:0.0263,lateLogin:0.1053,breakPct:0.0384}
   },
   wtd:{
-10186:{utr:1.947,dt:11.4,onTime:0.5282,orders:2645,riders:58,acceptTime:0.37,toVendor:0.48,toCustomer:5.54,actHrs:1358.7,planHrs:1386.1,avgHrs:23.43,noShow:0.0179,lateLogin:0.3214,breakPct:0.0105},
-10196:{utr:1.944,dt:17.2,onTime:0.896,orders:3076,riders:73,acceptTime:1.24,toVendor:1.21,toCustomer:8.09,actHrs:1582.4,planHrs:1660.5,avgHrs:21.68,noShow:0.0278,lateLogin:0.2986,breakPct:0.0065},
-10198:{utr:2.021,dt:12.5,onTime:0.9311,orders:3424,riders:76,acceptTime:0.8,toVendor:0.72,toCustomer:6.03,actHrs:1694.4,planHrs:1848.5,avgHrs:22.29,noShow:0.0323,lateLogin:0.4258,breakPct:0.0135},
-10216:{utr:2.193,dt:16.0,onTime:0.8963,orders:1735,riders:38,acceptTime:1.27,toVendor:0.72,toCustomer:7.27,actHrs:791.2,planHrs:856.3,avgHrs:20.82,noShow:0.027,lateLogin:0.2973,breakPct:0.0082},
-10218:{utr:1.939,dt:10.4,onTime:0.9669,orders:4045,riders:89,acceptTime:0.39,toVendor:0.34,toCustomer:5.05,actHrs:2085.8,planHrs:2164.8,avgHrs:23.44,noShow:0.0172,lateLogin:0.408,breakPct:0.0073},
-10219:{utr:1.8,dt:20.0,onTime:0.8418,orders:1644,riders:43,acceptTime:2.09,toVendor:1.42,toCustomer:9.45,actHrs:913.4,planHrs:981.8,avgHrs:21.24,noShow:0.0187,lateLogin:0.3364,breakPct:0.0148},
-10229:{utr:1.917,dt:17.9,onTime:0.88,orders:875,riders:26,acceptTime:2.37,toVendor:1.58,toCustomer:7.47,actHrs:456.4,planHrs:605.5,avgHrs:17.55,noShow:0.125,lateLogin:0.25,breakPct:0.029},
-10230:{utr:2.149,dt:14.6,onTime:0.9227,orders:1333,riders:29,acceptTime:1.33,toVendor:1.12,toCustomer:6.05,actHrs:620.2,planHrs:682.7,avgHrs:21.39,noShow:0.0169,lateLogin:0.4237,breakPct:0.0149}
+10186:{utr:2.013,dt:11.4,onTime:0.5282,orders:2645,riders:58,acceptTime:0.37,toVendor:0.48,toCustomer:5.54,actHrs:1313.8,planHrs:1329.0,avgHrs:22.65,noShow:0.0129,lateLogin:0.0452,breakPct:0.0116},
+10196:{utr:1.983,dt:17.2,onTime:0.896,orders:3076,riders:73,acceptTime:1.24,toVendor:1.21,toCustomer:8.09,actHrs:1551.3,planHrs:1572.4,avgHrs:21.25,noShow:0.0167,lateLogin:0.0833,breakPct:0.0063},
+10198:{utr:2.072,dt:12.5,onTime:0.9311,orders:3424,riders:76,acceptTime:0.8,toVendor:0.72,toCustomer:6.03,actHrs:1652.4,planHrs:1749.9,avgHrs:21.74,noShow:0.0199,lateLogin:0.0846,breakPct:0.0141},
+10216:{utr:2.207,dt:16.0,onTime:0.8963,orders:1735,riders:37,acceptTime:1.27,toVendor:0.72,toCustomer:7.27,actHrs:786.2,planHrs:818.1,avgHrs:21.25,noShow:0.0211,lateLogin:0.1053,breakPct:0.0097},
+10218:{utr:1.992,dt:10.4,onTime:0.9669,orders:4045,riders:89,acceptTime:0.39,toVendor:0.34,toCustomer:5.05,actHrs:2030.3,planHrs:2069.1,avgHrs:22.81,noShow:0.0165,lateLogin:0.0658,breakPct:0.0075},
+10219:{utr:1.906,dt:20.0,onTime:0.8418,orders:1644,riders:41,acceptTime:2.09,toVendor:1.42,toCustomer:9.45,actHrs:862.5,planHrs:911.9,avgHrs:21.04,noShow:0.0,lateLogin:0.0492,breakPct:0.0197},
+10229:{utr:1.934,dt:17.9,onTime:0.88,orders:875,riders:27,acceptTime:2.37,toVendor:1.58,toCustomer:7.47,actHrs:452.5,planHrs:588.7,avgHrs:16.76,noShow:0.1667,lateLogin:0.2407,breakPct:0.0273},
+10230:{utr:2.198,dt:14.6,onTime:0.9227,orders:1333,riders:29,acceptTime:1.33,toVendor:1.12,toCustomer:6.05,actHrs:606.4,planHrs:656.9,avgHrs:20.91,noShow:0.0133,lateLogin:0.0933,breakPct:0.0148}
   },
   mtd:{
-10186:{utr:2.099,dt:11.3,onTime:0.52,orders:8786,riders:70,acceptTime:0.46,toVendor:0.61,toCustomer:5.51,actHrs:4185.7,planHrs:4366.2,avgHrs:59.8,noShow:0.0333,lateLogin:0.2694,breakPct:0.0035},
-10196:{utr:2.104,dt:17.2,onTime:0.8967,orders:10384,riders:85,acceptTime:1.31,toVendor:1.27,toCustomer:7.93,actHrs:4935.2,planHrs:5357.3,avgHrs:58.06,noShow:0.0564,lateLogin:0.269,breakPct:0.0023},
-10198:{utr:2.198,dt:13.3,onTime:0.925,orders:10724,riders:99,acceptTime:1.08,toVendor:1.06,toCustomer:6.23,actHrs:4877.9,planHrs:5518.6,avgHrs:49.27,noShow:0.0476,lateLogin:0.355,breakPct:0.0068},
-10216:{utr:2.25,dt:15.7,onTime:0.9083,orders:5243,riders:43,acceptTime:1.35,toVendor:0.76,toCustomer:7.11,actHrs:2330.1,planHrs:2636.6,avgHrs:54.19,noShow:0.0667,lateLogin:0.2756,breakPct:0.0053},
-10218:{utr:2.254,dt:11.6,onTime:0.9505,orders:13043,riders:96,acceptTime:0.77,toVendor:0.72,toCustomer:5.41,actHrs:5786.3,planHrs:6114.9,avgHrs:60.27,noShow:0.0342,lateLogin:0.3803,breakPct:0.0034},
-10219:{utr:1.967,dt:19.7,onTime:0.8493,orders:5363,riders:53,acceptTime:2.1,toVendor:1.53,toCustomer:9.68,actHrs:2726.3,planHrs:2914.9,avgHrs:51.44,noShow:0.025,lateLogin:0.2781,breakPct:0.0056},
-10229:{utr:1.837,dt:16.6,onTime:0.9084,orders:2534,riders:39,acceptTime:1.61,toVendor:1.62,toCustomer:7.06,actHrs:1379.6,planHrs:1892.6,avgHrs:35.37,noShow:0.1379,lateLogin:0.3218,breakPct:0.0117},
-10230:{utr:2.049,dt:17.0,onTime:0.9035,orders:4072,riders:39,acceptTime:1.52,toVendor:1.09,toCustomer:6.11,actHrs:1987.3,planHrs:2317.9,avgHrs:50.96,noShow:0.0796,lateLogin:0.4129,breakPct:0.0082}
+10186:{utr:1.299,dt:11.3,onTime:0.52,orders:8786,riders:59,acceptTime:0.46,toVendor:0.61,toCustomer:5.51,actHrs:6764.2,planHrs:7086.8,avgHrs:114.65,noShow:0.023,lateLogin:0.0472,breakPct:0.0039},
+10196:{utr:1.249,dt:17.2,onTime:0.8967,orders:10384,riders:77,acceptTime:1.31,toVendor:1.27,toCustomer:7.93,actHrs:8311.4,planHrs:8597.4,avgHrs:107.94,noShow:0.0218,lateLogin:0.0722,breakPct:0.0024},
+10198:{utr:1.241,dt:13.3,onTime:0.925,orders:10724,riders:82,acceptTime:1.08,toVendor:1.06,toCustomer:6.23,actHrs:8644.8,planHrs:9211.8,avgHrs:105.42,noShow:0.0195,lateLogin:0.0721,breakPct:0.0054},
+10216:{utr:1.28,dt:15.7,onTime:0.9083,orders:5243,riders:40,acceptTime:1.35,toVendor:0.76,toCustomer:7.11,actHrs:4097.4,planHrs:4428.3,avgHrs:102.43,noShow:0.0315,lateLogin:0.0665,breakPct:0.0046},
+10218:{utr:1.278,dt:11.6,onTime:0.9505,orders:13043,riders:89,acceptTime:0.77,toVendor:0.72,toCustomer:5.41,actHrs:10204.3,planHrs:10572.2,avgHrs:114.66,noShow:0.0192,lateLogin:0.05,breakPct:0.0031},
+10219:{utr:1.271,dt:19.7,onTime:0.8493,orders:5363,riders:42,acceptTime:2.1,toVendor:1.53,toCustomer:9.68,actHrs:4220.5,planHrs:4522.3,avgHrs:100.49,noShow:0.0193,lateLogin:0.0468,breakPct:0.0061},
+10229:{utr:1.17,dt:16.6,onTime:0.9084,orders:2534,riders:31,acceptTime:1.61,toVendor:1.62,toCustomer:7.06,actHrs:2165.0,planHrs:2768.3,avgHrs:69.84,noShow:0.1414,lateLogin:0.2105,breakPct:0.0092},
+10230:{utr:1.15,dt:17.0,onTime:0.9035,orders:4072,riders:34,acceptTime:1.52,toVendor:1.09,toCustomer:6.11,actHrs:3540.4,planHrs:3918.8,avgHrs:104.13,noShow:0.0442,lateLogin:0.0752,breakPct:0.006}
   }
 };
 
