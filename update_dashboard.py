@@ -310,7 +310,10 @@ try:
                     zs = zs[:wk_pos] + new_week.rstrip() + zs[end_p:]
                     break
     else:
-        zs = zs.replace('const WEEK = {\n', 'const WEEK = {\n' + new_week, 1)
+        if 'const WEEK = {};' in zs:
+            zs = zs.replace('const WEEK = {};', 'const WEEK = {\n' + new_week + '}', 1)
+        else:
+            zs = zs.replace('const WEEK = {\n', 'const WEEK = {\n' + new_week, 1)
 
     # 4. Replace or insert current month entry
     mk_pat = f'"{month_key}":'
@@ -333,7 +336,10 @@ try:
         if ins >= 0:
             zs = zs[:ins] + new_month + ',\n  ' + zs[ins:]
         else:
-            zs = zs.replace('const MONTH = {\n', 'const MONTH = {\n' + new_month + ',\n', 1)
+            if 'const MONTH = {};' in zs:
+                zs = zs.replace('const MONTH = {};', 'const MONTH = {\n' + new_month + '\n}', 1)
+            else:
+                zs = zs.replace('const MONTH = {\n', 'const MONTH = {\n' + new_month + ',\n', 1)
 
     html = html[:start] + zs + html[end:]
     print("✓ ZONE section updated")
