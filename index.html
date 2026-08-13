@@ -1149,6 +1149,11 @@ const TGT   = { 'Nasr city':1.93, 'Heliopolis':1.86, 'Ain shams':1.73 };
 /* @@ZONE_DATA_START@@ */
 const DAY = {
   "2026-08-12":{ label:"Aug 12, 2026", zones:{
+    "Nasr city":  { utr:2.0454, riders:1716, orders:31530, delivComp:31530, sumHrs:15414.73, avgHrs:8.983, lateLogin:0.2945, noShow:0.0478, breakMin:45.61, fill:0.8349, acceptRate:0.9816, plannedHrs:18463.19, delivTime:26.03, rat:2.5, toVendor:3.283, onTime:0.8201, failRate:0.0244 },
+    "Heliopolis": { utr:2.1285, riders:1673, orders:29264, delivComp:29264, sumHrs:13748.46, avgHrs:8.218, lateLogin:0.3096, noShow:0.0907, breakMin:46.21, fill:0.7967, acceptRate:0.9817, plannedHrs:17257.07, delivTime:26.87, rat:3.27, toVendor:3.31, onTime:0.7396, failRate:0.0339 },
+    "Ain shams":  { utr:1.9283, riders:336, orders:4847, delivComp:4847, sumHrs:2513.56, avgHrs:7.481, lateLogin:0.1816, noShow:0.0586, breakMin:34.07, fill:0.8038, acceptRate:0.9767, plannedHrs:3127.02, delivTime:27.5, rat:2.45, toVendor:4.062, onTime:0.7555, failRate:0.029 }
+  }},
+  "2026-08-12":{ label:"Aug 12, 2026", zones:{
     "Nasr city":  { utr:1.4106, riders:1825, orders:31530, delivComp:31530, sumHrs:22351.5, avgHrs:12.247, lateLogin:0.291, noShow:0.0, breakMin:45.04, fill:0.9083, acceptRate:0.9816, plannedHrs:24606.91, delivTime:26.03, rat:2.5, toVendor:3.283, onTime:0.8201, failRate:0.0244 },
     "Heliopolis": { utr:1.5912, riders:1812, orders:29264, delivComp:29264, sumHrs:18391.37, avgHrs:10.15, lateLogin:0.3201, noShow:0.0, breakMin:46.97, fill:0.9029, acceptRate:0.9817, plannedHrs:20370.33, delivTime:26.87, rat:3.27, toVendor:3.31, onTime:0.7396, failRate:0.0339 },
     "Ain shams":  { utr:1.342, riders:391, orders:4847, delivComp:4847, sumHrs:3611.77, avgHrs:9.237, lateLogin:0.2131, noShow:0.0, breakMin:36.22, fill:0.9148, acceptRate:0.9767, plannedHrs:3948.04, delivTime:27.5, rat:2.45, toVendor:4.062, onTime:0.7555, failRate:0.029 }
@@ -1262,10 +1267,10 @@ const DAY = {
 };
 
 const WEEK = {
-        "2026-08-10":{ label:"Wk 33  Aug 10-12 (current)", short:"Wk 33", zones:{
-    "Nasr city": { utr:1.6911, riders:2058, orders:61636, delivComp:61636, sumHrs:36446.29, avgHrs:17.71, lateLogin:0.2982, noShow:0.0, breakMin:52.96, fill:0.9121, acceptRate:0.9811, plannedHrs:39959.96, delivTime:25.52, rat:2.47, toVendor:3.476, onTime:0.8486, failRate:0.0238 },
-    "Heliopolis":{ utr:1.8652, riders:2125, orders:58163, delivComp:58163, sumHrs:31183.2, avgHrs:14.674, lateLogin:0.3179, noShow:0.0, breakMin:55.66, fill:0.8988, acceptRate:0.9835, plannedHrs:34693.3, delivTime:27.64, rat:4.17, toVendor:3.547, onTime:0.7413, failRate:0.0287 },
-    "Ain shams": { utr:1.4923, riders:476, orders:8614, delivComp:8614, sumHrs:5772.21, avgHrs:12.126, lateLogin:0.245, noShow:0.0, breakMin:37.86, fill:0.9096, acceptRate:0.9706, plannedHrs:6345.63, delivTime:28.59, rat:2.49, toVendor:3.869, onTime:0.7015, failRate:0.039 }
+          "2026-08-10":{ label:"Wk 33  Aug 10-12 (current)", short:"Wk 33", zones:{
+    "Nasr city": { utr:2.0489, riders:1958, orders:61636, delivComp:61636, sumHrs:30081.91, avgHrs:15.364, lateLogin:0.2908, noShow:0.0458, breakMin:53.6, fill:0.8494, acceptRate:0.9811, plannedHrs:35416.07, delivTime:25.52, rat:2.47, toVendor:3.476, onTime:0.8486, failRate:0.0238 },
+    "Heliopolis":{ utr:2.2173, riders:1962, orders:58163, delivComp:58163, sumHrs:26231.65, avgHrs:13.37, lateLogin:0.2957, noShow:0.0923, breakMin:53.52, fill:0.802, acceptRate:0.9835, plannedHrs:32707.04, delivTime:27.64, rat:4.17, toVendor:3.547, onTime:0.7413, failRate:0.0287 },
+    "Ain shams": { utr:1.884, riders:401, orders:8614, delivComp:8614, sumHrs:4572.11, avgHrs:11.402, lateLogin:0.2182, noShow:0.0574, breakMin:35.15, fill:0.8168, acceptRate:0.9706, plannedHrs:5597.91, delivTime:28.59, rat:2.49, toVendor:3.869, onTime:0.7015, failRate:0.039 }
   }},
   "2026-08-09":{ label:"Wk 33  Aug 10-11", short:"Wk 33", zones:{
     "Nasr city": { utr:2.1115, riders:1959, orders:62985, delivComp:62985, sumHrs:29829.39, avgHrs:7.342, lateLogin:0.2909, noShow:0.0458, breakMin:52.38, fill:0.841, acceptRate:0.978, plannedHrs:35468.07, delivTime:25.43, rat:7.04, toVendor:3.445, onTime:0.8485, failRate:0.0199 },
@@ -1345,11 +1350,12 @@ const WEEK = {
 };
 
 const MONTH = {
-                    "2026-08":{ label:"Aug 2026 (MTD Aug 1-12)", zones:{
-    "Nasr city": { utr:2.0044, riders:2546, orders:180055, delivComp:180055, sumHrs:89829.18, avgHrs:35.282, lateLogin:0.2947, noShow:0.0, breakMin:56.09, fill:0.9043, acceptRate:0.9808, plannedHrs:99339.48, delivTime:25.89, rat:2.75, toVendor:3.58, onTime:0.846, failRate:0.0246 },
-    "Heliopolis":{ utr:2.0397, riders:2837, orders:166166, delivComp:166166, sumHrs:81465.27, avgHrs:28.715, lateLogin:0.3329, noShow:0.0, breakMin:59.56, fill:0.8917, acceptRate:0.9831, plannedHrs:91355.95, delivTime:25.85, rat:2.92, toVendor:3.46, onTime:0.7955, failRate:0.0238 },
-    "Ain shams": { utr:1.6739, riders:743, orders:28791, delivComp:28791, sumHrs:17199.81, avgHrs:23.149, lateLogin:0.2682, noShow:0.0, breakMin:41.87, fill:0.9056, acceptRate:0.9693, plannedHrs:18993.12, delivTime:27.29, rat:2.27, toVendor:4.064, onTime:0.7624, failRate:0.0346 }
+                      "2026-08":{ label:"Aug 2026 (MTD Aug 1-12)", zones:{
+    "Nasr city": { utr:1.1086, riders:2835, orders:180055, delivComp:180055, sumHrs:162410.02, avgHrs:57.287, lateLogin:0.2733, noShow:0.0535, breakMin:56.98, fill:0.8335, acceptRate:0.9808, plannedHrs:194856.31, delivTime:25.89, rat:2.75, toVendor:3.58, onTime:0.846, failRate:0.0246 },
+    "Heliopolis":{ utr:1.1208, riders:2933, orders:166166, delivComp:166166, sumHrs:148261.47, avgHrs:50.549, lateLogin:0.3065, noShow:0.0895, breakMin:58.41, fill:0.7924, acceptRate:0.9831, plannedHrs:187105.43, delivTime:25.85, rat:2.92, toVendor:3.46, onTime:0.7955, failRate:0.0238 },
+    "Ain shams": { utr:1.036, riders:608, orders:28791, delivComp:28791, sumHrs:27789.65, avgHrs:45.707, lateLogin:0.2119, noShow:0.0666, breakMin:40.02, fill:0.7935, acceptRate:0.9693, plannedHrs:35023.34, delivTime:27.29, rat:2.27, toVendor:4.064, onTime:0.7624, failRate:0.0346 }
   }},
+
 
 
 
@@ -1779,13 +1785,13 @@ const TLP_TGT = [
 ];
 
 /* @@NASR_3PL_DATA_START@@ -- auto-updated daily at 12:00 PM, do not edit manually */
-const CFG_YDAY_LBL       = 'Aug 12';;;;;
-const CFG_W7_LBL         = 'Aug 6-12';;;;;
-const CFG_MTD_LBL        = 'Aug 1-12';;;;;
-const CFG_MTD_DAYS       = 12;;;;;
-const CFG_LAST_MONTH_LBL = 'Jul';;;;;
-const CFG_LAST_MONTH_DAYS = 31;;;;;
-const CFG_CUR_MONTH_LBL  = 'Aug';;;;;
+const CFG_YDAY_LBL       = 'Aug 12';;;;;;
+const CFG_W7_LBL         = 'Aug 6-12';;;;;;
+const CFG_MTD_LBL        = 'Aug 1-12';;;;;;
+const CFG_MTD_DAYS       = 12;;;;;;
+const CFG_LAST_MONTH_LBL = 'Jul';;;;;;
+const CFG_LAST_MONTH_DAYS = 31;;;;;;
+const CFG_CUR_MONTH_LBL  = 'Aug';;;;;;
 const TLP_YDAY = {"Nasr city|Ebad El rahman": 3877.15, "Heliopolis|Ebad El rahman": 2784.25, "Nasr city|El Abtal": 1815.22, "Heliopolis|Al Alamia": 1467.98, "Nasr city|Stop Car": 1194.23, "Nasr city|Team mh for Delivery": 1175.43, "Heliopolis|Top delivery": 1071.96, "Heliopolis|Team mh for Delivery": 1043.21, "Nasr city|Speedo": 973.98, "Nasr city|Al Alamia": 889.76, "Heliopolis|El Abtal": 758.2, "Heliopolis|MTA": 703.44, "Heliopolis|Jasson": 702.26, "Heliopolis|Full Speed": 694.62, "Heliopolis|Speedo": 646.35, "Heliopolis|El Ezz": 612.13, "Nasr city|El Tohami": 521.79, "Ain shams|Al Alamia": 521.27, "Nasr city|Tanta": 457.22, "Heliopolis|El Tohami": 452.81, "Heliopolis|Barg": 435.01, "Nasr city|Super Speed": 430.58, "Nasr city|El Ezz": 396.94, "Nasr city|Barg": 380.44, "Nasr city|Top delivery": 375.08, "Nasr city|MTA": 359.8, "Nasr city|Full Speed": 350.79, "Nasr city|Jasson": 312.44, "Ain shams|Top delivery": 308.74, "Nasr city|Courier for delivery": 294.72, "Ain shams|Stop Car": 262.3, "Nasr city|Tanta Car": 236.1, "Heliopolis|Courier for delivery": 213.63, "Heliopolis|MR Delivery": 207.63, "Nasr city|MR Delivery": 198.65, "Heliopolis|Super Speed": 194.08, "Heliopolis|Apache": 187.4, "Ain shams|Jasson": 182.76, "Heliopolis|Stop Car": 179.1, "Ain shams|MTA": 177.67, "Heliopolis|Noot": 174.96, "Heliopolis|BeCool": 163.05, "Nasr city|Noot": 160.77, "Nasr city|Zero Zero Seven": 154.22, "Nasr city|Apache": 145.36, "Heliopolis|Tanta Car": 133.22, "Nasr city|Bedaya": 128.1, "Ain shams|Ebad El rahman": 120.73, "Ain shams|Apache": 118.86, "Nasr city|SOG": 110.41, "Nasr city|BeCool": 83.54, "Ain shams|Speedo": 80.8, "Heliopolis|Wakeel": 80.61, "Ain shams|Wakeel": 76.51, "Ain shams|El Tohami": 70.1, "Ain shams|Tanta Car": 69.56, "Ain shams|Team mh for Delivery": 66.51, "Ain shams|Barg": 63.32, "Heliopolis|Tanta": 53.26, "Ain shams|Full Speed": 53.24, "Nasr city|Wakeel": 44.15, "Ain shams|Courier for delivery": 41.52, "Nasr city|Glesco": 32.27, "Ain shams|El Ezz": 31.33, "Ain shams|Noot": 28.71, "Ain shams|MR Delivery": 26.87, "Heliopolis|Bedaya": 24.49, "Heliopolis|el Dawlya": 20.14, "Heliopolis|Zero Zero Seven": 10.91};
 const TLP_W7 = {"Heliopolis|El Ezz": 615.29, "Heliopolis|Jasson": 669.53, "Heliopolis|El Abtal": 684.58, "Heliopolis|Barg": 489.26, "Heliopolis|Al Alamia": 1427.75, "Heliopolis|Apache": 222.36, "Heliopolis|BeCool": 155.26, "Heliopolis|MTA": 684.55, "Nasr city|Full Speed": 327.76, "Nasr city|Jasson": 321.59, "Nasr city|MTA": 343.84, "Nasr city|SOG": 127.87, "Nasr city|Stop Car": 1120.59, "Nasr city|Super Speed": 431.87, "Nasr city|Tanta": 474.2, "Nasr city|Tanta Car": 236.53, "Nasr city|Team mh for Delivery": 1091.46, "Nasr city|Barg": 367.53, "Nasr city|Noot": 169.65, "Nasr city|Zero Zero Seven": 122.7, "Heliopolis|Bedaya": 18.35, "Heliopolis|Courier for delivery": 220.86, "Heliopolis|Ebad El rahman": 2904.45, "Heliopolis|Full Speed": 691.69, "Heliopolis|Speedo": 725.13, "Heliopolis|Team mh for Delivery": 1093.69, "Heliopolis|MR Delivery": 222.62, "Heliopolis|Stop Car": 178.87, "Heliopolis|Super Speed": 223.74, "Nasr city|Al Alamia": 871.5, "Nasr city|Courier for delivery": 334.39, "Nasr city|Ebad El rahman": 3627.61, "Nasr city|El Abtal": 1746.53, "Nasr city|El Ezz": 419.39, "Nasr city|Speedo": 1059.94, "Nasr city|Top delivery": 322.67, "Nasr city|MR Delivery": 170.66, "Heliopolis|Top delivery": 1062.55, "Ain shams|Ebad El rahman": 126.12, "Ain shams|El Tohami": 82.25, "Ain shams|Full Speed": 72.86, "Ain shams|Jasson": 186.94, "Ain shams|MTA": 246.95, "Ain shams|Apache": 129.68, "Ain shams|Top delivery": 352.05, "Ain shams|Wakeel": 66.76, "Heliopolis|Zero Zero Seven": 10.02, "Ain shams|Al Alamia": 569.97, "Ain shams|Barg": 79.82, "Ain shams|Noot": 29.17, "Ain shams|Stop Car": 240.5, "Ain shams|Team mh for Delivery": 69.0, "Ain shams|El Ezz": 31.69, "Ain shams|MR Delivery": 36.96, "Ain shams|Tanta Car": 110.15, "Heliopolis|Wakeel": 83.71, "Nasr city|Wakeel": 45.47, "Heliopolis|el Dawlya": 16.58, "Nasr city|Glesco": 15.43, "Nasr city|Apache": 166.25, "Heliopolis|Tanta Car": 174.2, "Nasr city|El Tohami": 541.02, "Nasr city|Bedaya": 136.77, "Ain shams|Speedo": 79.63, "Heliopolis|Tanta": 50.2, "Ain shams|Courier for delivery": 42.09, "Nasr city|BeCool": 85.34, "Heliopolis|El Tohami": 434.73, "Heliopolis|Noot": 184.05};
 const TLP_MTD = {"Ain shams|Noot": 30.02, "Heliopolis|Ebad El rahman": 2965.09, "Heliopolis|El Abtal": 685.34, "Heliopolis|Jasson": 689.99, "Heliopolis|Noot": 171.73, "Heliopolis|Speedo": 732.84, "Heliopolis|Top delivery": 1110.09, "Heliopolis|Apache": 225.49, "Heliopolis|Tanta Car": 191.9, "Nasr city|El Tohami": 570.69, "Nasr city|Full Speed": 327.8, "Nasr city|Speedo": 1067.54, "Nasr city|Team mh for Delivery": 1120.47, "Nasr city|Barg": 364.16, "Nasr city|Bedaya": 136.89, "Nasr city|Noot": 165.23, "Heliopolis|Barg": 501.98, "Heliopolis|El Ezz": 634.42, "Heliopolis|Full Speed": 674.36, "Heliopolis|El Tohami": 435.78, "Heliopolis|MTA": 682.91, "Heliopolis|Team mh for Delivery": 1123.25, "Nasr city|Al Alamia": 851.01, "Nasr city|Ebad El rahman": 3653.15, "Nasr city|El Abtal": 1750.12, "Nasr city|El Ezz": 419.2, "Nasr city|Jasson": 319.08, "Nasr city|MTA": 360.33, "Nasr city|SOG": 139.73, "Nasr city|Tanta": 458.42, "Nasr city|Courier for delivery": 358.49, "Nasr city|MR Delivery": 168.88, "Nasr city|Super Speed": 444.81, "Heliopolis|Bedaya": 24.54, "Ain shams|Barg": 82.32, "Ain shams|Full Speed": 69.62, "Ain shams|Jasson": 180.07, "Ain shams|MTA": 255.81, "Ain shams|Team mh for Delivery": 66.96, "Ain shams|Apache": 125.57, "Ain shams|Wakeel": 64.0, "Ain shams|Al Alamia": 572.44, "Ain shams|El Ezz": 34.43, "Ain shams|MR Delivery": 37.06, "Ain shams|Speedo": 76.03, "Ain shams|Top delivery": 345.94, "Heliopolis|Courier for delivery": 225.74, "Nasr city|Stop Car": 1041.63, "Nasr city|Top delivery": 350.73, "Heliopolis|el Dawlya": 15.06, "Heliopolis|BeCool": 155.57, "Ain shams|Courier for delivery": 42.87, "Ain shams|Ebad El rahman": 129.0, "Heliopolis|Super Speed": 224.19, "Nasr city|Tanta Car": 241.13, "Nasr city|Wakeel": 46.62, "Nasr city|Zero Zero Seven": 115.05, "Ain shams|El Tohami": 79.04, "Ain shams|Tanta Car": 104.61, "Ain shams|Stop Car": 224.2, "Heliopolis|Tanta": 49.8, "Nasr city|BeCool": 90.17, "Heliopolis|MR Delivery": 238.26, "Heliopolis|Stop Car": 176.96, "Heliopolis|Zero Zero Seven": 11.16, "Nasr city|Apache": 176.73, "Nasr city|Glesco": 10.25, "Heliopolis|Al Alamia": 1411.14, "Heliopolis|Wakeel": 87.14};
@@ -2317,34 +2323,34 @@ function renderOffenders(){
 const HYBRID_MARTS=[{id:10186,label:"Ard El Golf"},{id:10196,label:"El Tayaran"},{id:10198,label:"Masaken El Shorouk"},{id:10216,label:"Masaken Sheraton"},{id:10218,label:"El Hadeeka El Dawlya"},{id:10219,label:"Ain Shams"},{id:10229,label:"Omarat El Tawfiq"},{id:10230,label:"Hay 8"}];
 const HYBRID_DATA={
   yday:{
-10186:{utr:1.3,dt:11.29,onTime:0.5154,orders:1362,riders:55,acceptTime:0.033,toVendor:0.501,toCustomer:5.52,actHrs:1047.37,planHrs:1058.24,avgHrs:19.04,noShow:0.0,lateLogin:0.35,breakPct:0.0165},
-10196:{utr:1.462,dt:16.79,onTime:0.9018,orders:1609,riders:71,acceptTime:0.033,toVendor:1.103,toCustomer:7.95,actHrs:1100.71,planHrs:1107.05,avgHrs:15.5,noShow:0.0,lateLogin:0.3371,breakPct:0.0085},
-10198:{utr:1.506,dt:12.36,onTime:0.9316,orders:1711,riders:70,acceptTime:0.033,toVendor:0.676,toCustomer:5.98,actHrs:1135.81,planHrs:1150.47,avgHrs:16.23,noShow:0.0,lateLogin:0.5227,breakPct:0.0186},
-10216:{utr:1.663,dt:15.7,onTime:0.8993,orders:874,riders:33,acceptTime:0.033,toVendor:0.72,toCustomer:7.21,actHrs:525.66,planHrs:530.39,avgHrs:15.93,noShow:0.0,lateLogin:0.2727,breakPct:0.0122},
-10218:{utr:1.354,dt:10.07,onTime:0.9697,orders:2080,riders:83,acceptTime:0.033,toVendor:0.279,toCustomer:4.91,actHrs:1535.69,planHrs:1537.64,avgHrs:18.5,noShow:0.0,lateLogin:0.4444,breakPct:0.008},
-10219:{utr:1.579,dt:20.01,onTime:0.8568,orders:810,riders:35,acceptTime:0.367,toVendor:1.306,toCustomer:9.22,actHrs:512.87,planHrs:518.07,avgHrs:14.65,noShow:0.0,lateLogin:0.2586,breakPct:0.0167},
-10229:{utr:1.666,dt:17.07,onTime:0.8857,orders:490,riders:23,acceptTime:0.042,toVendor:1.448,toCustomer:7.21,actHrs:294.06,planHrs:326.0,avgHrs:12.79,noShow:0.0,lateLogin:0.3704,breakPct:0.0575},
-10230:{utr:1.705,dt:14.35,onTime:0.9397,orders:697,riders:26,acceptTime:0.033,toVendor:1.153,toCustomer:5.98,actHrs:408.68,planHrs:429.33,avgHrs:15.72,noShow:0.0,lateLogin:0.4118,breakPct:0.0258}
+10186:{utr:1.972,dt:11.29,onTime:0.5154,orders:1362,riders:54,acceptTime:0.033,toVendor:0.501,toCustomer:5.52,actHrs:690.79,planHrs:714.53,avgHrs:12.79,noShow:0.0351,lateLogin:0.2982,breakPct:0.0252},
+10196:{utr:1.886,dt:16.79,onTime:0.9018,orders:1609,riders:72,acceptTime:0.033,toVendor:1.103,toCustomer:7.95,actHrs:853.0,planHrs:898.8,avgHrs:11.85,noShow:0.0132,lateLogin:0.3421,breakPct:0.0114},
+10198:{utr:1.989,dt:12.36,onTime:0.9316,orders:1711,riders:68,acceptTime:0.033,toVendor:0.676,toCustomer:5.98,actHrs:860.41,planHrs:946.74,avgHrs:12.65,noShow:0.0533,lateLogin:0.4933,breakPct:0.0185},
+10216:{utr:2.286,dt:15.7,onTime:0.8993,orders:874,riders:34,acceptTime:0.033,toVendor:0.72,toCustomer:7.21,actHrs:382.31,planHrs:420.39,avgHrs:11.24,noShow:0.0541,lateLogin:0.2703,breakPct:0.0166},
+10218:{utr:1.958,dt:10.07,onTime:0.9697,orders:2080,riders:83,acceptTime:0.033,toVendor:0.279,toCustomer:4.91,actHrs:1062.3,planHrs:1112.06,avgHrs:12.8,noShow:0.0225,lateLogin:0.4382,breakPct:0.0115},
+10219:{utr:1.879,dt:20.01,onTime:0.8568,orders:810,riders:36,acceptTime:0.367,toVendor:1.306,toCustomer:9.22,actHrs:431.17,planHrs:473.03,avgHrs:11.98,noShow:0.0,lateLogin:0.2308,breakPct:0.0223},
+10229:{utr:2.018,dt:17.07,onTime:0.8857,orders:490,riders:23,acceptTime:0.042,toVendor:1.448,toCustomer:7.21,actHrs:242.77,planHrs:326.5,avgHrs:10.56,noShow:0.1429,lateLogin:0.2857,breakPct:0.0618},
+10230:{utr:2.319,dt:14.35,onTime:0.9397,orders:697,riders:26,acceptTime:0.033,toVendor:1.153,toCustomer:5.98,actHrs:300.55,planHrs:338.33,avgHrs:11.56,noShow:0.0357,lateLogin:0.3571,breakPct:0.0393}
   },
   wtd:{
-10186:{utr:1.679,dt:11.6,onTime:0.5429,orders:2553,riders:60,acceptTime:0.033,toVendor:0.488,toCustomer:5.72,actHrs:1520.11,planHrs:1524.23,avgHrs:25.34,noShow:0.0,lateLogin:0.3306,breakPct:0.0066},
-10196:{utr:1.749,dt:16.68,onTime:0.9038,orders:3015,riders:71,acceptTime:0.033,toVendor:1.204,toCustomer:7.81,actHrs:1723.4,planHrs:1744.68,avgHrs:24.27,noShow:0.0,lateLogin:0.3151,breakPct:0.0056},
-10198:{utr:1.901,dt:12.8,onTime:0.9287,orders:3296,riders:78,acceptTime:0.033,toVendor:0.976,toCustomer:6.13,actHrs:1734.2,planHrs:1776.35,avgHrs:22.23,noShow:0.0,lateLogin:0.3793,breakPct:0.0183},
-10216:{utr:1.948,dt:16.04,onTime:0.9038,orders:1590,riders:36,acceptTime:0.05,toVendor:0.699,toCustomer:7.29,actHrs:816.34,planHrs:837.75,avgHrs:22.68,noShow:0.0,lateLogin:0.2857,breakPct:0.0107},
-10218:{utr:1.768,dt:10.87,onTime:0.9578,orders:3911,riders:88,acceptTime:0.033,toVendor:0.478,toCustomer:5.16,actHrs:2211.63,planHrs:2212.12,avgHrs:25.13,noShow:0.0,lateLogin:0.3851,breakPct:0.0072},
-10219:{utr:1.727,dt:19.86,onTime:0.8133,orders:1596,riders:44,acceptTime:0.05,toVendor:1.536,toCustomer:9.62,actHrs:924.28,planHrs:939.94,avgHrs:21.01,noShow:0.0,lateLogin:0.3796,breakPct:0.0109},
-10229:{utr:1.695,dt:17.94,onTime:0.8888,orders:836,riders:25,acceptTime:0.05,toVendor:1.668,toCustomer:7.8,actHrs:493.14,planHrs:525.0,avgHrs:19.73,noShow:0.0,lateLogin:0.3696,breakPct:0.0198},
-10230:{utr:1.823,dt:14.87,onTime:0.9161,orders:1251,riders:31,acceptTime:0.033,toVendor:0.856,toCustomer:5.93,actHrs:686.38,planHrs:700.0,avgHrs:22.14,noShow:0.0,lateLogin:0.5862,breakPct:0.0123}
+10186:{utr:1.991,dt:11.6,onTime:0.5429,orders:2553,riders:58,acceptTime:0.033,toVendor:0.488,toCustomer:5.72,actHrs:1282.53,planHrs:1289.85,avgHrs:22.11,noShow:0.0,lateLogin:0.3333,breakPct:0.0074},
+10196:{utr:2.042,dt:16.68,onTime:0.9038,orders:3015,riders:71,acceptTime:0.033,toVendor:1.204,toCustomer:7.81,actHrs:1476.16,planHrs:1576.39,avgHrs:20.79,noShow:0.0563,lateLogin:0.2958,breakPct:0.0054},
+10198:{utr:2.187,dt:12.8,onTime:0.9287,orders:3296,riders:76,acceptTime:0.033,toVendor:0.976,toCustomer:6.13,actHrs:1507.33,planHrs:1749.25,avgHrs:19.83,noShow:0.0265,lateLogin:0.3245,breakPct:0.0182},
+10216:{utr:2.119,dt:16.04,onTime:0.9038,orders:1590,riders:35,acceptTime:0.05,toVendor:0.699,toCustomer:7.29,actHrs:750.4,planHrs:849.21,avgHrs:21.44,noShow:0.0676,lateLogin:0.2432,breakPct:0.0163},
+10218:{utr:2.121,dt:10.87,onTime:0.9578,orders:3911,riders:87,acceptTime:0.033,toVendor:0.478,toCustomer:5.16,actHrs:1843.84,planHrs:1924.67,avgHrs:21.19,noShow:0.0127,lateLogin:0.3376,breakPct:0.0082},
+10219:{utr:1.861,dt:19.86,onTime:0.8133,orders:1596,riders:43,acceptTime:0.05,toVendor:1.536,toCustomer:9.62,actHrs:857.81,planHrs:906.39,avgHrs:19.95,noShow:0.0556,lateLogin:0.3704,breakPct:0.0112},
+10229:{utr:1.823,dt:17.94,onTime:0.8888,orders:836,riders:25,acceptTime:0.05,toVendor:1.668,toCustomer:7.8,actHrs:458.6,planHrs:616.49,avgHrs:18.34,noShow:0.1,lateLogin:0.25,breakPct:0.0149},
+10230:{utr:2.023,dt:14.87,onTime:0.9161,orders:1251,riders:29,acceptTime:0.033,toVendor:0.856,toCustomer:5.93,actHrs:618.35,planHrs:680.37,avgHrs:21.32,noShow:0.071,lateLogin:0.3994,breakPct:0.0113}
   },
   mtd:{
-10186:{utr:2.112,dt:11.35,onTime:0.5204,orders:7415,riders:69,acceptTime:0.033,toVendor:0.622,toCustomer:5.51,actHrs:3511.41,planHrs:3517.23,avgHrs:50.89,noShow:0.0,lateLogin:0.2778,breakPct:0.0039},
-10196:{utr:2.12,dt:17.2,onTime:0.8965,orders:8689,riders:84,acceptTime:0.067,toVendor:1.249,toCustomer:7.93,actHrs:4098.42,planHrs:4114.99,avgHrs:48.79,noShow:0.0,lateLogin:0.2849,breakPct:0.0031},
-10198:{utr:2.202,dt:13.44,onTime:0.9238,orders:8951,riders:98,acceptTime:0.05,toVendor:1.101,toCustomer:6.28,actHrs:4065.15,planHrs:4162.54,avgHrs:41.48,noShow:0.0,lateLogin:0.3783,breakPct:0.0099},
-10216:{utr:2.212,dt:15.66,onTime:0.9101,orders:4303,riders:41,acceptTime:0.05,toVendor:0.731,toCustomer:7.11,actHrs:1945.45,planHrs:2001.25,avgHrs:47.45,noShow:0.0,lateLogin:0.3114,breakPct:0.0062},
-10218:{utr:2.288,dt:11.88,onTime:0.9472,orders:10932,riders:95,acceptTime:0.033,toVendor:0.791,toCustomer:5.5,actHrs:4778.02,planHrs:4810.68,avgHrs:50.29,noShow:0.0,lateLogin:0.3984,breakPct:0.0046},
-10219:{utr:1.941,dt:19.57,onTime:0.8464,orders:4473,riders:52,acceptTime:0.3,toVendor:1.529,toCustomer:9.79,actHrs:2304.78,planHrs:2352.83,avgHrs:44.32,noShow:0.0,lateLogin:0.3056,breakPct:0.0071},
-10229:{utr:1.768,dt:16.46,onTime:0.9149,orders:2009,riders:37,acceptTime:0.05,toVendor:1.609,toCustomer:7.05,actHrs:1136.39,planHrs:1217.05,avgHrs:30.71,noShow:0.0,lateLogin:0.4444,breakPct:0.0162},
-10230:{utr:1.971,dt:17.48,onTime:0.8959,orders:3325,riders:38,acceptTime:0.033,toVendor:1.04,toCustomer:6.15,actHrs:1686.77,planHrs:1752.6,avgHrs:44.39,noShow:0.0,lateLogin:0.4899,breakPct:0.0108}
+10186:{utr:1.194,dt:11.35,onTime:0.5204,orders:7415,riders:70,acceptTime:0.033,toVendor:0.622,toCustomer:5.51,actHrs:6211.62,planHrs:6773.97,avgHrs:88.74,noShow:0.0456,lateLogin:0.2281,breakPct:0.0021},
+10196:{utr:1.111,dt:17.2,onTime:0.8965,orders:8689,riders:97,acceptTime:0.067,toVendor:1.249,toCustomer:7.93,actHrs:7821.39,planHrs:8572.62,avgHrs:80.63,noShow:0.0582,lateLogin:0.2909,breakPct:0.0018},
+10198:{utr:1.168,dt:13.44,onTime:0.9238,orders:8951,riders:107,acceptTime:0.05,toVendor:1.101,toCustomer:6.28,actHrs:7666.76,planHrs:8909.76,avgHrs:71.65,noShow:0.0385,lateLogin:0.3329,breakPct:0.005},
+10216:{utr:1.218,dt:15.66,onTime:0.9101,orders:4303,riders:45,acceptTime:0.05,toVendor:0.731,toCustomer:7.11,actHrs:3534.04,planHrs:4041.82,avgHrs:78.53,noShow:0.0665,lateLogin:0.211,breakPct:0.0034},
+10218:{utr:1.268,dt:11.88,onTime:0.9472,orders:10932,riders:101,acceptTime:0.033,toVendor:0.791,toCustomer:5.5,actHrs:8622.31,planHrs:9291.69,avgHrs:85.37,noShow:0.0316,lateLogin:0.35,breakPct:0.0024},
+10219:{utr:1.147,dt:19.57,onTime:0.8464,orders:4473,riders:54,acceptTime:0.3,toVendor:1.529,toCustomer:9.79,actHrs:3901.16,planHrs:4370.65,avgHrs:72.24,noShow:0.0345,lateLogin:0.25,breakPct:0.0043},
+10229:{utr:0.945,dt:16.46,onTime:0.9149,orders:2009,riders:42,acceptTime:0.05,toVendor:1.609,toCustomer:7.05,actHrs:2125.76,planHrs:3192.45,avgHrs:50.61,noShow:0.1453,lateLogin:0.3412,breakPct:0.0065},
+10230:{utr:0.979,dt:17.48,onTime:0.8959,orders:3325,riders:41,acceptTime:0.033,toVendor:1.04,toCustomer:6.15,actHrs:3396.66,planHrs:3926.43,avgHrs:82.85,noShow:0.071,lateLogin:0.3994,breakPct:0.0059}
   }
 };
 
