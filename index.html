@@ -1262,7 +1262,7 @@ function breakPct(z){
 function runRate(z, tgt){
   if(!z.sumHrs||!z.orders||!tgt) return null;
   const needed = z.orders / tgt;
-  return (needed / z.sumHrs) * 100;
+  return (z.sumHrs / needed) * 100;
 }
 function rrColor(rr){
   if(rr==null) return 'n';
