@@ -1256,17 +1256,18 @@ function breakPct(z){
   if(z.breakMin==null||!z.avgHrs||z.avgHrs===0) return null;
   return z.breakMin / (z.avgHrs*60) * 100;
 }
-/* Run Rate % = actual sumHrs / needed hrs  100
-   needed hrs = orders / target_utr */
+/* Run Rate % = needed hrs / actual sumHrs * 100
+   needed hrs = orders / target_utr
+   100% = hitting target UTR exactly, <100% = below target */
 function runRate(z, tgt){
   if(!z.sumHrs||!z.orders||!tgt) return null;
   const needed = z.orders / tgt;
-  return (z.sumHrs / needed) * 100;
+  return (needed / z.sumHrs) * 100;
 }
 function rrColor(rr){
   if(rr==null) return 'n';
-  if(rr>=90 && rr<=110) return 'g';
-  if(rr>=80 && rr<=120) return 'y';
+  if(rr>=90) return 'g';
+  if(rr>=75) return 'y';
   return 'r';
 }
 /* health score (updated UTR logic) */
@@ -1350,7 +1351,7 @@ function card(zone, z, cz){
   const rrc=rrColor(rr);
   const cRr=cz?runRate(cz,tgt):null;
   const neededHrs=z.orders&&tgt?(z.orders/tgt).toFixed(0):null;
-  const rrStatus=rr==null?'':rr>=90&&rr<=110?' On Track':rr>110?'^ Over Staffed':'v Under Staffed';
+  const rrStatus=rr==null?'':rr>=95?' On Track':rr>=80?'↓ Slightly Below':'↓ Below Target';
 
   /* val & cmpVal must be same numeric scale; cmpFmt formats the compare value for display */
   function row(name,val,clrArgs,valStr,cmpVal=null,cmpFmt=null,bigUp=true){
