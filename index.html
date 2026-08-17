@@ -1797,11 +1797,8 @@ init3PLDropdown();
     <select class="off-date-sel" id="off-date-sel" onchange="renderOffenders()">
       <option value="mtd">All Month (MTD)</option>
     </select>
+    <input type="text" id="off-id-filter" placeholder="🔍 Rider ID" oninput="renderOffenders()" style="padding:6px 12px;border-radius:6px;border:2px solid #FF5900;background:#fff;color:#222;font-size:13px;font-weight:600;outline:none;width:180px;" />
     <span style="font-size:11px;color:rgba(255,255,255,.3);margin-left:auto" id="off-count-label"></span>
-  </div>
-  <div style="margin:0 24px 10px;display:flex;align-items:center;gap:8px">
-    <input type="text" id="off-id-filter" class="off-id-filter" placeholder="🔍 Search Rider ID…" oninput="renderOffenders()" />
-    <span id="off-filter-count" style="font-size:11px;color:rgba(255,89,0,.7);font-weight:700"></span>
   </div>
 
   <div class="off-table-wrap">
