@@ -600,6 +600,12 @@ try:
     html = re.sub(r'Last 7 Days \([^)]+\)', f'Last 7 Days ({w7_lbl})', html)
     # MTD label
     html = re.sub(r'MTD \([^)]+\)', f'MTD ({mtd_lbl})', html)
+    # Tmart Hybrid tab sync label
+    html = re.sub(r'Data: Yesterday \([A-Za-z]+ \d+\)  WTD \([^)]+\)  MTD \([^)]+\)',
+                  f'Data: Yesterday ({yday_short})  WTD ({week_range})  MTD ({mtd_lbl})', html)
+    # Tmart Hybrid yday column header
+    html = re.sub(r'(id="tpl-hdr-yday"[^>]*>)[A-Za-z]+ \d+',
+                  rf'\g<1>{yday_short}', html)
     print("✓ Text patches applied")
 except Exception as e:
     errors.append(f"Text patches: {e}")
