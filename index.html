@@ -438,6 +438,10 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
   border-radius:6px; color:#111; font-size:12px;
   padding:6px 9px; font-family:inherit; outline:none;
 }
+.off-detail-field textarea::placeholder,
+.off-detail-field input[type=text]::placeholder {
+  color:rgba(255,255,255,.3);
+}
 .off-detail-field textarea:focus,
 .off-detail-field input[type=text]:focus {
   border-color:rgba(255,135,0,.5); background:rgba(255,135,0,.04);
@@ -786,6 +790,32 @@ body {
 .off-count.y { background: rgba(255,171,0,.12) !important; color: #8b6000 !important; }
 .off-count.g { color: #ccc !important; }
 .off-empty { color: #ccc !important; }
+
+/* ── Offender notes / suspension – light mode ── */
+.off-note-empty { color: rgba(0,0,0,.2) !important; }
+.off-row:hover  { background: #FAF3EE !important; }
+.off-detail-inner {
+  background: #FAF3EE !important;
+  border-bottom: 1px solid #EAE0D8 !important;
+}
+.off-detail-field label {
+  color: #888 !important;
+}
+.off-detail-field textarea,
+.off-detail-field input[type=text] {
+  background: #fff !important;
+  border: 1px solid #DDD4C8 !important;
+  color: #222 !important;
+}
+.off-detail-field textarea::placeholder,
+.off-detail-field input[type=text]::placeholder {
+  color: #bbb !important;
+}
+.off-detail-field textarea:focus,
+.off-detail-field input[type=text]:focus {
+  border-color: rgba(255,89,0,.5) !important;
+  background: #fff8f4 !important;
+}
 
 /* ── DT COMPLIANCE TAB ── */
 .dtc-view-btn {
