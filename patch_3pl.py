@@ -1,7 +1,7 @@
 import json, re
 from collections import defaultdict
 
-DATA_FILE = "/sessions/loving-wizardly-fermat/mnt/.claude/projects/C--Users-AdhamMahmoud-AppData-Roaming-Claude-local-agent-mode-sessions-ca432383-8082-4459-b484-0859f8bcc845-17689280-b17d-4dbe-83e7-9e62144aab69-local-7deccb8c-1ae0-4ad2-b3e5-608182e65a58-outputs/035c3756-8555-4f96-a97f-0d13f39b7ac9/tool-results/mcp-28138290-1612-4fb1-aaf0-f9911799cd76-looker_query-1786959917011.txt"
+DATA_FILE = "/sessions/loving-wizardly-fermat/mnt/.claude/projects/C--Users-AdhamMahmoud-AppData-Roaming-Claude-local-agent-mode-sessions-ca432383-8082-4459-b484-0859f8bcc845-17689280-b17d-4dbe-83e7-9e62144aab69-local-7deccb8c-1ae0-4ad2-b3e5-608182e65a58-outputs/035c3756-8555-4f96-a97f-0d13f39b7ac9/tool-results/mcp-28138290-1612-4fb1-aaf0-f9911799cd76-looker_query-1786969133515.txt"
 with open(DATA_FILE) as f:
     raw = json.load(f)
 rows = raw.get('data', raw) if isinstance(raw, dict) else raw
@@ -9,14 +9,13 @@ rows = raw.get('data', raw) if isinstance(raw, dict) else raw
 TARGET_ZONES = {"Nasr city", "Heliopolis", "Ain shams"}
 rows = [r for r in rows if r.get('dim_logistics_rider.last_operating_zone_name') in TARGET_ZONES]
 
-# Also handle "Glesco" vs "Gelesco" contract name variant
-CONTRACT_MAP = {"Glesco": "Gelesco"}
+CONTRACT_MAP = {"Glesco": "Gelesco", "Team mh for Delivery": "Team Mh for delivery"}
 
-YDAY = "2026-08-15"   # use lag-adjusted yday
-W7_START, W7_END = "2026-08-09", "2026-08-15"
-MTD_START, MTD_END = "2026-08-01", "2026-08-15"
+YDAY = "2026-08-16"
+W7_START, W7_END = "2026-08-10", "2026-08-16"
+MTD_START, MTD_END = "2026-08-01", "2026-08-16"
 MONTH_START, MONTH_END = "2026-07-01", "2026-07-31"
-W7_DAYS, MTD_DAYS, LM_DAYS = 7, 15, 31
+W7_DAYS, MTD_DAYS, LM_DAYS = 7, 16, 31
 
 def in_range(d, s, e): return s <= d <= e
 
@@ -29,7 +28,7 @@ mtd_riders_sum = defaultdict(int)
 for r in rows:
     zone     = r['dim_logistics_rider.last_operating_zone_name']
     contract = r['agg_logistics_rider_performance.contract_name'].strip()
-    contract = CONTRACT_MAP.get(contract, contract)  # normalize name variants
+    contract = CONTRACT_MAP.get(contract, contract)
     dt       = r['agg_logistics_rider_performance.created_date_date']
     riders   = int(r['agg_logistics_rider_performance.total_active_riders'] or 0)
     hrs      = float(r['agg_logistics_rider_performance.sum_actual_working_duration'] or 0.0)
@@ -69,14 +68,14 @@ TLP_AWH_W7    = {k: awh(w7_data[k]["sum_hrs"],  w7_data[k]["sum_riders"])  for k
 TLP_AWH_MTD   = {k: awh(mtd_data[k]["sum_hrs"], mtd_data[k]["sum_riders"]) for k in all_keys}
 TLP_AWH_MONTH = {k: awh(month_data[k]["sum_hrs"],month_data[k]["sum_riders"]) for k in all_keys}
 
-print(f"Top5 YDAY: {sorted(TLP_YDAY.items(),key=lambda x:-x[1])[:5]}")
-print(f"Top5 RIDERS: {sorted(TLP_RIDERS_YDAY.items(),key=lambda x:-x[1])[:5]}")
-print(f"AWH Nasr city|Ebad El rahman: {TLP_AWH_YDAY.get('Nasr city|Ebad El rahman')}")
+print(f"Top5 YDAY hrs: {sorted(TLP_YDAY.items(),key=lambda x:-x[1])[:5]}")
+print(f"Top5 RIDERS yday: {sorted(TLP_RIDERS_YDAY.items(),key=lambda x:-x[1])[:5]}")
+print(f"Ebad AWH yday: {TLP_AWH_YDAY.get('Nasr city|Ebad El rahman')}")
 
 def patch_const(html, name, value):
     val = json.dumps(value, ensure_ascii=False)
     new, n = re.subn(rf'const {name} = \{{.*?\}};', f'const {name} = {val};', html, flags=re.DOTALL)
-    print(f"  {name}: {n} sub")
+    print(f"  {name}: {n} sub(s)")
     return new
 
 for name, val in [
