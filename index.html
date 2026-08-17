@@ -416,42 +416,13 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 .off-count.y { background:rgba(255,171,0,.15); color:#ffd166; }
 .off-count.g { color:rgba(255,255,255,.35); }
 .off-empty { text-align:center; padding:48px; color:rgba(255,255,255,.3); font-size:14px; }
-/* Offender notes / suspension */
-.off-notes-ind { text-align:center; width:28px; cursor:pointer; }
-.off-note-dot  { color:#36b37e; font-size:14px; }
-.off-note-empty{ color:rgba(255,255,255,.15); font-size:14px; }
-.off-row       { cursor:pointer; transition:background .15s; }
-.off-row:hover { background:rgba(255,255,255,.04); }
-.off-detail-row td { padding:0 !important; border-top:none !important; }
-.off-detail-inner {
-  display:flex; gap:12px; padding:10px 16px 14px;
-  background:#f5ede3; border-bottom:1px solid #ddd4c8;
+.off-id-filter {
+  padding:6px 12px; border-radius:20px; font-size:12px; font-weight:600;
+  border:1.5px solid rgba(255,255,255,.18); background:rgba(255,255,255,.07);
+  color:rgba(255,255,255,.85); outline:none; width:150px; transition:all .15s;
 }
-.off-detail-field { display:flex; flex-direction:column; gap:4px; }
-.off-detail-field label {
-  font-size:10px; font-weight:700; letter-spacing:.06em;
-  text-transform:uppercase; color:#666;
-}
-.off-detail-field textarea {
-  width:340px; height:56px; resize:vertical;
-  background:#fff; border:1.5px solid #ccc;
-  border-radius:6px; color:#111; font-size:12px;
-  padding:6px 9px; font-family:inherit; outline:none;
-}
-.off-detail-field textarea::placeholder,
-.off-detail-field input[type=text]::placeholder {
-  color:#aaa;
-}
-.off-detail-field textarea:focus,
-.off-detail-field input[type=text]:focus {
-  border-color:rgba(255,135,0,.5); background:rgba(255,135,0,.04);
-}
-.off-detail-field input[type=text] {
-  width:140px; background:#fff;
-  border:1.5px solid #ccc; border-radius:6px;
-  color:#111; font-size:12px; padding:6px 9px;
-  font-family:inherit; outline:none;
-}
+.off-id-filter::placeholder { color:rgba(255,255,255,.3); }
+.off-id-filter:focus { border-color:rgba(255,89,0,.5); background:rgba(255,89,0,.06); }
 
 
 /*  DT COMPLIANCE TAB  */
@@ -771,6 +742,12 @@ body {
   background-position: right 10px center !important;
 }
 .off-date-sel option { background: #fff !important; color: #333 !important; }
+.off-id-filter {
+  background: #fff !important; border-color: #DDD4C8 !important;
+  color: #333 !important;
+}
+.off-id-filter::placeholder { color: #bbb !important; }
+.off-id-filter:focus { border-color: rgba(255,89,0,.5) !important; background: #fff8f4 !important; }
 .off-table-wrap { border-radius: 10px; overflow: auto; border: 1px solid #EAE0D8 !important; }
 .off-table thead th {
   color: #aaa !important;
@@ -791,31 +768,7 @@ body {
 .off-count.g { color: #ccc !important; }
 .off-empty { color: #ccc !important; }
 
-/* ── Offender notes / suspension – light mode ── */
-.off-note-empty { color: rgba(0,0,0,.2) !important; }
-.off-row:hover  { background: #FAF3EE !important; }
-.off-detail-inner {
-  background: #FAF3EE !important;
-  border-bottom: 1px solid #EAE0D8 !important;
-}
-.off-detail-field label {
-  color: #888 !important;
-}
-.off-detail-field textarea,
-.off-detail-field input[type=text] {
-  background: #fff !important;
-  border: 1px solid #DDD4C8 !important;
-  color: #222 !important;
-}
-.off-detail-field textarea::placeholder,
-.off-detail-field input[type=text]::placeholder {
-  color: #bbb !important;
-}
-.off-detail-field textarea:focus,
-.off-detail-field input[type=text]:focus {
-  border-color: rgba(255,89,0,.5) !important;
-  background: #fff8f4 !important;
-}
+
 
 /* ── DT COMPLIANCE TAB ── */
 .dtc-view-btn {
@@ -1844,6 +1797,7 @@ init3PLDropdown();
     <select class="off-date-sel" id="off-date-sel" onchange="renderOffenders()">
       <option value="mtd">All Month (MTD)</option>
     </select>
+    <input type="text" id="off-id-filter" class="off-id-filter" placeholder="🔍 Rider ID…" oninput="renderOffenders()" />
     <span style="font-size:11px;color:rgba(255,255,255,.3);margin-left:auto" id="off-count-label"></span>
   </div>
 
@@ -1858,11 +1812,10 @@ init3PLDropdown();
           <th onclick="sortOff('breaks')"  id="offh-breaks" class="r">BREAKS (h) <span class="sort-arrow">^v</span></th>
           <th onclick="sortOff('avp')"     id="offh-avp"    class="r">AVP% <span class="sort-arrow">^v</span></th>
           <th onclick="sortOff('shifts')" id="offh-shifts" class="r">SHIFTS <span class="sort-arrow">^v</span></th>
-          <th class="off-notes-ind" title="Notes / Action">📝</th>
         </tr>
       </thead>
       <tbody id="off-tbody">
-        <tr><td colspan="8" class="off-empty">Loading…</td></tr>
+        <tr><td colspan="7" class="off-empty">Loading…</td></tr>
       </tbody>
     </table>
   </div>
@@ -2209,18 +2162,10 @@ function sortOff(col){
   renderOffenders();
 }
 
-/* ── Offender notes / suspension helpers ── */
-function saveOffenderNote(id,val){ localStorage.setItem('rider_note_'+id, val); }
-function saveOffenderSusp(id,val){ localStorage.setItem('rider_susp_'+id, val); }
-function toggleOffDetail(id){
-  const el=document.getElementById('off-detail-'+id);
-  if(el) el.style.display = el.style.display==='none' ? 'table-row' : 'none';
-}
-
 function renderOffenders(){
   const mKey = getOffMonth();
   const mo = OFFENDERS[mKey];
-  if(!mo){ document.getElementById('off-tbody').innerHTML='<tr><td colspan="8" class="off-empty">No data for this month.</td></tr>'; return; }
+  if(!mo){ document.getElementById('off-tbody').innerHTML='<tr><td colspan="7" class="off-empty">No data for this month.</td></tr>'; return; }
 
   const dateVal = document.getElementById('off-date-sel').value;
   let riders;
@@ -2229,6 +2174,10 @@ function renderOffenders(){
   } else {
     riders = ((mo.days||{})[dateVal]||{})[offZone] || [];
   }
+
+  // Filter by Rider ID
+  const idFilter = (document.getElementById('off-id-filter')?.value||'').trim().toLowerCase();
+  if(idFilter) riders = riders.filter(r=>String(r.id).toLowerCase().includes(idFilter));
 
   // Sort
   const sorted = [...riders].sort((a,b)=>{
@@ -2246,7 +2195,7 @@ function renderOffenders(){
   document.getElementById('off-count-label').textContent = `${sorted.length} riders`;
 
   if(!sorted.length){
-    document.getElementById('off-tbody').innerHTML='<tr><td colspan="8" class="off-empty">No offenders found for selected filters.</td></tr>';
+    document.getElementById('off-tbody').innerHTML='<tr><td colspan="7" class="off-empty">No offenders found for selected filters.</td></tr>';
     return;
   }
 
@@ -2254,15 +2203,7 @@ function renderOffenders(){
     const ns = r.noShow||0, lt = r.late||0, br = r.breaks??0, av = r.avp??0, dy = r.shifts||0;
     const nsCls = ns>=3?'r':ns>=1?'y':'g';
     const ltCls = lt>=5?'r':lt>=2?'y':'g';
-    const note = localStorage.getItem('rider_note_'+r.id)||'';
-    const susp = localStorage.getItem('rider_susp_'+r.id)||'';
-    const hasNote = note.trim().length>0 || susp.trim().length>0;
-    const noteDot = hasNote
-      ? '<span class="off-note-dot" title="Has notes">●</span>'
-      : '<span class="off-note-empty">○</span>';
-    // escape id for use in HTML attributes (rider IDs are numeric, but be safe)
-    const safeId = String(r.id).replace(/"/g,'&quot;');
-    return `<tr class="off-row" onclick="toggleOffDetail('${safeId}')">
+    return `<tr>
       <td class="off-rank">${i+1}</td>
       <td class="off-id">${r.id}</td>
       <td class="off-num r"><span class="off-count ${nsCls}">${ns}</span></td>
@@ -2270,21 +2211,6 @@ function renderOffenders(){
       <td class="off-num r">${br>0?br.toFixed(1)+'h':'0h'}</td>
       <td class="off-num r">${av>0?av.toFixed(1)+'%':'-'}</td>
       <td class="off-num r">${dy||'-'}</td>
-      <td class="off-notes-ind">${noteDot}</td>
-    </tr>
-    <tr id="off-detail-${safeId}" class="off-detail-row" style="display:none">
-      <td colspan="8">
-        <div class="off-detail-inner">
-          <div class="off-detail-field">
-            <label>Action Taken</label>
-            <textarea onclick="event.stopPropagation()" oninput="saveOffenderNote('${safeId}',this.value)" placeholder="Write action taken with this rider…">${note.replace(/</g,'&lt;')}</textarea>
-          </div>
-          <div class="off-detail-field">
-            <label>Suspension Duration</label>
-            <input type="text" value="${susp.replace(/"/g,'&quot;')}" onclick="event.stopPropagation()" oninput="saveOffenderSusp('${safeId}',this.value)" placeholder="e.g. 3 days" />
-          </div>
-        </div>
-      </td>
     </tr>`;
   }).join('');
   document.getElementById('off-tbody').innerHTML = rows;
