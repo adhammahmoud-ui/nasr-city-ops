@@ -417,9 +417,9 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 .off-count.g { color:rgba(255,255,255,.35); }
 .off-empty { text-align:center; padding:48px; color:rgba(255,255,255,.3); font-size:14px; }
 .off-id-filter {
-  padding:6px 12px; border-radius:20px; font-size:12px; font-weight:600;
-  border:1.5px solid rgba(255,255,255,.18); background:rgba(255,255,255,.07);
-  color:rgba(255,255,255,.85); outline:none; width:150px; transition:all .15s;
+  padding:7px 14px; border-radius:8px; font-size:13px; font-weight:600;
+  border:1.5px solid rgba(255,255,255,.25); background:rgba(255,255,255,.1);
+  color:rgba(255,255,255,.9); outline:none; width:220px; transition:all .15s;
 }
 .off-id-filter::placeholder { color:rgba(255,255,255,.3); }
 .off-id-filter:focus { border-color:rgba(255,89,0,.5); background:rgba(255,89,0,.06); }
@@ -743,8 +743,8 @@ body {
 }
 .off-date-sel option { background: #fff !important; color: #333 !important; }
 .off-id-filter {
-  background: #fff !important; border-color: #DDD4C8 !important;
-  color: #333 !important;
+  background: #fff !important; border: 1.5px solid #bbb !important;
+  color: #222 !important; box-shadow: 0 1px 4px rgba(0,0,0,.08);
 }
 .off-id-filter::placeholder { color: #bbb !important; }
 .off-id-filter:focus { border-color: rgba(255,89,0,.5) !important; background: #fff8f4 !important; }
@@ -1797,8 +1797,11 @@ init3PLDropdown();
     <select class="off-date-sel" id="off-date-sel" onchange="renderOffenders()">
       <option value="mtd">All Month (MTD)</option>
     </select>
-    <input type="text" id="off-id-filter" class="off-id-filter" placeholder="🔍 Rider ID…" oninput="renderOffenders()" />
     <span style="font-size:11px;color:rgba(255,255,255,.3);margin-left:auto" id="off-count-label"></span>
+  </div>
+  <div style="margin:0 24px 10px;display:flex;align-items:center;gap:8px">
+    <input type="text" id="off-id-filter" class="off-id-filter" placeholder="🔍 Search Rider ID…" oninput="renderOffenders()" />
+    <span id="off-filter-count" style="font-size:11px;color:rgba(255,89,0,.7);font-weight:700"></span>
   </div>
 
   <div class="off-table-wrap">
