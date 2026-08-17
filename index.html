@@ -416,6 +416,39 @@ body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif
 .off-count.y { background:rgba(255,171,0,.15); color:#ffd166; }
 .off-count.g { color:rgba(255,255,255,.35); }
 .off-empty { text-align:center; padding:48px; color:rgba(255,255,255,.3); font-size:14px; }
+/* Offender notes / suspension */
+.off-notes-ind { text-align:center; width:28px; cursor:pointer; }
+.off-note-dot  { color:#36b37e; font-size:14px; }
+.off-note-empty{ color:rgba(255,255,255,.15); font-size:14px; }
+.off-row       { cursor:pointer; transition:background .15s; }
+.off-row:hover { background:rgba(255,255,255,.04); }
+.off-detail-row td { padding:0 !important; border-top:none !important; }
+.off-detail-inner {
+  display:flex; gap:12px; padding:10px 16px 14px;
+  background:rgba(255,255,255,.03); border-bottom:1px solid rgba(255,255,255,.07);
+}
+.off-detail-field { display:flex; flex-direction:column; gap:4px; }
+.off-detail-field label {
+  font-size:10px; font-weight:700; letter-spacing:.06em;
+  text-transform:uppercase; color:rgba(255,255,255,.35);
+}
+.off-detail-field textarea {
+  width:340px; height:56px; resize:vertical;
+  background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12);
+  border-radius:6px; color:rgba(255,255,255,.85); font-size:12px;
+  padding:6px 9px; font-family:inherit; outline:none;
+}
+.off-detail-field textarea:focus,
+.off-detail-field input[type=text]:focus {
+  border-color:rgba(255,135,0,.5); background:rgba(255,135,0,.04);
+}
+.off-detail-field input[type=text] {
+  width:140px; background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.12); border-radius:6px;
+  color:rgba(255,255,255,.85); font-size:12px; padding:6px 9px;
+  font-family:inherit; outline:none;
+}
+
 
 /*  DT COMPLIANCE TAB  */
 .dtc-controls { display:flex; align-items:center; gap:10px; margin:16px 24px 10px; flex-wrap:wrap; }
@@ -1795,10 +1828,11 @@ init3PLDropdown();
           <th onclick="sortOff('breaks')"  id="offh-breaks" class="r">BREAKS (h) <span class="sort-arrow">^v</span></th>
           <th onclick="sortOff('avp')"     id="offh-avp"    class="r">AVP% <span class="sort-arrow">^v</span></th>
           <th onclick="sortOff('shifts')" id="offh-shifts" class="r">SHIFTS <span class="sort-arrow">^v</span></th>
+          <th class="off-notes-ind" title="Notes / Action">📝</th>
         </tr>
       </thead>
       <tbody id="off-tbody">
-        <tr><td colspan="7" class="off-empty">Loading&</td></tr>
+        <tr><td colspan="8" class="off-empty">Loading…</td></tr>
       </tbody>
     </table>
   </div>
@@ -2145,10 +2179,18 @@ function sortOff(col){
   renderOffenders();
 }
 
+/* ── Offender notes / suspension helpers ── */
+function saveOffenderNote(id,val){ localStorage.setItem('rider_note_'+id, val); }
+function saveOffenderSusp(id,val){ localStorage.setItem('rider_susp_'+id, val); }
+function toggleOffDetail(id){
+  const el=document.getElementById('off-detail-'+id);
+  if(el) el.style.display = el.style.display==='none' ? 'table-row' : 'none';
+}
+
 function renderOffenders(){
   const mKey = getOffMonth();
   const mo = OFFENDERS[mKey];
-  if(!mo){ document.getElementById('off-tbody').innerHTML='<tr><td colspan="7" class="off-empty">No data for this month.</td></tr>'; return; }
+  if(!mo){ document.getElementById('off-tbody').innerHTML='<tr><td colspan="8" class="off-empty">No data for this month.</td></tr>'; return; }
 
   const dateVal = document.getElementById('off-date-sel').value;
   let riders;
@@ -2174,7 +2216,7 @@ function renderOffenders(){
   document.getElementById('off-count-label').textContent = `${sorted.length} riders`;
 
   if(!sorted.length){
-    document.getElementById('off-tbody').innerHTML='<tr><td colspan="7" class="off-empty">No offenders found for selected filters.</td></tr>';
+    document.getElementById('off-tbody').innerHTML='<tr><td colspan="8" class="off-empty">No offenders found for selected filters.</td></tr>';
     return;
   }
 
@@ -2182,7 +2224,15 @@ function renderOffenders(){
     const ns = r.noShow||0, lt = r.late||0, br = r.breaks??0, av = r.avp??0, dy = r.shifts||0;
     const nsCls = ns>=3?'r':ns>=1?'y':'g';
     const ltCls = lt>=5?'r':lt>=2?'y':'g';
-    return `<tr>
+    const note = localStorage.getItem('rider_note_'+r.id)||'';
+    const susp = localStorage.getItem('rider_susp_'+r.id)||'';
+    const hasNote = note.trim().length>0 || susp.trim().length>0;
+    const noteDot = hasNote
+      ? '<span class="off-note-dot" title="Has notes">●</span>'
+      : '<span class="off-note-empty">○</span>';
+    // escape id for use in HTML attributes (rider IDs are numeric, but be safe)
+    const safeId = String(r.id).replace(/"/g,'&quot;');
+    return `<tr class="off-row" onclick="toggleOffDetail('${safeId}')">
       <td class="off-rank">${i+1}</td>
       <td class="off-id">${r.id}</td>
       <td class="off-num r"><span class="off-count ${nsCls}">${ns}</span></td>
@@ -2190,6 +2240,21 @@ function renderOffenders(){
       <td class="off-num r">${br>0?br.toFixed(1)+'h':'0h'}</td>
       <td class="off-num r">${av>0?av.toFixed(1)+'%':'-'}</td>
       <td class="off-num r">${dy||'-'}</td>
+      <td class="off-notes-ind">${noteDot}</td>
+    </tr>
+    <tr id="off-detail-${safeId}" class="off-detail-row" style="display:none">
+      <td colspan="8">
+        <div class="off-detail-inner">
+          <div class="off-detail-field">
+            <label>Action Taken</label>
+            <textarea onclick="event.stopPropagation()" oninput="saveOffenderNote('${safeId}',this.value)" placeholder="Write action taken with this rider…">${note.replace(/</g,'&lt;')}</textarea>
+          </div>
+          <div class="off-detail-field">
+            <label>Suspension Duration</label>
+            <input type="text" value="${susp.replace(/"/g,'&quot;')}" onclick="event.stopPropagation()" oninput="saveOffenderSusp('${safeId}',this.value)" placeholder="e.g. 3 days" />
+          </div>
+        </div>
+      </td>
     </tr>`;
   }).join('');
   document.getElementById('off-tbody').innerHTML = rows;
