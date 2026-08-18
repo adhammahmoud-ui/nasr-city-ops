@@ -1785,6 +1785,7 @@ init3PLDropdown();
 
   <div class="off-controls">
     <div class="off-zone-btns">
+      <button class="off-zone-btn" onclick="setOffZone('__all__')" id="offz-all">All Zones</button>
       <button class="off-zone-btn active" onclick="setOffZone('Nasr city')" id="offz-nasr">Nasr City</button>
       <button class="off-zone-btn" onclick="setOffZone('Heliopolis')"       id="offz-helio">Heliopolis</button>
       <button class="off-zone-btn" onclick="setOffZone('Ain shams')"        id="offz-ain">Ain Shams</button>
@@ -1802,6 +1803,7 @@ init3PLDropdown();
       <thead>
         <tr>
           <th class="off-rank">#</th>
+          <th id="offh-zone" style="display:none">ZONE</th>
           <th onclick="sortOff('id')"      id="offh-id">RIDER ID <span class="sort-arrow">^v</span></th>
           <th onclick="sortOff('noShow')"  id="offh-noShow" class="r sorted">NO SHOW <span class="sort-arrow">^v</span></th>
           <th onclick="sortOff('late')"    id="offh-late"   class="r">LATE <span class="sort-arrow">^v</span></th>
@@ -2136,8 +2138,11 @@ function initOffenders(){
 function setOffZone(z){
   offZone = z;
   document.querySelectorAll('.off-zone-btn').forEach(b=>b.classList.remove('active'));
-  const map = {'Nasr city':'offz-nasr','Heliopolis':'offz-helio','Ain shams':'offz-ain'};
+  const map = {'Nasr city':'offz-nasr','Heliopolis':'offz-helio','Ain shams':'offz-ain','__all__':'offz-all'};
   document.getElementById(map[z])?.classList.add('active');
+  // Show/hide zone column
+  const showZoneCol = z === '__all__';
+  document.getElementById('offh-zone').style.display = showZoneCol ? '' : 'none';
   renderOffenders();
 }
 
@@ -2165,8 +2170,15 @@ function exportOffendersCSV(){
   if(!mo) return;
 
   const dateVal = document.getElementById('off-date-sel').value;
+  const allZones = offZone === '__all__';
+  const zoneKeys = ['Nasr city', 'Heliopolis', 'Ain shams'];
   let riders;
-  if(dateVal === 'mtd'){
+  if(allZones){
+    riders = zoneKeys.flatMap(z => {
+      const zRiders = dateVal === 'mtd' ? (mo.mtd||{})[z]||[] : ((mo.days||{})[dateVal]||{})[z]||[];
+      return zRiders.map(r=>({...r, _zone:z}));
+    });
+  } else if(dateVal === 'mtd'){
     riders = (mo.mtd||{})[offZone] || [];
   } else {
     riders = ((mo.days||{})[dateVal]||{})[offZone] || [];
@@ -2182,19 +2194,16 @@ function exportOffendersCSV(){
 
   const mLabel = (mo.label || mKey).replace(/[^a-zA-Z0-9_-]/g,'_');
   const datePart = dateVal === 'mtd' ? 'MTD' : dateVal;
-  const zonePart = offZone.replace(/\s+/g,'_');
+  const zonePart = allZones ? 'All_Zones' : offZone.replace(/\s+/g,'_');
   const filename = `offenders_${zonePart}_${mLabel}_${datePart}.csv`;
 
-  const header = ['Rank','Rider ID','No Show','Late','Breaks (min)','AVP%','Shifts'];
-  const rows = sorted.map((r,i)=>[
-    i+1,
-    r.id,
-    r.noShow||0,
-    r.late||0,
-    (r.breaks??0).toFixed(1),
-    (r.avp??0).toFixed(1),
-    r.shifts||0
-  ]);
+  const header = allZones
+    ? ['Rank','Zone','Rider ID','No Show','Late','Breaks (min)','AVP%','Shifts']
+    : ['Rank','Rider ID','No Show','Late','Breaks (min)','AVP%','Shifts'];
+  const rows = sorted.map((r,i)=> allZones
+    ? [i+1, r._zone, r.id, r.noShow||0, r.late||0, (r.breaks??0).toFixed(1), (r.avp??0).toFixed(1), r.shifts||0]
+    : [i+1, r.id, r.noShow||0, r.late||0, (r.breaks??0).toFixed(1), (r.avp??0).toFixed(1), r.shifts||0]
+  );
 
   const csv = [header, ...rows].map(r=>r.join(',')).join('\n');
   const blob = new Blob([csv], {type:'text/csv'});
@@ -2210,8 +2219,15 @@ function renderOffenders(){
   if(!mo){ document.getElementById('off-tbody').innerHTML='<tr><td colspan="7" class="off-empty">No data for this month.</td></tr>'; return; }
 
   const dateVal = document.getElementById('off-date-sel').value;
+  const allZones = offZone === '__all__';
+  const zoneKeys = ['Nasr city', 'Heliopolis', 'Ain shams'];
   let riders;
-  if(dateVal === 'mtd'){
+  if(allZones){
+    riders = zoneKeys.flatMap(z => {
+      const zRiders = dateVal === 'mtd' ? (mo.mtd||{})[z]||[] : ((mo.days||{})[dateVal]||{})[z]||[];
+      return zRiders.map(r=>({...r, _zone:z}));
+    });
+  } else if(dateVal === 'mtd'){
     riders = (mo.mtd||{})[offZone] || [];
   } else {
     riders = ((mo.days||{})[dateVal]||{})[offZone] || [];
@@ -2233,7 +2249,8 @@ function renderOffenders(){
     const dt = new Date(dateVal+'T00:00:00');
     return dt.toLocaleDateString('en',{month:'short',day:'numeric',year:'numeric'});
   })();
-  document.getElementById('off-sync-label').textContent = `Top ${sorted.length} offenders  ${offZone}  ${dateLabel}`;
+  const zoneLabel = allZones ? 'All Zones' : offZone;
+  document.getElementById('off-sync-label').textContent = `Top ${sorted.length} offenders  ${zoneLabel}  ${dateLabel}`;
   document.getElementById('off-count-label').textContent = `${sorted.length} riders`;
 
   if(!sorted.length){
@@ -2241,12 +2258,15 @@ function renderOffenders(){
     return;
   }
 
+  const zoneShort = {'Nasr city':'Nasr','Heliopolis':'Helio','Ain shams':'Ain Sh'};
   const rows = sorted.map((r,i)=>{
     const ns = r.noShow||0, lt = r.late||0, br = r.breaks??0, av = r.avp??0, dy = r.shifts||0;
     const nsCls = ns>=3?'r':ns>=1?'y':'g';
     const ltCls = lt>=5?'r':lt>=2?'y':'g';
+    const zoneTd = allZones ? `<td style="font-size:11px;font-weight:600;color:#FF5900;white-space:nowrap">${zoneShort[r._zone]||r._zone}</td>` : '';
     return `<tr>
       <td class="off-rank">${i+1}</td>
+      ${zoneTd}
       <td class="off-id">${r.id}</td>
       <td class="off-num r"><span class="off-count ${nsCls}">${ns}</span></td>
       <td class="off-num r"><span class="off-count ${ltCls}">${lt}</span></td>
