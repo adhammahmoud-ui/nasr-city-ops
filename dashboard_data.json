@@ -1,147 +1,155 @@
 {
   "generated": "2026-08-18",
   "data_date": "2026-08-17",
-  "tableau_fallback": true,
   "zone": {
     "yday": {
       "Nasr city": {
-        "riders": 1914,
-        "orders": 30924,
-        "delivTime": 21.96,
-        "rat": 5.285,
-        "toVendor": 2.641,
-        "onTime": 0.8799,
-        "failRate": 0.0201,
-        "sumHrs": 15868.3,
-        "plannedHrs": 19022.4,
-        "lateLogin": 0.0688,
-        "breakMin": 53.05,
-        "acceptRate": 0.8342,
-        "noShow": 0.0018
+        "riders": 1686,
+        "orders": 30330,
+        "sumHrs": 17021.58,
+        "plannedHrs": 18482.13,
+        "lateLogin": 0.0647,
+        "noShow": 0.0387,
+        "breakMin": 49.02,
+        "acceptRate": 0.921,
+        "fill": 0.921,
+        "delivTime": 22.086,
+        "rat": 5.63,
+        "toVendor": 2.973,
+        "onTime": 0.8742,
+        "failRate": 0.0212
       },
       "Heliopolis": {
-        "riders": 1802,
-        "orders": 28650,
-        "delivTime": 22.13,
-        "rat": 6.173,
-        "toVendor": 3.198,
-        "onTime": 0.8391,
-        "failRate": 0.018,
-        "sumHrs": 13362.5,
-        "plannedHrs": 16461.5,
-        "lateLogin": 0.0766,
-        "breakMin": 52.31,
-        "acceptRate": 0.8117,
-        "noShow": 0.0
+        "riders": 1682,
+        "orders": 28923,
+        "sumHrs": 14757.23,
+        "plannedHrs": 16145.62,
+        "lateLogin": 0.0744,
+        "noShow": 0.0566,
+        "breakMin": 48.31,
+        "acceptRate": 0.914,
+        "fill": 0.914,
+        "delivTime": 22.069,
+        "rat": 5.82,
+        "toVendor": 3.221,
+        "onTime": 0.8441,
+        "failRate": 0.02
       },
       "Ain shams": {
-        "riders": 403,
-        "orders": 4983,
-        "delivTime": 24.13,
-        "rat": 6.436,
-        "toVendor": 4.174,
-        "onTime": 0.7922,
-        "failRate": 0.0252,
-        "sumHrs": 2353.7,
-        "plannedHrs": 2982.1,
-        "lateLogin": 0.0613,
-        "breakMin": 38.5,
-        "acceptRate": 0.7893,
-        "noShow": 0.0
+        "riders": 348,
+        "orders": 4337,
+        "sumHrs": 2634.82,
+        "plannedHrs": 2875.03,
+        "lateLogin": 0.0575,
+        "noShow": 0.0574,
+        "breakMin": 39.81,
+        "acceptRate": 0.9164,
+        "fill": 0.9164,
+        "delivTime": 23.737,
+        "rat": 6.633,
+        "toVendor": 4.208,
+        "onTime": 0.7747,
+        "failRate": 0.028
       }
     },
     "wtd": {
       "Nasr city": {
-        "riders": 2714,
-        "orders": 217509,
-        "delivTime": 22.056,
-        "rat": 6.42,
-        "toVendor": 3.075,
-        "onTime": 0.8608,
-        "failRate": 0.0233,
-        "sumHrs": 109561.5,
-        "plannedHrs": 129004.1,
-        "lateLogin": 0.0612,
-        "breakMin": 51.67,
-        "acceptRate": 0.8493,
-        "noShow": 0.0307
+        "riders": 1686,
+        "orders": 30330,
+        "sumHrs": 17021.58,
+        "plannedHrs": 18482.13,
+        "lateLogin": 0.0647,
+        "noShow": 0.0387,
+        "breakMin": 49.02,
+        "acceptRate": 0.921,
+        "fill": 0.921,
+        "delivTime": 22.086,
+        "rat": 5.63,
+        "toVendor": 2.973,
+        "onTime": 0.8742,
+        "failRate": 0.0212
       },
       "Heliopolis": {
-        "riders": 2887,
-        "orders": 194758,
-        "delivTime": 21.845,
-        "rat": 7.404,
-        "toVendor": 3.264,
-        "onTime": 0.7945,
-        "failRate": 0.0243,
-        "sumHrs": 92227.1,
-        "plannedHrs": 113357.7,
-        "lateLogin": 0.0675,
-        "breakMin": 51.59,
-        "acceptRate": 0.8136,
-        "noShow": 0.059
+        "riders": 1682,
+        "orders": 28923,
+        "sumHrs": 14757.23,
+        "plannedHrs": 16145.62,
+        "lateLogin": 0.0744,
+        "noShow": 0.0566,
+        "breakMin": 48.31,
+        "acceptRate": 0.914,
+        "fill": 0.914,
+        "delivTime": 22.069,
+        "rat": 5.82,
+        "toVendor": 3.221,
+        "onTime": 0.8441,
+        "failRate": 0.02
       },
       "Ain shams": {
-        "riders": 798,
-        "orders": 34127,
-        "delivTime": 23.654,
-        "rat": 6.812,
-        "toVendor": 3.972,
-        "onTime": 0.7805,
-        "failRate": 0.0293,
-        "sumHrs": 17023.2,
-        "plannedHrs": 20957.2,
-        "lateLogin": 0.0642,
-        "breakMin": 36.56,
-        "acceptRate": 0.8123,
-        "noShow": 0.0437
+        "riders": 348,
+        "orders": 4337,
+        "sumHrs": 2634.82,
+        "plannedHrs": 2875.03,
+        "lateLogin": 0.0575,
+        "noShow": 0.0574,
+        "breakMin": 39.81,
+        "acceptRate": 0.9164,
+        "fill": 0.9164,
+        "delivTime": 23.737,
+        "rat": 6.633,
+        "toVendor": 4.208,
+        "onTime": 0.7747,
+        "failRate": 0.028
       }
     },
     "mtd": {
       "Nasr city": {
         "riders": 3365,
-        "orders": 495823,
-        "delivTime": 22.409,
+        "orders": 495920,
+        "sumHrs": 246772.58,
+        "plannedHrs": 273564.16,
+        "lateLogin": 0.0645,
+        "noShow": 0.0366,
+        "breakMin": 57.5,
+        "acceptRate": 0.9021,
+        "fill": 0.9021,
+        "delivTime": 22.41,
         "rat": 6.807,
         "toVendor": 3.311,
-        "onTime": 0.8543,
-        "failRate": 0.0238,
-        "sumHrs": 250426.0,
-        "plannedHrs": 294866.0,
-        "lateLogin": 0.0612,
-        "breakMin": 51.67,
-        "acceptRate": 0.8493,
-        "noShow": 0.0356
+        "onTime": 0.8528,
+        "failRate": 0.0238
       },
       "Heliopolis": {
         "riders": 3741,
-        "orders": 450900,
-        "delivTime": 22.019,
+        "orders": 450975,
+        "sumHrs": 220847.6,
+        "plannedHrs": 248578.93,
+        "lateLogin": 0.0723,
+        "noShow": 0.0653,
+        "breakMin": 60.3,
+        "acceptRate": 0.8884,
+        "fill": 0.8884,
+        "delivTime": 22.02,
         "rat": 6.783,
-        "toVendor": 3.287,
-        "onTime": 0.8184,
-        "failRate": 0.0223,
-        "sumHrs": 210804.0,
-        "plannedHrs": 259104.0,
-        "lateLogin": 0.0675,
-        "breakMin": 51.59,
-        "acceptRate": 0.8136,
-        "noShow": 0.0642
+        "toVendor": 3.288,
+        "onTime": 0.8176,
+        "failRate": 0.0223
       },
       "Ain shams": {
         "riders": 1177,
-        "orders": 79434,
-        "delivTime": 24.042,
-        "rat": 6.472,
-        "toVendor": 4.048,
-        "onTime": 0.7881,
-        "failRate": 0.0326,
-        "sumHrs": 38910.0,
-        "plannedHrs": 47916.0,
-        "lateLogin": 0.0642,
-        "breakMin": 36.56,
-        "acceptRate": 0.8123,
-        "noShow": 0.0499
+        "orders": 79452,
+        "sumHrs": 45702.9,
+        "plannedHrs": 50549.23,
+        "lateLogin": 0.0695,
+        "noShow": 0.0511,
+        "breakMin": 41.98,
+        "acceptRate": 0.9041,
+        "fill": 0.9041,
+        "delivTime": 24.041,
+        "rat": 6.473,
+        "toVendor": 4.047,
+        "onTime": 0.7866,
+        "failRate": 0.0326
       }
     }
   },
@@ -194,17 +202,17 @@
   },
   "dtc_mtd": {
     "ard_golf": [
-      81.4,
+      81.3,
       0,
       0
     ],
     "hegaz": [
-      55.3,
+      55.2,
       0,
       0
     ],
     "matareya": [
-      32.3,
+      32.5,
       0,
       0
     ],
@@ -214,27 +222,27 @@
       0
     ],
     "tayaran": [
-      47.1,
+      47.4,
       0,
       0
     ],
     "hay8": [
-      44.5,
+      45.1,
       0,
       0
     ],
     "shorouk": [
-      72.8,
+      73.2,
       0,
       0
     ],
     "masaken_sh": [
-      50.1,
+      49.9,
       0,
       0
     ],
     "omarat": [
-      49.8,
+      49.7,
       0,
       0
     ]
@@ -242,895 +250,247 @@
   "offenders": {
     "Nasr city": [
       {
-        "id": 2160437,
-        "noShow": 15,
-        "late": 1,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 2497581,
-        "noShow": 15,
-        "late": 0,
-        "breaks": 169.9,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
         "id": 2070739,
-        "noShow": 12,
-        "late": 3,
-        "breaks": 178.5,
-        "avp": 0.0,
-        "shifts": 22
-      },
-      {
-        "id": 4754402,
-        "noShow": 11,
-        "late": 10,
-        "breaks": 104.6,
-        "avp": 0.0,
-        "shifts": 23
-      },
-      {
-        "id": 3926637,
-        "noShow": 11,
-        "late": 6,
-        "breaks": 32.2,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4810407,
-        "noShow": 11,
-        "late": 1,
-        "breaks": 120.1,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4765718,
-        "noShow": 11,
+        "noShow": 7,
         "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 11
+        "breaks": 16.7,
+        "avp": 27.9,
+        "shifts": 15
       },
       {
         "id": 4710477,
-        "noShow": 10,
-        "late": 3,
-        "breaks": 126.3,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4811704,
-        "noShow": 10,
-        "late": 1,
-        "breaks": 138.0,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4809263,
-        "noShow": 10,
+        "noShow": 6,
         "late": 0,
-        "breaks": 67.9,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4812562,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 2023378,
-        "noShow": 9,
-        "late": 11,
-        "breaks": 172.1,
-        "avp": 0.0,
-        "shifts": 20
-      },
-      {
-        "id": 2654871,
-        "noShow": 9,
-        "late": 11,
-        "breaks": 102.4,
-        "avp": 0.0,
-        "shifts": 22
-      },
-      {
-        "id": 4559589,
-        "noShow": 9,
-        "late": 5,
-        "breaks": 25.4,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4337254,
-        "noShow": 9,
-        "late": 3,
-        "breaks": 190.8,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 3674158,
-        "noShow": 9,
-        "late": 3,
-        "breaks": 63.6,
-        "avp": 0.0,
-        "shifts": 20
-      },
-      {
-        "id": 4811635,
-        "noShow": 9,
-        "late": 2,
-        "breaks": 60.4,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 2269368,
-        "noShow": 9,
-        "late": 1,
-        "breaks": 156.0,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4808104,
-        "noShow": 9,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
+        "breaks": 3.0,
+        "avp": 14.5,
         "shifts": 9
-      },
-      {
-        "id": 4591503,
-        "noShow": 8,
-        "late": 15,
-        "breaks": 84.0,
-        "avp": 0.0,
-        "shifts": 28
-      },
-      {
-        "id": 4764539,
-        "noShow": 8,
-        "late": 11,
-        "breaks": 84.4,
-        "avp": 0.0,
-        "shifts": 20
-      },
-      {
-        "id": 4498025,
-        "noShow": 8,
-        "late": 8,
-        "breaks": 39.9,
-        "avp": 0.0,
-        "shifts": 27
-      },
-      {
-        "id": 4761336,
-        "noShow": 8,
-        "late": 5,
-        "breaks": 174.0,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4594352,
-        "noShow": 8,
-        "late": 1,
-        "breaks": 167.0,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4803108,
-        "noShow": 8,
-        "late": 1,
-        "breaks": 277.9,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4472110,
-        "noShow": 8,
-        "late": 1,
-        "breaks": 74.7,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4802380,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 1653982,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 194.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2834196,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 379.7,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4764497,
-        "noShow": 7,
-        "late": 8,
-        "breaks": 163.8,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4707745,
-        "noShow": 7,
-        "late": 6,
-        "breaks": 174.8,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4804615,
-        "noShow": 7,
-        "late": 5,
-        "breaks": 38.0,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4760895,
-        "noShow": 7,
-        "late": 5,
-        "breaks": 280.8,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 4722464,
-        "noShow": 7,
-        "late": 4,
-        "breaks": 122.1,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4616204,
-        "noShow": 7,
-        "late": 3,
-        "breaks": 109.8,
-        "avp": 0.0,
-        "shifts": 11
       },
       {
         "id": 4712851,
-        "noShow": 7,
+        "noShow": 6,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 7
+        "shifts": 6
       },
       {
-        "id": 2659438,
-        "noShow": 7,
+        "id": 4810407,
+        "noShow": 6,
         "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
+        "breaks": 2.0,
+        "avp": 4.4,
         "shifts": 8
       },
       {
-        "id": 4150983,
-        "noShow": 7,
+        "id": 4811704,
+        "noShow": 6,
         "late": 0,
-        "breaks": 35.1,
+        "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 9
+        "shifts": 6
       },
       {
-        "id": 4587819,
+        "id": 4811635,
         "noShow": 6,
-        "late": 8,
-        "breaks": 318.9,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 15
+        "shifts": 6
       },
       {
-        "id": 4740372,
+        "id": 4809263,
         "noShow": 6,
-        "late": 4,
-        "breaks": 160.9,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 13
+        "shifts": 6
+      },
+      {
+        "id": 4808104,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 4754402,
+        "noShow": 6,
+        "late": 7,
+        "breaks": 9.1,
+        "avp": 28.5,
+        "shifts": 14
+      },
+      {
+        "id": 4472110,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 0.0,
+        "shifts": 6
       },
       {
         "id": 4815867,
-        "noShow": 6,
-        "late": 4,
-        "breaks": 38.3,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4752436,
-        "noShow": 6,
-        "late": 4,
-        "breaks": 33.4,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4813855,
-        "noShow": 6,
-        "late": 4,
-        "breaks": 70.5,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 2471618,
-        "noShow": 6,
-        "late": 3,
-        "breaks": 264.2,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2127148,
-        "noShow": 6,
-        "late": 2,
-        "breaks": 447.1,
-        "avp": 0.0,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 1.0,
+        "avp": 15.2,
         "shifts": 8
       },
       {
-        "id": 4721720,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 158.2,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4724926,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 39.1,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 1780112,
-        "noShow": 6,
+        "id": 4812562,
+        "noShow": 5,
         "late": 0,
-        "breaks": 15.8,
+        "breaks": 0.0,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4820177,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 2160437,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
         "shifts": 7
       },
       {
-        "id": 4654155,
-        "noShow": 6,
+        "id": 2497581,
+        "noShow": 5,
         "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 2822272,
-        "noShow": 6,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4596915,
-        "noShow": 5,
-        "late": 16,
-        "breaks": 167.1,
-        "avp": 0.0,
-        "shifts": 25
-      },
-      {
-        "id": 4763858,
-        "noShow": 5,
-        "late": 13,
-        "breaks": 90.4,
-        "avp": 0.0,
-        "shifts": 23
-      },
-      {
-        "id": 2535214,
-        "noShow": 5,
-        "late": 11,
-        "breaks": 134.1,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 1052863,
-        "noShow": 5,
-        "late": 10,
-        "breaks": 11.7,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4694205,
-        "noShow": 5,
-        "late": 7,
-        "breaks": 92.2,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 2213181,
-        "noShow": 5,
-        "late": 6,
-        "breaks": 86.1,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4182887,
-        "noShow": 5,
-        "late": 6,
-        "breaks": 118.8,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 4714256,
-        "noShow": 5,
-        "late": 5,
-        "breaks": 187.3,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4691849,
-        "noShow": 5,
-        "late": 5,
-        "breaks": 238.7,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4752344,
-        "noShow": 5,
-        "late": 5,
-        "breaks": 172.9,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4719875,
-        "noShow": 5,
-        "late": 5,
-        "breaks": 231.8,
-        "avp": 0.0,
-        "shifts": 23
-      },
-      {
-        "id": 4715947,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 41.8,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4780631,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 168.9,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 3529157,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 103.4,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4520413,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 47.2,
-        "avp": 0.0,
-        "shifts": 20
-      },
-      {
-        "id": 4807891,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 99.2,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4806413,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 15.5,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4404885,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4783424,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 40.3,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4140034,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 241.4,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 2462535,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 191.6,
-        "avp": 0.0,
+        "breaks": 2.8,
+        "avp": 14.8,
         "shifts": 8
       },
       {
-        "id": 4754642,
+        "id": 4765718,
         "noShow": 5,
         "late": 0,
         "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 2156061,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 17.3,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4804608,
-        "noShow": 4,
-        "late": 13,
-        "breaks": 49.0,
-        "avp": 0.0,
-        "shifts": 20
-      },
-      {
-        "id": 4765814,
-        "noShow": 4,
-        "late": 12,
-        "breaks": 136.7,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4183495,
-        "noShow": 4,
-        "late": 11,
-        "breaks": 121.1,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4739108,
-        "noShow": 4,
-        "late": 11,
-        "breaks": 84.7,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4810503,
-        "noShow": 4,
-        "late": 10,
-        "breaks": 124.9,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4687272,
-        "noShow": 4,
-        "late": 9,
-        "breaks": 229.0,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 2154584,
-        "noShow": 4,
-        "late": 8,
-        "breaks": 183.0,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4786439,
-        "noShow": 4,
-        "late": 8,
-        "breaks": 126.7,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4295078,
-        "noShow": 4,
-        "late": 8,
-        "breaks": 410.8,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4464176,
-        "noShow": 4,
-        "late": 8,
-        "breaks": 65.9,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4761064,
-        "noShow": 4,
-        "late": 8,
-        "breaks": 201.1,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4628239,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 32.2,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4576403,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 93.6,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4150600,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 28.0,
-        "avp": 0.0,
-        "shifts": 21
-      },
-      {
-        "id": 4631091,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 63.7,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4783235,
-        "noShow": 4,
-        "late": 6,
-        "breaks": 50.5,
-        "avp": 0.0,
-        "shifts": 22
-      },
-      {
-        "id": 4265605,
-        "noShow": 4,
-        "late": 6,
-        "breaks": 92.3,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4786524,
-        "noShow": 4,
-        "late": 6,
-        "breaks": 192.7,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 2483167,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 178.4,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4724880,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 58.7,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 3499066,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 260.7,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4604088,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 54.0,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 1950193,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 70.9,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4555366,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 31.1,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 3435626,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 3.5,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4159265,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 80.0,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4565167,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 288.6,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 1159093,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 94.4,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 1760212,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 177.1,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4802477,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 135.3,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4689417,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 75.2,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4730363,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 283.4,
         "avp": 0.0,
         "shifts": 6
       },
       {
         "id": 4806291,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 92.2,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 1.5,
+        "avp": 53.9,
+        "shifts": 7
+      },
+      {
+        "id": 4594352,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
         "shifts": 5
       },
       {
-        "id": 4804726,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 143.5,
+        "id": 3529157,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4783424,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 0.0,
+        "avp": 1.6,
         "shifts": 6
       },
       {
-        "id": 4807266,
-        "noShow": 4,
+        "id": 2127148,
+        "noShow": 5,
         "late": 1,
-        "breaks": 94.0,
+        "breaks": 6.3,
+        "avp": 2.1,
+        "shifts": 6
+      },
+      {
+        "id": 4783235,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 5.7,
+        "avp": 56.4,
+        "shifts": 14
+      },
+      {
+        "id": 4721720,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 1.4,
+        "avp": 23.3,
+        "shifts": 6
+      },
+      {
+        "id": 4464176,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 4.3,
+        "avp": 36.5,
+        "shifts": 8
+      },
+      {
+        "id": 1918136,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.5,
+        "avp": 19.3,
+        "shifts": 5
+      },
+      {
+        "id": 3674158,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 12.5,
+        "avp": 37.9,
+        "shifts": 11
+      },
+      {
+        "id": 2535214,
+        "noShow": 4,
+        "late": 7,
+        "breaks": 9.4,
+        "avp": 20.8,
+        "shifts": 11
+      },
+      {
+        "id": 4689417,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 3.8,
+        "avp": 24.4,
+        "shifts": 8
+      },
+      {
+        "id": 1780112,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 19.8,
+        "shifts": 5
+      },
+      {
+        "id": 4337254,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
         "shifts": 5
       },
       {
-        "id": 4570915,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 136.9,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 2491690,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 260.1,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4783328,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 326.9,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 1780832,
+        "id": 4707745,
         "noShow": 4,
         "late": 0,
         "breaks": 0.0,
@@ -1141,1133 +501,131 @@
         "id": 4820151,
         "noShow": 4,
         "late": 0,
-        "breaks": 177.9,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4809242,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 4
-      },
-      {
-        "id": 4747803,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 393.6,
-        "avp": 0.0,
+        "breaks": 7.9,
+        "avp": 23.9,
         "shifts": 6
       },
       {
-        "id": 1918136,
+        "id": 4691849,
         "noShow": 4,
-        "late": 0,
-        "breaks": 15.5,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 3496011,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 112.6,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4008960,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 50.7,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4820177,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 4
-      },
-      {
-        "id": 1817492,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 3142450,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 4
-      }
-    ],
-    "Ain shams": [
-      {
-        "id": 4642949,
-        "noShow": 10,
-        "late": 6,
-        "breaks": 89.2,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 2659130,
-        "noShow": 10,
-        "late": 1,
-        "breaks": 91.1,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4280168,
-        "noShow": 9,
-        "late": 3,
-        "breaks": 108.4,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 2381788,
-        "noShow": 9,
         "late": 2,
-        "breaks": 126.8,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4746793,
-        "noShow": 8,
-        "late": 10,
-        "breaks": 55.9,
-        "avp": 0.0,
-        "shifts": 21
-      },
-      {
-        "id": 4783169,
-        "noShow": 8,
-        "late": 6,
-        "breaks": 216.4,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4783214,
-        "noShow": 8,
-        "late": 2,
-        "breaks": 244.4,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4703587,
-        "noShow": 8,
-        "late": 1,
-        "breaks": 133.2,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 2654773,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 51.8,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 2185940,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 22.7,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4760807,
-        "noShow": 7,
-        "late": 4,
-        "breaks": 116.7,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4809195,
-        "noShow": 7,
-        "late": 2,
-        "breaks": 114.1,
-        "avp": 0.0,
+        "breaks": 10.3,
+        "avp": 28.9,
         "shifts": 9
       },
       {
-        "id": 3925170,
-        "noShow": 7,
-        "late": 2,
-        "breaks": 14.5,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 3991650,
-        "noShow": 7,
+        "id": 4182887,
+        "noShow": 4,
         "late": 1,
-        "breaks": 103.7,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4602629,
-        "noShow": 7,
-        "late": 0,
-        "breaks": 154.7,
-        "avp": 0.0,
+        "breaks": 14.4,
+        "avp": 18.2,
         "shifts": 9
       },
       {
-        "id": 4046863,
-        "noShow": 6,
-        "late": 8,
-        "breaks": 135.9,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4724626,
-        "noShow": 6,
-        "late": 2,
-        "breaks": 202.9,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4711170,
-        "noShow": 6,
-        "late": 0,
-        "breaks": 367.1,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4807028,
-        "noShow": 6,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4655897,
-        "noShow": 6,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4775489,
-        "noShow": 5,
-        "late": 6,
-        "breaks": 110.2,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 1417543,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4783233,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 90.3,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4630817,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 199.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4802394,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 140.0,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4802570,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 1623967,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 61.0,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4693094,
-        "noShow": 4,
-        "late": 6,
-        "breaks": 218.8,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 2823637,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 70.5,
-        "avp": 0.0,
-        "shifts": 23
-      },
-      {
-        "id": 4752314,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 87.8,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4804487,
+        "id": 4591503,
         "noShow": 4,
         "late": 4,
-        "breaks": 189.0,
-        "avp": 0.0,
+        "breaks": 12.0,
+        "avp": 40.6,
         "shifts": 17
       },
       {
-        "id": 4737309,
+        "id": 2023378,
         "noShow": 4,
-        "late": 2,
-        "breaks": 62.4,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4614833,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 115.1,
-        "avp": 0.0,
+        "late": 4,
+        "breaks": 12.1,
+        "avp": 37.8,
         "shifts": 8
       },
       {
-        "id": 4825020,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 386.8,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 4703334,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 47.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 3433532,
+        "id": 4183495,
         "noShow": 4,
         "late": 0,
-        "breaks": 122.1,
-        "avp": 0.0,
-        "shifts": 11
+        "breaks": 8.0,
+        "avp": 7.0,
+        "shifts": 5
       },
       {
-        "id": 4010909,
+        "id": 4714256,
         "noShow": 4,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
+        "shifts": 6
+      },
+      {
+        "id": 1653982,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4140034,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 6.9,
+        "avp": 9.0,
         "shifts": 5
       },
       {
-        "id": 4758475,
+        "id": 3926637,
         "noShow": 4,
         "late": 0,
-        "breaks": 287.9,
+        "breaks": 1.9,
+        "avp": 53.0,
+        "shifts": 13
+      },
+      {
+        "id": 4559589,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 6
+        "shifts": 4
+      },
+      {
+        "id": 4813855,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 5.0,
+        "avp": 20.9,
+        "shifts": 7
       }
     ],
     "Heliopolis": [
       {
-        "id": 4133861,
-        "noShow": 16,
+        "id": 4769937,
+        "noShow": 8,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 1929761,
-        "noShow": 14,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4783648,
-        "noShow": 14,
-        "late": 0,
-        "breaks": 237.4,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 1390508,
-        "noShow": 13,
-        "late": 6,
-        "breaks": 77.2,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4409100,
-        "noShow": 12,
-        "late": 8,
-        "breaks": 123.3,
-        "avp": 0.0,
-        "shifts": 28
+        "shifts": 8
       },
       {
         "id": 4549182,
-        "noShow": 12,
-        "late": 5,
-        "breaks": 360.0,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 3968316,
-        "noShow": 12,
-        "late": 4,
-        "breaks": 318.1,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 3529074,
-        "noShow": 12,
-        "late": 4,
-        "breaks": 55.5,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 2172819,
-        "noShow": 12,
-        "late": 1,
-        "breaks": 213.9,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4746818,
-        "noShow": 11,
-        "late": 8,
-        "breaks": 131.1,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4406017,
-        "noShow": 11,
-        "late": 8,
-        "breaks": 42.8,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4171396,
-        "noShow": 11,
-        "late": 5,
-        "breaks": 105.3,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 4202995,
-        "noShow": 11,
-        "late": 0,
-        "breaks": 301.9,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 2407523,
-        "noShow": 11,
-        "late": 0,
-        "breaks": 184.9,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4769937,
-        "noShow": 10,
-        "late": 9,
-        "breaks": 116.2,
-        "avp": 0.0,
-        "shifts": 21
-      },
-      {
-        "id": 2402774,
-        "noShow": 10,
-        "late": 5,
-        "breaks": 16.0,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4614846,
-        "noShow": 10,
-        "late": 4,
-        "breaks": 278.5,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4414483,
-        "noShow": 10,
+        "noShow": 7,
         "late": 2,
-        "breaks": 275.9,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4809245,
-        "noShow": 10,
-        "late": 2,
-        "breaks": 137.3,
-        "avp": 0.0,
+        "breaks": 12.0,
+        "avp": 5.6,
         "shifts": 12
-      },
-      {
-        "id": 2606954,
-        "noShow": 10,
-        "late": 1,
-        "breaks": 27.0,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 1235541,
-        "noShow": 10,
-        "late": 1,
-        "breaks": 81.2,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 2495115,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 104.6,
-        "avp": 0.0,
-        "shifts": 16
       },
       {
         "id": 4523344,
-        "noShow": 10,
+        "noShow": 6,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 10
+        "shifts": 6
       },
       {
-        "id": 4242600,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4775556,
-        "noShow": 9,
-        "late": 6,
-        "breaks": 65.9,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4777040,
-        "noShow": 9,
-        "late": 5,
-        "breaks": 167.0,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4769673,
-        "noShow": 9,
-        "late": 5,
-        "breaks": 104.5,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 1352533,
-        "noShow": 9,
-        "late": 1,
-        "breaks": 24.7,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4784197,
-        "noShow": 9,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 951040,
-        "noShow": 9,
-        "late": 0,
-        "breaks": 27.3,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4703440,
-        "noShow": 8,
-        "late": 9,
-        "breaks": 52.1,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4517903,
-        "noShow": 8,
-        "late": 9,
-        "breaks": 61.6,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4756732,
-        "noShow": 8,
-        "late": 9,
-        "breaks": 117.9,
-        "avp": 0.0,
-        "shifts": 20
-      },
-      {
-        "id": 4611674,
-        "noShow": 8,
-        "late": 7,
-        "breaks": 112.0,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4813713,
-        "noShow": 8,
-        "late": 3,
-        "breaks": 111.5,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 1301845,
-        "noShow": 8,
-        "late": 3,
-        "breaks": 186.5,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 2043710,
-        "noShow": 8,
-        "late": 2,
-        "breaks": 172.9,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4743512,
-        "noShow": 8,
-        "late": 1,
-        "breaks": 240.2,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4765618,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4780407,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4285630,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 2015850,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4691830,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4689551,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 16.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4802338,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 122.8,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4806991,
-        "noShow": 7,
-        "late": 7,
-        "breaks": 31.5,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4264541,
-        "noShow": 7,
-        "late": 7,
-        "breaks": 119.0,
-        "avp": 0.0,
-        "shifts": 20
-      },
-      {
-        "id": 2127179,
-        "noShow": 7,
-        "late": 7,
-        "breaks": 140.5,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 3503957,
-        "noShow": 7,
-        "late": 6,
-        "breaks": 141.9,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4542744,
-        "noShow": 7,
-        "late": 5,
-        "breaks": 232.3,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 2089955,
-        "noShow": 7,
-        "late": 5,
-        "breaks": 164.2,
-        "avp": 0.0,
-        "shifts": 23
-      },
-      {
-        "id": 2199245,
-        "noShow": 7,
-        "late": 4,
-        "breaks": 66.3,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 2058668,
-        "noShow": 7,
-        "late": 4,
-        "breaks": 206.3,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 1835046,
-        "noShow": 7,
-        "late": 3,
-        "breaks": 74.5,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 2113059,
-        "noShow": 7,
-        "late": 3,
-        "breaks": 159.4,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 866141,
-        "noShow": 7,
-        "late": 2,
-        "breaks": 134.8,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 2272649,
-        "noShow": 7,
-        "late": 2,
-        "breaks": 274.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2655972,
-        "noShow": 7,
-        "late": 2,
-        "breaks": 91.9,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 2209629,
-        "noShow": 7,
-        "late": 2,
-        "breaks": 82.0,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 2140297,
-        "noShow": 7,
-        "late": 1,
-        "breaks": 15.2,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4421282,
-        "noShow": 7,
-        "late": 1,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 2524025,
-        "noShow": 7,
-        "late": 1,
-        "breaks": 79.3,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 3833932,
-        "noShow": 7,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 3895772,
-        "noShow": 7,
-        "late": 0,
-        "breaks": 207.1,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4773251,
-        "noShow": 6,
-        "late": 11,
-        "breaks": 173.5,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4540226,
-        "noShow": 6,
-        "late": 11,
-        "breaks": 51.3,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 2108245,
-        "noShow": 6,
-        "late": 10,
-        "breaks": 140.4,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4807866,
-        "noShow": 6,
-        "late": 10,
-        "breaks": 50.6,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 4716674,
-        "noShow": 6,
-        "late": 8,
-        "breaks": 103.0,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4687115,
-        "noShow": 6,
-        "late": 7,
-        "breaks": 63.0,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4805901,
-        "noShow": 6,
-        "late": 7,
-        "breaks": 42.1,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4761241,
-        "noShow": 6,
-        "late": 6,
-        "breaks": 134.5,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 1627104,
-        "noShow": 6,
-        "late": 5,
-        "breaks": 238.7,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 907631,
-        "noShow": 6,
-        "late": 5,
-        "breaks": 96.1,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 1834889,
-        "noShow": 6,
-        "late": 4,
-        "breaks": 261.4,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 2402693,
-        "noShow": 6,
-        "late": 4,
-        "breaks": 40.6,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 3871383,
-        "noShow": 6,
-        "late": 4,
-        "breaks": 54.1,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4783389,
-        "noShow": 6,
-        "late": 4,
-        "breaks": 90.8,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 1285640,
-        "noShow": 6,
-        "late": 3,
-        "breaks": 253.4,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 1581619,
-        "noShow": 6,
-        "late": 3,
-        "breaks": 30.2,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 1366287,
-        "noShow": 6,
-        "late": 3,
-        "breaks": 179.0,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4700694,
+        "id": 4636058,
         "noShow": 6,
         "late": 2,
-        "breaks": 200.3,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4777114,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4654039,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 84.2,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4789395,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 47.0,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 2516497,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 1719311,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 91.3,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 1798369,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 104.6,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4387822,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 185.2,
-        "avp": 0.0,
+        "breaks": 8.3,
+        "avp": 21.7,
         "shifts": 12
-      },
-      {
-        "id": 3671555,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 67.4,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4653485,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 192.4,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4759345,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 19.8,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2639837,
-        "noShow": 6,
-        "late": 0,
-        "breaks": 5.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4805482,
-        "noShow": 6,
-        "late": 0,
-        "breaks": 59.7,
-        "avp": 0.0,
-        "shifts": 7
       },
       {
         "id": 4813460,
@@ -2278,7 +636,15 @@
         "shifts": 6
       },
       {
-        "id": 4802439,
+        "id": 4783389,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 7.6,
+        "avp": 40.9,
+        "shifts": 14
+      },
+      {
+        "id": 4813713,
         "noShow": 6,
         "late": 0,
         "breaks": 0.0,
@@ -2286,319 +652,31 @@
         "shifts": 6
       },
       {
-        "id": 2112167,
+        "id": 4406017,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 1.4,
+        "avp": 20.2,
+        "shifts": 9
+      },
+      {
+        "id": 2495115,
         "noShow": 6,
         "late": 0,
-        "breaks": 167.4,
-        "avp": 0.0,
+        "breaks": 1.6,
+        "avp": 10.2,
         "shifts": 7
       },
       {
-        "id": 4773174,
-        "noShow": 5,
-        "late": 15,
-        "breaks": 73.8,
-        "avp": 0.0,
-        "shifts": 24
-      },
-      {
-        "id": 4681894,
-        "noShow": 5,
-        "late": 14,
-        "breaks": 62.4,
-        "avp": 0.0,
-        "shifts": 25
-      },
-      {
-        "id": 4595987,
-        "noShow": 5,
-        "late": 12,
-        "breaks": 147.5,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4340695,
-        "noShow": 5,
-        "late": 10,
-        "breaks": 176.3,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4755163,
-        "noShow": 5,
-        "late": 9,
-        "breaks": 228.6,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 2274346,
-        "noShow": 5,
-        "late": 8,
-        "breaks": 37.6,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 2537145,
-        "noShow": 5,
-        "late": 7,
-        "breaks": 47.8,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4321677,
-        "noShow": 5,
-        "late": 6,
-        "breaks": 31.1,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4707236,
-        "noShow": 5,
-        "late": 5,
-        "breaks": 142.3,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 4222761,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 21.5,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 653631,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 14.4,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 3784051,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 52.9,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 4755127,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 271.1,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4591723,
-        "noShow": 5,
-        "late": 4,
-        "breaks": 116.8,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4491547,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 182.8,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 1110676,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 288.8,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 1893457,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 140.6,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4815364,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 93.5,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4807870,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 116.3,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4638882,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 35.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 1039740,
-        "noShow": 5,
-        "late": 3,
-        "breaks": 57.6,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 1132254,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 54.2,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2149988,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 43.4,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4653313,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 220.8,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4062792,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 214.8,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4729905,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 134.2,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4538238,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 2.7,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4699329,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 11.7,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4777790,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 137.3,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4823690,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 147.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4807969,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 161.7,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4710568,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 120.1,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4780468,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 115.7,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 1486723,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 476.8,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4813463,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 184.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 2048556,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 23.2,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4804579,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 15.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4036451,
+        "id": 4242600,
         "noShow": 5,
         "late": 0,
-        "breaks": 82.9,
+        "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 12
+        "shifts": 5
       },
       {
-        "id": 4769846,
+        "id": 4809245,
         "noShow": 5,
         "late": 0,
         "breaks": 0.0,
@@ -2614,631 +692,191 @@
         "shifts": 5
       },
       {
-        "id": 2458884,
+        "id": 1235541,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 18.3,
+        "shifts": 6
+      },
+      {
+        "id": 4202995,
         "noShow": 5,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4517903,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 2.8,
+        "avp": 34.7,
         "shifts": 9
       },
       {
-        "id": 2161362,
+        "id": 1110676,
         "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
+        "late": 4,
+        "breaks": 10.0,
+        "avp": 16.9,
+        "shifts": 9
       },
       {
-        "id": 4700747,
+        "id": 4783648,
         "noShow": 5,
         "late": 0,
-        "breaks": 38.0,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4258544,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 4633855,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 1837182,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 9.7,
-        "avp": 0.0,
+        "breaks": 4.0,
+        "avp": 12.1,
         "shifts": 7
       },
       {
-        "id": 4803759,
+        "id": 1929761,
         "noShow": 5,
         "late": 0,
         "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 3888166,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 12.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 3884095,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 40.3,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 3857017,
-        "noShow": 4,
-        "late": 13,
-        "breaks": 7.5,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4800193,
-        "noShow": 4,
-        "late": 13,
-        "breaks": 19.5,
-        "avp": 0.0,
-        "shifts": 38
-      },
-      {
-        "id": 4773388,
-        "noShow": 4,
-        "late": 12,
-        "breaks": 55.3,
-        "avp": 0.0,
-        "shifts": 22
-      },
-      {
-        "id": 4636058,
-        "noShow": 4,
-        "late": 12,
-        "breaks": 142.7,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4783167,
-        "noShow": 4,
-        "late": 11,
-        "breaks": 36.4,
-        "avp": 0.0,
-        "shifts": 17
-      },
-      {
-        "id": 4380306,
-        "noShow": 4,
-        "late": 11,
-        "breaks": 42.0,
-        "avp": 0.0,
-        "shifts": 21
-      },
-      {
-        "id": 4725209,
-        "noShow": 4,
-        "late": 10,
-        "breaks": 20.2,
-        "avp": 0.0,
-        "shifts": 22
-      },
-      {
-        "id": 4716133,
-        "noShow": 4,
-        "late": 9,
-        "breaks": 94.4,
-        "avp": 0.0,
-        "shifts": 19
-      },
-      {
-        "id": 3856567,
-        "noShow": 4,
-        "late": 9,
-        "breaks": 282.7,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4614636,
-        "noShow": 4,
-        "late": 9,
-        "breaks": 169.7,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4573472,
-        "noShow": 4,
-        "late": 9,
-        "breaks": 121.2,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4647914,
-        "noShow": 4,
-        "late": 9,
-        "breaks": 12.4,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 1287202,
-        "noShow": 4,
-        "late": 8,
-        "breaks": 69.7,
-        "avp": 0.0,
-        "shifts": 18
-      },
-      {
-        "id": 4288140,
-        "noShow": 4,
-        "late": 8,
-        "breaks": 127.5,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 4242766,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 73.0,
-        "avp": 0.0,
-        "shifts": 21
-      },
-      {
-        "id": 4537857,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 139.6,
-        "avp": 0.0,
-        "shifts": 21
-      },
-      {
-        "id": 4699811,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 100.8,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4726348,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 332.6,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4380474,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 102.8,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 1457717,
-        "noShow": 4,
-        "late": 7,
-        "breaks": 8.7,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 1141607,
-        "noShow": 4,
-        "late": 6,
-        "breaks": 79.2,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 1382967,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 211.6,
-        "avp": 0.0,
-        "shifts": 14
-      },
-      {
-        "id": 4724811,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 82.0,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4666733,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 92.4,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4807953,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 60.3,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4353191,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 186.3,
-        "avp": 0.0,
-        "shifts": 10
-      },
-      {
-        "id": 4802907,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 116.1,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 2838137,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 154.3,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 1742017,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 13.9,
-        "avp": 0.0,
-        "shifts": 21
-      },
-      {
-        "id": 2529005,
-        "noShow": 4,
-        "late": 5,
-        "breaks": 132.0,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 4785493,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 108.6,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4609581,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 56.5,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4326896,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 179.7,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4574579,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 16.4,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 996019,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 90.1,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4787924,
-        "noShow": 4,
-        "late": 4,
-        "breaks": 13.8,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 1459332,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 119.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4493613,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 129.3,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 2521425,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 151.1,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 1878123,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 27.8,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4813659,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 75.1,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4811479,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 23.1,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4493083,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 56.3,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 1329204,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 918458,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 54.1,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 2607621,
-        "noShow": 4,
-        "late": 3,
-        "breaks": 152.3,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 2196517,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 41.8,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 2403018,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 23.7,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4811684,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 143.3,
-        "avp": 0.0,
-        "shifts": 15
-      },
-      {
-        "id": 1523419,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 95.2,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 1756964,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 82.7,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4802826,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 92.5,
         "avp": 0.0,
         "shifts": 6
       },
       {
-        "id": 3435855,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 176.1,
-        "avp": 0.0,
-        "shifts": 8
+        "id": 4807291,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.1,
+        "avp": 6.5,
+        "shifts": 6
       },
       {
-        "id": 2366868,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 32.3,
-        "avp": 0.0,
-        "shifts": 16
-      },
-      {
-        "id": 1660799,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 57.9,
-        "avp": 0.0,
-        "shifts": 13
-      },
-      {
-        "id": 4468581,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 78.7,
+        "id": 4133861,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
         "shifts": 7
       },
       {
-        "id": 2434758,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 191.1,
+        "id": 4761241,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 9
+        "shifts": 5
       },
       {
-        "id": 1781880,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 230.3,
+        "id": 4689551,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 9
+        "shifts": 5
+      },
+      {
+        "id": 4823690,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 2.4,
+        "avp": 18.2,
+        "shifts": 7
+      },
+      {
+        "id": 4769673,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 2.5,
+        "avp": 16.8,
+        "shifts": 6
+      },
+      {
+        "id": 4806991,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 3.9,
+        "avp": 39.1,
+        "shifts": 7
       },
       {
         "id": 4807933,
         "noShow": 4,
-        "late": 2,
-        "breaks": 156.7,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4339588,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 18.2,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2403010,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 123.8,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 1982025,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 6.5,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4467817,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 175.4,
-        "avp": 0.0,
-        "shifts": 12
-      },
-      {
-        "id": 4591657,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 62.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 3877444,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 9.9,
-        "avp": 0.0,
+        "late": 5,
+        "breaks": 7.2,
+        "avp": 36.1,
         "shifts": 10
       },
       {
-        "id": 4729946,
+        "id": 1835046,
         "noShow": 4,
-        "late": 1,
-        "breaks": 133.8,
-        "avp": 0.0,
-        "shifts": 9
+        "late": 3,
+        "breaks": 0.8,
+        "avp": 35.1,
+        "shifts": 7
       },
       {
-        "id": 4489101,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 104.9,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2222699,
+        "id": 2172819,
         "noShow": 4,
         "late": 0,
         "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 4
-      },
-      {
-        "id": 4807291,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 6.0,
         "avp": 0.0,
         "shifts": 5
       },
       {
-        "id": 3902256,
+        "id": 4802886,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 13.2,
+        "avp": 21.8,
+        "shifts": 7
+      },
+      {
+        "id": 4775556,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 3.2,
+        "avp": 15.0,
+        "shifts": 6
+      },
+      {
+        "id": 1382967,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 18.8,
+        "avp": 15.6,
+        "shifts": 9
+      },
+      {
+        "id": 1627104,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 8.6,
+        "avp": 26.3,
+        "shifts": 7
+      },
+      {
+        "id": 4409100,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 4.8,
+        "avp": 40.7,
+        "shifts": 9
+      },
+      {
+        "id": 4829606,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 3.1,
+        "avp": 11.2,
+        "shifts": 6
+      },
+      {
+        "id": 3968316,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 15.6,
+        "avp": 10.8,
+        "shifts": 7
+      },
+      {
+        "id": 2112167,
         "noShow": 4,
         "late": 0,
         "breaks": 0.0,
@@ -3246,47 +884,177 @@
         "shifts": 4
       },
       {
-        "id": 4679188,
+        "id": 2606954,
         "noShow": 4,
         "late": 0,
-        "breaks": 286.1,
+        "breaks": 0.9,
+        "avp": 39.9,
+        "shifts": 7
+      },
+      {
+        "id": 4414483,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 10.9,
+        "avp": 26.3,
+        "shifts": 10
+      },
+      {
+        "id": 1285640,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
         "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4803759,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 4681894,
+        "noShow": 4,
+        "late": 6,
+        "breaks": 7.1,
+        "avp": 45.9,
+        "shifts": 13
+      },
+      {
+        "id": 2407523,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 22.7,
+        "shifts": 5
+      },
+      {
+        "id": 4609581,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 4.4,
+        "avp": 36.7,
+        "shifts": 8
+      },
+      {
+        "id": 3529074,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 1.0,
+        "avp": 27.9,
+        "shifts": 6
+      },
+      {
+        "id": 4746818,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 2.0,
+        "avp": 10.1,
+        "shifts": 6
+      },
+      {
+        "id": 4666733,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 19.2,
+        "shifts": 5
+      },
+      {
+        "id": 4773251,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 5.2,
+        "avp": 22.4,
+        "shifts": 8
+      },
+      {
+        "id": 2149988,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 5.4,
+        "avp": 41.0,
+        "shifts": 7
+      },
+      {
+        "id": 1390508,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 0.0,
+        "shifts": 4
+      },
+      {
+        "id": 2113059,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 11.3,
+        "avp": 30.8,
+        "shifts": 8
+      }
+    ],
+    "Ain shams": [
+      {
+        "id": 4746793,
+        "noShow": 6,
+        "late": 5,
+        "breaks": 6.3,
+        "avp": 34.5,
         "shifts": 14
       },
       {
-        "id": 3831965,
-        "noShow": 4,
-        "late": 0,
+        "id": 4783169,
+        "noShow": 5,
+        "late": 1,
         "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 4
+        "avp": 3.4,
+        "shifts": 6
       },
       {
-        "id": 4811744,
-        "noShow": 4,
+        "id": 1623967,
+        "noShow": 5,
         "late": 0,
-        "breaks": 46.0,
+        "breaks": 0.0,
         "avp": 0.0,
         "shifts": 5
       },
       {
-        "id": 4738989,
-        "noShow": 4,
+        "id": 3991650,
+        "noShow": 5,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
+        "shifts": 5
+      },
+      {
+        "id": 4825020,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 6.4,
+        "avp": 11.2,
         "shifts": 7
       },
       {
-        "id": 4763853,
+        "id": 4804487,
         "noShow": 4,
-        "late": 0,
-        "breaks": 152.6,
-        "avp": 0.0,
+        "late": 2,
+        "breaks": 10.2,
+        "avp": 33.4,
         "shifts": 10
       },
       {
-        "id": 4657024,
+        "id": 4010909,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "avp": 34.0,
+        "shifts": 6
+      },
+      {
+        "id": 3925170,
         "noShow": 4,
         "late": 0,
         "breaks": 0.0,
@@ -3294,1062 +1062,1078 @@
         "shifts": 4
       },
       {
-        "id": 1684340,
+        "id": 2185940,
         "noShow": 4,
         "late": 0,
-        "breaks": 32.7,
-        "avp": 0.0,
-        "shifts": 7
+        "breaks": 0.0,
+        "avp": 6.8,
+        "shifts": 5
       },
       {
-        "id": 4740380,
+        "id": 4783233,
         "noShow": 4,
         "late": 0,
-        "breaks": 101.2,
+        "breaks": 0.0,
         "avp": 0.0,
-        "shifts": 6
+        "shifts": 4
       }
     ]
   },
   "hybrid": {
     "yday": {
-      "10218": {
-        "riders": 66,
-        "actHrs": 764.38,
-        "planHrs": 943.6,
-        "orders": 1905,
-        "dt": 11.16,
-        "rat": 0.497,
-        "tv": 0.656,
-        "tc": 5.391,
-        "onTime": 0.9696,
-        "noShow": 0.1358,
-        "lateLogin": 0.3827,
-        "breakMin": 15.69
-      },
-      "10198": {
-        "riders": 63,
-        "actHrs": 714.38,
-        "planHrs": 798.19,
-        "orders": 1444,
-        "dt": 12.92,
-        "rat": 0.885,
-        "tv": 0.996,
-        "tc": 5.801,
-        "onTime": 0.9569,
-        "noShow": 0.0435,
-        "lateLogin": 0.3623,
-        "breakMin": 28.35
+      "10186": {
+        "riders": 52,
+        "actHrs": 582.61,
+        "planHrs": 608.47,
+        "noShow": 0.0645,
+        "breakMin": 7.93,
+        "lateLogin": 0.0656,
+        "orders": 1303,
+        "dt": 15.819,
+        "rat": 0.4111,
+        "tv": 0.6102,
+        "tc": 6.016,
+        "onTime": 0.5825
       },
       "10196": {
-        "riders": 62,
-        "actHrs": 702.41,
-        "planHrs": 751.07,
-        "orders": 1363,
-        "dt": 17.39,
-        "rat": 1.001,
-        "tv": 1.299,
+        "riders": 69,
+        "actHrs": 784.91,
+        "planHrs": 824.73,
+        "noShow": 0.0989,
+        "breakMin": 9.68,
+        "lateLogin": 0.061,
+        "orders": 1714,
+        "dt": 18.834,
+        "rat": 0.7104,
+        "tv": 1.1772,
         "tc": 7.158,
-        "onTime": 0.9041,
-        "noShow": 0.0455,
-        "lateLogin": 0.4242,
-        "breakMin": 11.67
+        "onTime": 0.9271
       },
-      "10186": {
-        "riders": 45,
-        "actHrs": 499.46,
-        "planHrs": 565.21,
-        "orders": 1121,
-        "dt": 13.07,
-        "rat": 0.495,
-        "tv": 0.99,
-        "tc": 6.016,
-        "onTime": 0.4538,
-        "noShow": 0.0588,
-        "lateLogin": 0.2941,
-        "breakMin": 7.94
-      },
-      "10219": {
-        "riders": 33,
-        "actHrs": 348.53,
-        "planHrs": 413.61,
-        "orders": 673,
-        "dt": 21.2,
-        "rat": 2.071,
-        "tv": 1.618,
-        "tc": 10.051,
-        "onTime": 0.8376,
-        "noShow": 0.0625,
-        "lateLogin": 0.2708,
-        "breakMin": 38.09
+      "10198": {
+        "riders": 64,
+        "actHrs": 754.96,
+        "planHrs": 824.41,
+        "noShow": 0.1071,
+        "breakMin": 18.28,
+        "lateLogin": 0.075,
+        "orders": 1662,
+        "dt": 15.136,
+        "rat": 0.4933,
+        "tv": 0.7903,
+        "tc": 5.801,
+        "onTime": 0.9567
       },
       "10216": {
         "riders": 30,
-        "actHrs": 335.01,
-        "planHrs": 417.5,
-        "orders": 555,
-        "dt": 23.72,
-        "rat": 2.846,
-        "tv": 0.95,
+        "actHrs": 344.64,
+        "planHrs": 358.13,
+        "noShow": 0.0769,
+        "breakMin": 12.19,
+        "lateLogin": 0.0,
+        "orders": 743,
+        "dt": 17.83,
+        "rat": 1.3991,
+        "tv": 0.7852,
         "tc": 8.091,
-        "onTime": 0.0,
-        "noShow": 0.0833,
-        "lateLogin": 0.1944,
-        "breakMin": 19.25
+        "onTime": 0.8748
       },
-      "10230": {
-        "riders": 25,
-        "actHrs": 269.68,
-        "planHrs": 354.34,
-        "orders": 546,
-        "dt": 14.88,
-        "rat": 0.767,
-        "tv": 0.926,
-        "tc": 6.048,
-        "onTime": 0.9118,
-        "noShow": 0.0968,
-        "lateLogin": 0.2903,
-        "breakMin": 47.77
+      "10218": {
+        "riders": 76,
+        "actHrs": 911.0,
+        "planHrs": 939.44,
+        "noShow": 0.0095,
+        "breakMin": 16.28,
+        "lateLogin": 0.0602,
+        "orders": 2090,
+        "dt": 14.988,
+        "rat": 0.4032,
+        "tv": 0.4754,
+        "tc": 5.391,
+        "onTime": 0.9541
+      },
+      "10219": {
+        "riders": 31,
+        "actHrs": 358.21,
+        "planHrs": 381.47,
+        "noShow": 0.0833,
+        "breakMin": 15.43,
+        "lateLogin": 0.0417,
+        "orders": 732,
+        "dt": 21.211,
+        "rat": 1.9252,
+        "tv": 1.4826,
+        "tc": 10.051,
+        "onTime": 0.8429
       },
       "10229": {
-        "riders": 20,
-        "actHrs": 215.5,
-        "planHrs": 275.5,
-        "orders": 364,
-        "dt": 16.39,
-        "rat": 0.845,
-        "tv": 1.34,
+        "riders": 17,
+        "actHrs": 183.17,
+        "planHrs": 238.43,
+        "noShow": 0.3182,
+        "breakMin": 26.4,
+        "lateLogin": 0.2593,
+        "orders": 361,
+        "dt": 19.823,
+        "rat": 1.1666,
+        "tv": 1.3951,
         "tc": 6.928,
-        "onTime": 0.9341,
-        "noShow": 0.125,
-        "lateLogin": 0.5833,
-        "breakMin": 25.56
+        "onTime": 0.9114
+      },
+      "10230": {
+        "riders": 28,
+        "actHrs": 318.83,
+        "planHrs": 350.9,
+        "noShow": 0.1667,
+        "breakMin": 32.39,
+        "lateLogin": 0.0606,
+        "orders": 705,
+        "dt": 17.457,
+        "rat": 0.7517,
+        "tv": 0.9359,
+        "tc": 6.048,
+        "onTime": 0.9461
       }
     },
     "wtd": {
-      "10218": {
-        "riders": 89,
-        "actHrs": 5854.2,
-        "planHrs": 6397.78,
-        "orders": 12126,
-        "dt": 10.82,
-        "rat": 0.397,
-        "tv": 0.37,
-        "tc": 4.947,
-        "onTime": 0.9602,
-        "noShow": 0.0312,
-        "lateLogin": 0.4016,
-        "breakMin": 10.99
-      },
-      "10198": {
-        "riders": 78,
-        "actHrs": 4747.18,
-        "planHrs": 5393.96,
-        "orders": 10240,
-        "dt": 12.62,
-        "rat": 0.809,
-        "tv": 0.83,
-        "tc": 5.77,
-        "onTime": 0.9372,
-        "noShow": 0.0445,
-        "lateLogin": 0.343,
-        "breakMin": 18.46
+      "10186": {
+        "riders": 52,
+        "actHrs": 582.61,
+        "planHrs": 608.47,
+        "noShow": 0.0645,
+        "breakMin": 7.93,
+        "lateLogin": 0.0656,
+        "orders": 1303,
+        "dt": 15.819,
+        "rat": 0.4111,
+        "tv": 0.6102,
+        "tc": 6.016,
+        "onTime": 0.5825
       },
       "10196": {
-        "riders": 75,
-        "actHrs": 4655.18,
-        "planHrs": 4996.34,
-        "orders": 9222,
-        "dt": 16.92,
-        "rat": 1.032,
-        "tv": 1.14,
-        "tc": 7.631,
-        "onTime": 0.904,
-        "noShow": 0.0323,
-        "lateLogin": 0.3441,
-        "breakMin": 9.41
+        "riders": 69,
+        "actHrs": 784.91,
+        "planHrs": 824.73,
+        "noShow": 0.0989,
+        "breakMin": 9.68,
+        "lateLogin": 0.061,
+        "orders": 1714,
+        "dt": 18.834,
+        "rat": 0.7104,
+        "tv": 1.1772,
+        "tc": 7.158,
+        "onTime": 0.9271
       },
-      "10186": {
-        "riders": 59,
-        "actHrs": 3763.86,
-        "planHrs": 3965.67,
-        "orders": 7656,
-        "dt": 11.24,
-        "rat": 0.376,
-        "tv": 0.45,
-        "tc": 5.361,
-        "onTime": 0.4913,
-        "noShow": 0.0278,
-        "lateLogin": 0.3642,
-        "breakMin": 14.49
-      },
-      "10219": {
-        "riders": 44,
-        "actHrs": 2488.98,
-        "planHrs": 2715.07,
-        "orders": 4740,
-        "dt": 20.74,
-        "rat": 2.025,
-        "tv": 1.516,
-        "tc": 9.763,
-        "onTime": 0.8375,
-        "noShow": 0.0338,
-        "lateLogin": 0.3277,
-        "breakMin": 14.15
+      "10198": {
+        "riders": 64,
+        "actHrs": 754.96,
+        "planHrs": 824.41,
+        "noShow": 0.1071,
+        "breakMin": 18.28,
+        "lateLogin": 0.075,
+        "orders": 1662,
+        "dt": 15.136,
+        "rat": 0.4933,
+        "tv": 0.7903,
+        "tc": 5.801,
+        "onTime": 0.9567
       },
       "10216": {
-        "riders": 38,
-        "actHrs": 1875.26,
-        "planHrs": 2118.73,
-        "orders": 3410,
-        "dt": 16.57,
-        "rat": 1.352,
-        "tv": 0.755,
-        "tc": 7.263,
-        "onTime": 0.899,
-        "noShow": 0.0694,
-        "lateLogin": 0.4398,
-        "breakMin": 12.81
+        "riders": 30,
+        "actHrs": 344.64,
+        "planHrs": 358.13,
+        "noShow": 0.0769,
+        "breakMin": 12.19,
+        "lateLogin": 0.0,
+        "orders": 743,
+        "dt": 17.83,
+        "rat": 1.3991,
+        "tv": 0.7852,
+        "tc": 8.091,
+        "onTime": 0.8748
       },
-      "10230": {
+      "10218": {
+        "riders": 76,
+        "actHrs": 911.0,
+        "planHrs": 939.44,
+        "noShow": 0.0095,
+        "breakMin": 16.28,
+        "lateLogin": 0.0602,
+        "orders": 2090,
+        "dt": 14.988,
+        "rat": 0.4032,
+        "tv": 0.4754,
+        "tc": 5.391,
+        "onTime": 0.9541
+      },
+      "10219": {
         "riders": 31,
-        "actHrs": 1844.16,
-        "planHrs": 2128.2,
-        "orders": 3970,
-        "dt": 14.87,
-        "rat": 1.153,
-        "tv": 1.028,
-        "tc": 5.837,
-        "onTime": 0.9211,
-        "noShow": 0.0389,
-        "lateLogin": 0.4556,
-        "breakMin": 31.6
+        "actHrs": 358.21,
+        "planHrs": 381.47,
+        "noShow": 0.0833,
+        "breakMin": 15.43,
+        "lateLogin": 0.0417,
+        "orders": 732,
+        "dt": 21.211,
+        "rat": 1.9252,
+        "tv": 1.4826,
+        "tc": 10.051,
+        "onTime": 0.8429
       },
       "10229": {
-        "riders": 30,
-        "actHrs": 1359.61,
-        "planHrs": 1778.95,
-        "orders": 2632,
-        "dt": 16.96,
-        "rat": 1.625,
-        "tv": 1.551,
-        "tc": 7.131,
-        "onTime": 0.9024,
-        "noShow": 0.1111,
-        "lateLogin": 0.3395,
-        "breakMin": 24.93
+        "riders": 17,
+        "actHrs": 183.17,
+        "planHrs": 238.43,
+        "noShow": 0.3182,
+        "breakMin": 26.4,
+        "lateLogin": 0.2593,
+        "orders": 361,
+        "dt": 19.823,
+        "rat": 1.1666,
+        "tv": 1.3951,
+        "tc": 6.928,
+        "onTime": 0.9114
+      },
+      "10230": {
+        "riders": 28,
+        "actHrs": 318.83,
+        "planHrs": 350.9,
+        "noShow": 0.1667,
+        "breakMin": 32.39,
+        "lateLogin": 0.0606,
+        "orders": 705,
+        "dt": 17.457,
+        "rat": 0.7517,
+        "tv": 0.9359,
+        "tc": 6.048,
+        "onTime": 0.9461
       }
     },
     "mtd": {
-      "10218": {
-        "riders": 89,
-        "actHrs": 5854.2,
-        "planHrs": 6397.78,
-        "orders": 12126,
-        "dt": 10.82,
-        "rat": 0.397,
-        "tv": 0.37,
-        "tc": 4.947,
-        "onTime": 0.957,
-        "noShow": 0.0312,
-        "lateLogin": 0.4016,
-        "breakMin": 10.99
-      },
-      "10198": {
-        "riders": 78,
-        "actHrs": 4747.18,
-        "planHrs": 5393.96,
-        "orders": 10240,
-        "dt": 12.62,
-        "rat": 0.809,
-        "tv": 0.83,
-        "tc": 5.77,
-        "onTime": 0.9356,
-        "noShow": 0.0445,
-        "lateLogin": 0.343,
-        "breakMin": 18.46
-      },
-      "10196": {
-        "riders": 75,
-        "actHrs": 4655.18,
-        "planHrs": 4996.34,
-        "orders": 9222,
-        "dt": 16.92,
-        "rat": 1.032,
-        "tv": 1.14,
-        "tc": 7.631,
-        "onTime": 0.9041,
-        "noShow": 0.0323,
-        "lateLogin": 0.3441,
-        "breakMin": 9.41
-      },
       "10186": {
         "riders": 59,
-        "actHrs": 3763.86,
-        "planHrs": 3965.67,
-        "orders": 7656,
-        "dt": 11.24,
-        "rat": 0.376,
-        "tv": 0.45,
+        "actHrs": 8395.04,
+        "planHrs": 8827.35,
+        "noShow": 0.0224,
+        "breakMin": 27.25,
+        "lateLogin": 0.0358,
+        "orders": 19924,
+        "dt": 14.96,
+        "rat": 0.4765,
+        "tv": 0.7132,
         "tc": 5.361,
-        "onTime": 0.5091,
-        "noShow": 0.0278,
-        "lateLogin": 0.3642,
-        "breakMin": 14.49
+        "onTime": 0.5295
       },
-      "10219": {
-        "riders": 44,
-        "actHrs": 2488.98,
-        "planHrs": 2715.07,
-        "orders": 4740,
-        "dt": 20.74,
-        "rat": 2.025,
-        "tv": 1.516,
-        "tc": 9.763,
-        "onTime": 0.8377,
-        "noShow": 0.0338,
-        "lateLogin": 0.3277,
-        "breakMin": 14.15
+      "10196": {
+        "riders": 85,
+        "actHrs": 11386.26,
+        "planHrs": 11983.55,
+        "noShow": 0.0278,
+        "breakMin": 20.43,
+        "lateLogin": 0.0575,
+        "orders": 24073,
+        "dt": 19.04,
+        "rat": 1.1417,
+        "tv": 1.2145,
+        "tc": 7.631,
+        "onTime": 0.9005
+      },
+      "10198": {
+        "riders": 85,
+        "actHrs": 10924.31,
+        "planHrs": 11546.05,
+        "noShow": 0.0168,
+        "breakMin": 31.56,
+        "lateLogin": 0.05,
+        "orders": 25588,
+        "dt": 15.732,
+        "rat": 0.9519,
+        "tv": 0.984,
+        "tc": 5.77,
+        "onTime": 0.9329
       },
       "10216": {
-        "riders": 38,
-        "actHrs": 1875.26,
-        "planHrs": 2118.73,
-        "orders": 3410,
-        "dt": 16.57,
-        "rat": 1.352,
-        "tv": 0.755,
+        "riders": 35,
+        "actHrs": 4857.31,
+        "planHrs": 5080.64,
+        "noShow": 0.018,
+        "breakMin": 25.43,
+        "lateLogin": 0.063,
+        "orders": 10352,
+        "dt": 16.682,
+        "rat": 1.3998,
+        "tv": 0.8518,
         "tc": 7.263,
-        "onTime": 0.9027,
-        "noShow": 0.0694,
-        "lateLogin": 0.4398,
-        "breakMin": 12.81
+        "onTime": 0.9032
       },
-      "10230": {
-        "riders": 31,
-        "actHrs": 1844.16,
-        "planHrs": 2128.2,
-        "orders": 3970,
-        "dt": 14.87,
-        "rat": 1.153,
-        "tv": 1.028,
-        "tc": 5.837,
-        "onTime": 0.917,
-        "noShow": 0.0389,
-        "lateLogin": 0.4556,
-        "breakMin": 31.6
+      "10218": {
+        "riders": 86,
+        "actHrs": 12182.55,
+        "planHrs": 12993.21,
+        "noShow": 0.0236,
+        "breakMin": 29.99,
+        "lateLogin": 0.0368,
+        "orders": 30927,
+        "dt": 14.339,
+        "rat": 0.5985,
+        "tv": 0.6081,
+        "tc": 4.947,
+        "onTime": 0.9586
+      },
+      "10219": {
+        "riders": 41,
+        "actHrs": 5260.51,
+        "planHrs": 5686.99,
+        "noShow": 0.0277,
+        "breakMin": 35.07,
+        "lateLogin": 0.0357,
+        "orders": 11468,
+        "dt": 20.7,
+        "rat": 2.0926,
+        "tv": 1.5977,
+        "tc": 9.763,
+        "onTime": 0.8484
       },
       "10229": {
-        "riders": 30,
-        "actHrs": 1359.61,
-        "planHrs": 1778.95,
-        "orders": 2632,
-        "dt": 16.96,
-        "rat": 1.625,
-        "tv": 1.551,
+        "riders": 29,
+        "actHrs": 2801.35,
+        "planHrs": 3491.75,
+        "noShow": 0.125,
+        "breakMin": 36.65,
+        "lateLogin": 0.1588,
+        "orders": 5852,
+        "dt": 19.641,
+        "rat": 1.3679,
+        "tv": 1.611,
         "tc": 7.131,
-        "onTime": 0.9041,
-        "noShow": 0.1111,
-        "lateLogin": 0.3395,
-        "breakMin": 24.93
+        "onTime": 0.918
+      },
+      "10230": {
+        "riders": 35,
+        "actHrs": 4518.62,
+        "planHrs": 5087.66,
+        "noShow": 0.0381,
+        "breakMin": 44.4,
+        "lateLogin": 0.0409,
+        "orders": 10169,
+        "dt": 18.698,
+        "rat": 1.3777,
+        "tv": 1.11,
+        "tc": 5.837,
+        "onTime": 0.9028
       }
     }
   },
   "perf": {
     "yday": {
       "619844": {
-        "orders_total": 2792,
-        "dt": 21.02,
-        "rat": 1.013,
-        "tv": 1.952,
+        "orders_total": 2861,
+        "dt": 20.35,
+        "rat": 0.8966,
+        "tv": 2.217,
         "tc": 6.337,
         "avtc": 5.559,
+        "ot": 0.9179,
         "l10": 0.0304,
         "l5": 0.1163,
-        "fir": 0.9993,
-        "ot": 0.9046
-      },
-      "783048": {
-        "orders_total": 2509,
-        "dt": 15.12,
-        "rat": 0.43,
-        "tv": 0.974,
-        "tc": 3.58,
-        "avtc": 2.924,
-        "l10": 0.0083,
-        "l5": 0.0494,
-        "fir": 1.0004,
-        "ot": 0.9534
+        "fir": 0.9993
       },
       "717765": {
-        "orders_total": 2497,
-        "dt": 20.39,
-        "rat": 0.949,
-        "tv": 0.758,
+        "orders_total": 2537,
+        "dt": 20.9,
+        "rat": 0.7583,
+        "tv": 1.353,
         "tc": 5.475,
         "avtc": 4.2,
+        "ot": 0.9421,
         "l10": 0.0234,
         "l5": 0.0638,
-        "fir": 0.998,
-        "ot": 0.9309
+        "fir": 0.998
       },
-      "655461": {
-        "orders_total": 2378,
-        "dt": 23.38,
-        "rat": 2.763,
-        "tv": 2.879,
-        "tc": 6.556,
-        "avtc": 6.097,
-        "l10": 0.0998,
-        "l5": 0.2754,
-        "fir": 1.0008,
-        "ot": 0.8222
-      },
-      "793636": {
-        "orders_total": 2250,
-        "dt": 16.84,
-        "rat": 0.983,
-        "tv": 1.739,
-        "tc": 4.122,
-        "avtc": 3.553,
-        "l10": 0.034,
-        "l5": 0.1307,
-        "fir": 1.0009,
-        "ot": 0.931
+      "783048": {
+        "orders_total": 2508,
+        "dt": 15.53,
+        "rat": 0.5256,
+        "tv": 0.949,
+        "tc": 3.58,
+        "avtc": 2.924,
+        "ot": 0.947,
+        "l10": 0.0083,
+        "l5": 0.0494,
+        "fir": 1.0004
       },
       "760059": {
-        "orders_total": 2174,
-        "dt": 22.67,
-        "rat": 2.832,
-        "tv": 2.425,
+        "orders_total": 2259,
+        "dt": 19.453,
+        "rat": 1.239,
+        "tv": 1.866,
         "tc": 9.743,
         "avtc": 9.127,
+        "ot": 0.8964,
         "l10": 0.097,
         "l5": 0.2148,
-        "fir": 0.9973,
-        "ot": 0.8316
+        "fir": 0.9973
+      },
+      "793636": {
+        "orders_total": 2089,
+        "dt": 15.751,
+        "rat": 0.6149,
+        "tv": 1.319,
+        "tc": 4.122,
+        "avtc": 3.553,
+        "ot": 0.9517,
+        "l10": 0.034,
+        "l5": 0.1307,
+        "fir": 1.0009
+      },
+      "655461": {
+        "orders_total": 2075,
+        "dt": 22.62,
+        "rat": 2.85,
+        "tv": 2.85,
+        "tc": 6.556,
+        "avtc": 6.097,
+        "ot": 0.8154,
+        "l10": 0.0998,
+        "l5": 0.2754,
+        "fir": 1.0008
       },
       "619849": {
-        "orders_total": 1998,
-        "dt": 18.96,
-        "rat": 1.474,
-        "tv": 2.054,
+        "orders_total": 2028,
+        "dt": 19.103,
+        "rat": 1.401,
+        "tv": 2.573,
         "tc": 3.761,
         "avtc": 3.25,
+        "ot": 0.7845,
         "l10": 0.0493,
         "l5": 0.1723,
-        "fir": 1.0,
-        "ot": 0.7797
+        "fir": 1.0
       },
       "620008": {
-        "orders_total": 1581,
-        "dt": 16.32,
-        "rat": 0.695,
-        "tv": 1.471,
+        "orders_total": 1600,
+        "dt": 16.039,
+        "rat": 0.571,
+        "tv": 1.029,
         "tc": 4.012,
         "avtc": 3.351,
+        "ot": 0.6044,
         "l10": 0.0221,
         "l5": 0.0945,
-        "fir": 1.0013,
-        "ot": 0.5996
+        "fir": 1.0013
       },
       "801850": {
-        "orders_total": 1206,
-        "dt": 20.52,
-        "rat": 1.119,
-        "tv": 2.576,
+        "orders_total": 1182,
+        "dt": 20.702,
+        "rat": 1.178,
+        "tv": 2.897,
         "tc": 5.436,
         "avtc": 5.076,
+        "ot": 0.9382,
         "l10": 0.0386,
         "l5": 0.1783,
-        "fir": 1.0008,
-        "ot": 0.9401
+        "fir": 1.0008
       }
     },
     "l3d": {
       "619844": {
-        "orders_total": 8421,
-        "dt": 20.83,
-        "rat": 1.156,
-        "tv": 2.181,
+        "orders_total": 5711,
+        "dt": 20.959,
+        "rat": 1.1178,
+        "tv": 2.149,
         "tc": 6.058,
         "avtc": 5.363,
+        "ot": 0.9021,
         "l10": 0.0379,
         "l5": 0.1425,
-        "fir": 0.9994,
-        "ot": 0.9025
+        "fir": 0.9994
       },
       "717765": {
-        "orders_total": 7856,
-        "dt": 20.36,
-        "rat": 1.118,
-        "tv": 1.389,
+        "orders_total": 5097,
+        "dt": 20.496,
+        "rat": 0.9743,
+        "tv": 1.065,
         "tc": 5.207,
         "avtc": 4.134,
+        "ot": 0.9258,
         "l10": 0.0286,
         "l5": 0.0814,
-        "fir": 0.998,
-        "ot": 0.9266
+        "fir": 0.998
       },
       "655461": {
-        "orders_total": 7368,
-        "dt": 22.97,
-        "rat": 2.845,
-        "tv": 2.902,
+        "orders_total": 4849,
+        "dt": 22.887,
+        "rat": 2.6513,
+        "tv": 2.856,
         "tc": 6.376,
         "avtc": 5.969,
+        "ot": 0.8323,
         "l10": 0.0944,
         "l5": 0.2641,
-        "fir": 1.0008,
-        "ot": 0.8309
+        "fir": 1.0008
       },
       "783048": {
-        "orders_total": 7134,
-        "dt": 14.79,
-        "rat": 0.433,
-        "tv": 0.769,
+        "orders_total": 4789,
+        "dt": 14.89,
+        "rat": 0.4798,
+        "tv": 0.898,
         "tc": 3.792,
         "avtc": 3.015,
+        "ot": 0.9561,
         "l10": 0.0089,
         "l5": 0.0446,
-        "fir": 0.9997,
-        "ot": 0.9574
+        "fir": 0.9997
       },
       "793636": {
-        "orders_total": 6591,
-        "dt": 16.12,
-        "rat": 0.94,
-        "tv": 1.568,
+        "orders_total": 4432,
+        "dt": 16.399,
+        "rat": 0.9274,
+        "tv": 1.628,
         "tc": 3.984,
         "avtc": 3.399,
+        "ot": 0.938,
         "l10": 0.0324,
         "l5": 0.1168,
-        "fir": 1.0,
-        "ot": 0.9373
+        "fir": 1.0
       },
       "619849": {
-        "orders_total": 6001,
-        "dt": 18.73,
-        "rat": 1.358,
-        "tv": 1.825,
+        "orders_total": 3996,
+        "dt": 18.65,
+        "rat": 1.3844,
+        "tv": 1.872,
         "tc": 3.995,
         "avtc": 3.399,
+        "ot": 0.762,
         "l10": 0.0388,
         "l5": 0.1494,
-        "fir": 1.0002,
-        "ot": 0.7686
+        "fir": 1.0002
       },
       "620008": {
-        "orders_total": 4469,
-        "dt": 15.06,
-        "rat": 0.594,
-        "tv": 0.97,
+        "orders_total": 3048,
+        "dt": 15.643,
+        "rat": 0.7747,
+        "tv": 1.192,
         "tc": 3.921,
         "avtc": 3.105,
+        "ot": 0.5492,
         "l10": 0.0156,
         "l5": 0.0643,
-        "fir": 0.9991,
-        "ot": 0.5112
-      },
-      "801850": {
-        "orders_total": 3516,
-        "dt": 19.81,
-        "rat": 1.323,
-        "tv": 2.596,
-        "tc": 5.4,
-        "avtc": 5.032,
-        "l10": 0.0516,
-        "l5": 0.1955,
-        "fir": 1.0003,
-        "ot": 0.933
+        "fir": 0.9991
       },
       "760059": {
-        "orders_total": 2503,
-        "dt": 22.13,
-        "rat": 2.874,
-        "tv": 2.43,
+        "orders_total": 2408,
+        "dt": 22.352,
+        "rat": 2.9907,
+        "tv": 2.524,
         "tc": 9.007,
         "avtc": 8.443,
+        "ot": 0.8318,
         "l10": 0.098,
         "l5": 0.222,
-        "fir": 0.9976,
-        "ot": 0.8353
+        "fir": 0.9976
+      },
+      "801850": {
+        "orders_total": 2375,
+        "dt": 20.047,
+        "rat": 1.3124,
+        "tv": 2.547,
+        "tc": 5.4,
+        "avtc": 5.032,
+        "ot": 0.936,
+        "l10": 0.0516,
+        "l5": 0.1955,
+        "fir": 1.0003
       }
     },
     "l7d": {
       "619844": {
-        "orders_total": 19886,
-        "dt": 20.76,
-        "rat": 1.276,
-        "tv": 2.294,
+        "orders_total": 17013,
+        "dt": 20.821,
+        "rat": 1.277,
+        "tv": 2.242,
         "tc": 5.759,
         "avtc": 5.126,
+        "ot": 0.896,
         "l10": 0.0437,
         "l5": 0.1629,
-        "fir": 0.9999,
-        "ot": 0.9003
+        "fir": 0.9999
       },
       "717765": {
-        "orders_total": 18056,
-        "dt": 21.01,
-        "rat": 1.219,
-        "tv": 1.677,
+        "orders_total": 15739,
+        "dt": 20.762,
+        "rat": 1.1974,
+        "tv": 1.572,
         "tc": 5.469,
         "avtc": 4.354,
+        "ot": 0.9159,
         "l10": 0.0352,
         "l5": 0.106,
-        "fir": 0.9986,
-        "ot": 0.9155
+        "fir": 0.9986
       },
       "783048": {
-        "orders_total": 17092,
-        "dt": 14.9,
-        "rat": 0.572,
-        "tv": 0.865,
+        "orders_total": 14602,
+        "dt": 14.835,
+        "rat": 0.5136,
+        "tv": 0.81,
         "tc": 3.82,
         "avtc": 3.063,
+        "ot": 0.9573,
         "l10": 0.0144,
         "l5": 0.0603,
-        "fir": 0.9992,
-        "ot": 0.9574
+        "fir": 0.9992
       },
       "655461": {
-        "orders_total": 16247,
-        "dt": 22.91,
-        "rat": 2.856,
-        "tv": 2.711,
+        "orders_total": 14115,
+        "dt": 22.898,
+        "rat": 2.7111,
+        "tv": 2.701,
         "tc": 6.23,
         "avtc": 5.746,
+        "ot": 0.8293,
         "l10": 0.1032,
         "l5": 0.2564,
-        "fir": 1.0021,
-        "ot": 0.824
+        "fir": 1.0021
       },
       "793636": {
-        "orders_total": 15547,
-        "dt": 16.31,
-        "rat": 0.975,
-        "tv": 1.561,
+        "orders_total": 13297,
+        "dt": 16.28,
+        "rat": 0.9458,
+        "tv": 1.465,
         "tc": 4.072,
         "avtc": 3.489,
+        "ot": 0.9343,
         "l10": 0.0335,
         "l5": 0.1194,
-        "fir": 0.999,
-        "ot": 0.9329
+        "fir": 0.999
       },
       "619849": {
-        "orders_total": 14316,
-        "dt": 19.12,
-        "rat": 1.741,
-        "tv": 2.329,
+        "orders_total": 12212,
+        "dt": 19.139,
+        "rat": 1.7303,
+        "tv": 2.211,
         "tc": 3.822,
         "avtc": 3.334,
+        "ot": 0.7814,
         "l10": 0.0664,
         "l5": 0.2097,
-        "fir": 1.0005,
-        "ot": 0.7824
-      },
-      "760059": {
-        "orders_total": 11316,
-        "dt": 19.43,
-        "rat": 1.954,
-        "tv": 1.947,
-        "tc": 6.165,
-        "avtc": 5.501,
-        "l10": 0.0758,
-        "l5": 0.1883,
-        "fir": 1.001,
-        "ot": 0.8763
+        "fir": 1.0005
       },
       "620008": {
-        "orders_total": 10825,
-        "dt": 15.34,
-        "rat": 0.729,
-        "tv": 1.009,
+        "orders_total": 9187,
+        "dt": 15.194,
+        "rat": 0.6829,
+        "tv": 0.963,
         "tc": 3.988,
         "avtc": 3.162,
+        "ot": 0.5287,
         "l10": 0.0218,
         "l5": 0.0797,
-        "fir": 0.9996,
-        "ot": 0.5373
+        "fir": 0.9996
+      },
+      "760059": {
+        "orders_total": 9085,
+        "dt": 19.626,
+        "rat": 2.2727,
+        "tv": 1.883,
+        "tc": 6.165,
+        "avtc": 5.501,
+        "ot": 0.8709,
+        "l10": 0.0758,
+        "l5": 0.1883,
+        "fir": 1.001
       },
       "801850": {
-        "orders_total": 8476,
-        "dt": 20.31,
-        "rat": 2.144,
-        "tv": 2.953,
+        "orders_total": 7267,
+        "dt": 20.191,
+        "rat": 2.1161,
+        "tv": 2.861,
         "tc": 5.298,
         "avtc": 4.997,
+        "ot": 0.9057,
         "l10": 0.0887,
         "l5": 0.2682,
-        "fir": 1.0019,
-        "ot": 0.9063
+        "fir": 1.0019
       }
     },
     "l14d": {
       "619844": {
-        "orders_total": 39729,
-        "dt": 21.23,
-        "rat": 1.477,
-        "tv": 2.528,
+        "orders_total": 36953,
+        "dt": 21.229,
+        "rat": 1.4421,
+        "tv": 2.494,
         "tc": 5.729,
         "avtc": 5.19,
+        "ot": 0.8937,
         "l10": 0.0518,
         "l5": 0.1901,
-        "fir": 1.0005,
-        "ot": 0.8943
+        "fir": 1.0005
       },
       "717765": {
-        "orders_total": 36747,
-        "dt": 22.41,
-        "rat": 1.553,
-        "tv": 2.232,
+        "orders_total": 34029,
+        "dt": 22.322,
+        "rat": 1.5142,
+        "tv": 2.178,
         "tc": 6.366,
         "avtc": 5.145,
+        "ot": 0.8982,
         "l10": 0.0443,
         "l5": 0.1267,
-        "fir": 0.9988,
-        "ot": 0.8983
+        "fir": 0.9988
       },
       "783048": {
-        "orders_total": 34087,
-        "dt": 15.2,
-        "rat": 0.801,
-        "tv": 1.143,
+        "orders_total": 31610,
+        "dt": 15.206,
+        "rat": 0.7879,
+        "tv": 1.125,
         "tc": 3.812,
         "avtc": 3.176,
+        "ot": 0.949,
         "l10": 0.0176,
         "l5": 0.0809,
-        "fir": 0.9996,
-        "ot": 0.9515
+        "fir": 0.9996
       },
       "655461": {
-        "orders_total": 32204,
-        "dt": 22.87,
-        "rat": 2.698,
-        "tv": 2.711,
+        "orders_total": 29994,
+        "dt": 22.808,
+        "rat": 2.626,
+        "tv": 2.671,
         "tc": 5.904,
         "avtc": 5.404,
+        "ot": 0.8311,
         "l10": 0.0967,
         "l5": 0.2488,
-        "fir": 1.0018,
-        "ot": 0.8309
+        "fir": 1.0018
       },
       "793636": {
-        "orders_total": 30694,
-        "dt": 16.8,
-        "rat": 1.165,
-        "tv": 1.83,
+        "orders_total": 28535,
+        "dt": 16.786,
+        "rat": 1.1601,
+        "tv": 1.823,
         "tc": 4.081,
         "avtc": 3.579,
+        "ot": 0.9219,
         "l10": 0.041,
         "l5": 0.1448,
-        "fir": 0.9997,
-        "ot": 0.9233
+        "fir": 0.9997
       },
       "619849": {
-        "orders_total": 28433,
-        "dt": 19.26,
-        "rat": 1.803,
-        "tv": 2.367,
+        "orders_total": 26298,
+        "dt": 19.242,
+        "rat": 1.7584,
+        "tv": 2.351,
         "tc": 3.926,
         "avtc": 3.456,
+        "ot": 0.7892,
         "l10": 0.0611,
         "l5": 0.2108,
-        "fir": 1.0001,
-        "ot": 0.7911
+        "fir": 1.0001
       },
       "760059": {
-        "orders_total": 25965,
-        "dt": 19.17,
-        "rat": 1.954,
-        "tv": 2.064,
+        "orders_total": 23853,
+        "dt": 19.171,
+        "rat": 1.9208,
+        "tv": 2.043,
         "tc": 5.537,
         "avtc": 4.932,
+        "ot": 0.8907,
         "l10": 0.0613,
         "l5": 0.1804,
-        "fir": 1.0008,
-        "ot": 0.893
+        "fir": 1.0008
       },
       "620008": {
-        "orders_total": 21876,
-        "dt": 15.5,
-        "rat": 0.774,
-        "tv": 1.197,
+        "orders_total": 20195,
+        "dt": 15.433,
+        "rat": 0.7197,
+        "tv": 1.122,
         "tc": 3.968,
         "avtc": 3.267,
+        "ot": 0.5553,
         "l10": 0.0219,
         "l5": 0.0854,
-        "fir": 1.0002,
-        "ot": 0.5679
+        "fir": 1.0002
       },
       "801850": {
-        "orders_total": 16715,
-        "dt": 20.52,
-        "rat": 1.927,
-        "tv": 3.225,
+        "orders_total": 15491,
+        "dt": 20.433,
+        "rat": 1.8667,
+        "tv": 3.194,
         "tc": 5.152,
         "avtc": 4.905,
+        "ot": 0.9131,
         "l10": 0.0855,
         "l5": 0.2887,
-        "fir": 1.0027,
-        "ot": 0.9146
+        "fir": 1.0027
       }
     },
     "mtd": {
       "619844": {
-        "orders_total": 45236,
-        "dt": 21.18,
-        "rat": 1.481,
+        "orders_total": 45238,
+        "dt": 21.177,
+        "rat": 1.4815,
         "tv": 2.502,
         "tc": 5.756,
         "avtc": 5.211,
+        "ot": 0.8917,
         "l10": 0.052,
         "l5": 0.1894,
-        "fir": 1.0005,
-        "ot": 0.8934
+        "fir": 1.0005
       },
       "717765": {
         "orders_total": 42266,
-        "dt": 22.46,
-        "rat": 1.578,
+        "dt": 22.457,
+        "rat": 1.5781,
         "tv": 2.245,
         "tc": 6.411,
         "avtc": 5.236,
+        "ot": 0.8953,
         "l10": 0.0463,
         "l5": 0.1306,
-        "fir": 0.9986,
-        "ot": 0.8972
+        "fir": 0.9986
       },
       "783048": {
-        "orders_total": 39031,
-        "dt": 15.17,
-        "rat": 0.793,
+        "orders_total": 39032,
+        "dt": 15.167,
+        "rat": 0.7932,
         "tv": 1.129,
         "tc": 3.821,
         "avtc": 3.169,
+        "ot": 0.9506,
         "l10": 0.0177,
         "l5": 0.0805,
-        "fir": 0.9996,
-        "ot": 0.9529
+        "fir": 0.9996
       },
       "655461": {
-        "orders_total": 36888,
-        "dt": 22.99,
-        "rat": 2.795,
+        "orders_total": 36890,
+        "dt": 22.987,
+        "rat": 2.7945,
         "tv": 2.717,
         "tc": 6.117,
         "avtc": 5.613,
+        "ot": 0.8277,
         "l10": 0.0983,
         "l5": 0.2534,
-        "fir": 1.0015,
-        "ot": 0.8299
+        "fir": 1.0015
       },
       "793636": {
-        "orders_total": 35232,
-        "dt": 16.73,
-        "rat": 1.166,
+        "orders_total": 35236,
+        "dt": 16.733,
+        "rat": 1.1655,
         "tv": 1.811,
         "tc": 4.069,
         "avtc": 3.562,
+        "ot": 0.9229,
         "l10": 0.0405,
         "l5": 0.1432,
-        "fir": 0.9996,
-        "ot": 0.9253
+        "fir": 0.9996
       },
       "619849": {
-        "orders_total": 32665,
-        "dt": 19.32,
-        "rat": 1.741,
+        "orders_total": 32666,
+        "dt": 19.318,
+        "rat": 1.7408,
         "tv": 2.281,
         "tc": 3.996,
         "avtc": 3.504,
+        "ot": 0.7895,
         "l10": 0.0584,
         "l5": 0.2033,
-        "fir": 1.0,
-        "ot": 0.7897
+        "fir": 1.0
       },
       "760059": {
-        "orders_total": 30202,
-        "dt": 19.21,
-        "rat": 1.878,
+        "orders_total": 30203,
+        "dt": 19.207,
+        "rat": 1.8778,
         "tv": 2.04,
         "tc": 5.57,
         "avtc": 4.957,
+        "ot": 0.8927,
         "l10": 0.0583,
         "l5": 0.1745,
-        "fir": 1.0006,
-        "ot": 0.895
+        "fir": 1.0006
       },
       "620008": {
         "orders_total": 24901,
         "dt": 15.48,
-        "rat": 0.758,
+        "rat": 0.7583,
         "tv": 1.185,
         "tc": 3.967,
         "avtc": 3.261,
+        "ot": 0.5699,
         "l10": 0.0211,
         "l5": 0.084,
-        "fir": 1.0003,
-        "ot": 0.567
+        "fir": 1.0003
       },
       "801850": {
-        "orders_total": 19183,
-        "dt": 20.49,
-        "rat": 1.832,
+        "orders_total": 19188,
+        "dt": 20.489,
+        "rat": 1.8324,
         "tv": 3.157,
         "tc": 5.174,
         "avtc": 4.917,
+        "ot": 0.9152,
         "l10": 0.0808,
         "l5": 0.2791,
-        "fir": 1.0025,
-        "ot": 0.9175
+        "fir": 1.0025
       }
     },
     "lm": {
       "619844": {
         "orders_total": 82827,
-        "dt": 20.38,
-        "rat": 1.413,
+        "dt": 20.383,
+        "rat": 1.4129,
         "tv": 2.584,
         "tc": 5.1,
         "avtc": 4.608,
         "l10": 0.0534,
-        "l5": 0.1925,
-        "fir": 1.0006,
-        "ot": 0.9057
+        "l5": 0.1925
       },
       "717765": {
         "orders_total": 75348,
-        "dt": 22.13,
-        "rat": 1.273,
+        "dt": 22.135,
+        "rat": 1.2733,
         "tv": 2.032,
         "tc": 6.18,
         "avtc": 5.278,
         "l10": 0.0445,
-        "l5": 0.1313,
-        "fir": 0.9988,
-        "ot": 0.9049
+        "l5": 0.1313
       },
       "655461": {
         "orders_total": 68492,
         "dt": 23.36,
-        "rat": 2.366,
+        "rat": 2.3658,
         "tv": 2.471,
         "tc": 6.19,
         "avtc": 5.564,
         "l10": 0.0753,
-        "l5": 0.215,
-        "fir": 1.0007,
-        "ot": 0.842
+        "l5": 0.215
       },
       "783048": {
         "orders_total": 67570,
-        "dt": 16.5,
-        "rat": 1.196,
+        "dt": 16.495,
+        "rat": 1.1956,
         "tv": 1.833,
         "tc": 3.96,
         "avtc": 3.5,
         "l10": 0.0304,
-        "l5": 0.125,
-        "fir": 1.0006,
-        "ot": 0.941
+        "l5": 0.125
       },
       "793636": {
         "orders_total": 62878,
-        "dt": 16.75,
-        "rat": 1.053,
+        "dt": 16.754,
+        "rat": 1.0532,
         "tv": 2.043,
         "tc": 3.846,
         "avtc": 3.355,
         "l10": 0.0459,
-        "l5": 0.1515,
-        "fir": 1.0007,
-        "ot": 0.9321
+        "l5": 0.1515
       },
       "619849": {
         "orders_total": 60716,
-        "dt": 19.34,
-        "rat": 1.306,
+        "dt": 19.335,
+        "rat": 1.3057,
         "tv": 1.966,
         "tc": 3.751,
         "avtc": 3.192,
         "l10": 0.0442,
-        "l5": 0.1685,
-        "fir": 0.9999,
-        "ot": 0.7542
+        "l5": 0.1685
       },
       "760059": {
         "orders_total": 60086,
-        "dt": 19.22,
-        "rat": 1.32,
+        "dt": 19.221,
+        "rat": 1.3204,
         "tv": 1.945,
         "tc": 4.939,
         "avtc": 4.314,
         "l10": 0.0375,
-        "l5": 0.1429,
-        "fir": 0.9998,
-        "ot": 0.9216
+        "l5": 0.1429
       },
       "620008": {
         "orders_total": 44676,
-        "dt": 17.31,
-        "rat": 1.116,
+        "dt": 17.312,
+        "rat": 1.1149,
         "tv": 1.849,
         "tc": 4.723,
         "avtc": 4.16,
         "l10": 0.0325,
-        "l5": 0.1296,
-        "fir": 1.0004,
-        "ot": 0.7114
+        "l5": 0.1296
       },
       "801850": {
         "orders_total": 33511,
-        "dt": 20.67,
-        "rat": 1.254,
+        "dt": 20.668,
+        "rat": 1.2543,
         "tv": 3.134,
         "tc": 5.082,
         "avtc": 4.781,
         "l10": 0.0686,
-        "l5": 0.2505,
-        "fir": 1.0011,
-        "ot": 0.929
+        "l5": 0.2505
       }
     }
   },
   "perf_shift": {
     "yday": {
-      "10229": {
-        "l10": 0.2917,
-        "l5": 0.2917
-      },
-      "10216": {
-        "l10": 0.1111,
-        "l5": 0.1111
+      "10186": {
+        "l10": 0.0656,
+        "l5": 0.0656
       },
       "10196": {
-        "l10": 0.0758,
-        "l5": 0.1061
+        "l10": 0.061,
+        "l5": 0.061
       },
       "10198": {
-        "l10": 0.0435,
-        "l5": 0.0435
+        "l10": 0.075,
+        "l5": 0.075
+      },
+      "10216": {
+        "l10": 0.0,
+        "l5": 0.0645
+      },
+      "10218": {
+        "l10": 0.0602,
+        "l5": 0.0964
       },
       "10219": {
         "l10": 0.0417,
-        "l5": 0.0625
+        "l5": 0.0417
       },
-      "10218": {
-        "l10": 0.037,
-        "l5": 0.0617
+      "10229": {
+        "l10": 0.2593,
+        "l5": 0.2593
       },
       "10230": {
-        "l10": 0.0323,
+        "l10": 0.0606,
+        "l5": 0.0606
+      }
+    },
+    "wtd": {
+      "10186": {
+        "l10": 0.0656,
+        "l5": 0.0656
+      },
+      "10196": {
+        "l10": 0.061,
+        "l5": 0.061
+      },
+      "10198": {
+        "l10": 0.075,
+        "l5": 0.075
+      },
+      "10216": {
+        "l10": 0.0,
         "l5": 0.0645
       },
-      "10186": {
-        "l10": 0.0196,
-        "l5": 0.0588
+      "10218": {
+        "l10": 0.0602,
+        "l5": 0.0964
+      },
+      "10219": {
+        "l10": 0.0417,
+        "l5": 0.0417
+      },
+      "10229": {
+        "l10": 0.2593,
+        "l5": 0.2593
+      },
+      "10230": {
+        "l10": 0.0606,
+        "l5": 0.0606
       }
     },
     "l3d": {
@@ -4455,37 +2239,37 @@
       }
     },
     "mtd": {
-      "10229": {
-        "l10": 0.2204,
-        "l5": 0.2312
-      },
-      "10216": {
-        "l10": 0.0833,
-        "l5": 0.0873
+      "10186": {
+        "l10": 0.0358,
+        "l5": 0.0
       },
       "10196": {
-        "l10": 0.0762,
-        "l5": 0.0982
+        "l10": 0.0575,
+        "l5": 0.0575
       },
       "10198": {
-        "l10": 0.0521,
-        "l5": 0.0734
+        "l10": 0.05,
+        "l5": 0.05
+      },
+      "10216": {
+        "l10": 0.063,
+        "l5": 0.063
       },
       "10218": {
-        "l10": 0.0471,
-        "l5": 0.0673
-      },
-      "10230": {
-        "l10": 0.0427,
-        "l5": 0.0474
+        "l10": 0.0368,
+        "l5": 0.0368
       },
       "10219": {
-        "l10": 0.0349,
-        "l5": 0.064
+        "l10": 0.0357,
+        "l5": 0.0357
       },
-      "10186": {
-        "l10": 0.032,
-        "l5": 0.0427
+      "10229": {
+        "l10": 0.1588,
+        "l5": 0.1588
+      },
+      "10230": {
+        "l10": 0.0409,
+        "l5": 0.0409
       }
     },
     "lm": {
