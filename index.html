@@ -1794,6 +1794,7 @@ init3PLDropdown();
     </select>
     <input type="text" id="off-id-filter" placeholder="🔍 Rider ID" oninput="renderOffenders()" style="padding:6px 12px;border-radius:6px;border:2px solid #FF5900;background:#fff;color:#222;font-size:13px;font-weight:600;outline:none;width:180px;" />
     <span style="font-size:11px;color:rgba(255,255,255,.3);margin-left:auto" id="off-count-label"></span>
+    <button onclick="exportOffendersCSV()" style="padding:6px 14px;border-radius:6px;border:none;background:#FF5900;color:#fff;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:.5px;">⬇ Export CSV</button>
   </div>
 
   <div class="off-table-wrap">
@@ -2156,6 +2157,51 @@ function sortOff(col){
     if(arrow) arrow.textContent = c===offSortCol ? (offSortAsc?'':'') : '';
   });
   renderOffenders();
+}
+
+function exportOffendersCSV(){
+  const mKey = getOffMonth();
+  const mo = OFFENDERS[mKey];
+  if(!mo) return;
+
+  const dateVal = document.getElementById('off-date-sel').value;
+  let riders;
+  if(dateVal === 'mtd'){
+    riders = (mo.mtd||{})[offZone] || [];
+  } else {
+    riders = ((mo.days||{})[dateVal]||{})[offZone] || [];
+  }
+
+  const idFilter = (document.getElementById('off-id-filter')?.value||'').trim().toLowerCase();
+  if(idFilter) riders = riders.filter(r=>String(r.id).toLowerCase().includes(idFilter));
+
+  const sorted = [...riders].sort((a,b)=>{
+    const av = a[offSortCol]??0, bv = b[offSortCol]??0;
+    return offSortAsc ? av-bv : bv-av;
+  });
+
+  const mLabel = (mo.label || mKey).replace(/[^a-zA-Z0-9_-]/g,'_');
+  const datePart = dateVal === 'mtd' ? 'MTD' : dateVal;
+  const zonePart = offZone.replace(/\s+/g,'_');
+  const filename = `offenders_${zonePart}_${mLabel}_${datePart}.csv`;
+
+  const header = ['Rank','Rider ID','No Show','Late','Breaks (min)','AVP%','Shifts'];
+  const rows = sorted.map((r,i)=>[
+    i+1,
+    r.id,
+    r.noShow||0,
+    r.late||0,
+    (r.breaks??0).toFixed(1),
+    (r.avp??0).toFixed(1),
+    r.shifts||0
+  ]);
+
+  const csv = [header, ...rows].map(r=>r.join(',')).join('\n');
+  const blob = new Blob([csv], {type:'text/csv'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename; a.click();
+  URL.revokeObjectURL(url);
 }
 
 function renderOffenders(){
