@@ -68,7 +68,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
-HTML_PATH  = Path('/tmp/nasr-city-ops/index.html')
+HTML_PATH  = Path('/tmp/ncops-fresh/index.html')
 
 # ── DATE CALCULATIONS ──────────────────────────────────────────────────────
 today = date.today()
@@ -252,7 +252,7 @@ def zone_obj(d):
         f"lateLogin:{r4(d['lateLogin'])}, noShow:{r4(d['noShow'])}, breakMin:{r2(d['breakMin'])}, "
         f"fill:{r4(fill)}, acceptRate:{r4(d['acceptRate'])}, plannedHrs:{r2(d['plannedHrs'])}, "
         f"delivTime:{r2(d['delivTime'])}, rat:{r2(d['rat'])}, toVendor:{r3(d['toVendor'])}, "
-        f"onTime:{r4(d['onTime'])}, failRate:{r4(d['failRate'])} }}"
+        f"onTime:{r4(d['onTime'])}, failRate:{r4(d['failRate'])}"  + (f", rr:{d['rr']}" if 'rr' in d else "") + " }"
     )
 
 try:
