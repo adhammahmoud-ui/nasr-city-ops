@@ -2104,17 +2104,18 @@ function renderDTC() {
 function renderDTCCompare() {
   const tbody = document.getElementById('dtc-tbody');
   const julData  = DTC_MONTHLY['2026-07'];
-  const augData  = DTC_MONTHLY[getCurrentMonthKey()];
-  if (!julData || !augData) {
+  if (!julData) {
     tbody.innerHTML = '<tr><td colspan="5" class="off-empty">Monthly data unavailable.</td></tr>';
     return;
   }
+  // Compute Aug MTD live from DTC_DAYS (same as the MTD view)
+  const augDays = getDaysInCurrentMonth();
   document.getElementById('dtc-sync-label').textContent =
-    'DT Compliance  July 2026 vs August 2026 MTD';
+    'DT Compliance  July 2026 vs August 2026 MTD (' + augDays.length + ' days)';
 
   const rows = DTC_MARTS.map(m => {
     const jul = julData.marts[m.id];
-    const aug = augData.marts[m.id];
+    const aug = dtcAvg(augDays, m.id);
     if (!jul || !aug) return '';
     const julPct = jul[0], augPct = aug[0];
     const delta  = augPct - julPct;
