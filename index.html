@@ -1843,6 +1843,7 @@ init3PLDropdown();
     <button class="dtc-view-btn" id="dtcv-l7d"    onclick="setDTCView('l7d')">Last 7 Days</button>
     <button class="dtc-view-btn" id="dtcv-lm"     onclick="setDTCView('lm')">Last Month</button>
     <button class="dtc-view-btn" id="dtcv-compare" onclick="setDTCView('compare')">Jul → Aug MTD</button>
+    <button class="dtc-view-btn dtc-sort-btn" id="dtc-compare-sort-btn" onclick="toggleCompareSort()" style="display:none">v Highest Change First</button>
     <button class="dtc-view-btn dtc-sort-btn" id="dtc-sort-btn" onclick="toggleDTCSort()">v Highest First</button>
   </div>
   <div class="dtc-zone-bar">
@@ -1855,7 +1856,7 @@ init3PLDropdown();
 
   <div class="dtc-table-wrap">
     <table class="dtc-table">
-      <thead>
+      <thead id="dtc-thead">
         <tr>
           <th>#</th>
           <th>Mart</th>
@@ -2004,6 +2005,9 @@ function toggleDTCSort(){
 }
 function setDTCView(v) {
   dtcView = v;
+  if (v !== 'compare') resetDTCThead();
+  const csb = document.getElementById('dtc-compare-sort-btn');
+  if (csb) csb.style.display = v === 'compare' ? 'inline-block' : 'none';
   document.querySelectorAll('.dtc-view-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('dtcv-' + v)?.classList.add('active');
   const weekSel = document.getElementById('dtc-week-sel');
@@ -2101,60 +2105,87 @@ function renderDTC() {
   tbody.innerHTML = rows;
   if(window._applyDTCZone) window._applyDTCZone();
 }
+let compareSort = 'desc'; // desc = highest change first
+
+function toggleCompareSort() {
+  compareSort = compareSort === 'desc' ? 'asc' : 'desc';
+  const btn = document.getElementById('dtc-compare-sort-btn');
+  if (btn) btn.textContent = compareSort === 'desc' ? 'v Highest Change First' : '^ Lowest Change First';
+  renderDTCCompare();
+}
+
 function renderDTCCompare() {
-  const tbody = document.getElementById('dtc-tbody');
-  const julData  = DTC_MONTHLY['2026-07'];
+  const tbody  = document.getElementById('dtc-tbody');
+  const thead  = document.getElementById('dtc-thead');
+  const julData = DTC_MONTHLY['2026-07'];
   if (!julData) {
     tbody.innerHTML = '<tr><td colspan="5" class="off-empty">Monthly data unavailable.</td></tr>';
     return;
   }
-  // Compute Aug MTD live from DTC_DAYS (same as the MTD view)
+  // Swap thead to compare columns
+  thead.innerHTML = `<tr>
+    <th>Mart</th>
+    <th class="r">Jul (Full)</th>
+    <th class="r" style="min-width:200px">Aug MTD</th>
+    <th class="r" style="cursor:pointer" onclick="toggleCompareSort()">Change ⇅</th>
+    <th class="r">Aug Orders</th>
+  </tr>`;
+
+  // Compute Aug MTD live from DTC_DAYS
   const augDays = getDaysInCurrentMonth();
   document.getElementById('dtc-sync-label').textContent =
     'DT Compliance  July 2026 vs August 2026 MTD (' + augDays.length + ' days)';
 
-  const rows = DTC_MARTS.map(m => {
+  // Build mart entries with delta
+  let entries = DTC_MARTS.map(m => {
     const jul = julData.marts[m.id];
     const aug = dtcAvg(augDays, m.id);
-    if (!jul || !aug) return '';
+    if (!jul || !aug) return null;
+    return { m, jul, aug, delta: aug[0] - jul[0] };
+  }).filter(Boolean);
+
+  // Sort by delta
+  entries.sort((a, b) => compareSort === 'desc' ? b.delta - a.delta : a.delta - b.delta);
+
+  const rows = entries.map(({ m, jul, aug, delta }) => {
     const julPct = jul[0], augPct = aug[0];
-    const delta  = augPct - julPct;
-    const sign   = delta >= 0 ? '+' : '';
+    const sign    = delta >= 0 ? '+' : '';
     const deltaCls = delta >= 0 ? 'g' : 'r';
-    const arrow  = delta >= 0 ? '▲' : '▼';
-    const barJul = Math.min(100, julPct).toFixed(1);
-    const barAug = Math.min(100, augPct).toFixed(1);
-    const clsJul = julPct >= 70 ? 'g' : julPct >= 50 ? 'y' : 'r';
-    const clsAug = augPct >= 70 ? 'g' : augPct >= 50 ? 'y' : 'r';
-    const bcAug  = augPct >= 70 ? '#36b37e' : augPct >= 50 ? '#ffd166' : '#ff6b6b';
+    const arrow   = delta >= 0 ? '▲' : '▼';
+    const barAug  = Math.min(100, augPct).toFixed(1);
+    const clsJul  = julPct >= 70 ? 'g' : julPct >= 50 ? 'y' : 'r';
+    const clsAug  = augPct >= 70 ? 'g' : augPct >= 50 ? 'y' : 'r';
+    const bcAug   = augPct >= 70 ? '#36b37e' : augPct >= 50 ? '#ffd166' : '#ff6b6b';
     return `<tr data-zone="${m.zone}">
-      <td class="dtc-mart-name" style="min-width:160px">${m.label}</td>
+      <td class="dtc-mart-name">${m.label}</td>
       <td style="text-align:right">
         <span class="dtc-pct ${clsJul}" style="font-size:17px">${julPct.toFixed(1)}%</span>
       </td>
-      <td style="text-align:right">
+      <td>
         <div class="dtc-pct-wrap">
           <div class="dtc-bar-wrap"><div class="dtc-bar-fill" style="width:${barAug}%;background:${bcAug}"></div></div>
           <span class="dtc-pct ${clsAug}" style="font-size:17px">${augPct.toFixed(1)}%</span>
         </div>
       </td>
-      <td style="text-align:right;min-width:80px">
+      <td style="text-align:right">
         <span class="dtc-pct ${deltaCls}" style="font-size:16px;font-weight:700">${arrow} ${sign}${delta.toFixed(1)}pp</span>
       </td>
       <td class="dtc-orders">${aug[1].toLocaleString()} / ${aug[2].toLocaleString()}</td>
     </tr>`;
   }).join('');
 
-  // Add header row
-  const header = `<tr style="border-bottom:1px solid rgba(255,255,255,.12)">
-    <td style="color:#aaa;font-size:11px;text-transform:uppercase;letter-spacing:1px;padding-bottom:6px">Mart</td>
-    <td style="color:#aaa;font-size:11px;text-align:right;padding-bottom:6px">Jul (Full)</td>
-    <td style="color:#aaa;font-size:11px;text-align:right;padding-bottom:6px">Aug MTD</td>
-    <td style="color:#aaa;font-size:11px;text-align:right;padding-bottom:6px">Change</td>
-    <td style="color:#aaa;font-size:11px;text-align:right;padding-bottom:6px">Orders</td>
-  </tr>`;
-  tbody.innerHTML = header + rows;
+  tbody.innerHTML = rows;
   if (window._applyDTCZone) window._applyDTCZone();
+}
+
+function resetDTCThead() {
+  const thead = document.getElementById('dtc-thead');
+  if (thead) thead.innerHTML = `<tr>
+    <th>#</th>
+    <th>Mart</th>
+    <th class="r" style="min-width:180px">DT d15 min</th>
+    <th class="r">Orders</th>
+  </tr>`;
 }
 
 </script>
