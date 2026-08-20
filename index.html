@@ -2378,6 +2378,7 @@ function renderOffenders(){
       <td class="off-num r">${bpVal!=null?`<span class="off-count ${bpCls}">${bpVal.toFixed(1)}%</span>`:'-'}</td>
       <td class="off-num r">${av!=null&&av>0?av.toFixed(1)+'%':'-'}</td>
       <td class="off-num r">${dy||'-'}</td>
+      <td class="off-num r">${r.planned??'-'}</td>
     </tr>`;
   }).join('');
   document.getElementById('off-tbody').innerHTML = rows;
