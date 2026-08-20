@@ -68,7 +68,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
-HTML_PATH  = Path('/tmp/ncops-fresh/index.html')
+HTML_PATH  = Path('/tmp/nasr-city-ops/index.html')
 
 # ── DATE CALCULATIONS ──────────────────────────────────────────────────────
 today = date.today()
