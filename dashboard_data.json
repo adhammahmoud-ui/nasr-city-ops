@@ -286,1992 +286,5508 @@
   "offenders": {
     "Nasr city": [
       {
+        "id": 2070739,
+        "noShow": 16,
+        "late": 1,
+        "breaks": 54.7,
+        "breakPct": 50.0,
+        "avp": 34.2,
+        "shifts": 36,
+        "planned": 12525,
+        "actual": 3936
+      },
+      {
         "id": 2497581,
         "noShow": 15,
         "late": 0,
-        "breaks": 2.8,
+        "breaks": 7.7,
+        "breakPct": 32.8,
         "avp": 6.1,
-        "shifts": 19
+        "shifts": 22,
+        "planned": 9570,
+        "actual": 518
       },
       {
         "id": 2160437,
         "noShow": 14,
         "late": 2,
         "breaks": 0.0,
+        "breakPct": 0.0,
         "avp": 2.8,
-        "shifts": 19
+        "shifts": 22,
+        "planned": 1830,
+        "actual": 46
       },
       {
-        "id": 2070739,
-        "noShow": 14,
+        "id": 3926637,
+        "noShow": 13,
         "late": 1,
-        "breaks": 30.9,
-        "avp": 34.2,
-        "shifts": 33
+        "breaks": 15.0,
+        "breakPct": 7.8,
+        "avp": 45.3,
+        "shifts": 30,
+        "planned": 13193,
+        "actual": 5803
       },
       {
         "id": 4754402,
         "noShow": 12,
-        "late": 19,
-        "breaks": 23.9,
+        "late": 24,
+        "breaks": 35.1,
+        "breakPct": 28.7,
         "avp": 40.6,
-        "shifts": 40
+        "shifts": 46,
+        "planned": 12473,
+        "actual": 5621
       },
       {
-        "id": 3926637,
+        "id": 4710477,
+        "noShow": 12,
+        "late": 3,
+        "breaks": 47.5,
+        "breakPct": 64.1,
+        "avp": 21.8,
+        "shifts": 23,
+        "planned": 6627,
+        "actual": 1707
+      },
+      {
+        "id": 2834196,
+        "noShow": 12,
+        "late": 0,
+        "breaks": 27.1,
+        "breakPct": 125.7,
+        "avp": 6.1,
+        "shifts": 14,
+        "planned": 6390,
+        "actual": 302
+      },
+      {
+        "id": 4707745,
         "noShow": 11,
-        "late": 1,
-        "breaks": 4.8,
-        "avp": 45.3,
-        "shifts": 24
+        "late": 10,
+        "breaks": 49.9,
+        "breakPct": 113.0,
+        "avp": 20.1,
+        "shifts": 21,
+        "planned": 6067,
+        "actual": 928
       },
       {
         "id": 4810407,
         "noShow": 11,
         "late": 0,
-        "breaks": 2.0,
+        "breaks": 9.2,
+        "breakPct": 89.6,
         "avp": 2.5,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 5294,
+        "actual": 134
       },
       {
-        "id": 4710477,
+        "id": 4472110,
+        "noShow": 11,
+        "late": 0,
+        "breaks": 26.0,
+        "breakPct": 23.1,
+        "avp": 22.8,
+        "shifts": 18,
+        "planned": 7580,
+        "actual": 2032
+      },
+      {
+        "id": 1653982,
+        "noShow": 11,
+        "late": 0,
+        "breaks": 14.9,
+        "breakPct": 55.0,
+        "avp": 14.3,
+        "shifts": 13,
+        "planned": 2880,
+        "actual": 353
+      },
+      {
+        "id": 2023378,
         "noShow": 10,
-        "late": 3,
-        "breaks": 13.5,
-        "avp": 21.8,
-        "shifts": 18
+        "late": 15,
+        "breaks": 87.5,
+        "breakPct": 49.1,
+        "avp": 36.4,
+        "shifts": 26,
+        "planned": 12285,
+        "actual": 4635
+      },
+      {
+        "id": 4761064,
+        "noShow": 10,
+        "late": 14,
+        "breaks": 79.9,
+        "breakPct": 58.8,
+        "avp": 47.3,
+        "shifts": 36,
+        "planned": 11430,
+        "actual": 4889
+      },
+      {
+        "id": 4616204,
+        "noShow": 10,
+        "late": 4,
+        "breaks": 46.8,
+        "breakPct": 46.1,
+        "avp": 25.1,
+        "shifts": 19,
+        "planned": 6630,
+        "actual": 1927
+      },
+      {
+        "id": 4721720,
+        "noShow": 10,
+        "late": 0,
+        "breaks": 46.1,
+        "breakPct": 41.9,
+        "avp": 47.5,
+        "shifts": 26,
+        "planned": 6060,
+        "actual": 2856
       },
       {
         "id": 4765718,
         "noShow": 10,
         "late": 0,
         "breaks": 0.0,
+        "breakPct": 0.0,
         "avp": 0.0,
-        "shifts": 11
+        "shifts": 11,
+        "planned": 960,
+        "actual": 0
       },
       {
         "id": 4812562,
         "noShow": 10,
         "late": 0,
         "breaks": 0.0,
+        "breakPct": 0.0,
         "avp": 0.0,
-        "shifts": 10
+        "shifts": 10,
+        "planned": 3480,
+        "actual": 0
       },
       {
         "id": 4809263,
         "noShow": 10,
         "late": 0,
-        "breaks": 1.1,
+        "breaks": 6.2,
+        "breakPct": 12.4,
         "avp": 12.7,
-        "shifts": 11
+        "shifts": 11,
+        "planned": 4320,
+        "actual": 548
       },
       {
         "id": 4811704,
         "noShow": 10,
         "late": 0,
-        "breaks": 2.3,
+        "breaks": 12.5,
+        "breakPct": 117.9,
         "avp": 3.5,
-        "shifts": 11
+        "shifts": 11,
+        "planned": 3318,
+        "actual": 117
       },
       {
-        "id": 4472110,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 6.2,
-        "avp": 22.8,
-        "shifts": 15
-      },
-      {
-        "id": 2023378,
+        "id": 2535214,
         "noShow": 9,
-        "late": 14,
-        "breaks": 32.9,
-        "avp": 36.4,
-        "shifts": 23
+        "late": 15,
+        "breaks": 66.3,
+        "breakPct": 62.9,
+        "avp": 36.3,
+        "shifts": 30,
+        "planned": 9453,
+        "actual": 3160
       },
       {
         "id": 2654871,
         "noShow": 9,
         "late": 13,
-        "breaks": 24.4,
+        "breaks": 56.3,
+        "breakPct": 70.0,
         "avp": 36.6,
-        "shifts": 26
+        "shifts": 26,
+        "planned": 5718,
+        "actual": 2093
       },
       {
-        "id": 4616204,
+        "id": 4715947,
         "noShow": 9,
         "late": 2,
-        "breaks": 8.4,
-        "avp": 25.1,
-        "shifts": 15
+        "breaks": 9.6,
+        "breakPct": 8.0,
+        "avp": 0.0,
+        "shifts": 26,
+        "planned": 8130,
+        "actual": 3137
       },
       {
-        "id": 2834196,
+        "id": 4150983,
         "noShow": 9,
         "late": 0,
-        "breaks": 6.3,
-        "avp": 6.1,
-        "shifts": 11
-      },
-      {
-        "id": 1653982,
-        "noShow": 9,
-        "late": 0,
-        "breaks": 3.2,
-        "avp": 14.3,
-        "shifts": 11
+        "breaks": 14.6,
+        "breakPct": 19.9,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 4020,
+        "actual": 878
       },
       {
         "id": 4811635,
         "noShow": 9,
         "late": 0,
-        "breaks": 2.0,
+        "breaks": 11.0,
+        "breakPct": 47.4,
         "avp": 7.5,
-        "shifts": 11
+        "shifts": 11,
+        "planned": 3409,
+        "actual": 255
       },
       {
-        "id": 3674158,
+        "id": 4820177,
         "noShow": 9,
         "late": 0,
-        "breaks": 19.7,
-        "avp": 35.0,
-        "shifts": 24
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 3150,
+        "actual": 0
       },
       {
         "id": 2269368,
         "noShow": 9,
         "late": 0,
-        "breaks": 10.4,
+        "breaks": 48.0,
+        "breakPct": 32.9,
         "avp": 28.4,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 6690,
+        "actual": 1897
+      },
+      {
+        "id": 4140034,
+        "noShow": 9,
+        "late": 0,
+        "breaks": 43.9,
+        "breakPct": 71.7,
+        "avp": 20.6,
+        "shifts": 11,
+        "planned": 4350,
+        "actual": 673
+      },
+      {
+        "id": 4559589,
+        "noShow": 9,
+        "late": 0,
+        "breaks": 9.1,
+        "breakPct": 6.4,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 6190,
+        "actual": 1985
+      },
+      {
+        "id": 4808104,
+        "noShow": 9,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 4515,
+        "actual": 0
+      },
+      {
+        "id": 1780112,
+        "noShow": 9,
+        "late": 0,
+        "breaks": 11.2,
+        "breakPct": 13.0,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 4500,
+        "actual": 1118
+      },
+      {
+        "id": 3674158,
+        "noShow": 9,
+        "late": 0,
+        "breaks": 49.2,
+        "breakPct": 42.2,
+        "avp": 35.0,
+        "shifts": 24,
+        "planned": 7989,
+        "actual": 2800
       },
       {
         "id": 4764539,
         "noShow": 8,
-        "late": 23,
-        "breaks": 19.4,
+        "late": 27,
+        "breaks": 35.7,
+        "breakPct": 26.9,
         "avp": 54.4,
-        "shifts": 35
+        "shifts": 42,
+        "planned": 9690,
+        "actual": 5578
+      },
+      {
+        "id": 4587819,
+        "noShow": 8,
+        "late": 18,
+        "breaks": 103.7,
+        "breakPct": 116.2,
+        "avp": 25.5,
+        "shifts": 30,
+        "planned": 10605,
+        "actual": 2676
       },
       {
         "id": 4591503,
         "noShow": 8,
-        "late": 12,
-        "breaks": 30.2,
+        "late": 13,
+        "breaks": 44.4,
+        "breakPct": 28.6,
         "avp": 41.0,
-        "shifts": 42
+        "shifts": 50,
+        "planned": 16138,
+        "actual": 7762
+      },
+      {
+        "id": 4576403,
+        "noShow": 8,
+        "late": 7,
+        "breaks": 39.6,
+        "breakPct": 27.0,
+        "avp": 63.3,
+        "shifts": 26,
+        "planned": 6150,
+        "actual": 3807
+      },
+      {
+        "id": 4804615,
+        "noShow": 8,
+        "late": 6,
+        "breaks": 13.8,
+        "breakPct": 8.7,
+        "avp": 0.0,
+        "shifts": 25,
+        "planned": 6623,
+        "actual": 3972
+      },
+      {
+        "id": 2127148,
+        "noShow": 8,
+        "late": 3,
+        "breaks": 81.3,
+        "breakPct": 243.0,
+        "avp": 7.2,
+        "shifts": 11,
+        "planned": 5565,
+        "actual": 368
       },
       {
         "id": 4761336,
         "noShow": 8,
         "late": 3,
-        "breaks": 20.3,
+        "breaks": 58.0,
+        "breakPct": 88.4,
         "avp": 23.1,
-        "shifts": 21
+        "shifts": 21,
+        "planned": 5975,
+        "actual": 1378
+      },
+      {
+        "id": 4806291,
+        "noShow": 8,
+        "late": 2,
+        "breaks": 9.2,
+        "breakPct": 7.0,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 3135,
+        "actual": 1310
       },
       {
         "id": 4594352,
         "noShow": 8,
         "late": 2,
-        "breaks": 5.9,
+        "breaks": 27.3,
+        "breakPct": 55.4,
         "avp": 34.6,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 1852,
+        "actual": 641
+      },
+      {
+        "id": 4498025,
+        "noShow": 8,
+        "late": 2,
+        "breaks": 18.1,
+        "breakPct": 11.7,
+        "avp": 0.0,
+        "shifts": 52,
+        "planned": 12749,
+        "actual": 8029
       },
       {
         "id": 4803108,
         "noShow": 8,
         "late": 1,
-        "breaks": 4.6,
+        "breaks": 30.9,
+        "breakPct": 75.3,
         "avp": 8.0,
-        "shifts": 9
+        "shifts": 9,
+        "planned": 4590,
+        "actual": 369
       },
       {
         "id": 4337254,
         "noShow": 8,
         "late": 1,
-        "breaks": 19.1,
+        "breaks": 54.5,
+        "breakPct": 67.4,
         "avp": 26.9,
-        "shifts": 19
+        "shifts": 21,
+        "planned": 7036,
+        "actual": 1699
       },
       {
-        "id": 4721720,
+        "id": 4802380,
         "noShow": 8,
         "late": 0,
-        "breaks": 18.5,
-        "avp": 47.5,
-        "shifts": 22
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 3525,
+        "actual": 0
       },
       {
-        "id": 4587819,
+        "id": 1052863,
         "noShow": 7,
-        "late": 16,
-        "breaks": 44.5,
-        "avp": 25.5,
-        "shifts": 26
-      },
-      {
-        "id": 2535214,
-        "noShow": 7,
-        "late": 13,
-        "breaks": 29.1,
-        "avp": 36.3,
-        "shifts": 26
-      },
-      {
-        "id": 4707745,
-        "noShow": 7,
-        "late": 10,
-        "breaks": 17.5,
-        "avp": 20.1,
-        "shifts": 17
+        "late": 25,
+        "breaks": 5.5,
+        "breakPct": 3.3,
+        "avp": 0.0,
+        "shifts": 32,
+        "planned": 8730,
+        "actual": 5371
       },
       {
         "id": 4764497,
         "noShow": 7,
         "late": 8,
-        "breaks": 22.4,
+        "breaks": 60.9,
+        "breakPct": 46.2,
         "avp": 45.1,
-        "shifts": 22
+        "shifts": 22,
+        "planned": 6439,
+        "actual": 2904
       },
       {
         "id": 4760895,
         "noShow": 7,
         "late": 7,
-        "breaks": 32.8,
+        "breaks": 93.6,
+        "breakPct": 107.4,
         "avp": 19.4,
-        "shifts": 21
+        "shifts": 21,
+        "planned": 9435,
+        "actual": 1830
       },
       {
-        "id": 2127148,
+        "id": 4783183,
         "noShow": 7,
-        "late": 3,
-        "breaks": 14.9,
-        "avp": 7.2,
-        "shifts": 10
+        "late": 5,
+        "breaks": 80.4,
+        "breakPct": 65.6,
+        "avp": 35.6,
+        "shifts": 13,
+        "planned": 5550,
+        "actual": 1592
+      },
+      {
+        "id": 3884359,
+        "noShow": 7,
+        "late": 4,
+        "breaks": 0.7,
+        "breakPct": 1.6,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 2900,
+        "actual": 540
       },
       {
         "id": 4722464,
         "noShow": 7,
         "late": 3,
-        "breaks": 21.9,
+        "breaks": 72.3,
+        "breakPct": 24.1,
         "avp": 52.6,
-        "shifts": 18
+        "shifts": 20,
+        "planned": 10620,
+        "actual": 6007
       },
       {
-        "id": 4761064,
-        "noShow": 6,
-        "late": 14,
-        "breaks": 47.9,
-        "avp": 47.3,
-        "shifts": 32
+        "id": 4159265,
+        "noShow": 7,
+        "late": 3,
+        "breaks": 24.0,
+        "breakPct": 18.5,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 5250,
+        "actual": 1295
       },
       {
-        "id": 4576403,
+        "id": 4724926,
+        "noShow": 7,
+        "late": 2,
+        "breaks": 24.2,
+        "breakPct": 13.8,
+        "avp": 0.0,
+        "shifts": 27,
+        "planned": 8906,
+        "actual": 4719
+      },
+      {
+        "id": 4520413,
+        "noShow": 7,
+        "late": 1,
+        "breaks": 28.2,
+        "breakPct": 14.2,
+        "avp": 0.0,
+        "shifts": 32,
+        "planned": 10213,
+        "actual": 6369
+      },
+      {
+        "id": 2659438,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 3740,
+        "actual": 0
+      },
+      {
+        "id": 4712851,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 3690,
+        "actual": 0
+      },
+      {
+        "id": 4464176,
         "noShow": 6,
-        "late": 7,
-        "breaks": 17.1,
-        "avp": 63.3,
-        "shifts": 24
+        "late": 8,
+        "breaks": 33.8,
+        "breakPct": 10.1,
+        "avp": 0.0,
+        "shifts": 22,
+        "planned": 11025,
+        "actual": 7366
       },
       {
         "id": 2471618,
         "noShow": 6,
         "late": 6,
-        "breaks": 13.2,
+        "breaks": 66.1,
+        "breakPct": 119.6,
         "avp": 14.7,
-        "shifts": 12
+        "shifts": 12,
+        "planned": 4500,
+        "actual": 663
       },
       {
         "id": 4719875,
         "noShow": 6,
         "late": 6,
-        "breaks": 38.6,
+        "breaks": 108.3,
+        "breakPct": 48.8,
         "avp": 39.5,
-        "shifts": 22
+        "shifts": 22,
+        "planned": 10769,
+        "actual": 4886
+      },
+      {
+        "id": 4182887,
+        "noShow": 6,
+        "late": 5,
+        "breaks": 77.0,
+        "breakPct": 41.7,
+        "avp": 45.8,
+        "shifts": 25,
+        "planned": 9723,
+        "actual": 4618
       },
       {
         "id": 4740372,
         "noShow": 6,
         "late": 5,
-        "breaks": 19.5,
+        "breaks": 65.1,
+        "breakPct": 75.7,
         "avp": 24.3,
-        "shifts": 18
+        "shifts": 18,
+        "planned": 6376,
+        "actual": 1549
       },
       {
-        "id": 4140034,
+        "id": 4783235,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 36.2,
+        "breakPct": 17.2,
+        "avp": 0.0,
+        "shifts": 45,
+        "planned": 12784,
+        "actual": 9488
+      },
+      {
+        "id": 4694205,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 49.1,
+        "breakPct": 22.0,
+        "avp": 55.1,
+        "shifts": 22,
+        "planned": 9090,
+        "actual": 4922
+      },
+      {
+        "id": 4752436,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 15.2,
+        "breakPct": 7.9,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 4695,
+        "actual": 2120
+      },
+      {
+        "id": 3499066,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 120.9,
+        "breakPct": 85.4,
+        "avp": 0.0,
+        "shifts": 18,
+        "planned": 7200,
+        "actual": 2547
+      },
+      {
+        "id": 4807891,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 109.2,
+        "breakPct": 55.3,
+        "avp": 54.5,
+        "shifts": 18,
+        "planned": 7237,
+        "actual": 3558
+      },
+      {
+        "id": 4813855,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 35.2,
+        "breakPct": 18.8,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 4855,
+        "actual": 2248
+      },
+      {
+        "id": 4830384,
         "noShow": 6,
         "late": 0,
-        "breaks": 8.1,
-        "avp": 20.6,
-        "shifts": 8
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 2070,
+        "actual": 0
+      },
+      {
+        "id": 2822272,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 2025,
+        "actual": 0
+      },
+      {
+        "id": 4654155,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 3240,
+        "actual": 0
       },
       {
         "id": 4596915,
         "noShow": 5,
-        "late": 17,
-        "breaks": 61.6,
+        "late": 19,
+        "breaks": 97.2,
+        "breakPct": 55.3,
         "avp": 50.9,
-        "shifts": 40
+        "shifts": 46,
+        "planned": 15358,
+        "actual": 8076
       },
       {
         "id": 4763858,
         "noShow": 5,
         "late": 14,
-        "breaks": 27.7,
+        "breaks": 50.4,
+        "breakPct": 37.4,
         "avp": 55.9,
-        "shifts": 33
+        "shifts": 33,
+        "planned": 7948,
+        "actual": 4443
       },
       {
         "id": 4786439,
         "noShow": 5,
-        "late": 10,
-        "breaks": 19.8,
+        "late": 12,
+        "breaks": 62.9,
+        "breakPct": 61.1,
         "avp": 37.1,
-        "shifts": 21
+        "shifts": 23,
+        "planned": 6177,
+        "actual": 2366
       },
       {
         "id": 4739108,
         "noShow": 5,
-        "late": 9,
-        "breaks": 17.4,
+        "late": 12,
+        "breaks": 54.5,
+        "breakPct": 18.9,
         "avp": 60.7,
-        "shifts": 19
+        "shifts": 22,
+        "planned": 9855,
+        "actual": 6363
+      },
+      {
+        "id": 4765814,
+        "noShow": 5,
+        "late": 11,
+        "breaks": 77.6,
+        "breakPct": 48.7,
+        "avp": 57.5,
+        "shifts": 35,
+        "planned": 10284,
+        "actual": 5570
+      },
+      {
+        "id": 2483167,
+        "noShow": 5,
+        "late": 10,
+        "breaks": 89.8,
+        "breakPct": 35.8,
+        "avp": 49.2,
+        "shifts": 18,
+        "planned": 9360,
+        "actual": 4513
+      },
+      {
+        "id": 4752399,
+        "noShow": 5,
+        "late": 9,
+        "breaks": 69.5,
+        "breakPct": 36.1,
+        "avp": 0.0,
+        "shifts": 25,
+        "planned": 8323,
+        "actual": 4812
       },
       {
         "id": 4691849,
         "noShow": 5,
-        "late": 8,
-        "breaks": 37.2,
+        "late": 9,
+        "breaks": 115.6,
+        "breakPct": 50.3,
         "avp": 44.0,
-        "shifts": 19
+        "shifts": 22,
+        "planned": 10380,
+        "actual": 5057
+      },
+      {
+        "id": 4832369,
+        "noShow": 5,
+        "late": 6,
+        "breaks": 45.8,
+        "breakPct": 22.1,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 5490,
+        "actual": 2274
+      },
+      {
+        "id": 4150600,
+        "noShow": 5,
+        "late": 5,
+        "breaks": 24.5,
+        "breakPct": 7.8,
+        "avp": 0.0,
+        "shifts": 26,
+        "planned": 11182,
+        "actual": 8139
       },
       {
         "id": 4752344,
         "noShow": 5,
         "late": 5,
-        "breaks": 27.1,
+        "breaks": 70.6,
+        "breakPct": 56.5,
         "avp": 43.8,
-        "shifts": 23
+        "shifts": 23,
+        "planned": 6565,
+        "actual": 2876
       },
       {
-        "id": 4182887,
+        "id": 4815867,
         "noShow": 5,
-        "late": 5,
-        "breaks": 32.1,
-        "avp": 45.8,
-        "shifts": 25
+        "late": 4,
+        "breaks": 15.3,
+        "breakPct": 10.1,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 4530,
+        "actual": 2278
       },
       {
         "id": 3529157,
         "noShow": 5,
         "late": 3,
-        "breaks": 10.3,
+        "breaks": 55.9,
+        "breakPct": 32.0,
         "avp": 43.3,
-        "shifts": 11
+        "shifts": 12,
+        "planned": 4507,
+        "actual": 2093
+      },
+      {
+        "id": 4806413,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 3.4,
+        "breakPct": 4.3,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 1351,
+        "actual": 715
+      },
+      {
+        "id": 4783424,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 15.1,
+        "breakPct": 11.5,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 4260,
+        "actual": 2110
       },
       {
         "id": 4780631,
         "noShow": 5,
         "late": 2,
-        "breaks": 19.7,
+        "breaks": 84.4,
+        "breakPct": 57.3,
         "avp": 42.5,
-        "shifts": 14
+        "shifts": 14,
+        "planned": 4855,
+        "actual": 2063
       },
       {
-        "id": 4694205,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 16.0,
-        "avp": 55.1,
-        "shifts": 20
-      },
-      {
-        "id": 4807891,
+        "id": 4729912,
         "noShow": 5,
         "late": 1,
-        "breaks": 23.0,
-        "avp": 54.5,
-        "shifts": 16
+        "breaks": 85.8,
+        "breakPct": 123.7,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 5128,
+        "actual": 1317
       },
       {
-        "id": 2462535,
+        "id": 3908849,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 14.4,
+        "breakPct": 36.9,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 1533,
+        "actual": 234
+      },
+      {
+        "id": 4274113,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 11.8,
+        "breakPct": 4.9,
+        "avp": 0.0,
+        "shifts": 25,
+        "planned": 9195,
+        "actual": 5981
+      },
+      {
+        "id": 4746787,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1665,
+        "actual": 0
+      },
+      {
+        "id": 4835721,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 43.9,
+        "breakPct": 22.0,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 3728,
+        "actual": 2397
+      },
+      {
+        "id": 4678766,
         "noShow": 5,
         "late": 0,
         "breaks": 13.0,
-        "avp": 29.8,
-        "shifts": 11
+        "breakPct": 26.4,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 2927,
+        "actual": 442
       },
       {
         "id": 2156061,
         "noShow": 5,
         "late": 0,
-        "breaks": 7.5,
+        "breaks": 50.3,
+        "breakPct": 21.8,
         "avp": 42.8,
-        "shifts": 9
+        "shifts": 9,
+        "planned": 4845,
+        "actual": 2073
+      },
+      {
+        "id": 2462535,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 64.9,
+        "breakPct": 59.4,
+        "avp": 29.8,
+        "shifts": 12,
+        "planned": 4858,
+        "actual": 1311
+      },
+      {
+        "id": 3915905,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1005,
+        "actual": 0
+      },
+      {
+        "id": 3435626,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 8.3,
+        "breakPct": 5.7,
+        "avp": 0.0,
+        "shifts": 23,
+        "planned": 4585,
+        "actual": 3311
+      },
+      {
+        "id": 4553907,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 1.9,
+        "breakPct": 0.5,
+        "avp": 0.0,
+        "shifts": 25,
+        "planned": 12495,
+        "actual": 9917
+      },
+      {
+        "id": 2213181,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 52.6,
+        "breakPct": 14.3,
+        "avp": 0.0,
+        "shifts": 18,
+        "planned": 10411,
+        "actual": 6639
+      },
+      {
+        "id": 4404885,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 7680,
+        "actual": 4435
+      },
+      {
+        "id": 4562006,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 47.0,
+        "breakPct": 28.0,
+        "avp": 0.0,
+        "shifts": 37,
+        "planned": 9027,
+        "actual": 6218
+      },
+      {
+        "id": 4754642,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 4425,
+        "actual": 0
+      },
+      {
+        "id": 4008960,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 20.3,
+        "breakPct": 6.7,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 5565,
+        "actual": 3020
       },
       {
         "id": 4810503,
         "noShow": 4,
-        "late": 22,
-        "breaks": 26.6,
+        "late": 28,
+        "breaks": 56.9,
+        "breakPct": 45.1,
         "avp": 36.9,
-        "shifts": 28
+        "shifts": 34,
+        "planned": 10860,
+        "actual": 4288
       },
       {
         "id": 2154584,
         "noShow": 4,
-        "late": 18,
-        "breaks": 25.1,
+        "late": 19,
+        "breaks": 59.0,
+        "breakPct": 42.1,
         "avp": 41.6,
-        "shifts": 23
+        "shifts": 26,
+        "planned": 9666,
+        "actual": 3640
+      },
+      {
+        "id": 4687272,
+        "noShow": 4,
+        "late": 18,
+        "breaks": 128.6,
+        "breakPct": 82.5,
+        "avp": 35.1,
+        "shifts": 33,
+        "planned": 13162,
+        "actual": 5143
+      },
+      {
+        "id": 4800184,
+        "noShow": 4,
+        "late": 17,
+        "breaks": 74.6,
+        "breakPct": 60.7,
+        "avp": 0.0,
+        "shifts": 33,
+        "planned": 8571,
+        "actual": 4054
       },
       {
         "id": 4803885,
         "noShow": 4,
         "late": 16,
-        "breaks": 25.6,
+        "breaks": 61.4,
+        "breakPct": 42.5,
         "avp": 53.6,
-        "shifts": 23
+        "shifts": 25,
+        "planned": 6500,
+        "actual": 3613
       },
       {
         "id": 2204829,
         "noShow": 4,
         "late": 16,
-        "breaks": 29.4,
+        "breaks": 46.4,
+        "breakPct": 22.0,
         "avp": 57.9,
-        "shifts": 38
-      },
-      {
-        "id": 4687272,
-        "noShow": 4,
-        "late": 14,
-        "breaks": 51.9,
-        "avp": 35.1,
-        "shifts": 27
+        "shifts": 38,
+        "planned": 13830,
+        "actual": 8009
       },
       {
         "id": 4265605,
         "noShow": 4,
-        "late": 13,
-        "breaks": 14.6,
+        "late": 16,
+        "breaks": 53.3,
+        "breakPct": 44.3,
         "avp": 34.5,
-        "shifts": 17
+        "shifts": 21,
+        "planned": 7194,
+        "actual": 2525
       },
       {
-        "id": 4765814,
+        "id": 3902201,
         "noShow": 4,
-        "late": 11,
-        "breaks": 37.5,
-        "avp": 57.5,
-        "shifts": 31
+        "late": 16,
+        "breaks": 119.8,
+        "breakPct": 121.4,
+        "avp": 0.0,
+        "shifts": 23,
+        "planned": 7620,
+        "actual": 2269
       },
       {
-        "id": 2483167,
+        "id": 4724673,
         "noShow": 4,
-        "late": 9,
-        "breaks": 26.5,
-        "avp": 49.2,
-        "shifts": 16
+        "late": 15,
+        "breaks": 66.9,
+        "breakPct": 38.0,
+        "avp": 0.0,
+        "shifts": 48,
+        "planned": 13980,
+        "actual": 8438
+      },
+      {
+        "id": 1496335,
+        "noShow": 4,
+        "late": 13,
+        "breaks": 75.6,
+        "breakPct": 23.3,
+        "avp": 0.0,
+        "shifts": 23,
+        "planned": 12885,
+        "actual": 7446
+      },
+      {
+        "id": 4808039,
+        "noShow": 4,
+        "late": 8,
+        "breaks": 58.7,
+        "breakPct": 38.8,
+        "avp": 0.0,
+        "shifts": 24,
+        "planned": 6270,
+        "actual": 3637
       },
       {
         "id": 4724880,
         "noShow": 4,
         "late": 8,
-        "breaks": 10.1,
+        "breaks": 37.1,
+        "breakPct": 22.5,
         "avp": 46.9,
-        "shifts": 18
+        "shifts": 21,
+        "planned": 6745,
+        "actual": 3458
       },
       {
-        "id": 4783183,
+        "id": 4725048,
         "noShow": 4,
-        "late": 5,
-        "breaks": 17.4,
-        "avp": 35.6,
-        "shifts": 10
+        "late": 7,
+        "breaks": 56.4,
+        "breakPct": 30.3,
+        "avp": 0.0,
+        "shifts": 32,
+        "planned": 10005,
+        "actual": 5956
+      },
+      {
+        "id": 4804608,
+        "noShow": 4,
+        "late": 7,
+        "breaks": 28.1,
+        "breakPct": 9.8,
+        "avp": 0.0,
+        "shifts": 35,
+        "planned": 13306,
+        "actual": 10041
+      },
+      {
+        "id": 1858957,
+        "noShow": 4,
+        "late": 6,
+        "breaks": 61.8,
+        "breakPct": 93.9,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 2942,
+        "actual": 789
+      },
+      {
+        "id": 4628239,
+        "noShow": 4,
+        "late": 6,
+        "breaks": 14.7,
+        "breakPct": 3.6,
+        "avp": 0.0,
+        "shifts": 28,
+        "planned": 13273,
+        "actual": 11308
+      },
+      {
+        "id": 4786524,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 148.3,
+        "breakPct": 54.4,
+        "avp": 48.8,
+        "shifts": 19,
+        "planned": 9993,
+        "actual": 5178
+      },
+      {
+        "id": 2659504,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 24.6,
+        "breakPct": 25.9,
+        "avp": 0.0,
+        "shifts": 18,
+        "planned": 2205,
+        "actual": 1707
       },
       {
         "id": 4802477,
         "noShow": 4,
         "late": 4,
-        "breaks": 6.8,
+        "breaks": 45.1,
+        "breakPct": 38.1,
         "avp": 37.8,
-        "shifts": 9
+        "shifts": 9,
+        "planned": 2820,
+        "actual": 1066
       },
       {
-        "id": 4786524,
+        "id": 4694148,
         "noShow": 4,
-        "late": 3,
-        "breaks": 33.8,
-        "avp": 48.8,
-        "shifts": 15
+        "late": 4,
+        "breaks": 46.6,
+        "breakPct": 31.6,
+        "avp": 67.1,
+        "shifts": 33,
+        "planned": 7269,
+        "actual": 4871
+      },
+      {
+        "id": 4555366,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 15.5,
+        "breakPct": 7.0,
+        "avp": 0.0,
+        "shifts": 20,
+        "planned": 6795,
+        "actual": 4425
       },
       {
         "id": 4631091,
         "noShow": 4,
         "late": 3,
-        "breaks": 12.7,
+        "breaks": 42.4,
+        "breakPct": 35.0,
         "avp": 45.9,
-        "shifts": 18
+        "shifts": 18,
+        "planned": 4753,
+        "actual": 2181
       },
       {
-        "id": 4694148,
+        "id": 4592244,
         "noShow": 4,
         "late": 3,
-        "breaks": 25.1,
-        "avp": 67.1,
-        "shifts": 32
+        "breaks": 51.5,
+        "breakPct": 55.1,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 3432,
+        "actual": 1216
       },
       {
-        "id": 4565167,
+        "id": 4804777,
         "noShow": 4,
-        "late": 2,
-        "breaks": 19.2,
-        "avp": 18.3,
-        "shifts": 12
+        "late": 3,
+        "breaks": 28.4,
+        "breakPct": 12.5,
+        "avp": 0.0,
+        "shifts": 39,
+        "planned": 11110,
+        "actual": 8897
       },
       {
-        "id": 4730363,
+        "id": 1950193,
         "noShow": 4,
-        "late": 2,
-        "breaks": 9.4,
-        "avp": 29.8,
-        "shifts": 8
-      },
-      {
-        "id": 4689417,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 3.8,
-        "avp": 24.4,
-        "shifts": 8
-      },
-      {
-        "id": 1159093,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 6.3,
-        "avp": 20.3,
-        "shifts": 14
+        "late": 3,
+        "breaks": 42.4,
+        "breakPct": 21.4,
+        "avp": 0.0,
+        "shifts": 36,
+        "planned": 10741,
+        "actual": 7126
       },
       {
         "id": 4570915,
         "noShow": 4,
         "late": 2,
-        "breaks": 29.8,
+        "breaks": 57.9,
+        "breakPct": 28.6,
         "avp": 65.6,
-        "shifts": 32
+        "shifts": 34,
+        "planned": 10395,
+        "actual": 6892
+      },
+      {
+        "id": 4689417,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 28.2,
+        "breakPct": 52.5,
+        "avp": 24.4,
+        "shifts": 8,
+        "planned": 1765,
+        "actual": 430
+      },
+      {
+        "id": 4565167,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 96.2,
+        "breakPct": 111.2,
+        "avp": 18.3,
+        "shifts": 12,
+        "planned": 5673,
+        "actual": 1038
+      },
+      {
+        "id": 4730363,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 70.8,
+        "breakPct": 77.2,
+        "avp": 29.8,
+        "shifts": 8,
+        "planned": 2460,
+        "actual": 734
+      },
+      {
+        "id": 1159093,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 27.0,
+        "breakPct": 38.0,
+        "avp": 20.3,
+        "shifts": 14,
+        "planned": 4908,
+        "actual": 994
+      },
+      {
+        "id": 4150363,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 23.6,
+        "breakPct": 4.8,
+        "avp": 0.0,
+        "shifts": 21,
+        "planned": 12855,
+        "actual": 10315
+      },
+      {
+        "id": 4132982,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 180.0,
+        "breakPct": 87.1,
+        "avp": 36.6,
+        "shifts": 14,
+        "planned": 6990,
+        "actual": 2894
+      },
+      {
+        "id": 1088655,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 31.4,
+        "breakPct": 10.0,
+        "avp": 0.0,
+        "shifts": 18,
+        "planned": 8797,
+        "actual": 5679
       },
       {
         "id": 2491690,
         "noShow": 4,
         "late": 1,
-        "breaks": 42.7,
+        "breaks": 160.1,
+        "breakPct": 82.0,
         "avp": 41.0,
-        "shifts": 16
-      },
-      {
-        "id": 4747803,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 15.1,
-        "avp": 20.4,
-        "shifts": 9
-      },
-      {
-        "id": 4132982,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 33.6,
-        "avp": 36.6,
-        "shifts": 11
-      },
-      {
-        "id": 4783328,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 5.5,
-        "avp": 12.6,
-        "shifts": 5
+        "shifts": 16,
+        "planned": 7624,
+        "actual": 3126
       },
       {
         "id": 1760212,
         "noShow": 4,
-        "late": 0,
-        "breaks": 35.9,
+        "late": 1,
+        "breaks": 72.9,
+        "breakPct": 59.6,
         "avp": 46.1,
-        "shifts": 28
-      },
-      {
-        "id": 4804726,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 4.8,
-        "avp": 17.2,
-        "shifts": 6
-      },
-      {
-        "id": 4714256,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 18.7,
-        "avp": 38.8,
-        "shifts": 19
+        "shifts": 31,
+        "planned": 7906,
+        "actual": 3795
       },
       {
         "id": 4820151,
         "noShow": 4,
         "late": 0,
-        "breaks": 8.9,
+        "breaks": 76.2,
+        "breakPct": 41.9,
         "avp": 37.4,
-        "shifts": 7
+        "shifts": 7,
+        "planned": 3405,
+        "actual": 1274
+      },
+      {
+        "id": 4714256,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 51.1,
+        "breakPct": 53.1,
+        "avp": 38.8,
+        "shifts": 22,
+        "planned": 6510,
+        "actual": 2116
       },
       {
         "id": 3496011,
         "noShow": 4,
         "late": 0,
-        "breaks": 15.0,
+        "breaks": 60.1,
+        "breakPct": 22.2,
         "avp": 62.9,
-        "shifts": 15
+        "shifts": 15,
+        "planned": 6444,
+        "actual": 4056
+      },
+      {
+        "id": 2647602,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 27.8,
+        "breakPct": 10.8,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 5400,
+        "actual": 3849
+      },
+      {
+        "id": 4809242,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 4,
+        "planned": 1530,
+        "actual": 0
+      },
+      {
+        "id": 2134855,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 2.1,
+        "breakPct": 10.5,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1879,
+        "actual": 101
+      },
+      {
+        "id": 4295078,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 252.3,
+        "breakPct": 175.5,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 8730,
+        "actual": 2157
+      },
+      {
+        "id": 4747803,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 100.5,
+        "breakPct": 154.4,
+        "avp": 20.4,
+        "shifts": 9,
+        "planned": 2880,
+        "actual": 586
+      },
+      {
+        "id": 4556473,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 2492,
+        "actual": 654
+      },
+      {
+        "id": 3513631,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 104.2,
+        "breakPct": 54.9,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 4715,
+        "actual": 1900
+      },
+      {
+        "id": 1780832,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 4,
+        "planned": 2070,
+        "actual": 0
+      },
+      {
+        "id": 4783328,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 65.4,
+        "breakPct": 92.9,
+        "avp": 12.6,
+        "shifts": 5,
+        "planned": 2790,
+        "actual": 352
+      },
+      {
+        "id": 1918136,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 3.9,
+        "breakPct": 3.8,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 4125,
+        "actual": 825
+      },
+      {
+        "id": 4179572,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 4,
+        "planned": 375,
+        "actual": 0
+      },
+      {
+        "id": 4804734,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 52.2,
+        "breakPct": 57.8,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 3132,
+        "actual": 1355
+      },
+      {
+        "id": 4163597,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 22.8,
+        "breakPct": 5.5,
+        "avp": 0.0,
+        "shifts": 22,
+        "planned": 11205,
+        "actual": 9117
       },
       {
         "id": 4807266,
         "noShow": 4,
         "late": 0,
-        "breaks": 1.6,
+        "breaks": 18.8,
+        "breakPct": 21.1,
         "avp": 22.0,
-        "shifts": 5
+        "shifts": 5,
+        "planned": 2025,
+        "actual": 446
+      },
+      {
+        "id": 4183495,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 70.7,
+        "breakPct": 17.3,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 11157,
+        "actual": 7763
+      },
+      {
+        "id": 4833811,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 41.0,
+        "breakPct": 60.6,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1950,
+        "actual": 338
+      },
+      {
+        "id": 4804726,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 47.8,
+        "breakPct": 62.9,
+        "avp": 17.2,
+        "shifts": 6,
+        "planned": 2646,
+        "actual": 456
+      },
+      {
+        "id": 1817492,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 5276,
+        "actual": 0
+      },
+      {
+        "id": 4604088,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 24.3,
+        "breakPct": 9.6,
+        "avp": 0.0,
+        "shifts": 20,
+        "planned": 7068,
+        "actual": 5041
+      },
+      {
+        "id": 657058,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 17.8,
+        "breakPct": 5.1,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 7560,
+        "actual": 5578
+      },
+      {
+        "id": 4718694,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 1.2,
+        "breakPct": 0.4,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 6415,
+        "actual": 3880
+      },
+      {
+        "id": 2524970,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 11.3,
+        "breakPct": 2.8,
+        "avp": 0.0,
+        "shifts": 30,
+        "planned": 13950,
+        "actual": 11993
       }
     ],
     "Heliopolis": [
+      {
+        "id": 4409100,
+        "noShow": 16,
+        "late": 4,
+        "breaks": 58.1,
+        "breakPct": 54.3,
+        "avp": 41.0,
+        "shifts": 44,
+        "planned": 12285,
+        "actual": 4705
+      },
+      {
+        "id": 4769937,
+        "noShow": 15,
+        "late": 14,
+        "breaks": 43.7,
+        "breakPct": 45.1,
+        "avp": 37.3,
+        "shifts": 34,
+        "planned": 9048,
+        "actual": 3298
+      },
       {
         "id": 4133861,
         "noShow": 15,
         "late": 0,
         "breaks": 0.0,
+        "breakPct": 0.0,
         "avp": 0.0,
-        "shifts": 17
+        "shifts": 17,
+        "planned": 1155,
+        "actual": 0
+      },
+      {
+        "id": 2402774,
+        "noShow": 14,
+        "late": 7,
+        "breaks": 3.3,
+        "breakPct": 3.8,
+        "avp": 0.0,
+        "shifts": 25,
+        "planned": 7560,
+        "actual": 2132
+      },
+      {
+        "id": 1366287,
+        "noShow": 14,
+        "late": 5,
+        "breaks": 34.1,
+        "breakPct": 82.3,
+        "avp": 20.9,
+        "shifts": 21,
+        "planned": 6216,
+        "actual": 870
+      },
+      {
+        "id": 3968316,
+        "noShow": 14,
+        "late": 4,
+        "breaks": 120.6,
+        "breakPct": 175.5,
+        "avp": 14.5,
+        "shifts": 24,
+        "planned": 11070,
+        "actual": 1649
       },
       {
         "id": 1929761,
         "noShow": 14,
         "late": 0,
         "breaks": 0.0,
+        "breakPct": 0.0,
         "avp": 0.0,
-        "shifts": 16
+        "shifts": 16,
+        "planned": 8040,
+        "actual": 0
+      },
+      {
+        "id": 4523344,
+        "noShow": 14,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 4680,
+        "actual": 0
       },
       {
         "id": 4783648,
         "noShow": 14,
         "late": 0,
-        "breaks": 4.0,
+        "breaks": 14.8,
+        "breakPct": 75.4,
         "avp": 5.5,
-        "shifts": 16
+        "shifts": 16,
+        "planned": 5700,
+        "actual": 315
+      },
+      {
+        "id": 4202995,
+        "noShow": 14,
+        "late": 0,
+        "breaks": 18.9,
+        "breakPct": 88.8,
+        "avp": 7.4,
+        "shifts": 16,
+        "planned": 5265,
+        "actual": 340
+      },
+      {
+        "id": 2606954,
+        "noShow": 14,
+        "late": 0,
+        "breaks": 3.0,
+        "breakPct": 10.0,
+        "avp": 0.0,
+        "shifts": 18,
+        "planned": 2025,
+        "actual": 541
+      },
+      {
+        "id": 1235541,
+        "noShow": 14,
+        "late": 0,
+        "breaks": 16.2,
+        "breakPct": 18.3,
+        "avp": 0.0,
+        "shifts": 20,
+        "planned": 7515,
+        "actual": 1772
+      },
+      {
+        "id": 4406017,
+        "noShow": 13,
+        "late": 11,
+        "breaks": 20.1,
+        "breakPct": 30.9,
+        "avp": 23.4,
+        "shifts": 24,
+        "planned": 5972,
+        "actual": 1559
+      },
+      {
+        "id": 4171396,
+        "noShow": 13,
+        "late": 9,
+        "breaks": 37.4,
+        "breakPct": 66.2,
+        "avp": 19.9,
+        "shifts": 24,
+        "planned": 6121,
+        "actual": 1358
+      },
+      {
+        "id": 4549182,
+        "noShow": 13,
+        "late": 5,
+        "breaks": 85.7,
+        "breakPct": 176.5,
+        "avp": 12.2,
+        "shifts": 21,
+        "planned": 8693,
+        "actual": 1020
       },
       {
         "id": 1390508,
         "noShow": 13,
         "late": 5,
-        "breaks": 7.7,
+        "breaks": 21.1,
+        "breakPct": 47.3,
         "avp": 17.3,
-        "shifts": 22
+        "shifts": 22,
+        "planned": 5665,
+        "actual": 979
       },
       {
-        "id": 3968316,
+        "id": 4414483,
         "noShow": 13,
-        "late": 3,
-        "breaks": 31.8,
-        "avp": 14.5,
-        "shifts": 21
+        "late": 5,
+        "breaks": 72.9,
+        "breakPct": 108.0,
+        "avp": 20.3,
+        "shifts": 26,
+        "planned": 9195,
+        "actual": 1756
       },
       {
-        "id": 4769937,
-        "noShow": 12,
-        "late": 14,
-        "breaks": 24.8,
-        "avp": 37.3,
-        "shifts": 31
+        "id": 4614846,
+        "noShow": 13,
+        "late": 4,
+        "breaks": 69.6,
+        "breakPct": 137.5,
+        "avp": 13.6,
+        "shifts": 20,
+        "planned": 8239,
+        "actual": 1013
       },
       {
-        "id": 4406017,
-        "noShow": 12,
-        "late": 9,
-        "breaks": 5.7,
-        "avp": 23.4,
-        "shifts": 21
+        "id": 2495115,
+        "noShow": 13,
+        "late": 0,
+        "breaks": 42.6,
+        "breakPct": 62.8,
+        "avp": 28.6,
+        "shifts": 23,
+        "planned": 6240,
+        "actual": 1562
       },
       {
-        "id": 4171396,
+        "id": 4777040,
         "noShow": 12,
         "late": 6,
-        "breaks": 10.5,
-        "avp": 19.9,
-        "shifts": 20
-      },
-      {
-        "id": 4549182,
-        "noShow": 12,
-        "late": 5,
-        "breaks": 30.0,
-        "avp": 12.2,
-        "shifts": 20
-      },
-      {
-        "id": 4409100,
-        "noShow": 12,
-        "late": 4,
-        "breaks": 38.7,
-        "avp": 41.0,
-        "shifts": 37
+        "breaks": 70.6,
+        "breakPct": 72.1,
+        "avp": 31.4,
+        "shifts": 22,
+        "planned": 8130,
+        "actual": 2155
       },
       {
         "id": 3529074,
         "noShow": 12,
         "late": 4,
-        "breaks": 3.7,
+        "breaks": 13.9,
+        "breakPct": 16.0,
         "avp": 17.3,
-        "shifts": 16
+        "shifts": 16,
+        "planned": 8040,
+        "actual": 1388
       },
       {
         "id": 2172819,
         "noShow": 12,
         "late": 0,
-        "breaks": 3.6,
+        "breaks": 11.3,
+        "breakPct": 929.9,
         "avp": 0.5,
-        "shifts": 16
-      },
-      {
-        "id": 4202995,
-        "noShow": 12,
-        "late": 0,
-        "breaks": 5.0,
-        "avp": 7.4,
-        "shifts": 14
+        "shifts": 19,
+        "planned": 5532,
+        "actual": 23
       },
       {
         "id": 4746818,
         "noShow": 11,
-        "late": 11,
-        "breaks": 19.5,
+        "late": 16,
+        "breaks": 47.7,
+        "breakPct": 49.3,
         "avp": 18.0,
-        "shifts": 23
+        "shifts": 28,
+        "planned": 10920,
+        "actual": 2709
       },
       {
-        "id": 4614846,
+        "id": 4517903,
         "noShow": 11,
-        "late": 4,
-        "breaks": 23.2,
-        "avp": 13.6,
-        "shifts": 18
+        "late": 8,
+        "breaks": 28.2,
+        "breakPct": 14.7,
+        "avp": 0.0,
+        "shifts": 24,
+        "planned": 11327,
+        "actual": 4602
       },
       {
-        "id": 4414483,
+        "id": 2113059,
         "noShow": 11,
-        "late": 4,
-        "breaks": 27.3,
-        "avp": 20.3,
-        "shifts": 23
+        "late": 3,
+        "breaks": 54.2,
+        "breakPct": 33.6,
+        "avp": 40.3,
+        "shifts": 21,
+        "planned": 9801,
+        "actual": 3383
+      },
+      {
+        "id": 4743512,
+        "noShow": 11,
+        "late": 1,
+        "breaks": 71.0,
+        "breakPct": 54.9,
+        "avp": 32.0,
+        "shifts": 24,
+        "planned": 9906,
+        "actual": 3104
+      },
+      {
+        "id": 1352533,
+        "noShow": 11,
+        "late": 0,
+        "breaks": 13.4,
+        "breakPct": 20.3,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 5723,
+        "actual": 991
       },
       {
         "id": 2407523,
         "noShow": 11,
         "late": 0,
-        "breaks": 9.2,
+        "breaks": 39.6,
+        "breakPct": 49.4,
         "avp": 17.3,
-        "shifts": 14
+        "shifts": 14,
+        "planned": 6480,
+        "actual": 1122
       },
       {
-        "id": 2495115,
+        "id": 1301845,
         "noShow": 11,
         "late": 0,
-        "breaks": 11.7,
-        "avp": 28.6,
-        "shifts": 20
+        "breaks": 85.0,
+        "breakPct": 64.6,
+        "avp": 27.7,
+        "shifts": 17,
+        "planned": 8662,
+        "actual": 2235
       },
       {
-        "id": 4777040,
-        "noShow": 10,
-        "late": 5,
-        "breaks": 18.9,
-        "avp": 31.4,
-        "shifts": 19
+        "id": 951040,
+        "noShow": 11,
+        "late": 0,
+        "breaks": 29.6,
+        "breakPct": 18.9,
+        "avp": 0.0,
+        "shifts": 28,
+        "planned": 10320,
+        "actual": 4397
+      },
+      {
+        "id": 4784197,
+        "noShow": 11,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 4950,
+        "actual": 0
       },
       {
         "id": 4809245,
         "noShow": 10,
-        "late": 4,
-        "breaks": 4.6,
+        "late": 5,
+        "breaks": 21.8,
+        "breakPct": 25.7,
         "avp": 12.2,
-        "shifts": 14
+        "shifts": 15,
+        "planned": 6437,
+        "actual": 1272
       },
       {
-        "id": 1301845,
+        "id": 4689551,
         "noShow": 10,
         "late": 0,
-        "breaks": 15.6,
+        "breaks": 1.5,
+        "breakPct": 2.9,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 4575,
+        "actual": 552
+      },
+      {
+        "id": 1719311,
+        "noShow": 10,
+        "late": 0,
+        "breaks": 26.1,
+        "breakPct": 26.7,
         "avp": 27.7,
-        "shifts": 15
+        "shifts": 14,
+        "planned": 5700,
+        "actual": 1365
+      },
+      {
+        "id": 2199245,
+        "noShow": 10,
+        "late": 0,
+        "breaks": 29.6,
+        "breakPct": 23.6,
+        "avp": 51.8,
+        "shifts": 30,
+        "planned": 7642,
+        "actual": 3765
+      },
+      {
+        "id": 4242600,
+        "noShow": 10,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 4320,
+        "actual": 0
+      },
+      {
+        "id": 3895772,
+        "noShow": 10,
+        "late": 0,
+        "breaks": 79.3,
+        "breakPct": 53.7,
+        "avp": 29.8,
+        "shifts": 15,
+        "planned": 7950,
+        "actual": 2217
+      },
+      {
+        "id": 2127179,
+        "noShow": 9,
+        "late": 16,
+        "breaks": 55.7,
+        "breakPct": 54.5,
+        "avp": 29.3,
+        "shifts": 26,
+        "planned": 9272,
+        "actual": 2660
       },
       {
         "id": 4756732,
         "noShow": 9,
-        "late": 13,
-        "breaks": 28.6,
+        "late": 15,
+        "breaks": 56.1,
+        "breakPct": 43.7,
         "avp": 32.0,
-        "shifts": 32
+        "shifts": 37,
+        "planned": 13045,
+        "actual": 4745
+      },
+      {
+        "id": 4775556,
+        "noShow": 9,
+        "late": 12,
+        "breaks": 18.8,
+        "breakPct": 16.8,
+        "avp": 0.0,
+        "shifts": 21,
+        "planned": 6165,
+        "actual": 2355
+      },
+      {
+        "id": 4542744,
+        "noShow": 9,
+        "late": 7,
+        "breaks": 84.5,
+        "breakPct": 68.9,
+        "avp": 35.1,
+        "shifts": 22,
+        "planned": 8357,
+        "actual": 2697
       },
       {
         "id": 4769673,
         "noShow": 9,
         "late": 5,
-        "breaks": 10.4,
+        "breaks": 39.2,
+        "breakPct": 26.8,
         "avp": 32.8,
-        "shifts": 16
+        "shifts": 16,
+        "planned": 7116,
+        "actual": 2337
       },
       {
-        "id": 4743512,
+        "id": 653631,
         "noShow": 9,
-        "late": 1,
-        "breaks": 28.0,
-        "avp": 32.0,
-        "shifts": 19
+        "late": 0,
+        "breaks": 23.2,
+        "breakPct": 9.5,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 9050,
+        "actual": 4661
       },
       {
-        "id": 2127179,
+        "id": 1662231,
         "noShow": 8,
-        "late": 13,
-        "breaks": 17.6,
-        "avp": 29.3,
-        "shifts": 22
+        "late": 25,
+        "breaks": 21.3,
+        "breakPct": 13.4,
+        "avp": 0.0,
+        "shifts": 35,
+        "planned": 12015,
+        "actual": 5563
+      },
+      {
+        "id": 2108245,
+        "noShow": 8,
+        "late": 18,
+        "breaks": 83.9,
+        "breakPct": 104.0,
+        "avp": 21.5,
+        "shifts": 26,
+        "planned": 10725,
+        "actual": 2097
       },
       {
         "id": 4703440,
         "noShow": 8,
-        "late": 13,
-        "breaks": 9.7,
+        "late": 17,
+        "breaks": 27.8,
+        "breakPct": 25.8,
         "avp": 64.1,
-        "shifts": 23
+        "shifts": 27,
+        "planned": 3948,
+        "actual": 2907
+      },
+      {
+        "id": 1835046,
+        "noShow": 8,
+        "late": 11,
+        "breaks": 14.1,
+        "breakPct": 13.5,
+        "avp": 0.0,
+        "shifts": 23,
+        "planned": 4890,
+        "actual": 2396
+      },
+      {
+        "id": 2089955,
+        "noShow": 8,
+        "late": 7,
+        "breaks": 59.7,
+        "breakPct": 29.6,
+        "avp": 55.0,
+        "shifts": 47,
+        "planned": 16130,
+        "actual": 9480
       },
       {
         "id": 3503957,
         "noShow": 8,
         "late": 6,
-        "breaks": 26.0,
+        "breaks": 62.5,
+        "breakPct": 32.4,
         "avp": 44.5,
-        "shifts": 25
+        "shifts": 25,
+        "planned": 10847,
+        "actual": 4825
       },
       {
-        "id": 1366287,
+        "id": 2366868,
         "noShow": 8,
-        "late": 5,
-        "breaks": 11.9,
-        "avp": 20.9,
-        "shifts": 15
+        "late": 4,
+        "breaks": 16.8,
+        "breakPct": 11.5,
+        "avp": 0.0,
+        "shifts": 35,
+        "planned": 6480,
+        "actual": 5128
+      },
+      {
+        "id": 2058668,
+        "noShow": 8,
+        "late": 4,
+        "breaks": 64.1,
+        "breakPct": 50.5,
+        "avp": 40.6,
+        "shifts": 24,
+        "planned": 8085,
+        "actual": 3047
       },
       {
         "id": 4813713,
         "noShow": 8,
         "late": 4,
-        "breaks": 7.4,
+        "breaks": 34.3,
+        "breakPct": 85.8,
         "avp": 12.5,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 4153,
+        "actual": 520
       },
       {
         "id": 1627104,
         "noShow": 8,
         "late": 4,
-        "breaks": 23.9,
+        "breaks": 105.6,
+        "breakPct": 64.6,
         "avp": 22.3,
-        "shifts": 14
+        "shifts": 17,
+        "planned": 8925,
+        "actual": 2780
       },
       {
         "id": 2043710,
         "noShow": 8,
         "late": 3,
-        "breaks": 12.5,
+        "breaks": 34.1,
+        "breakPct": 51.2,
         "avp": 22.2,
-        "shifts": 19
+        "shifts": 22,
+        "planned": 7894,
+        "actual": 1463
       },
       {
-        "id": 2113059,
+        "id": 1581619,
         "noShow": 8,
         "late": 3,
-        "breaks": 19.0,
-        "avp": 40.3,
-        "shifts": 18
+        "breaks": 10.8,
+        "breakPct": 7.7,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 6045,
+        "actual": 1970
+      },
+      {
+        "id": 3871383,
+        "noShow": 8,
+        "late": 2,
+        "breaks": 15.9,
+        "breakPct": 8.5,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 6540,
+        "actual": 2620
+      },
+      {
+        "id": 2655972,
+        "noShow": 8,
+        "late": 1,
+        "breaks": 35.2,
+        "breakPct": 21.4,
+        "avp": 57.7,
+        "shifts": 34,
+        "planned": 9467,
+        "actual": 5593
+      },
+      {
+        "id": 4780407,
+        "noShow": 8,
+        "late": 1,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 2640,
+        "actual": 192
+      },
+      {
+        "id": 4653485,
+        "noShow": 8,
+        "late": 1,
+        "breaks": 35.0,
+        "breakPct": 81.7,
+        "avp": 13.0,
+        "shifts": 11,
+        "planned": 4704,
+        "actual": 471
       },
       {
         "id": 4691830,
         "noShow": 8,
         "late": 0,
-        "breaks": 2.2,
+        "breaks": 14.8,
+        "breakPct": 4426.7,
         "avp": 0.1,
-        "shifts": 9
-      },
-      {
-        "id": 1719311,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 6.1,
-        "avp": 27.7,
-        "shifts": 12
-      },
-      {
-        "id": 3895772,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 13.8,
-        "avp": 29.8,
-        "shifts": 12
-      },
-      {
-        "id": 4611674,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 14.9,
-        "avp": 42.1,
-        "shifts": 16
+        "shifts": 9,
+        "planned": 2115,
+        "actual": 3
       },
       {
         "id": 4802338,
         "noShow": 8,
         "late": 0,
-        "breaks": 2.0,
+        "breaks": 13.6,
+        "breakPct": 22.6,
         "avp": 11.1,
-        "shifts": 9
+        "shifts": 9,
+        "planned": 4906,
+        "actual": 544
       },
       {
-        "id": 2199245,
+        "id": 2639837,
         "noShow": 8,
         "late": 0,
-        "breaks": 12.5,
-        "avp": 51.8,
-        "shifts": 25
+        "breaks": 1.2,
+        "breakPct": 1.1,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 4125,
+        "actual": 1344
+      },
+      {
+        "id": 4765618,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 2610,
+        "actual": 0
+      },
+      {
+        "id": 2140297,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 3.5,
+        "breakPct": 3.9,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 3490,
+        "actual": 1422
+      },
+      {
+        "id": 2015850,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 4260,
+        "actual": 0
+      },
+      {
+        "id": 4611674,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 56.0,
+        "breakPct": 32.8,
+        "avp": 42.1,
+        "shifts": 16,
+        "planned": 6495,
+        "actual": 2737
+      },
+      {
+        "id": 2516497,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 6.9,
+        "breakPct": 5.0,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 5235,
+        "actual": 1375
+      },
+      {
+        "id": 2149988,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 21.7,
+        "breakPct": 8.1,
+        "avp": 0.0,
+        "shifts": 18,
+        "planned": 8775,
+        "actual": 4823
+      },
+      {
+        "id": 4285630,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 3165,
+        "actual": 0
+      },
+      {
+        "id": 4773174,
+        "noShow": 7,
+        "late": 24,
+        "breaks": 34.1,
+        "breakPct": 17.2,
+        "avp": 0.0,
+        "shifts": 53,
+        "planned": 16990,
+        "actual": 10501
+      },
+      {
+        "id": 4755163,
+        "noShow": 7,
+        "late": 18,
+        "breaks": 95.1,
+        "breakPct": 88.9,
+        "avp": 31.1,
+        "shifts": 27,
+        "planned": 9465,
+        "actual": 2888
       },
       {
         "id": 4681894,
         "noShow": 7,
-        "late": 13,
-        "breaks": 23.8,
+        "late": 17,
+        "breaks": 43.2,
+        "breakPct": 24.7,
         "avp": 48.4,
-        "shifts": 35
+        "shifts": 42,
+        "planned": 14415,
+        "actual": 7342
+      },
+      {
+        "id": 4806991,
+        "noShow": 7,
+        "late": 16,
+        "breaks": 20.0,
+        "breakPct": 9.1,
+        "avp": 0.0,
+        "shifts": 25,
+        "planned": 9531,
+        "actual": 5495
+      },
+      {
+        "id": 2423925,
+        "noShow": 7,
+        "late": 11,
+        "breaks": 67.8,
+        "breakPct": 33.3,
+        "avp": 46.9,
+        "shifts": 31,
+        "planned": 13290,
+        "actual": 6308
       },
       {
         "id": 4716674,
         "noShow": 7,
-        "late": 8,
-        "breaks": 13.7,
+        "late": 9,
+        "breaks": 51.7,
+        "breakPct": 24.9,
         "avp": 43.9,
-        "shifts": 19
-      },
-      {
-        "id": 4542744,
-        "noShow": 7,
-        "late": 7,
-        "breaks": 31.0,
-        "avp": 35.1,
-        "shifts": 20
-      },
-      {
-        "id": 2089955,
-        "noShow": 7,
-        "late": 4,
-        "breaks": 46.4,
-        "avp": 55.0,
-        "shifts": 39
-      },
-      {
-        "id": 2058668,
-        "noShow": 7,
-        "late": 3,
-        "breaks": 22.2,
-        "avp": 40.6,
-        "shifts": 22
-      },
-      {
-        "id": 4264541,
-        "noShow": 7,
-        "late": 2,
-        "breaks": 28.3,
-        "avp": 50.0,
-        "shifts": 30
+        "shifts": 22,
+        "planned": 9720,
+        "actual": 4571
       },
       {
         "id": 866141,
         "noShow": 7,
         "late": 2,
-        "breaks": 20.5,
+        "breaks": 54.6,
+        "breakPct": 25.9,
         "avp": 47.0,
-        "shifts": 21
+        "shifts": 23,
+        "planned": 9542,
+        "actual": 4844
+      },
+      {
+        "id": 4264541,
+        "noShow": 7,
+        "late": 2,
+        "breaks": 51.3,
+        "breakPct": 27.3,
+        "avp": 50.0,
+        "shifts": 34,
+        "planned": 11824,
+        "actual": 6396
+      },
+      {
+        "id": 2403010,
+        "noShow": 7,
+        "late": 2,
+        "breaks": 52.8,
+        "breakPct": 36.9,
+        "avp": 42.2,
+        "shifts": 22,
+        "planned": 6923,
+        "actual": 3148
+      },
+      {
+        "id": 4012626,
+        "noShow": 7,
+        "late": 1,
+        "breaks": 22.7,
+        "breakPct": 15.2,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 4604,
+        "actual": 2097
       },
       {
         "id": 2209629,
         "noShow": 7,
         "late": 1,
-        "breaks": 7.8,
+        "breaks": 36.1,
+        "breakPct": 23.0,
         "avp": 35.5,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 5745,
+        "actual": 2042
       },
       {
-        "id": 2655972,
+        "id": 4491590,
         "noShow": 7,
         "late": 1,
-        "breaks": 16.3,
-        "avp": 57.7,
-        "shifts": 29
+        "breaks": 5.6,
+        "breakPct": 19.2,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 1658,
+        "actual": 324
+      },
+      {
+        "id": 4591723,
+        "noShow": 7,
+        "late": 1,
+        "breaks": 80.0,
+        "breakPct": 32.9,
+        "avp": 47.2,
+        "shifts": 17,
+        "planned": 8745,
+        "actual": 4132
+      },
+      {
+        "id": 3884095,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 20.4,
+        "breakPct": 10.8,
+        "avp": 0.0,
+        "shifts": 25,
+        "planned": 8265,
+        "actual": 4735
+      },
+      {
+        "id": 2048556,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 7.3,
+        "breakPct": 6.0,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 5134,
+        "actual": 1937
       },
       {
         "id": 2272649,
         "noShow": 7,
         "late": 0,
-        "breaks": 9.1,
+        "breaks": 60.9,
+        "breakPct": 92.6,
         "avp": 15.1,
-        "shifts": 9
+        "shifts": 9,
+        "planned": 3915,
+        "actual": 592
+      },
+      {
+        "id": 1756964,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 39.1,
+        "breakPct": 17.4,
+        "avp": 0.0,
+        "shifts": 27,
+        "planned": 9969,
+        "actual": 6074
+      },
+      {
+        "id": 4421282,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 6743,
+        "actual": 1703
+      },
+      {
+        "id": 3833932,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 4995,
+        "actual": 0
+      },
+      {
+        "id": 2524025,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 31.5,
+        "breakPct": 13.5,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 7380,
+        "actual": 3274
       },
       {
         "id": 1834889,
         "noShow": 7,
         "late": 0,
-        "breaks": 27.1,
+        "breaks": 116.1,
+        "breakPct": 128.1,
         "avp": 21.7,
-        "shifts": 14
+        "shifts": 14,
+        "planned": 5850,
+        "actual": 1269
+      },
+      {
+        "id": 4780338,
+        "noShow": 6,
+        "late": 26,
+        "breaks": 73.1,
+        "breakPct": 57.6,
+        "avp": 41.3,
+        "shifts": 36,
+        "planned": 10043,
+        "actual": 4569
       },
       {
         "id": 4773251,
         "noShow": 6,
-        "late": 19,
-        "breaks": 40.3,
+        "late": 24,
+        "breaks": 84.9,
+        "breakPct": 55.0,
         "avp": 40.8,
-        "shifts": 30
+        "shifts": 36,
+        "planned": 12618,
+        "actual": 5564
       },
       {
-        "id": 4755163,
+        "id": 2537145,
         "noShow": 6,
-        "late": 17,
-        "breaks": 40.4,
-        "avp": 31.1,
-        "shifts": 25
+        "late": 20,
+        "breaks": 17.0,
+        "breakPct": 13.4,
+        "avp": 0.0,
+        "shifts": 26,
+        "planned": 5235,
+        "actual": 3308
       },
       {
-        "id": 2108245,
+        "id": 4340695,
         "noShow": 6,
-        "late": 16,
-        "breaks": 30.1,
-        "avp": 21.5,
-        "shifts": 22
+        "late": 15,
+        "breaks": 86.5,
+        "breakPct": 31.4,
+        "avp": 61.7,
+        "shifts": 22,
+        "planned": 10500,
+        "actual": 6067
+      },
+      {
+        "id": 4411588,
+        "noShow": 6,
+        "late": 13,
+        "breaks": 26.9,
+        "breakPct": 22.7,
+        "avp": 57.9,
+        "shifts": 23,
+        "planned": 4912,
+        "actual": 2725
+      },
+      {
+        "id": 4783167,
+        "noShow": 6,
+        "late": 12,
+        "breaks": 19.5,
+        "breakPct": 12.6,
+        "avp": 0.0,
+        "shifts": 30,
+        "planned": 6579,
+        "actual": 4626
       },
       {
         "id": 907631,
         "noShow": 6,
-        "late": 10,
-        "breaks": 22.1,
+        "late": 11,
+        "breaks": 42.1,
+        "breakPct": 28.0,
         "avp": 58.5,
-        "shifts": 30
+        "shifts": 38,
+        "planned": 8972,
+        "actual": 5717
+      },
+      {
+        "id": 4540226,
+        "noShow": 6,
+        "late": 10,
+        "breaks": 34.5,
+        "breakPct": 17.2,
+        "avp": 0.0,
+        "shifts": 29,
+        "planned": 10671,
+        "actual": 5806
+      },
+      {
+        "id": 4807866,
+        "noShow": 6,
+        "late": 10,
+        "breaks": 26.5,
+        "breakPct": 13.4,
+        "avp": 0.0,
+        "shifts": 21,
+        "planned": 9388,
+        "actual": 4147
+      },
+      {
+        "id": 2838137,
+        "noShow": 6,
+        "late": 9,
+        "breaks": 63.5,
+        "breakPct": 53.7,
+        "avp": 45.9,
+        "shifts": 32,
+        "planned": 8562,
+        "actual": 3785
+      },
+      {
+        "id": 4304384,
+        "noShow": 6,
+        "late": 7,
+        "breaks": 9.0,
+        "breakPct": 6.4,
+        "avp": 0.0,
+        "shifts": 17,
+        "planned": 6015,
+        "actual": 2397
       },
       {
         "id": 4761241,
         "noShow": 6,
         "late": 7,
-        "breaks": 22.4,
+        "breaks": 56.0,
+        "breakPct": 28.7,
         "avp": 50.3,
-        "shifts": 24
+        "shifts": 24,
+        "planned": 9321,
+        "actual": 4691
       },
       {
-        "id": 4700694,
+        "id": 4654039,
+        "noShow": 6,
+        "late": 6,
+        "breaks": 21.6,
+        "breakPct": 12.8,
+        "avp": 0.0,
+        "shifts": 24,
+        "planned": 5932,
+        "actual": 4062
+      },
+      {
+        "id": 4707236,
+        "noShow": 6,
+        "late": 5,
+        "breaks": 52.4,
+        "breakPct": 26.2,
+        "avp": 62.3,
+        "shifts": 37,
+        "planned": 11680,
+        "actual": 7386
+      },
+      {
+        "id": 4813659,
         "noShow": 6,
         "late": 4,
-        "breaks": 16.7,
-        "avp": 22.8,
-        "shifts": 14
+        "breaks": 28.8,
+        "breakPct": 22.8,
+        "avp": 45.9,
+        "shifts": 19,
+        "planned": 5060,
+        "actual": 2401
       },
       {
         "id": 4653313,
         "noShow": 6,
         "late": 4,
-        "breaks": 25.8,
+        "breaks": 103.0,
+        "breakPct": 55.8,
         "avp": 33.7,
-        "shifts": 15
+        "shifts": 15,
+        "planned": 8220,
+        "actual": 2768
+      },
+      {
+        "id": 4805901,
+        "noShow": 6,
+        "late": 4,
+        "breaks": 22.0,
+        "breakPct": 14.4,
+        "avp": 0.0,
+        "shifts": 31,
+        "planned": 7504,
+        "actual": 4734
+      },
+      {
+        "id": 4700694,
+        "noShow": 6,
+        "late": 4,
+        "breaks": 71.7,
+        "breakPct": 86.6,
+        "avp": 22.8,
+        "shifts": 14,
+        "planned": 5070,
+        "actual": 1158
+      },
+      {
+        "id": 4777114,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 5.7,
+        "breakPct": 12.3,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 2295,
+        "actual": 420
+      },
+      {
+        "id": 2402693,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 34.2,
+        "breakPct": 16.4,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 6782,
+        "actual": 3125
       },
       {
         "id": 2607621,
         "noShow": 6,
         "late": 3,
-        "breaks": 20.5,
+        "breaks": 76.0,
+        "breakPct": 37.2,
         "avp": 45.7,
-        "shifts": 18
+        "shifts": 24,
+        "planned": 9828,
+        "actual": 4909
       },
       {
-        "id": 4636058,
+        "id": 4242766,
         "noShow": 6,
         "late": 2,
-        "breaks": 33.3,
-        "avp": 40.5,
-        "shifts": 27
+        "breaks": 42.0,
+        "breakPct": 51.3,
+        "avp": 55.4,
+        "shifts": 36,
+        "planned": 5285,
+        "actual": 2950
+      },
+      {
+        "id": 4789395,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 5.9,
+        "breakPct": 11.5,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 3015,
+        "actual": 408
       },
       {
         "id": 4783389,
         "noShow": 6,
         "late": 2,
-        "breaks": 7.6,
+        "breaks": 32.4,
+        "breakPct": 39.8,
         "avp": 40.9,
-        "shifts": 14
+        "shifts": 14,
+        "planned": 2790,
+        "actual": 1140
       },
       {
-        "id": 4653485,
+        "id": 4636058,
         "noShow": 6,
-        "late": 1,
-        "breaks": 6.4,
-        "avp": 13.0,
-        "shifts": 9
-      },
-      {
-        "id": 4591723,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 22.3,
-        "avp": 47.2,
-        "shifts": 15
-      },
-      {
-        "id": 4780468,
-        "noShow": 6,
-        "late": 1,
-        "breaks": 8.8,
-        "avp": 41.9,
-        "shifts": 11
+        "late": 2,
+        "breaks": 74.0,
+        "breakPct": 71.5,
+        "avp": 40.5,
+        "shifts": 27,
+        "planned": 6903,
+        "actual": 2793
       },
       {
         "id": 1798369,
         "noShow": 6,
         "late": 1,
-        "breaks": 5.2,
+        "breaks": 26.2,
+        "breakPct": 16.2,
         "avp": 32.2,
-        "shifts": 11
+        "shifts": 12,
+        "planned": 4980,
+        "actual": 1936
       },
       {
-        "id": 1285640,
+        "id": 1851271,
         "noShow": 6,
-        "late": 0,
-        "breaks": 29.6,
-        "avp": 21.9,
-        "shifts": 18
+        "late": 1,
+        "breaks": 28.8,
+        "breakPct": 60.1,
+        "avp": 14.1,
+        "shifts": 7,
+        "planned": 3225,
+        "actual": 336
       },
       {
-        "id": 4614636,
+        "id": 4780468,
         "noShow": 6,
-        "late": 0,
-        "breaks": 25.5,
-        "avp": 38.5,
-        "shifts": 22
+        "late": 1,
+        "breaks": 48.2,
+        "breakPct": 23.3,
+        "avp": 41.9,
+        "shifts": 11,
+        "planned": 5415,
+        "actual": 2271
       },
       {
-        "id": 2112167,
+        "id": 3902256,
         "noShow": 6,
         "late": 0,
-        "breaks": 2.8,
-        "avp": 20.6,
-        "shifts": 8
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 2880,
+        "actual": 0
       },
       {
         "id": 4387822,
         "noShow": 6,
         "late": 0,
-        "breaks": 19.7,
+        "breaks": 83.3,
+        "breakPct": 29.6,
         "avp": 56.0,
-        "shifts": 14
+        "shifts": 16,
+        "planned": 7430,
+        "actual": 4501
+      },
+      {
+        "id": 4614636,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 74.8,
+        "breakPct": 48.8,
+        "avp": 38.5,
+        "shifts": 25,
+        "planned": 8550,
+        "actual": 3832
+      },
+      {
+        "id": 1285640,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 94.3,
+        "breakPct": 139.8,
+        "avp": 21.9,
+        "shifts": 19,
+        "planned": 5617,
+        "actual": 1281
+      },
+      {
+        "id": 4759345,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 4.9,
+        "breakPct": 6.6,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 3670,
+        "actual": 896
+      },
+      {
+        "id": 4829606,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 18.4,
+        "breakPct": 91.1,
+        "avp": 8.6,
+        "shifts": 10,
+        "planned": 3420,
+        "actual": 202
+      },
+      {
+        "id": 4813460,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 1080,
+        "actual": 0
+      },
+      {
+        "id": 2196517,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 20.6,
+        "breakPct": 8.5,
+        "avp": 0.0,
+        "shifts": 26,
+        "planned": 8880,
+        "actual": 6326
+      },
+      {
+        "id": 1486723,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 59.6,
+        "breakPct": 23837.5,
+        "avp": 0.1,
+        "shifts": 8,
+        "planned": 2970,
+        "actual": 2
+      },
+      {
+        "id": 4805482,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 7.5,
+        "breakPct": 9.7,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 3135,
+        "actual": 614
+      },
+      {
+        "id": 4802439,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 2610,
+        "actual": 0
+      },
+      {
+        "id": 4700747,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 6.3,
+        "breakPct": 4.7,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 4532,
+        "actual": 1611
+      },
+      {
+        "id": 3671555,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 26.3,
+        "breakPct": 12.2,
+        "avp": 0.0,
+        "shifts": 22,
+        "planned": 7009,
+        "actual": 4746
+      },
+      {
+        "id": 4809268,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 27.7,
+        "breakPct": 41.7,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 3150,
+        "actual": 465
+      },
+      {
+        "id": 4321677,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 14.6,
+        "breakPct": 9.5,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 4494,
+        "actual": 2478
+      },
+      {
+        "id": 4390516,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 20.2,
+        "breakPct": 21.6,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 3638,
+        "actual": 1217
+      },
+      {
+        "id": 3784051,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 24.8,
+        "breakPct": 12.3,
+        "avp": 0.0,
+        "shifts": 30,
+        "planned": 8641,
+        "actual": 6053
+      },
+      {
+        "id": 2112167,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 20.9,
+        "breakPct": 48.2,
+        "avp": 20.6,
+        "shifts": 8,
+        "planned": 1680,
+        "actual": 347
+      },
+      {
+        "id": 1893457,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 83.5,
+        "breakPct": 38.6,
+        "avp": 50.6,
+        "shifts": 20,
+        "planned": 8557,
+        "actual": 4325
+      },
+      {
+        "id": 4222761,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 31.6,
+        "breakPct": 10.3,
+        "avp": 0.0,
+        "shifts": 21,
+        "planned": 8753,
+        "actual": 6420
+      },
+      {
+        "id": 1742017,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 9.3,
+        "breakPct": 2.6,
+        "avp": 0.0,
+        "shifts": 35,
+        "planned": 15135,
+        "actual": 12538
+      },
+      {
+        "id": 4811670,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 23.3,
+        "breakPct": 12.1,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 3780,
+        "actual": 1730
       },
       {
         "id": 4687115,
         "noShow": 6,
         "late": 0,
-        "breaks": 10.9,
+        "breaks": 41.5,
+        "breakPct": 20.7,
         "avp": 54.7,
-        "shifts": 17
-      },
-      {
-        "id": 4780338,
-        "noShow": 5,
-        "late": 23,
-        "breaks": 41.2,
-        "avp": 41.3,
-        "shifts": 32
+        "shifts": 20,
+        "planned": 6773,
+        "actual": 4007
       },
       {
         "id": 4573472,
         "noShow": 5,
-        "late": 19,
-        "breaks": 20.2,
+        "late": 20,
+        "breaks": 63.3,
+        "breakPct": 52.3,
         "avp": 47.5,
-        "shifts": 26
+        "shifts": 31,
+        "planned": 7965,
+        "actual": 3751
       },
       {
         "id": 4595987,
         "noShow": 5,
         "late": 18,
-        "breaks": 32.3,
+        "breaks": 74.5,
+        "breakPct": 50.5,
         "avp": 45.6,
-        "shifts": 26
+        "shifts": 26,
+        "planned": 8415,
+        "actual": 3834
       },
       {
-        "id": 4340695,
+        "id": 4288140,
         "noShow": 5,
-        "late": 14,
-        "breaks": 29.9,
-        "avp": 61.7,
-        "shifts": 20
+        "late": 17,
+        "breaks": 57.1,
+        "breakPct": 44.5,
+        "avp": 62.9,
+        "shifts": 32,
+        "planned": 6390,
+        "actual": 4104
       },
       {
-        "id": 2423925,
+        "id": 4380306,
         "noShow": 5,
-        "late": 11,
-        "breaks": 31.1,
-        "avp": 46.9,
-        "shifts": 26
+        "late": 16,
+        "breaks": 17.8,
+        "breakPct": 8.0,
+        "avp": 0.0,
+        "shifts": 48,
+        "planned": 15236,
+        "actual": 10733
       },
       {
         "id": 4699811,
         "noShow": 5,
-        "late": 9,
-        "breaks": 16.0,
+        "late": 12,
+        "breaks": 76.2,
+        "breakPct": 30.0,
         "avp": 51.0,
-        "shifts": 15
+        "shifts": 18,
+        "planned": 8715,
+        "actual": 4581
+      },
+      {
+        "id": 4413134,
+        "noShow": 5,
+        "late": 12,
+        "breaks": 12.2,
+        "breakPct": 5.7,
+        "avp": 0.0,
+        "shifts": 31,
+        "planned": 9360,
+        "actual": 6642
+      },
+      {
+        "id": 4647914,
+        "noShow": 5,
+        "late": 9,
+        "breaks": 7.1,
+        "breakPct": 1.6,
+        "avp": 0.0,
+        "shifts": 21,
+        "planned": 12879,
+        "actual": 9182
+      },
+      {
+        "id": 4807933,
+        "noShow": 5,
+        "late": 8,
+        "breaks": 32.1,
+        "breakPct": 24.8,
+        "avp": 38.5,
+        "shifts": 15,
+        "planned": 4432,
+        "actual": 1937
+      },
+      {
+        "id": 4815364,
+        "noShow": 5,
+        "late": 8,
+        "breaks": 34.9,
+        "breakPct": 10.9,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 8595,
+        "actual": 4808
+      },
+      {
+        "id": 4707935,
+        "noShow": 5,
+        "late": 8,
+        "breaks": 40.8,
+        "breakPct": 39.8,
+        "avp": 45.3,
+        "shifts": 19,
+        "planned": 4701,
+        "actual": 1948
+      },
+      {
+        "id": 4802907,
+        "noShow": 5,
+        "late": 7,
+        "breaks": 46.9,
+        "breakPct": 33.3,
+        "avp": 49.4,
+        "shifts": 23,
+        "planned": 6417,
+        "actual": 3238
       },
       {
         "id": 1110676,
         "noShow": 5,
         "late": 6,
-        "breaks": 21.5,
+        "breaks": 75.8,
+        "breakPct": 207.9,
         "avp": 12.6,
-        "shifts": 14
+        "shifts": 17,
+        "planned": 6190,
+        "actual": 620
       },
       {
-        "id": 4807933,
+        "id": 4806213,
         "noShow": 5,
         "late": 6,
-        "breaks": 7.9,
-        "avp": 38.5,
-        "shifts": 13
+        "breaks": 49.6,
+        "breakPct": 32.9,
+        "avp": 0.0,
+        "shifts": 34,
+        "planned": 10866,
+        "actual": 5127
+      },
+      {
+        "id": 4538238,
+        "noShow": 5,
+        "late": 6,
+        "breaks": 34.2,
+        "breakPct": 21.5,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 4305,
+        "actual": 1749
+      },
+      {
+        "id": 2274346,
+        "noShow": 5,
+        "late": 6,
+        "breaks": 16.6,
+        "breakPct": 7.2,
+        "avp": 0.0,
+        "shifts": 36,
+        "planned": 10485,
+        "actual": 8256
       },
       {
         "id": 4671990,
         "noShow": 5,
         "late": 5,
-        "breaks": 18.4,
+        "breaks": 69.2,
+        "breakPct": 42.5,
         "avp": 40.6,
-        "shifts": 16
+        "shifts": 16,
+        "planned": 6405,
+        "actual": 2602
       },
       {
         "id": 4537857,
         "noShow": 5,
         "late": 4,
-        "breaks": 39.6,
+        "breaks": 69.8,
+        "breakPct": 65.9,
         "avp": 38.6,
-        "shifts": 34
+        "shifts": 34,
+        "planned": 9323,
+        "actual": 3602
       },
       {
-        "id": 4707236,
+        "id": 3926582,
         "noShow": 5,
-        "late": 4,
-        "breaks": 29.8,
-        "avp": 62.3,
-        "shifts": 32
+        "late": 3,
+        "breaks": 33.7,
+        "breakPct": 14.3,
+        "avp": 0.0,
+        "shifts": 26,
+        "planned": 9105,
+        "actual": 6149
+      },
+      {
+        "id": 4807870,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 65.2,
+        "breakPct": 33.4,
+        "avp": 44.1,
+        "shifts": 18,
+        "planned": 6930,
+        "actual": 3512
+      },
+      {
+        "id": 4699329,
+        "noShow": 5,
+        "late": 3,
+        "breaks": 3.5,
+        "breakPct": 3.0,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 2592,
+        "actual": 1183
       },
       {
         "id": 4729905,
         "noShow": 5,
         "late": 3,
-        "breaks": 10.9,
+        "breaks": 46.8,
+        "breakPct": 33.3,
         "avp": 42.0,
-        "shifts": 14
-      },
-      {
-        "id": 4813463,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 9.2,
-        "avp": 22.5,
-        "shifts": 10
-      },
-      {
-        "id": 1039740,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 2.9,
-        "avp": 10.9,
-        "shifts": 9
-      },
-      {
-        "id": 4242766,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 20.7,
-        "avp": 55.4,
-        "shifts": 31
-      },
-      {
-        "id": 4807969,
-        "noShow": 5,
-        "late": 2,
-        "breaks": 9.6,
-        "avp": 41.2,
-        "shifts": 12
+        "shifts": 14,
+        "planned": 4680,
+        "actual": 1968
       },
       {
         "id": 1132254,
         "noShow": 5,
         "late": 2,
-        "breaks": 3.6,
+        "breaks": 21.7,
+        "breakPct": 34.9,
         "avp": 30.5,
-        "shifts": 10
+        "shifts": 10,
+        "planned": 2035,
+        "actual": 621
       },
       {
-        "id": 4823690,
+        "id": 4833814,
         "noShow": 5,
         "late": 2,
-        "breaks": 2.5,
-        "avp": 18.2,
-        "shifts": 7
+        "breaks": 6.7,
+        "breakPct": 17.0,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 2430,
+        "actual": 276
+      },
+      {
+        "id": 1039740,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 19.2,
+        "breakPct": 56.1,
+        "avp": 10.9,
+        "shifts": 9,
+        "planned": 2834,
+        "actual": 308
       },
       {
         "id": 4491547,
         "noShow": 5,
         "late": 2,
-        "breaks": 15.2,
+        "breaks": 70.3,
+        "breakPct": 67.1,
         "avp": 31.7,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 4299,
+        "actual": 1362
+      },
+      {
+        "id": 4813463,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 55.2,
+        "breakPct": 83.8,
+        "avp": 22.5,
+        "shifts": 10,
+        "planned": 2927,
+        "actual": 659
+      },
+      {
+        "id": 4823690,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 21.0,
+        "breakPct": 33.7,
+        "avp": 18.2,
+        "shifts": 7,
+        "planned": 2400,
+        "actual": 436
+      },
+      {
+        "id": 4171278,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 93.0,
+        "breakPct": 85.1,
+        "avp": 0.0,
+        "shifts": 26,
+        "planned": 6655,
+        "actual": 2840
+      },
+      {
+        "id": 4807969,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 47.7,
+        "breakPct": 42.9,
+        "avp": 41.2,
+        "shifts": 12,
+        "planned": 3240,
+        "actual": 1335
+      },
+      {
+        "id": 4036522,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 114.0,
+        "breakPct": 43.6,
+        "avp": 44.6,
+        "shifts": 12,
+        "planned": 6690,
+        "actual": 3136
       },
       {
         "id": 4755127,
         "noShow": 5,
         "late": 1,
-        "breaks": 22.6,
+        "breaks": 135.5,
+        "breakPct": 112.4,
         "avp": 27.4,
-        "shifts": 10
+        "shifts": 10,
+        "planned": 4395,
+        "actual": 1206
+      },
+      {
+        "id": 4662777,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 72.7,
+        "breakPct": 38.9,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 4515,
+        "actual": 1684
+      },
+      {
+        "id": 2161362,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 7.7,
+        "breakPct": 55.5,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 2544,
+        "actual": 83
       },
       {
         "id": 4062792,
         "noShow": 5,
         "late": 1,
-        "breaks": 31.9,
+        "breaks": 106.4,
+        "breakPct": 107.1,
         "avp": 29.5,
-        "shifts": 18
-      },
-      {
-        "id": 2403010,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 17.8,
-        "avp": 42.2,
-        "shifts": 16
-      },
-      {
-        "id": 4807870,
-        "noShow": 5,
-        "late": 1,
-        "breaks": 11.6,
-        "avp": 44.1,
-        "shifts": 13
+        "shifts": 18,
+        "planned": 6058,
+        "actual": 1787
       },
       {
         "id": 4729946,
         "noShow": 5,
         "late": 1,
-        "breaks": 11.2,
+        "breaks": 53.9,
+        "breakPct": 15.8,
         "avp": 50.8,
-        "shifts": 11
+        "shifts": 13,
+        "planned": 7395,
+        "actual": 4423
       },
       {
-        "id": 1486723,
+        "id": 4638882,
         "noShow": 5,
-        "late": 0,
-        "breaks": 8.0,
-        "avp": 0.1,
-        "shifts": 7
+        "late": 1,
+        "breaks": 14.0,
+        "breakPct": 11.0,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 3499,
+        "actual": 1268
       },
       {
-        "id": 4829606,
+        "id": 4353191,
         "noShow": 5,
-        "late": 0,
-        "breaks": 3.1,
-        "avp": 8.6,
-        "shifts": 7
+        "late": 1,
+        "breaks": 117.5,
+        "breakPct": 42.1,
+        "avp": 52.8,
+        "shifts": 16,
+        "planned": 8639,
+        "actual": 4471
       },
       {
-        "id": 1893457,
+        "id": 4804579,
         "noShow": 5,
-        "late": 0,
-        "breaks": 25.5,
-        "avp": 50.6,
-        "shifts": 18
+        "late": 1,
+        "breaks": 2.5,
+        "breakPct": 6.5,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 1770,
+        "actual": 231
       },
       {
-        "id": 4777790,
+        "id": 2196063,
         "noShow": 5,
         "late": 0,
-        "breaks": 14.6,
-        "avp": 46.9,
-        "shifts": 18
+        "breaks": 131.0,
+        "breakPct": 50.7,
+        "avp": 48.2,
+        "shifts": 15,
+        "planned": 7755,
+        "actual": 3879
+      },
+      {
+        "id": 4803759,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1800,
+        "actual": 0
+      },
+      {
+        "id": 1684340,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 9.8,
+        "breakPct": 8.9,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 2187,
+        "actual": 1101
+      },
+      {
+        "id": 3888166,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 82.8,
+        "breakPct": 35.0,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 6409,
+        "actual": 3079
+      },
+      {
+        "id": 1837182,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 4.5,
+        "breakPct": 2.1,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 4470,
+        "actual": 2137
       },
       {
         "id": 4610956,
         "noShow": 5,
         "late": 0,
-        "breaks": 15.4,
+        "breaks": 55.2,
+        "breakPct": 33.9,
         "avp": 46.9,
-        "shifts": 18
+        "shifts": 21,
+        "planned": 6735,
+        "actual": 3420
+      },
+      {
+        "id": 2458884,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 2190,
+        "actual": 0
+      },
+      {
+        "id": 4807291,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 1.0,
+        "breakPct": 4.6,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 1978,
+        "actual": 129
+      },
+      {
+        "id": 4258544,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 2400,
+        "actual": 0
+      },
+      {
+        "id": 4036451,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 31.2,
+        "breakPct": 15.5,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 5655,
+        "actual": 3823
+      },
+      {
+        "id": 4777790,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 48.6,
+        "breakPct": 34.0,
+        "avp": 46.9,
+        "shifts": 18,
+        "planned": 5490,
+        "actual": 2573
+      },
+      {
+        "id": 2203888,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 11.0,
+        "breakPct": 3.4,
+        "avp": 0.0,
+        "shifts": 18,
+        "planned": 8475,
+        "actual": 5917
+      },
+      {
+        "id": 3509099,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 45.1,
+        "breakPct": 46.2,
+        "avp": 0.0,
+        "shifts": 33,
+        "planned": 7562,
+        "actual": 3224
+      },
+      {
+        "id": 4309974,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 34.6,
+        "breakPct": 15.5,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 5415,
+        "actual": 3113
+      },
+      {
+        "id": 4380474,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 59.5,
+        "breakPct": 16.2,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 9210,
+        "actual": 5891
+      },
+      {
+        "id": 4339588,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 8.4,
+        "breakPct": 7.0,
+        "avp": 0.0,
+        "shifts": 20,
+        "planned": 3362,
+        "actual": 2391
+      },
+      {
+        "id": 1827365,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 15.9,
+        "breakPct": 6.9,
+        "avp": 0.0,
+        "shifts": 44,
+        "planned": 12049,
+        "actual": 10157
+      },
+      {
+        "id": 2641498,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 148.6,
+        "breakPct": 118.3,
+        "avp": 34.4,
+        "shifts": 33,
+        "planned": 11055,
+        "actual": 4148
+      },
+      {
+        "id": 4825404,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1800,
+        "actual": 0
       },
       {
         "id": 4710568,
         "noShow": 5,
         "late": 0,
-        "breaks": 6.0,
+        "breaks": 45.0,
+        "breakPct": 25.5,
         "avp": 33.5,
-        "shifts": 8
+        "shifts": 8,
+        "planned": 4215,
+        "actual": 1413
       },
       {
-        "id": 4288140,
+        "id": 4633855,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 2460,
+        "actual": 0
+      },
+      {
+        "id": 4769846,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1785,
+        "actual": 0
+      },
+      {
+        "id": 3857017,
         "noShow": 4,
         "late": 16,
-        "breaks": 25.1,
-        "avp": 62.9,
-        "shifts": 27
+        "breaks": 4.5,
+        "breakPct": 2.8,
+        "avp": 0.0,
+        "shifts": 23,
+        "planned": 3988,
+        "actual": 3746
       },
       {
         "id": 3856567,
         "noShow": 4,
-        "late": 14,
-        "breaks": 45.8,
+        "late": 16,
+        "breaks": 118.7,
+        "breakPct": 71.5,
         "avp": 39.4,
-        "shifts": 19
+        "shifts": 24,
+        "planned": 10095,
+        "actual": 3982
       },
       {
-        "id": 4411588,
+        "id": 1903957,
         "noShow": 4,
-        "late": 13,
-        "breaks": 10.3,
-        "avp": 57.9,
-        "shifts": 21
+        "late": 15,
+        "breaks": 83.3,
+        "breakPct": 40.7,
+        "avp": 0.0,
+        "shifts": 24,
+        "planned": 9120,
+        "actual": 4915
+      },
+      {
+        "id": 4804866,
+        "noShow": 4,
+        "late": 11,
+        "breaks": 14.1,
+        "breakPct": 8.0,
+        "avp": 0.0,
+        "shifts": 42,
+        "planned": 10098,
+        "actual": 7399
       },
       {
         "id": 4716133,
         "noShow": 4,
         "late": 10,
-        "breaks": 23.6,
+        "breaks": 52.5,
+        "breakPct": 25.9,
         "avp": 62.8,
-        "shifts": 27
+        "shifts": 27,
+        "planned": 8709,
+        "actual": 5466
+      },
+      {
+        "id": 4811458,
+        "noShow": 4,
+        "late": 10,
+        "breaks": 42.3,
+        "breakPct": 26.1,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 5340,
+        "actual": 3073
       },
       {
         "id": 4726348,
         "noShow": 4,
-        "late": 9,
-        "breaks": 56.1,
+        "late": 10,
+        "breaks": 218.5,
+        "breakPct": 130.6,
         "avp": 31.1,
-        "shifts": 15
+        "shifts": 19,
+        "planned": 9827,
+        "actual": 3179
       },
       {
-        "id": 2838137,
+        "id": 4725209,
         "noShow": 4,
-        "late": 8,
-        "breaks": 33.5,
-        "avp": 45.9,
-        "shifts": 29
+        "late": 10,
+        "breaks": 9.6,
+        "breakPct": 4.8,
+        "avp": 0.0,
+        "shifts": 46,
+        "planned": 10831,
+        "actual": 9162
       },
       {
-        "id": 4707935,
+        "id": 4712897,
         "noShow": 4,
-        "late": 8,
-        "breaks": 12.9,
-        "avp": 45.3,
-        "shifts": 18
+        "late": 10,
+        "breaks": 108.6,
+        "breakPct": 154.5,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 6379,
+        "actual": 1335
+      },
+      {
+        "id": 4724811,
+        "noShow": 4,
+        "late": 9,
+        "breaks": 31.9,
+        "breakPct": 12.0,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 7560,
+        "actual": 3455
       },
       {
         "id": 4785493,
         "noShow": 4,
         "late": 8,
-        "breaks": 9.1,
+        "breaks": 38.8,
+        "breakPct": 23.2,
         "avp": 52.9,
-        "shifts": 14
+        "shifts": 14,
+        "planned": 4431,
+        "actual": 2344
       },
       {
-        "id": 4802907,
+        "id": 1382967,
+        "noShow": 4,
+        "late": 7,
+        "breaks": 96.9,
+        "breakPct": 92.3,
+        "avp": 0.0,
+        "shifts": 22,
+        "planned": 6467,
+        "actual": 2310
+      },
+      {
+        "id": 2088558,
         "noShow": 4,
         "late": 6,
-        "breaks": 13.6,
-        "avp": 49.4,
-        "shifts": 19
+        "breaks": 27.3,
+        "breakPct": 16.3,
+        "avp": 0.0,
+        "shifts": 28,
+        "planned": 7487,
+        "actual": 4699
       },
       {
-        "id": 4813659,
+        "id": 4666733,
+        "noShow": 4,
+        "late": 5,
+        "breaks": 42.2,
+        "breakPct": 18.2,
+        "avp": 0.0,
+        "shifts": 30,
+        "planned": 9780,
+        "actual": 6936
+      },
+      {
+        "id": 4773388,
+        "noShow": 4,
+        "late": 5,
+        "breaks": 23.4,
+        "breakPct": 11.9,
+        "avp": 0.0,
+        "shifts": 48,
+        "planned": 11712,
+        "actual": 9460
+      },
+      {
+        "id": 4787924,
+        "noShow": 4,
+        "late": 5,
+        "breaks": 31.0,
+        "breakPct": 18.1,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 4440,
+        "actual": 2225
+      },
+      {
+        "id": 4493083,
         "noShow": 4,
         "late": 4,
-        "breaks": 7.7,
-        "avp": 45.9,
-        "shifts": 14
+        "breaks": 28.6,
+        "breakPct": 9.1,
+        "avp": 0.0,
+        "shifts": 14,
+        "planned": 6810,
+        "actual": 4395
       },
       {
         "id": 996019,
         "noShow": 4,
         "late": 4,
-        "breaks": 6.0,
+        "breaks": 45.0,
+        "breakPct": 28.0,
         "avp": 35.7,
-        "shifts": 8
+        "shifts": 8,
+        "planned": 3615,
+        "actual": 1289
+      },
+      {
+        "id": 4635910,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 81.2,
+        "breakPct": 71.8,
+        "avp": 48.4,
+        "shifts": 20,
+        "planned": 4819,
+        "actual": 2262
+      },
+      {
+        "id": 4800193,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 14.9,
+        "breakPct": 6.5,
+        "avp": 0.0,
+        "shifts": 64,
+        "planned": 16194,
+        "actual": 14756
+      },
+      {
+        "id": 4811479,
+        "noShow": 4,
+        "late": 3,
+        "breaks": 11.5,
+        "breakPct": 7.9,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 2625,
+        "actual": 1168
       },
       {
         "id": 4609581,
         "noShow": 4,
         "late": 3,
-        "breaks": 6.6,
+        "breaks": 30.4,
+        "breakPct": 22.7,
         "avp": 49.2,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 3539,
+        "actual": 1740
       },
       {
-        "id": 4635910,
+        "id": 4728829,
         "noShow": 4,
-        "late": 2,
-        "breaks": 18.0,
-        "avp": 48.4,
-        "shifts": 14
+        "late": 3,
+        "breaks": 28.4,
+        "breakPct": 10.3,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 5235,
+        "actual": 3017
       },
       {
-        "id": 4802886,
+        "id": 4441112,
         "noShow": 4,
-        "late": 2,
-        "breaks": 13.4,
-        "avp": 28.2,
-        "shifts": 9
+        "late": 3,
+        "breaks": 50.0,
+        "breakPct": 19.9,
+        "avp": 0.0,
+        "shifts": 45,
+        "planned": 15279,
+        "actual": 11322
       },
       {
-        "id": 3435855,
+        "id": 3877444,
         "noShow": 4,
         "late": 2,
-        "breaks": 12.0,
-        "avp": 42.5,
-        "shifts": 13
+        "breaks": 6.4,
+        "breakPct": 3.2,
+        "avp": 0.0,
+        "shifts": 18,
+        "planned": 5369,
+        "actual": 3610
       },
       {
-        "id": 4493613,
+        "id": 635925,
         "noShow": 4,
         "late": 2,
-        "breaks": 19.8,
-        "avp": 60.6,
-        "shifts": 22
-      },
-      {
-        "id": 4811684,
-        "noShow": 4,
-        "late": 2,
-        "breaks": 29.4,
-        "avp": 71.2,
-        "shifts": 26
+        "breaks": 15.1,
+        "breakPct": 5.7,
+        "avp": 0.0,
+        "shifts": 36,
+        "planned": 11482,
+        "actual": 9573
       },
       {
         "id": 2469314,
         "noShow": 4,
         "late": 2,
-        "breaks": 14.2,
+        "breaks": 79.0,
+        "breakPct": 32.1,
         "avp": 57.4,
-        "shifts": 15
+        "shifts": 18,
+        "planned": 7517,
+        "actual": 4431
+      },
+      {
+        "id": 4493613,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 80.5,
+        "breakPct": 45.2,
+        "avp": 60.6,
+        "shifts": 27,
+        "planned": 8618,
+        "actual": 4807
+      },
+      {
+        "id": 2258673,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 75.6,
+        "breakPct": 36.0,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 5085,
+        "actual": 2523
+      },
+      {
+        "id": 4802886,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 89.4,
+        "breakPct": 50.4,
+        "avp": 28.2,
+        "shifts": 9,
+        "planned": 5656,
+        "actual": 1596
+      },
+      {
+        "id": 1287202,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 56.6,
+        "breakPct": 17.5,
+        "avp": 0.0,
+        "shifts": 27,
+        "planned": 12315,
+        "actual": 8737
+      },
+      {
+        "id": 4807953,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 39.5,
+        "breakPct": 18.7,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 3019,
+        "actual": 2535
+      },
+      {
+        "id": 4326896,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 90.4,
+        "breakPct": 119.6,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 2639,
+        "actual": 756
+      },
+      {
+        "id": 4473626,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 103.7,
+        "breakPct": 30.8,
+        "avp": 0.0,
+        "shifts": 27,
+        "planned": 13675,
+        "actual": 9099
+      },
+      {
+        "id": 3435855,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 55.2,
+        "breakPct": 38.1,
+        "avp": 42.5,
+        "shifts": 13,
+        "planned": 4440,
+        "actual": 1886
       },
       {
         "id": 4802826,
         "noShow": 4,
         "late": 2,
-        "breaks": 3.1,
+        "breaks": 23.1,
+        "breakPct": 20.6,
         "avp": 34.5,
-        "shifts": 8
+        "shifts": 8,
+        "planned": 2595,
+        "actual": 897
       },
       {
-        "id": 1459332,
+        "id": 4811684,
         "noShow": 4,
-        "late": 1,
-        "breaks": 7.9,
-        "avp": 32.4,
-        "shifts": 12
-      },
-      {
-        "id": 4467817,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 23.4,
-        "avp": 41.5,
-        "shifts": 18
-      },
-      {
-        "id": 1851271,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 3.4,
-        "avp": 14.1,
-        "shifts": 5
-      },
-      {
-        "id": 4353191,
-        "noShow": 4,
-        "late": 1,
-        "breaks": 20.7,
-        "avp": 52.8,
-        "shifts": 12
+        "late": 2,
+        "breaks": 65.2,
+        "breakPct": 26.9,
+        "avp": 71.2,
+        "shifts": 27,
+        "planned": 9151,
+        "actual": 6547
       },
       {
         "id": 1523419,
         "noShow": 4,
         "late": 1,
-        "breaks": 19.1,
+        "breaks": 66.4,
+        "breakPct": 17.9,
         "avp": 67.6,
-        "shifts": 18
+        "shifts": 21,
+        "planned": 10785,
+        "actual": 7776
       },
       {
-        "id": 2641498,
+        "id": 4830067,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 14.4,
+        "breakPct": 30.6,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1710,
+        "actual": 235
+      },
+      {
+        "id": 1459332,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 39.7,
+        "breakPct": 74.3,
+        "avp": 32.4,
+        "shifts": 12,
+        "planned": 1975,
+        "actual": 641
+      },
+      {
+        "id": 1564613,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 61.2,
+        "breakPct": 15.0,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 10575,
+        "actual": 7746
+      },
+      {
+        "id": 1141607,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 42.3,
+        "breakPct": 18.7,
+        "avp": 0.0,
+        "shifts": 29,
+        "planned": 9295,
+        "actual": 6577
+      },
+      {
+        "id": 4574579,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 11.3,
+        "breakPct": 4.2,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 5829,
+        "actual": 4276
+      },
+      {
+        "id": 4467817,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 77.9,
+        "breakPct": 65.1,
+        "avp": 41.5,
+        "shifts": 18,
+        "planned": 5189,
+        "actual": 2154
+      },
+      {
+        "id": 2529005,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 70.3,
+        "breakPct": 31.9,
+        "avp": 63.8,
+        "shifts": 35,
+        "planned": 11850,
+        "actual": 7728
+      },
+      {
+        "id": 4280146,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 9.5,
+        "breakPct": 9.2,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 2310,
+        "actual": 620
+      },
+      {
+        "id": 1878123,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 9.3,
+        "breakPct": 5.1,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 4171,
+        "actual": 2713
+      },
+      {
+        "id": 4752277,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 35.6,
+        "breakPct": 20.8,
+        "avp": 0.0,
+        "shifts": 31,
+        "planned": 7301,
+        "actual": 5310
+      },
+      {
+        "id": 4299571,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 63.9,
+        "breakPct": 20.3,
+        "avp": 0.0,
+        "shifts": 21,
+        "planned": 9982,
+        "actual": 6618
+      },
+      {
+        "id": 3821985,
         "noShow": 4,
         "late": 0,
-        "breaks": 74.9,
-        "avp": 34.4,
-        "shifts": 29
+        "breaks": 13.3,
+        "breakPct": 2.8,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 9000,
+        "actual": 7098
+      },
+      {
+        "id": 2196446,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 2.1,
+        "breakPct": 1.6,
+        "avp": 0.0,
+        "shifts": 24,
+        "planned": 4049,
+        "actual": 3127
+      },
+      {
+        "id": 4337147,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 55.2,
+        "breakPct": 48.4,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 3385,
+        "actual": 1026
       },
       {
         "id": 1781880,
         "noShow": 4,
         "late": 0,
-        "breaks": 20.9,
+        "breaks": 83.2,
+        "breakPct": 74.0,
         "avp": 33.6,
-        "shifts": 14
-      },
-      {
-        "id": 4679188,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 58.8,
-        "avp": 45.7,
-        "shifts": 18
-      },
-      {
-        "id": 4763853,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 2.5,
-        "avp": 7.9,
-        "shifts": 6
-      },
-      {
-        "id": 2196063,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 31.7,
-        "avp": 48.2,
-        "shifts": 13
-      },
-      {
-        "id": 4036522,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 17.9,
-        "avp": 44.6,
-        "shifts": 9
-      },
-      {
-        "id": 2521425,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 19.6,
-        "avp": 50.3,
-        "shifts": 14
-      },
-      {
-        "id": 3862421,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 39.3,
-        "avp": 63.3,
-        "shifts": 18
-      },
-      {
-        "id": 2529005,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 31.2,
-        "avp": 63.8,
-        "shifts": 29
-      },
-      {
-        "id": 2434758,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 17.5,
-        "avp": 56.1,
-        "shifts": 11
-      },
-      {
-        "id": 4468581,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 3.9,
-        "avp": 40.2,
-        "shifts": 10
-      },
-      {
-        "id": 4740380,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 3.4,
-        "avp": 50.4,
-        "shifts": 8
+        "shifts": 16,
+        "planned": 4867,
+        "actual": 1799
       },
       {
         "id": 1329204,
         "noShow": 4,
         "late": 0,
-        "breaks": 8.5,
+        "breaks": 56.9,
+        "breakPct": 23.6,
         "avp": 46.3,
-        "shifts": 9
+        "shifts": 9,
+        "planned": 4685,
+        "actual": 2169
+      },
+      {
+        "id": 2161714,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 4,
+        "planned": 1515,
+        "actual": 0
+      },
+      {
+        "id": 3993839,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 31.1,
+        "breakPct": 11.0,
+        "avp": 0.0,
+        "shifts": 34,
+        "planned": 12375,
+        "actual": 9626
+      },
+      {
+        "id": 4811744,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 7.7,
+        "breakPct": 7.4,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 2490,
+        "actual": 626
+      },
+      {
+        "id": 3831965,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 4,
+        "planned": 1905,
+        "actual": 0
+      },
+      {
+        "id": 4719737,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 121.3,
+        "breakPct": 78.8,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 6810,
+        "actual": 2927
+      },
+      {
+        "id": 1457717,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 44.3,
+        "breakPct": 14.1,
+        "avp": 0.0,
+        "shifts": 28,
+        "planned": 12142,
+        "actual": 8786
+      },
+      {
+        "id": 918458,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 31.8,
+        "breakPct": 7.4,
+        "avp": 0.0,
+        "shifts": 20,
+        "planned": 11235,
+        "actual": 8589
+      },
+      {
+        "id": 3862421,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 141.0,
+        "breakPct": 35.2,
+        "avp": 63.3,
+        "shifts": 21,
+        "planned": 12990,
+        "actual": 8419
+      },
+      {
+        "id": 4489101,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 52.4,
+        "breakPct": 18.2,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 6000,
+        "actual": 2887
+      },
+      {
+        "id": 2180039,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 30.2,
+        "breakPct": 12.2,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 4380,
+        "actual": 2232
+      },
+      {
+        "id": 2521425,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 84.5,
+        "breakPct": 37.3,
+        "avp": 50.3,
+        "shifts": 21,
+        "planned": 8350,
+        "actual": 4762
+      },
+      {
+        "id": 1623954,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 62.1,
+        "breakPct": 28.8,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 6930,
+        "actual": 4098
+      },
+      {
+        "id": 4468581,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 23.6,
+        "breakPct": 26.8,
+        "avp": 40.2,
+        "shifts": 10,
+        "planned": 2187,
+        "actual": 879
+      },
+      {
+        "id": 2430344,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 139.1,
+        "breakPct": 67.6,
+        "avp": 0.0,
+        "shifts": 20,
+        "planned": 7753,
+        "actual": 4113
+      },
+      {
+        "id": 4657024,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 4,
+        "planned": 1665,
+        "actual": 0
+      },
+      {
+        "id": 1535322,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 2299,
+        "actual": 0
+      },
+      {
+        "id": 4763853,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 25.4,
+        "breakPct": 59.6,
+        "avp": 7.9,
+        "shifts": 6,
+        "planned": 3225,
+        "actual": 256
+      },
+      {
+        "id": 2404606,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 65.9,
+        "breakPct": 70.1,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 2790,
+        "actual": 1221
       },
       {
         "id": 1660799,
         "noShow": 4,
         "late": 0,
-        "breaks": 8.7,
+        "breaks": 27.4,
+        "breakPct": 19.8,
         "avp": 55.7,
-        "shifts": 19
+        "shifts": 19,
+        "planned": 4738,
+        "actual": 2640
+      },
+      {
+        "id": 2403018,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 14.0,
+        "breakPct": 3.0,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 9495,
+        "actual": 7546
+      },
+      {
+        "id": 4679188,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 177.1,
+        "breakPct": 69.0,
+        "avp": 45.7,
+        "shifts": 22,
+        "planned": 11250,
+        "actual": 5649
+      },
+      {
+        "id": 1982025,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 1.9,
+        "breakPct": 1.0,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 3060,
+        "actual": 1350
+      },
+      {
+        "id": 4047348,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 1.1,
+        "breakPct": 1.3,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 2237,
+        "actual": 625
+      },
+      {
+        "id": 1514102,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 4,
+        "planned": 1875,
+        "actual": 0
+      },
+      {
+        "id": 4591657,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 25.8,
+        "breakPct": 11.4,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 4380,
+        "actual": 2721
+      },
+      {
+        "id": 4712875,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 14.2,
+        "breakPct": 14.4,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1920,
+        "actual": 495
+      },
+      {
+        "id": 4740380,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 25.3,
+        "breakPct": 25.3,
+        "avp": 50.4,
+        "shifts": 8,
+        "planned": 1590,
+        "actual": 801
       },
       {
         "id": 734662,
         "noShow": 4,
         "late": 0,
-        "breaks": 12.6,
+        "breaks": 58.0,
+        "breakPct": 19.6,
         "avp": 56.6,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 6780,
+        "actual": 3840
+      },
+      {
+        "id": 2222699,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 5,
+        "planned": 1800,
+        "actual": 0
+      },
+      {
+        "id": 4738989,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 3585,
+        "actual": 1740
+      },
+      {
+        "id": 4548995,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 35.0,
+        "breakPct": 21.7,
+        "avp": 0.0,
+        "shifts": 12,
+        "planned": 3705,
+        "actual": 1930
+      },
+      {
+        "id": 4235255,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 29.9,
+        "breakPct": 10.2,
+        "avp": 0.0,
+        "shifts": 28,
+        "planned": 10760,
+        "actual": 8185
+      },
+      {
+        "id": 2434758,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 84.7,
+        "breakPct": 21.0,
+        "avp": 56.1,
+        "shifts": 14,
+        "planned": 8655,
+        "actual": 5663
       }
     ],
     "Ain shams": [
       {
+        "id": 4746793,
+        "noShow": 15,
+        "late": 16,
+        "breaks": 18.6,
+        "breakPct": 15.2,
+        "avp": 0.0,
+        "shifts": 39,
+        "planned": 10859,
+        "actual": 4775
+      },
+      {
         "id": 4642949,
-        "noShow": 11,
-        "late": 9,
-        "breaks": 9.2,
+        "noShow": 13,
+        "late": 11,
+        "breaks": 31.9,
+        "breakPct": 43.6,
         "avp": 50.5,
-        "shifts": 20
+        "shifts": 24,
+        "planned": 3435,
+        "actual": 1755
+      },
+      {
+        "id": 4703587,
+        "noShow": 12,
+        "late": 1,
+        "breaks": 17.8,
+        "breakPct": 68.1,
+        "avp": 16.9,
+        "shifts": 15,
+        "planned": 2510,
+        "actual": 391
+      },
+      {
+        "id": 2185940,
+        "noShow": 11,
+        "late": 0,
+        "breaks": 3.0,
+        "breakPct": 9.6,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 5791,
+        "actual": 471
+      },
+      {
+        "id": 4280168,
+        "noShow": 11,
+        "late": 0,
+        "breaks": 38.5,
+        "breakPct": 22.6,
+        "avp": 32.1,
+        "shifts": 19,
+        "planned": 8790,
+        "actual": 3236
+      },
+      {
+        "id": 2381788,
+        "noShow": 10,
+        "late": 1,
+        "breaks": 52.7,
+        "breakPct": 59.9,
+        "avp": 31.2,
+        "shifts": 24,
+        "planned": 5145,
+        "actual": 2111
       },
       {
         "id": 2659130,
         "noShow": 10,
         "late": 1,
-        "breaks": 4.6,
+        "breaks": 13.7,
+        "breakPct": 45.7,
         "avp": 13.1,
-        "shifts": 17
-      },
-      {
-        "id": 4280168,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 10.8,
-        "avp": 32.1,
-        "shifts": 16
-      },
-      {
-        "id": 2381788,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 14.4,
-        "avp": 31.2,
-        "shifts": 19
+        "shifts": 20,
+        "planned": 5850,
+        "actual": 599
       },
       {
         "id": 4783214,
         "noShow": 9,
         "late": 4,
-        "breaks": 12.2,
+        "breaks": 43.1,
+        "breakPct": 65.6,
         "avp": 19.3,
-        "shifts": 17
+        "shifts": 17,
+        "planned": 5789,
+        "actual": 1117
       },
       {
-        "id": 4703587,
-        "noShow": 9,
-        "late": 1,
-        "breaks": 4.4,
-        "avp": 16.9,
-        "shifts": 12
+        "id": 4046863,
+        "noShow": 8,
+        "late": 11,
+        "breaks": 51.9,
+        "breakPct": 38.3,
+        "avp": 46.8,
+        "shifts": 28,
+        "planned": 8220,
+        "actual": 3788
       },
       {
         "id": 4783169,
         "noShow": 8,
         "late": 7,
-        "breaks": 25.3,
+        "breaks": 60.8,
+        "breakPct": 51.1,
         "avp": 34.8,
-        "shifts": 22
+        "shifts": 25,
+        "planned": 9915,
+        "actual": 2972
       },
       {
-        "id": 4046863,
+        "id": 4655897,
+        "noShow": 8,
+        "late": 4,
+        "breaks": 20.5,
+        "breakPct": 29.0,
+        "avp": 0.0,
+        "shifts": 15,
+        "planned": 3115,
+        "actual": 1060
+      },
+      {
+        "id": 4737309,
+        "noShow": 8,
+        "late": 2,
+        "breaks": 19.5,
+        "breakPct": 16.3,
+        "avp": 0.0,
+        "shifts": 16,
+        "planned": 5342,
+        "actual": 1911
+      },
+      {
+        "id": 2654773,
+        "noShow": 8,
+        "late": 1,
+        "breaks": 18.2,
+        "breakPct": 10.0,
+        "avp": 0.0,
+        "shifts": 26,
+        "planned": 8580,
+        "actual": 4725
+      },
+      {
+        "id": 4811070,
         "noShow": 7,
-        "late": 11,
-        "breaks": 21.4,
-        "avp": 46.8,
-        "shifts": 25
+        "late": 15,
+        "breaks": 61.0,
+        "breakPct": 32.4,
+        "avp": 56.1,
+        "shifts": 30,
+        "planned": 11489,
+        "actual": 5648
       },
       {
         "id": 4760807,
         "noShow": 7,
         "late": 8,
-        "breaks": 9.7,
+        "breaks": 34.3,
+        "breakPct": 34.1,
         "avp": 32.3,
-        "shifts": 17
+        "shifts": 17,
+        "planned": 5298,
+        "actual": 1709
       },
       {
         "id": 4809195,
         "noShow": 7,
         "late": 4,
-        "breaks": 10.2,
+        "breaks": 46.9,
+        "breakPct": 77.4,
         "avp": 24.8,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 3185,
+        "actual": 789
+      },
+      {
+        "id": 1417543,
+        "noShow": 7,
+        "late": 2,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 35,
+        "planned": 9700,
+        "actual": 6871
+      },
+      {
+        "id": 3991650,
+        "noShow": 7,
+        "late": 2,
+        "breaks": 30.5,
+        "breakPct": 18.2,
+        "avp": 0.0,
+        "shifts": 17,
+        "planned": 6315,
+        "actual": 2851
+      },
+      {
+        "id": 3925170,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 4.3,
+        "breakPct": 2.9,
+        "avp": 0.0,
+        "shifts": 17,
+        "planned": 5979,
+        "actual": 2518
       },
       {
         "id": 4602629,
         "noShow": 7,
         "late": 0,
-        "breaks": 5.2,
+        "breaks": 28.1,
+        "breakPct": 29.5,
         "avp": 21.4,
-        "shifts": 11
+        "shifts": 11,
+        "planned": 4905,
+        "actual": 1048
       },
       {
         "id": 4724626,
         "noShow": 6,
         "late": 2,
-        "breaks": 16.9,
+        "breaks": 78.1,
+        "breakPct": 85.0,
         "avp": 21.7,
-        "shifts": 13
+        "shifts": 13,
+        "planned": 5496,
+        "actual": 1194
+      },
+      {
+        "id": 4738787,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 64.1,
+        "breakPct": 23.4,
+        "avp": 0.0,
+        "shifts": 19,
+        "planned": 10528,
+        "actual": 5203
+      },
+      {
+        "id": 3916498,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 21.0,
+        "breakPct": 26.7,
+        "avp": 35.1,
+        "shifts": 10,
+        "planned": 2385,
+        "actual": 785
       },
       {
         "id": 4711170,
         "noShow": 6,
         "late": 0,
-        "breaks": 6.1,
+        "breaks": 45.9,
+        "breakPct": 131.6,
         "avp": 12.0,
-        "shifts": 8
+        "shifts": 8,
+        "planned": 2325,
+        "actual": 279
+      },
+      {
+        "id": 4807028,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 3054,
+        "actual": 172
+      },
+      {
+        "id": 4783262,
+        "noShow": 5,
+        "late": 17,
+        "breaks": 139.7,
+        "breakPct": 65.1,
+        "avp": 51.1,
+        "shifts": 36,
+        "planned": 15400,
+        "actual": 7721
+      },
+      {
+        "id": 4804724,
+        "noShow": 5,
+        "late": 13,
+        "breaks": 79.6,
+        "breakPct": 36.1,
+        "avp": 56.5,
+        "shifts": 33,
+        "planned": 13079,
+        "actual": 7283
       },
       {
         "id": 4775489,
         "noShow": 5,
         "late": 7,
-        "breaks": 12.9,
+        "breaks": 55.1,
+        "breakPct": 23.6,
         "avp": 46.7,
-        "shifts": 14
+        "shifts": 14,
+        "planned": 7020,
+        "actual": 3275
       },
       {
         "id": 4692759,
         "noShow": 5,
         "late": 5,
-        "breaks": 63.3,
+        "breaks": 124.2,
+        "breakPct": 108.1,
         "avp": 34.8,
-        "shifts": 30
+        "shifts": 33,
+        "planned": 10020,
+        "actual": 3793
       },
       {
         "id": 4783233,
         "noShow": 5,
         "late": 2,
-        "breaks": 15.8,
+        "breaks": 45.1,
+        "breakPct": 44.1,
         "avp": 39.6,
-        "shifts": 21
+        "shifts": 21,
+        "planned": 5434,
+        "actual": 2150
+      },
+      {
+        "id": 4802570,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0.0,
+        "breakPct": 0.0,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 4320,
+        "actual": 0
       },
       {
         "id": 4802394,
         "noShow": 5,
         "late": 0,
-        "breaks": 4.7,
+        "breaks": 35.0,
+        "breakPct": 56.3,
         "avp": 16.3,
-        "shifts": 8
+        "shifts": 8,
+        "planned": 3053,
+        "actual": 497
+      },
+      {
+        "id": 1623967,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 13.6,
+        "breakPct": 13.3,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 3150,
+        "actual": 919
+      },
+      {
+        "id": 3908765,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 9.3,
+        "breakPct": 8.5,
+        "avp": 0.0,
+        "shifts": 9,
+        "planned": 3193,
+        "actual": 981
       },
       {
         "id": 4630817,
         "noShow": 5,
         "late": 0,
-        "breaks": 3.3,
+        "breaks": 28.4,
+        "breakPct": 41.7,
         "avp": 16.2,
-        "shifts": 7
-      },
-      {
-        "id": 4811070,
-        "noShow": 4,
-        "late": 15,
-        "breaks": 30.5,
-        "avp": 56.1,
-        "shifts": 27
-      },
-      {
-        "id": 4783262,
-        "noShow": 4,
-        "late": 13,
-        "breaks": 68.3,
-        "avp": 51.1,
-        "shifts": 29
+        "shifts": 7,
+        "planned": 2940,
+        "actual": 477
       },
       {
         "id": 4693094,
         "noShow": 4,
-        "late": 11,
-        "breaks": 31.8,
+        "late": 13,
+        "breaks": 109.5,
+        "breakPct": 53.4,
         "avp": 42.4,
-        "shifts": 17
+        "shifts": 20,
+        "planned": 10125,
+        "actual": 4105
       },
       {
-        "id": 4804724,
+        "id": 2067181,
         "noShow": 4,
-        "late": 10,
-        "breaks": 35.4,
-        "avp": 56.5,
-        "shifts": 27
+        "late": 9,
+        "breaks": 25.1,
+        "breakPct": 13.6,
+        "avp": 0.0,
+        "shifts": 62,
+        "planned": 15394,
+        "actual": 11402
       },
       {
         "id": 4752314,
         "noShow": 4,
         "late": 8,
-        "breaks": 16.1,
+        "breaks": 43.9,
+        "breakPct": 27.3,
         "avp": 51.3,
-        "shifts": 22
+        "shifts": 22,
+        "planned": 6892,
+        "actual": 3538
+      },
+      {
+        "id": 4615825,
+        "noShow": 4,
+        "late": 6,
+        "breaks": 68.8,
+        "breakPct": 57.3,
+        "avp": 0.0,
+        "shifts": 10,
+        "planned": 3900,
+        "actual": 1201
       },
       {
         "id": 4804487,
         "noShow": 4,
         "late": 5,
-        "breaks": 43.5,
+        "breaks": 87.8,
+        "breakPct": 40.3,
         "avp": 59.4,
-        "shifts": 31
+        "shifts": 32,
+        "planned": 11910,
+        "actual": 6975
+      },
+      {
+        "id": 4801194,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 52.6,
+        "breakPct": 99.2,
+        "avp": 0.0,
+        "shifts": 8,
+        "planned": 2505,
+        "actual": 424
+      },
+      {
+        "id": 4755958,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 10.4,
+        "breakPct": 8.2,
+        "avp": 0.0,
+        "shifts": 11,
+        "planned": 2925,
+        "actual": 1390
+      },
+      {
+        "id": 4582248,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 39.3,
+        "breakPct": 23.0,
+        "avp": 0.0,
+        "shifts": 33,
+        "planned": 7650,
+        "actual": 5649
       },
       {
         "id": 4614833,
         "noShow": 4,
         "late": 2,
-        "breaks": 7.7,
+        "breaks": 30.4,
+        "breakPct": 24.1,
         "avp": 57.4,
-        "shifts": 13
+        "shifts": 19,
+        "planned": 3478,
+        "actual": 2396
       },
       {
-        "id": 4758475,
+        "id": 2657052,
         "noShow": 4,
         "late": 0,
-        "breaks": 9.6,
-        "avp": 23.7,
-        "shifts": 8
+        "breaks": 9.8,
+        "breakPct": 4.5,
+        "avp": 0.0,
+        "shifts": 28,
+        "planned": 7770,
+        "actual": 6152
+      },
+      {
+        "id": 4703334,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 7.8,
+        "breakPct": 10.7,
+        "avp": 0.0,
+        "shifts": 6,
+        "planned": 1890,
+        "actual": 438
       },
       {
         "id": 2823637,
         "noShow": 4,
         "late": 0,
-        "breaks": 22.3,
+        "breaks": 41.9,
+        "breakPct": 35.5,
         "avp": 57.0,
-        "shifts": 32
+        "shifts": 32,
+        "planned": 6628,
+        "actual": 3777
+      },
+      {
+        "id": 4758475,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 72.0,
+        "breakPct": 73.2,
+        "avp": 23.7,
+        "shifts": 8,
+        "planned": 3315,
+        "actual": 786
       },
       {
         "id": 3433532,
         "noShow": 4,
         "late": 0,
-        "breaks": 14.2,
+        "breaks": 77.7,
+        "breakPct": 28.9,
         "avp": 55.2,
-        "shifts": 11
+        "shifts": 11,
+        "planned": 5355,
+        "actual": 2958
       },
       {
-        "id": 3916498,
+        "id": 4825020,
         "noShow": 4,
         "late": 0,
-        "breaks": 3.5,
-        "avp": 35.1,
-        "shifts": 8
+        "breaks": 55.3,
+        "breakPct": 143.3,
+        "avp": 0.0,
+        "shifts": 7,
+        "planned": 2415,
+        "actual": 270
+      },
+      {
+        "id": 4010909,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0.9,
+        "breakPct": 1.2,
+        "avp": 0.0,
+        "shifts": 13,
+        "planned": 1396,
+        "actual": 1044
       }
     ]
   },
