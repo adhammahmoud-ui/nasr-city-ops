@@ -1132,6 +1132,7 @@ function renderPerf(){
       <select id="tpl-name-sel" class="tpl-name-sel" onchange="filterBy3PLName(this.value)">
         <option value="">All 3PLs</option>
       </select>
+      <button id="tpl-sort-btn" class="dtc-view-btn dtc-sort-btn" onclick="toggleTPLSort()" style="margin-left:auto">▼ Sort by MTD%</button>
     </div>
     <table class="tpl-table">
       <thead>
@@ -1730,6 +1731,7 @@ const TLP_AWH_MONTH = {"Ain shams|Al Alamia": 7.7, "Ain shams|Apache": 6.2, "Ain
 
 let cur3PLZone = 'all';
 let cur3PLName = '';
+let tpl3PLSort = 'none';
 
 function init3PLDropdown(){
   const sel = document.getElementById('tpl-name-sel');
@@ -1761,26 +1763,38 @@ function filter3PL(zone){
 function fh(v){ return v==null?'-':Math.round(v).toLocaleString()+'h'; }
 function pctClr(p){ return p==null?'n':p>=100?'g':p>=80?'y':'r'; }
 const CFG_MTD_DAYS = 23; // days 1-23 of August
+function toggleTPLSort(){
+  if(tpl3PLSort==='none') tpl3PLSort='desc';
+  else if(tpl3PLSort==='desc') tpl3PLSort='asc';
+  else tpl3PLSort='none';
+  const btn=document.getElementById('tpl-sort-btn');
+  if(tpl3PLSort==='none') btn.textContent='▼ Sort by MTD%';
+  else if(tpl3PLSort==='desc') btn.textContent='▼ Highest MTD% First';
+  else btn.textContent='▲ Lowest MTD% First';
+  render3PL();
+}
 function render3PL(){
   const zones = ['Nasr city','Heliopolis','Ain shams'];
   const zonesInView = cur3PLZone==='all' ? zones : [cur3PLZone];
   const zLabel = {'Nasr city':'Nasr City','Heliopolis':'Heliopolis','Ain shams':'Ain Shams'};
-  let html = '';
+  const awhFmt = v => v!=null?`<div style="font-size:10px;color:#999;margin-top:2px">AWH ${v.toFixed(1)}h</div>`:'';
+  const badge=(val,p,awh)=>{
+    const hrs=val!=null?`<span style="color:#1a1a1a;font-weight:700">${fh(val)}</span>`:`<span style="color:#aaa">-</span>`;
+    const pBadge=p!=null?` <span style="font-size:10px;font-weight:800;padding:1px 5px;border-radius:4px" class="tpl-pct ${pctClr(p)}">${p}%</span>`:'';
+    return `<div>${hrs}${pBadge}${awhFmt(awh)}</div>`;
+  };
+  // Collect all row data first so we can sort
+  let rows = [];
   zonesInView.forEach(zone=>{
     const zRows = TLP_TGT.filter(t=>t.z===zone && (!cur3PLName || (t.disp||t.n)===cur3PLName));
     if(!zRows.length) return;
-    if(cur3PLZone==='all') html += `<tr class="tpl-section-hdr"><td colspan="8">${zLabel[zone]}</td></tr>`;
     zRows.forEach(t=>{
       const key = `${t.z}|${t.n}`;
-      // Case-insensitive fallback lookup
       const keyLo = key.toLowerCase();
       const tlpGet = (obj) => { if(obj[key]!=null) return obj[key]; const k2=Object.keys(obj).find(k=>k.toLowerCase()===keyLo); return k2!=null?obj[k2]:null; };
       const yday=tlpGet(TLP_YDAY), w7=tlpGet(TLP_W7), month=tlpGet(TLP_MONTH), mtd=tlpGet(TLP_MTD);
-      const w7avg=w7, monthavg=month; // already avg/day from data
+      const w7avg=w7, monthavg=month;
       const pct=(t.tgt>0&&mtd!=null)?Math.round(mtd/t.tgt*100):null;
-      const pc=pctClr(pct);
-      const disp=t.disp||t.n;
-      // per-column achievement %
       const ydayPct=t.tgt>0&&yday!=null?Math.round(yday/t.tgt*100):null;
       const w7Pct  =t.tgt>0&&w7avg!=null?Math.round(w7avg/t.tgt*100):null;
       const moPct  =t.tgt>0&&monthavg!=null?Math.round(monthavg/t.tgt*100):null;
@@ -1791,23 +1805,33 @@ function render3PL(){
       const awhW7   = tlpGet(TLP_AWH_W7);
       const awhMtd  = tlpGet(TLP_AWH_MTD);
       const awhMo   = tlpGet(TLP_AWH_MONTH);
-      const awhFmt = v => v!=null?`<div style="font-size:10px;color:#999;margin-top:2px">AWH ${v.toFixed(1)}h</div>`:'';
-      const badge=(val,p,awh)=>{
-        const hrs=val!=null?`<span style="color:#1a1a1a;font-weight:700">${fh(val)}</span>`:`<span style="color:#aaa">-</span>`;
-        const pBadge=p!=null?` <span style="font-size:10px;font-weight:800;padding:1px 5px;border-radius:4px" class="tpl-pct ${pctClr(p)}">${p}%</span>`:'';
-        return `<div>${hrs}${pBadge}${awhFmt(awh)}</div>`;
-      };
-      html += `<tr>
-        <td><div class="tpl-name">${disp}</div></td>
-        <td><div class="tpl-zone">${zLabel[t.z]}</div></td>
-        <td class="tpl-tgt" style="text-align:right"><div style="font-size:13px;font-weight:700;color:#1a1a1a">${riders!=null?riders.toLocaleString():'-'}</div>${ridersMtdAvg!=null?`<div style="font-size:10px;color:#999;margin-top:2px">MTD ${ridersMtdAvg}/day</div>`:''}</td>
-        <td class="tpl-tgt">${t.tgt>0?t.tgt.toLocaleString()+'h':'-'}</td>
-        <td class="tpl-num">${badge(yday,ydayPct,awhYday)}</td>
-        <td class="tpl-num">${badge(w7avg,w7Pct,awhW7)}</td>
-        <td class="tpl-num">${badge(monthavg,moPct,awhMo)}</td>
-        <td style="text-align:right"><span class="tpl-pct ${pc}">${pct!=null?pct+'%':'-'}</span></td>
-      </tr>`;
+      rows.push({zone, t, pct, pc:pctClr(pct), disp:t.disp||t.n,
+        yday, w7avg, monthavg, ydayPct, w7Pct, moPct,
+        riders, ridersMtdAvg, awhYday, awhW7, awhMtd, awhMo});
     });
+  });
+  // Sort if active
+  if(tpl3PLSort==='desc') rows.sort((a,b)=>(b.pct??-Infinity)-(a.pct??-Infinity));
+  else if(tpl3PLSort==='asc') rows.sort((a,b)=>(a.pct??Infinity)-(b.pct??Infinity));
+  // Render
+  let html = '';
+  let lastZone = null;
+  rows.forEach(r=>{
+    const showZoneHeader = tpl3PLSort==='none' && cur3PLZone==='all';
+    if(showZoneHeader && r.zone!==lastZone){
+      html += `<tr class="tpl-section-hdr"><td colspan="8">${zLabel[r.zone]}</td></tr>`;
+      lastZone = r.zone;
+    }
+    html += `<tr>
+        <td><div class="tpl-name">${r.disp}</div></td>
+        <td><div class="tpl-zone">${zLabel[r.t.z]}</div></td>
+        <td class="tpl-tgt" style="text-align:right"><div style="font-size:13px;font-weight:700;color:#1a1a1a">${r.riders!=null?r.riders.toLocaleString():'-'}</div>${r.ridersMtdAvg!=null?`<div style="font-size:10px;color:#999;margin-top:2px">MTD ${r.ridersMtdAvg}/day</div>`:''}</td>
+        <td class="tpl-tgt">${r.t.tgt>0?r.t.tgt.toLocaleString()+'h':'-'}</td>
+        <td class="tpl-num">${badge(r.yday,r.ydayPct,r.awhYday)}</td>
+        <td class="tpl-num">${badge(r.w7avg,r.w7Pct,r.awhW7)}</td>
+        <td class="tpl-num">${badge(r.monthavg,r.moPct,r.awhMo)}</td>
+        <td style="text-align:right"><span class="tpl-pct ${r.pc}">${r.pct!=null?r.pct+'%':'-'}</span></td>
+      </tr>`;
   });
   document.getElementById('tpl-tbody').innerHTML = html;
 }
