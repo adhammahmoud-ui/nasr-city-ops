@@ -9,7 +9,7 @@ rows = raw.get('data', raw) if isinstance(raw, dict) else raw
 TARGET_ZONES = {"Nasr city", "Heliopolis", "Ain shams"}
 rows = [r for r in rows if r.get('dim_logistics_rider.last_operating_zone_name') in TARGET_ZONES]
 
-CONTRACT_MAP = {"Glesco": "Gelesco", "Team mh for Delivery": "Team Mh for delivery"}
+CONTRACT_MAP = {"Glesco": "Gelesco"}
 
 YDAY = "2026-08-16"
 W7_START, W7_END = "2026-08-10", "2026-08-16"
