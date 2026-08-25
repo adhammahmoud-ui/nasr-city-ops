@@ -92,7 +92,7 @@ def mlbl(d):  return MONTHS[d.month - 1]
 def mfull(d): return MONTHS_FULL[d.month - 1]
 
 yday_str    = yday.strftime('%Y-%m-%d')
-week_key_s  = week_start.strftime('%Y-%m-%d')
+week_key_s  = f"{yday.isocalendar()[0]}-W{week_num:02d}"
 yday_lbl    = f"{mlbl(yday)} {yday.day}, {yday.year}"
 yday_short  = f"{mlbl(yday)} {yday.day}"
 mtd_lbl     = f"{mlbl(month_start)} 1-{yday.day}"
@@ -292,12 +292,25 @@ try:
     zs = re.sub(r' \(current\)"', '"', zs)
 
     # 2. Prepend new day entry to DAY dict
+    # First clean up stale WTD entries (short:"Wk XX") that leaked into DAY section
+    import re as _re
+    day_s = zs.find('const DAY = {')
+    day_e = zs.find('\nconst WEEK', day_s)
+    if day_s >= 0 and day_e >= 0:
+        day_block = zs[day_s:day_e]
+        day_block = _re.sub(
+            r'  "\d{4}-\d{2}-\d{2}":\{[^}]*?short:"Wk \d+",.*?\}\},\n',
+            '', day_block, flags=_re.DOTALL)
+        zs = zs[:day_s] + day_block + zs[day_e:]
     zs = zs.replace('const DAY = {\n', 'const DAY = {\n' + new_day, 1)
 
-    # 3. Replace existing week entry with same key, or prepend
+    # 3. Replace existing week entry in WEEK section, or prepend to WEEK
+    wk_s = zs.find('const WEEK = {')
+    wk_e = zs.find('\nconst MONTH', wk_s if wk_s >= 0 else 0)
     wk_pat = f'"{week_key_s}":'
-    wk_pos = zs.find(wk_pat)
-    if wk_pos >= 0:
+    wk_pos = zs.find(wk_pat, wk_s if wk_s >= 0 else 0)
+    in_week_section = wk_pos >= 0 and (wk_e < 0 or wk_pos < wk_e)
+    if in_week_section:
         i = zs.find('{', wk_pos)
         depth = 0
         for j in range(i, len(zs)):
