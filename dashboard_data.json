@@ -5,7 +5,7 @@
     "yday": {
       "Nasr city": {
         "utr": 1.8064,
-        "rr": 106.84,
+        "rr": 1.0609,
         "riders": 1852,
         "orders": 30576,
         "delivComp": 30576,
@@ -25,7 +25,7 @@
       },
       "Heliopolis": {
         "utr": 1.938,
-        "rr": 95.98,
+        "rr": 0.9693,
         "riders": 1804,
         "orders": 28390,
         "delivComp": 28390,
@@ -45,7 +45,7 @@
       },
       "Ain shams": {
         "utr": 1.8861,
-        "rr": 91.72,
+        "rr": 0.9006,
         "riders": 331,
         "orders": 4527,
         "delivComp": 4527,
@@ -67,7 +67,7 @@
     "wtd": {
       "Nasr city": {
         "utr": 1.8843,
-        "rr": 102.43,
+        "rr": 1.0243,
         "riders": 2079,
         "orders": 60998,
         "delivComp": 60998,
@@ -87,7 +87,7 @@
       },
       "Heliopolis": {
         "utr": 2.0022,
-        "rr": 92.9,
+        "rr": 0.929,
         "riders": 2054,
         "orders": 56371,
         "delivComp": 56371,
@@ -107,7 +107,7 @@
       },
       "Ain shams": {
         "utr": 1.9799,
-        "rr": 87.38,
+        "rr": 0.8738,
         "riders": 401,
         "orders": 9179,
         "delivComp": 9179,
@@ -129,7 +129,7 @@
     "mtd": {
       "Nasr city": {
         "utr": 2.0043,
-        "rr": 96.29,
+        "rr": 0.9629,
         "riders": 3301,
         "orders": 769782,
         "delivComp": 769782,
@@ -149,7 +149,7 @@
       },
       "Heliopolis": {
         "utr": 2.0655,
-        "rr": 90.05,
+        "rr": 0.9005,
         "riders": 3307,
         "orders": 701465,
         "delivComp": 701465,
@@ -169,7 +169,7 @@
       },
       "Ain shams": {
         "utr": 1.959,
-        "rr": 88.31,
+        "rr": 0.8831,
         "riders": 702,
         "orders": 122707,
         "delivComp": 122707,
