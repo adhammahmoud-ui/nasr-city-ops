@@ -1,83 +1,84 @@
 {
-  "data_date": "2026-08-29",
-  "generated": "2026-08-30",
+  "generated": "2026-08-31",
+  "data_date": "2026-08-30",
+  "tableau_fallback": true,
   "zone": {
     "yday": {
       "Nasr city": {
-        "utr": 1.895,
+        "utr": 1.8987,
         "rr": 1.0141,
-        "riders": 1780,
-        "orders": 29644,
-        "delivComp": 29644,
-        "sumHrs": 15643.47,
-        "avgHrs": 8.788,
-        "plannedHrs": 18370.44,
-        "lateLogin": 0.056,
-        "noShow": 0.0409,
-        "breakMin": 49.43,
-        "fill": 0.8516,
-        "acceptRate": 0.8553,
-        "delivTime": 21.54,
+        "riders": 1816,
+        "orders": 30825,
+        "delivComp": 30168,
+        "sumHrs": 16234.81,
+        "avgHrs": 8.9399,
+        "plannedHrs": 20469.99,
+        "lateLogin": 0.0564,
+        "noShow": 0.0387,
+        "breakMin": 52.28,
+        "fill": 0.7931,
+        "acceptRate": 0.908,
+        "delivTime": 22.43,
         "rat": 4.9315,
-        "toVendor": 2.622,
-        "onTime": 0.8889,
-        "failRate": 0.0163
+        "toVendor": 2.46,
+        "onTime": 0.892,
+        "failRate": 0.0213
       },
       "Heliopolis": {
-        "utr": 1.8385,
+        "utr": 1.9121,
         "rr": 1.0069,
-        "riders": 1681,
-        "orders": 23898,
-        "delivComp": 23898,
-        "sumHrs": 12998.9,
-        "avgHrs": 7.733,
-        "plannedHrs": 15679.76,
-        "lateLogin": 0.0568,
-        "noShow": 0.0413,
-        "breakMin": 57.15,
-        "fill": 0.829,
-        "acceptRate": 0.8329,
-        "delivTime": 21.83,
+        "riders": 1817,
+        "orders": 28134,
+        "delivComp": 27597,
+        "sumHrs": 14713.36,
+        "avgHrs": 8.0976,
+        "plannedHrs": 18185.81,
+        "lateLogin": 0.0619,
+        "noShow": 0.0513,
+        "breakMin": 54.37,
+        "fill": 0.8091,
+        "acceptRate": 0.892,
+        "delivTime": 21.88,
         "rat": 4.5344,
-        "toVendor": 2.66,
-        "onTime": 0.8891,
-        "failRate": 0.0174
+        "toVendor": 2.49,
+        "onTime": 0.9,
+        "failRate": 0.0191
       },
       "Ain shams": {
-        "utr": 1.939,
+        "utr": 1.807,
         "rr": 0.8302,
-        "riders": 375,
-        "orders": 5310,
-        "delivComp": 5310,
-        "sumHrs": 2738.58,
-        "avgHrs": 7.303,
-        "plannedHrs": 3257.51,
-        "lateLogin": 0.0575,
-        "noShow": 0.0452,
-        "breakMin": 34.21,
-        "fill": 0.8407,
-        "acceptRate": 0.8414,
-        "delivTime": 25.26,
+        "riders": 366,
+        "orders": 4904,
+        "delivComp": 4567,
+        "sumHrs": 2713.88,
+        "avgHrs": 7.415,
+        "plannedHrs": 3629.08,
+        "lateLogin": 0.0714,
+        "noShow": 0.0355,
+        "breakMin": 37.07,
+        "fill": 0.7478,
+        "acceptRate": 0.913,
+        "delivTime": 27.39,
         "rat": 5.1642,
-        "toVendor": 3.944,
-        "onTime": 0.8153,
-        "failRate": 0.0452
+        "toVendor": 3.88,
+        "onTime": 0.795,
+        "failRate": 0.0687
       }
     },
     "wtd": {
       "Nasr city": {
-        "utr": 1.8673,
-        "rr": 1.0336,
+        "utr": 1.5687,
+        "rr": 1.029,
         "riders": 2385,
         "orders": 152265,
         "delivComp": 152265,
-        "sumHrs": 81542.59,
-        "avgHrs": 34.19,
+        "sumHrs": 97067.27,
+        "avgHrs": 40.6991,
         "plannedHrs": 94009.49,
         "lateLogin": 0.0594,
-        "noShow": 0.0263,
+        "noShow": 0.0286,
         "breakMin": 52.38,
-        "fill": 0.8674,
+        "fill": 1.0325,
         "acceptRate": 0.8704,
         "delivTime": 21.58,
         "rat": 4.9078,
@@ -86,18 +87,18 @@
         "failRate": 0.0145
       },
       "Heliopolis": {
-        "utr": 1.9478,
-        "rr": 0.9549,
+        "utr": 1.6363,
+        "rr": 1.009,
         "riders": 2440,
         "orders": 134206,
         "delivComp": 134206,
-        "sumHrs": 68900.29,
-        "avgHrs": 28.238,
+        "sumHrs": 82018.0,
+        "avgHrs": 33.6139,
         "plannedHrs": 83474.09,
         "lateLogin": 0.0597,
-        "noShow": 0.0451,
+        "noShow": 0.0445,
         "breakMin": 55.4,
-        "fill": 0.8254,
+        "fill": 0.9826,
         "acceptRate": 0.8269,
         "delivTime": 21.72,
         "rat": 4.7882,
@@ -106,18 +107,18 @@
         "failRate": 0.0157
       },
       "Ain shams": {
-        "utr": 1.9888,
-        "rr": 0.8699,
+        "utr": 1.6273,
+        "rr": 0.927,
         "riders": 495,
         "orders": 24608,
         "delivComp": 24608,
-        "sumHrs": 12373.04,
-        "avgHrs": 24.996,
+        "sumHrs": 15121.59,
+        "avgHrs": 30.5487,
         "plannedHrs": 14961.35,
         "lateLogin": 0.0622,
-        "noShow": 0.0366,
+        "noShow": 0.0381,
         "breakMin": 37.04,
-        "fill": 0.827,
+        "fill": 1.0107,
         "acceptRate": 0.8372,
         "delivTime": 23.94,
         "rat": 6.1828,
@@ -128,18 +129,18 @@
     },
     "mtd": {
       "Nasr city": {
-        "utr": 1.987,
-        "rr": 1.0179,
+        "utr": 1.9203,
+        "rr": 0.995,
         "riders": 3356,
         "orders": 861049,
         "delivComp": 861049,
-        "sumHrs": 433335.25,
-        "avgHrs": 129.123,
+        "sumHrs": 448401.87,
+        "avgHrs": 133.612,
         "plannedHrs": 510448.44,
         "lateLogin": 0.0608,
-        "noShow": 0.0336,
+        "noShow": 0.0339,
         "breakMin": 53.7,
-        "fill": 0.8489,
+        "fill": 0.8784,
         "acceptRate": 0.8489,
         "delivTime": 22.06,
         "rat": 6.1318,
@@ -148,18 +149,18 @@
         "failRate": 0.0169
       },
       "Heliopolis": {
-        "utr": 2.0603,
-        "rr": 0.9579,
+        "utr": 1.9893,
+        "rr": 0.9611,
         "riders": 3371,
         "orders": 783656,
         "delivComp": 783656,
-        "sumHrs": 380363.86,
-        "avgHrs": 112.834,
+        "sumHrs": 393939.61,
+        "avgHrs": 116.8613,
         "plannedHrs": 467846.15,
         "lateLogin": 0.0656,
-        "noShow": 0.0576,
+        "noShow": 0.057,
         "breakMin": 54.83,
-        "fill": 0.813,
+        "fill": 0.842,
         "acceptRate": 0.8127,
         "delivTime": 21.89,
         "rat": 6.0502,
@@ -168,18 +169,18 @@
         "failRate": 0.0167
       },
       "Ain shams": {
-        "utr": 1.9605,
-        "rr": 0.9332,
+        "utr": 1.887,
+        "rr": 0.9206,
         "riders": 720,
         "orders": 138264,
         "delivComp": 138264,
-        "sumHrs": 70525.06,
-        "avgHrs": 97.951,
+        "sumHrs": 73273.61,
+        "avgHrs": 101.7689,
         "plannedHrs": 87307.9,
         "lateLogin": 0.0652,
         "noShow": 0.0471,
         "breakMin": 39.1,
-        "fill": 0.8078,
+        "fill": 0.8393,
         "acceptRate": 0.8093,
         "delivTime": 23.96,
         "rat": 6.2526,
@@ -474,63 +475,23 @@
   "offenders": {
     "Nasr city": [
       {
-        "id": 2834196,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4809263,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4811704,
-        "noShow": 10,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 11
-      },
-      {
-        "id": 4803108,
-        "noShow": 8,
+        "id": 4755930,
+        "noShow": 9,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
         "shifts": 9
       },
       {
-        "id": 1653982,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2160437,
+        "id": 4852854,
         "noShow": 7,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4140034,
-        "noShow": 6,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
         "shifts": 7
       },
       {
-        "id": 4810407,
+        "id": 2127148,
         "noShow": 6,
         "late": 0,
         "breaks": 0.0,
@@ -538,80 +499,8 @@
         "shifts": 6
       },
       {
-        "id": 3908849,
+        "id": 4783355,
         "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4510873,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4833811,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4852854,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 4811635,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4826980,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 4807266,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 2134855,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 4783328,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 4806291,
-        "noShow": 4,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
@@ -620,55 +509,7 @@
     ],
     "Heliopolis": [
       {
-        "id": 4809268,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4691830,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 8
-      },
-      {
-        "id": 4780407,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 4802338,
-        "noShow": 8,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 9
-      },
-      {
-        "id": 2172819,
-        "noShow": 6,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4840081,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4807291,
+        "id": 4841610,
         "noShow": 5,
         "late": 0,
         "breaks": 0.0,
@@ -676,63 +517,7 @@
         "shifts": 5
       },
       {
-        "id": 1514102,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4804579,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4202995,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4783648,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 1851271,
-        "noShow": 5,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 6
-      },
-      {
-        "id": 4830067,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 4653485,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 1486723,
+        "id": 3895772,
         "noShow": 4,
         "late": 0,
         "breaks": 0.0,
@@ -740,7 +525,7 @@
         "shifts": 4
       },
       {
-        "id": 4837032,
+        "id": 2140297,
         "noShow": 4,
         "late": 0,
         "breaks": 0.0,
@@ -748,48 +533,15 @@
         "shifts": 4
       },
       {
-        "id": 4829606,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      },
-      {
-        "id": 4839977,
+        "id": 4857464,
         "noShow": 4,
         "late": 0,
         "breaks": 0.0,
         "avp": 0.0,
         "shifts": 4
-      },
-      {
-        "id": 4521838,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
       }
     ],
-    "Ain shams": [
-      {
-        "id": 4807028,
-        "noShow": 6,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 7
-      },
-      {
-        "id": 4703587,
-        "noShow": 4,
-        "late": 0,
-        "breaks": 0.0,
-        "avp": 0.0,
-        "shifts": 5
-      }
-    ]
+    "Ain shams": []
   },
   "hybrid": {
     "yday": {
