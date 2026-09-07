@@ -19,6 +19,10 @@ All date ranges are computed automatically from today's date:
     w7        = [yday - 6 days .. yday]  (7 days ending yday)
     mtd       = [month start .. yday]
     last_month= previous full calendar month
+
+NOTE on MTD_DAYS: Looker MTD data often excludes the most recent day (not yet
+finalised). MTD_DAYS is therefore computed from the actual distinct dates
+present in the data — NOT from yday.day — to avoid dividing by the wrong count.
 """
 
 import json, re, sys
@@ -45,7 +49,6 @@ W7_DAYS    = 7
 
 MTD_START  = yday.replace(day=1).strftime("%Y-%m-%d")
 MTD_END    = YDAY
-MTD_DAYS   = yday.day          # number of days in MTD period
 
 # Last full calendar month
 lm_last    = yday.replace(day=1) - timedelta(days=1)   # last day of prev month
@@ -53,12 +56,6 @@ lm_first   = lm_last.replace(day=1)
 MONTH_START= lm_first.strftime("%Y-%m-%d")
 MONTH_END  = lm_last.strftime("%Y-%m-%d")
 LM_DAYS    = lm_last.day
-
-print(f"Date ranges:")
-print(f"  YDAY      = {YDAY}")
-print(f"  W7        = {W7_START} → {W7_END}  ({W7_DAYS} days)")
-print(f"  MTD       = {MTD_START} → {MTD_END}  ({MTD_DAYS} days)")
-print(f"  LastMonth = {MONTH_START} → {MONTH_END}  ({LM_DAYS} days)")
 
 # ── Load Looker data ──────────────────────────────────────────────────────────
 with open(DATA_FILE) as f:
@@ -80,10 +77,31 @@ if not yday_rows:
 
 print(f"  YDAY rows found: {len(yday_rows)} ✓")
 
+# ── Compute MTD_DAYS from ACTUAL dates in the data (not yday.day) ─────────────
+# Looker MTD data often excludes the most recent day (not yet finalised),
+# so counting the actual distinct dates is more accurate than yday.day.
+def in_range(d, s, e): return s <= d <= e
+
+mtd_dates_in_data = set(
+    r['agg_logistics_rider_performance.created_date_date']
+    for r in rows
+    if in_range(r['agg_logistics_rider_performance.created_date_date'], MTD_START, MTD_END)
+)
+MTD_DAYS = len(mtd_dates_in_data)
+if MTD_DAYS == 0:
+    print(f"⚠️  WARNING: No MTD data found in range {MTD_START}–{MTD_END}! Falling back to yday.day.")
+    MTD_DAYS = yday.day
+
+MTD_ACTUAL_END = max(mtd_dates_in_data) if mtd_dates_in_data else MTD_END
+
+print(f"Date ranges:")
+print(f"  YDAY      = {YDAY}")
+print(f"  W7        = {W7_START} → {W7_END}  ({W7_DAYS} days)")
+print(f"  MTD       = {MTD_START} → {MTD_ACTUAL_END}  ({MTD_DAYS} days, from actual data)")
+print(f"  LastMonth = {MONTH_START} → {MONTH_END}  ({LM_DAYS} days)")
+
 # Name normalization
 CONTRACT_MAP = {"Glesco": "Gelesco"}
-
-def in_range(d, s, e): return s <= d <= e
 
 yday_data      = defaultdict(lambda: {"hrs": 0.0, "riders": 0})
 w7_data        = defaultdict(lambda: {"sum_hrs": 0.0, "sum_riders": 0})
@@ -130,29 +148,41 @@ print(f"  Keys in TLP_YDAY: {len(all_keys)}")
 def r2(v): return round(v, 2)
 def awh(hrs, riders): return r2(hrs / riders) if riders > 0 else 0
 
-TLP_YDAY           = {k: r2(yday_data[k]["hrs"])                           for k in all_keys}
-TLP_W7             = {k: r2(w7_data[k]["sum_hrs"] / W7_DAYS)               for k in all_keys}
-TLP_MTD            = {k: r2(mtd_data[k]["sum_hrs"] / MTD_DAYS)             for k in all_keys}
-TLP_MONTH          = {k: r2(month_data[k]["sum_hrs"] / LM_DAYS)            for k in all_keys}
-TLP_RIDERS_YDAY    = {k: yday_data[k]["riders"]                            for k in all_keys}
-TLP_RIDERS_MTD_SUM = {k: int(mtd_riders_sum[k])                           for k in all_keys}
+TLP_YDAY           = {k: r2(yday_data[k]["hrs"])                               for k in all_keys}
+TLP_W7             = {k: r2(w7_data[k]["sum_hrs"] / W7_DAYS)                   for k in all_keys}
+TLP_MTD            = {k: r2(mtd_data[k]["sum_hrs"] / MTD_DAYS)                 for k in all_keys}
+TLP_MONTH          = {k: r2(month_data[k]["sum_hrs"] / LM_DAYS)                for k in all_keys}
+TLP_RIDERS_YDAY    = {k: yday_data[k]["riders"]                                for k in all_keys}
+TLP_RIDERS_MTD_SUM = {k: int(mtd_riders_sum[k])                               for k in all_keys}
 TLP_AWH_YDAY       = {k: awh(yday_data[k]["hrs"],    yday_data[k]["riders"])    for k in all_keys}
 TLP_AWH_W7         = {k: awh(w7_data[k]["sum_hrs"],  w7_data[k]["sum_riders"])  for k in all_keys}
 TLP_AWH_MTD        = {k: awh(mtd_data[k]["sum_hrs"], mtd_data[k]["sum_riders"]) for k in all_keys}
 TLP_AWH_MONTH      = {k: awh(month_data[k]["sum_hrs"],month_data[k]["sum_riders"]) for k in all_keys}
 
-# Spot-check: show Ebad El rahman Nasr city
+# Spot-check
 ebad_key = "Nasr city|Ebad El rahman"
-print(f"\nSpot-check {ebad_key}:")
-print(f"  YDAY hrs    = {TLP_YDAY.get(ebad_key)}")
-print(f"  YDAY riders = {TLP_RIDERS_YDAY.get(ebad_key)}")
-print(f"  AWH yday    = {TLP_AWH_YDAY.get(ebad_key)}")
+if ebad_key in TLP_MTD:
+    print(f"\nSpot-check {ebad_key}:")
+    print(f"  YDAY hrs    = {TLP_YDAY.get(ebad_key)}")
+    print(f"  YDAY riders = {TLP_RIDERS_YDAY.get(ebad_key)}")
+    print(f"  AWH yday    = {TLP_AWH_YDAY.get(ebad_key)}")
+    print(f"  MTD avg/day = {TLP_MTD.get(ebad_key)}  (over {MTD_DAYS} days)")
 
 # ── Patch constants in HTML ───────────────────────────────────────────────────
 def patch_const(html, name, value):
     val = json.dumps(value, ensure_ascii=False)
     new, n = re.subn(rf'const {name} = \{{.*?\}};', f'const {name} = {val};', html, flags=re.DOTALL)
     print(f"  {name}: {n} substitution(s)")
+    return new
+
+def patch_scalar(html, name, value, comment=""):
+    comment_str = f"  // {comment}" if comment else ""
+    new, n = re.subn(
+        rf'const {name} = \d+;[^\n]*',
+        f'const {name} = {value};{comment_str}',
+        html
+    )
+    print(f"  {name}: {n} substitution(s)  →  {value}")
     return new
 
 print("\nPatching constants:")
@@ -170,7 +200,12 @@ for name, val in [
 ]:
     html = patch_const(html, name, val)
 
+# Patch CFG_MTD_DAYS so the JS rider avg column uses the same day count
+mtd_label = f"{yday.replace(day=1).strftime('%b %-d')}–{MTD_ACTUAL_END[8:].lstrip('0') if MTD_ACTUAL_END else ''} ({MTD_DAYS} days)"
+html = patch_scalar(html, "CFG_MTD_DAYS", MTD_DAYS, f"{yday.replace(day=1).strftime('%b 1')}–{MTD_ACTUAL_END} (Sep MTD)")
+
 with open(INDEX_FILE, "w", encoding="utf-8") as f:
     f.write(html)
 
 print(f"\n✅  Patched {INDEX_FILE} ({len(html):,} bytes)")
+print(f"    MTD_DAYS used = {MTD_DAYS}  (from actual data dates: {sorted(mtd_dates_in_data)})")
