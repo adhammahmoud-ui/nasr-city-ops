@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-07",
-  "data_date": "2026-09-06",
-  "tableau_fallback": false,
+  "generated": "2026-09-08",
+  "data_date": "2026-09-07",
+  "tableau_fallback": true,
   "looker_fallback": true,
-  "fallback_reason": "Looker unreachable (network), Sections C/E/F/3PL carried forward",
+  "fallback_reason": "Chrome extension unreachable (Tableau/Looker inaccessible); operational metrics carried from Sep 6; run rates updated from Google Sheet for Sep 7",
   "zone": {
     "yday": {
       "Nasr city": {
@@ -23,7 +23,8 @@
         "rat": 8.2,
         "toVendor": 3.68,
         "onTime": 0.84,
-        "failRate": 0.0293
+        "failRate": 0.0293,
+        "rr": 0.9146
       },
       "Heliopolis": {
         "utr": 2.2229,
@@ -42,7 +43,8 @@
         "rat": 7.54,
         "toVendor": 3.41,
         "onTime": 0.85,
-        "failRate": 0.0235
+        "failRate": 0.0235,
+        "rr": 0.8764
       },
       "Ain shams": {
         "utr": 2.0119,
@@ -61,7 +63,8 @@
         "rat": 6.55,
         "toVendor": 4.06,
         "onTime": 0.79,
-        "failRate": 0.0616
+        "failRate": 0.0616,
+        "rr": 0.9038
       }
     },
     "wtd": {
@@ -82,7 +85,8 @@
         "rat": 7.79,
         "toVendor": 3.36,
         "onTime": 0.8414,
-        "failRate": 0.0283
+        "failRate": 0.0283,
+        "rr": 0.9146
       },
       "Heliopolis": {
         "utr": 2.1827,
@@ -101,7 +105,8 @@
         "rat": 8.07,
         "toVendor": 3.33,
         "onTime": 0.8471,
-        "failRate": 0.0252
+        "failRate": 0.0252,
+        "rr": 0.8764
       },
       "Ain shams": {
         "utr": 2.0082,
@@ -120,7 +125,8 @@
         "rat": 6.43,
         "toVendor": 3.99,
         "onTime": 0.7929,
-        "failRate": 0.0684
+        "failRate": 0.0684,
+        "rr": 0.9038
       }
     },
     "mtd": {
@@ -141,7 +147,8 @@
         "rat": 8.19,
         "toVendor": 3.47,
         "onTime": 0.835,
-        "failRate": 0.0288
+        "failRate": 0.0288,
+        "rr": 0.9146
       },
       "Heliopolis": {
         "utr": 2.208,
@@ -160,7 +167,8 @@
         "rat": 8.51,
         "toVendor": 3.38,
         "onTime": 0.84,
-        "failRate": 0.0254
+        "failRate": 0.0254,
+        "rr": 0.8764
       },
       "Ain shams": {
         "utr": 2.029,
@@ -179,7 +187,8 @@
         "rat": 6.45,
         "toVendor": 3.99,
         "onTime": 0.7967,
-        "failRate": 0.0688
+        "failRate": 0.0688,
+        "rr": 0.9038
       }
     }
   },
