@@ -1,1 +1,2339 @@
-{"generated":"2026-09-09T10:43:07Z","data_date":"2026-09-08","tableau_fallback":true,"looker_fallback":false,"fallback_reason":"Tableau time metrics = yday fallback; SP orders carried forward","zone":{"yday":{"Nasr city":{"riders":1614,"orders":30070,"sumHrs":14615.57,"plannedHrs":17013.47,"lateLogin":0.0718,"noShow":0.035,"breakMin":67.31,"acceptRate":0.8591,"delivTime":22.0,"rat":7.5,"toVendor":3.4,"onTime":0.837,"failRate":0.024,"rr":0.9381},"Heliopolis":{"riders":1688,"orders":29123,"sumHrs":13735.73,"plannedHrs":16335.5,"lateLogin":0.0772,"noShow":0.0508,"breakMin":66.63,"acceptRate":0.8409,"delivTime":21.8,"rat":7.3,"toVendor":3.4,"onTime":0.824,"failRate":0.023,"rr":0.8773},"Ain shams":{"riders":344,"orders":4726,"sumHrs":2387.73,"plannedHrs":2798.11,"lateLogin":0.0718,"noShow":0.0377,"breakMin":48.51,"acceptRate":0.8533,"delivTime":23.3,"rat":6.6,"toVendor":3.9,"onTime":0.772,"failRate":0.064,"rr":0.8742}},"wtd":{"Nasr city":{"riders":920,"orders":29893.0,"sumHrs":14357.44,"plannedHrs":16733.57,"lateLogin":0.0737,"noShow":0.0317,"breakMin":61.7,"acceptRate":0.858,"delivTime":22.0,"rat":7.5,"toVendor":3.4,"onTime":0.837,"failRate":0.024},"Heliopolis":{"riders":986,"orders":29164.5,"sumHrs":13659.38,"plannedHrs":16345.49,"lateLogin":0.0769,"noShow":0.0493,"breakMin":60.83,"acceptRate":0.8357,"delivTime":21.8,"rat":7.3,"toVendor":3.4,"onTime":0.824,"failRate":0.023},"Ain shams":{"riders":211,"orders":4596.5,"sumHrs":2364.82,"plannedHrs":2797.7,"lateLogin":0.0755,"noShow":0.04,"breakMin":41.47,"acceptRate":0.8453,"delivTime":23.3,"rat":6.6,"toVendor":3.9,"onTime":0.772,"failRate":0.064}},"mtd":{"Nasr city":{"riders":310,"orders":30292.25,"sumHrs":14387.41,"plannedHrs":16609.9,"lateLogin":0.0735,"noShow":0.0304,"breakMin":43.52,"acceptRate":0.8662,"delivTime":22.0,"rat":7.5,"toVendor":3.4,"onTime":0.837,"failRate":0.024},"Heliopolis":{"riders":320,"orders":28707.12,"sumHrs":13044.79,"plannedHrs":15633.01,"lateLogin":0.0797,"noShow":0.0555,"breakMin":42.25,"acceptRate":0.8344,"delivTime":21.8,"rat":7.3,"toVendor":3.4,"onTime":0.824,"failRate":0.023},"Ain shams":{"riders":70,"orders":4983.5,"sumHrs":2485.47,"plannedHrs":2921.15,"lateLogin":0.0825,"noShow":0.0427,"breakMin":30.47,"acceptRate":0.8509,"delivTime":23.3,"rat":6.6,"toVendor":3.9,"onTime":0.772,"failRate":0.064}}},"dtc_yday":{"ard_golf":[81.0,0,0],"hegaz":[51.0,0,0],"matareya":[36.0,0,0],"hadeeqa":[81.0,0,0],"tayaran":[43.0,0,0],"hay8":[30.0,0,0],"shorouk":[73.0,0,0],"masaken_sh":[49.0,0,0],"omarat":[40.0,0,0],"2026-09-08":{"ard_golf":79,"hegaz":51,"matareya":38,"hadeeqa":84,"tayaran":56,"hay8":31,"shorouk":78,"masaken_sh":54,"omarat":42}},"dtc_mtd":{"ard_golf":[78.4,0,0],"hegaz":[52.3,0,0],"matareya":[33.5,0,0],"hadeeqa":[79.8,0,0],"tayaran":[53,0,0],"hay8":[28.3,0,0],"shorouk":[70.9,0,0],"masaken_sh":[44.4,0,0],"omarat":[38.4,0,0]},"offenders":{"Nasr city":[{"id":2654871,"noShow":7,"late":3,"breaks":2,"avp":14.3,"shifts":10},{"id":4873007,"noShow":6,"late":0,"breaks":3.7,"avp":21.9,"shifts":8},{"id":4871588,"noShow":6,"late":0,"breaks":0,"avp":0,"shifts":6},{"id":4848295,"noShow":6,"late":0,"breaks":0,"avp":0,"shifts":6},{"id":2024855,"noShow":6,"late":2,"breaks":8.9,"avp":14.2,"shifts":10},{"id":4858213,"noShow":6,"late":0,"breaks":0,"avp":0,"shifts":6},{"id":4691849,"noShow":5,"late":0,"breaks":7.1,"avp":10.2,"shifts":6},{"id":2100098,"noShow":5,"late":5,"breaks":13.8,"avp":35.6,"shifts":12},{"id":1432589,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":3996372,"noShow":5,"late":0,"breaks":0,"avp":25.2,"shifts":6},{"id":4874024,"noShow":5,"late":0,"breaks":2.5,"avp":39.4,"shifts":7},{"id":4810419,"noShow":5,"late":2,"breaks":1.5,"avp":21.6,"shifts":7},{"id":4825161,"noShow":5,"late":1,"breaks":2,"avp":2.4,"shifts":6},{"id":2077205,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4707745,"noShow":5,"late":5,"breaks":6,"avp":43.4,"shifts":11},{"id":2502574,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4387874,"noShow":4,"late":2,"breaks":5.8,"avp":11.4,"shifts":6},{"id":4310861,"noShow":4,"late":0,"breaks":7.3,"avp":39.7,"shifts":11},{"id":4783238,"noShow":4,"late":0,"breaks":2.1,"avp":2.5,"shifts":5},{"id":4877466,"noShow":4,"late":2,"breaks":1.4,"avp":18.4,"shifts":6},{"id":4877129,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":2023378,"noShow":4,"late":2,"breaks":17.5,"avp":25.9,"shifts":12},{"id":4715947,"noShow":4,"late":4,"breaks":10.6,"avp":42,"shifts":10},{"id":3832699,"noShow":4,"late":0,"breaks":1.5,"avp":44,"shifts":8},{"id":1653982,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4871608,"noShow":4,"late":0,"breaks":5.3,"avp":14.3,"shifts":6},{"id":4864196,"noShow":4,"late":1,"breaks":3.7,"avp":25.8,"shifts":6},{"id":4857443,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4845911,"noShow":4,"late":2,"breaks":4.7,"avp":35.2,"shifts":12},{"id":4842879,"noShow":4,"late":4,"breaks":6.1,"avp":47.6,"shifts":12}],"Heliopolis":[{"id":2594862,"noShow":12,"late":5,"breaks":4.2,"avp":21.8,"shifts":21},{"id":4840081,"noShow":8,"late":0,"breaks":0,"avp":0,"shifts":8},{"id":2254017,"noShow":7,"late":0,"breaks":0,"avp":0,"shifts":7},{"id":4202995,"noShow":7,"late":0,"breaks":0,"avp":0,"shifts":7},{"id":4746818,"noShow":7,"late":5,"breaks":10.4,"avp":21.2,"shifts":16},{"id":4773174,"noShow":6,"late":10,"breaks":12.9,"avp":38.2,"shifts":21},{"id":4862144,"noShow":6,"late":0,"breaks":0,"avp":0,"shifts":6},{"id":2814310,"noShow":6,"late":0,"breaks":0,"avp":0,"shifts":6},{"id":4409100,"noShow":6,"late":3,"breaks":7.5,"avp":25.2,"shifts":12},{"id":4764413,"noShow":6,"late":1,"breaks":0,"avp":39.4,"shifts":8},{"id":2113059,"noShow":6,"late":0,"breaks":0,"avp":0,"shifts":6},{"id":2366868,"noShow":6,"late":2,"breaks":0.6,"avp":40.8,"shifts":10},{"id":4867296,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":2654856,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":2255094,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":3975484,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4743085,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4793012,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4705344,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4706375,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4855494,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4874985,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4785064,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4870085,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":4746906,"noShow":5,"late":0,"breaks":0,"avp":0,"shifts":5},{"id":2507698,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":3974681,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4770539,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4876038,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4877199,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4868490,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4866244,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4857498,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4862039,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4860729,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4860440,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4857519,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4862034,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4860751,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4856882,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4856874,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4855491,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4855386,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4851946,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4847963,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4847960,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4844716,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4844709,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4844706,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4841897,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4841885,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4840082,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4839266,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4839264,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4839251,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4837963,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4837940,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4834946,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4832714,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4},{"id":4832710,"noShow":4,"late":0,"breaks":0,"avp":0,"shifts":4}],"Ain shams":[{"id":3786199,"noShow":3,"late":0,"breaks":0,"avp":0,"shifts":3},{"id":4859753,"noShow":3,"late":0,"breaks":0,"avp":0,"shifts":3},{"id":4868882,"noShow":3,"late":0,"breaks":0,"avp":0,"shifts":3},{"id":4876079,"noShow":3,"late":0,"breaks":0,"avp":0,"shifts":3},{"id":4878163,"noShow":3,"late":0,"breaks":0,"avp":0,"shifts":3},{"id":4879088,"noShow":3,"late":0,"breaks":0,"avp":0,"shifts":3},{"id":4879265,"noShow":3,"late":0,"breaks":0,"avp":0,"shifts":3},{"id":4882167,"noShow":3,"late":0,"breaks":0,"avp":0,"shifts":3}]},"hybrid":{"yday":{"10186":{"utr":2.073,"dt":11.916,"onTime":0.9571,"orders":1422,"riders":59,"actHrs":685.95,"planHrs":733.25,"avgHrs":11.626,"noShow":0.0361,"lateLogin":0.0964,"breakMin":11.37,"rat":0.545,"tv":0.85,"tc":5.161},"10196":{"utr":1.7065,"dt":16.028,"onTime":0.9117,"orders":1767,"riders":86,"actHrs":1035.48,"planHrs":1106.16,"avgHrs":12.04,"noShow":0.0368,"lateLogin":0.0662,"breakMin":12.63,"rat":0.852,"tv":1.182,"tc":7.088},"10198":{"utr":1.9698,"dt":12.254,"onTime":0.949,"orders":1825,"riders":75,"actHrs":926.48,"planHrs":988.99,"avgHrs":12.353,"noShow":0.031,"lateLogin":0.0465,"breakMin":23.33,"rat":0.667,"tv":0.828,"tc":5.351},"10216":{"utr":1.6666,"dt":16.46,"onTime":0.8864,"orders":819,"riders":41,"actHrs":491.42,"planHrs":530.24,"avgHrs":11.986,"noShow":0.0448,"lateLogin":0.0597,"breakMin":17.29,"rat":0.778,"tv":0.878,"tc":6.741},"10218":{"utr":2.1813,"dt":10.842,"onTime":0.9582,"orders":2129,"riders":79,"actHrs":976.02,"planHrs":1032.98,"avgHrs":12.355,"noShow":0.0294,"lateLogin":0.0882,"breakMin":18.8,"rat":0.406,"tv":0.426,"tc":4.834},"10219":{"utr":2.0723,"dt":23.906,"onTime":0.7967,"orders":728,"riders":29,"actHrs":351.3,"planHrs":371.8,"avgHrs":12.114,"noShow":0.0426,"lateLogin":0.0426,"breakMin":21.2,"rat":1.772,"tv":1.396,"tc":9.711},"10229":{"utr":1.0252,"dt":17.094,"onTime":0.8831,"orders":325,"riders":29,"actHrs":317,"planHrs":401.7,"avgHrs":10.931,"noShow":0.1892,"lateLogin":0.2162,"breakMin":31.97,"rat":1.052,"tv":1.537,"tc":6.911},"10230":{"utr":1.9839,"dt":15.346,"onTime":0.931,"orders":696,"riders":30,"actHrs":350.82,"planHrs":443.99,"avgHrs":11.694,"noShow":0.1702,"lateLogin":0.0851,"breakMin":33.94,"rat":1.023,"tv":0.977,"tc":5.602}},"wtd":{"10186":{"utr":2.0284,"dt":11.916,"onTime":0.9571,"orders":1422,"riders":32,"actHrs":701.055,"planHrs":742.12,"avgHrs":21.908,"noShow":0.0229,"lateLogin":0.1029,"breakMin":13.83,"rat":0.545,"tv":0.85,"tc":5.161},"10196":{"utr":1.7698,"dt":16.028,"onTime":0.9117,"orders":1767,"riders":44,"actHrs":998.43,"planHrs":1064.955,"avgHrs":22.692,"noShow":0.0311,"lateLogin":0.0739,"breakMin":16.75,"rat":0.852,"tv":1.182,"tc":7.088},"10198":{"utr":1.9893,"dt":12.254,"onTime":0.949,"orders":1825,"riders":40,"actHrs":917.4,"planHrs":982.01,"avgHrs":22.935,"noShow":0.0286,"lateLogin":0.049,"breakMin":28.93,"rat":0.667,"tv":0.828,"tc":5.351},"10216":{"utr":1.6931,"dt":16.46,"onTime":0.8864,"orders":819,"riders":22,"actHrs":483.73,"planHrs":528.62,"avgHrs":21.988,"noShow":0.0458,"lateLogin":0.0611,"breakMin":24.115,"rat":0.778,"tv":0.878,"tc":6.741},"10218":{"utr":2.118,"dt":10.842,"onTime":0.9582,"orders":2129,"riders":43,"actHrs":1005.205,"planHrs":1074.69,"avgHrs":23.377,"noShow":0.0295,"lateLogin":0.0996,"breakMin":17.825,"rat":0.406,"tv":0.426,"tc":4.834},"10219":{"utr":2.0776,"dt":23.906,"onTime":0.7967,"orders":728,"riders":16,"actHrs":350.4,"planHrs":377.355,"avgHrs":21.9,"noShow":0.0316,"lateLogin":0.0421,"breakMin":23.815,"rat":1.772,"tv":1.396,"tc":9.711},"10229":{"utr":1.0909,"dt":17.094,"onTime":0.8831,"orders":325,"riders":16,"actHrs":297.91,"planHrs":398.335,"avgHrs":18.619,"noShow":0.2535,"lateLogin":0.1972,"breakMin":29.23,"rat":1.052,"tv":1.537,"tc":6.911},"10230":{"utr":1.904,"dt":15.346,"onTime":0.931,"orders":696,"riders":18,"actHrs":365.545,"planHrs":456.405,"avgHrs":20.308,"noShow":0.1613,"lateLogin":0.1398,"breakMin":33.815,"rat":1.023,"tv":0.977,"tc":5.602}},"mtd":{"10186":{"utr":2.4202,"dt":11.916,"onTime":0.9571,"orders":1422,"riders":8,"actHrs":587.543,"planHrs":622.094,"avgHrs":73.443,"noShow":0.0274,"lateLogin":0.0995,"breakMin":20.645,"rat":0.545,"tv":0.85,"tc":5.161},"10196":{"utr":2.0064,"dt":16.028,"onTime":0.9117,"orders":1767,"riders":12,"actHrs":880.699,"planHrs":914.256,"avgHrs":73.392,"noShow":0.0264,"lateLogin":0.0539,"breakMin":15.627,"rat":0.852,"tv":1.182,"tc":7.088},"10198":{"utr":2.3237,"dt":12.254,"onTime":0.949,"orders":1825,"riders":10,"actHrs":785.375,"planHrs":816.893,"avgHrs":78.537,"noShow":0.0094,"lateLogin":0.034,"breakMin":23.797,"rat":0.667,"tv":0.828,"tc":5.351},"10216":{"utr":1.8389,"dt":16.46,"onTime":0.8864,"orders":819,"riders":6,"actHrs":445.377,"planHrs":470.379,"avgHrs":74.23,"noShow":0.0409,"lateLogin":0.0603,"breakMin":20.679,"rat":0.778,"tv":0.878,"tc":6.741},"10218":{"utr":2.572,"dt":10.842,"onTime":0.9582,"orders":2129,"riders":11,"actHrs":827.77,"planHrs":864.624,"avgHrs":75.252,"noShow":0.0152,"lateLogin":0.0986,"breakMin":19.485,"rat":0.406,"tv":0.426,"tc":4.834},"10219":{"utr":2.4497,"dt":23.906,"onTime":0.7967,"orders":728,"riders":4,"actHrs":297.179,"planHrs":307.424,"avgHrs":74.295,"noShow":0.0094,"lateLogin":0.0345,"breakMin":17.977,"rat":1.772,"tv":1.396,"tc":9.711},"10229":{"utr":1.2965,"dt":17.094,"onTime":0.8831,"orders":325,"riders":4,"actHrs":250.684,"planHrs":322.114,"avgHrs":62.671,"noShow":0.1575,"lateLogin":0.1612,"breakMin":41.734,"rat":1.052,"tv":1.537,"tc":6.911},"10230":{"utr":2.1261,"dt":15.346,"onTime":0.931,"orders":696,"riders":5,"actHrs":327.354,"planHrs":375.2,"avgHrs":65.471,"noShow":0.0724,"lateLogin":0.1086,"breakMin":34.072,"rat":1.023,"tv":0.977,"tc":5.602}}},"perf":{"yday":{"619844":{"orders_total":2972,"dt":16.2,"rat":0.8,"tv":2.5,"l10":0.02,"l5":0.09,"tc":7.5,"avtc":4.8,"ot":0.91,"fir":3.1},"619849":{"orders_total":2091,"dt":13.4,"rat":0.6,"tv":1.5,"l10":0.02,"l5":0.06,"tc":7.1,"avtc":3.2,"ot":0.94,"fir":2.8},"620008":{"orders_total":1748,"dt":11.5,"rat":0.5,"tv":1.6,"l10":0.01,"l5":0.05,"tc":5.2,"avtc":3.3,"ot":0.95,"fir":2.7},"655461":{"orders_total":2321,"dt":26.8,"rat":2.4,"tv":5.1,"l10":0.08,"l5":0.2,"tc":10.5,"avtc":9.5,"ot":0.8,"fir":6.9},"717765":{"orders_total":2830,"dt":16.8,"rat":1.0,"tv":1.8,"l10":0.02,"l5":0.06,"tc":8.1,"avtc":4.7,"ot":0.94,"fir":4.1},"760059":{"orders_total":2171,"dt":16.4,"rat":0.7,"tv":2.0,"l10":0.02,"l5":0.07,"tc":7.2,"avtc":5.7,"ot":0.93,"fir":3.2},"783048":{"orders_total":2529,"dt":11.0,"rat":0.5,"tv":1.2,"l10":0.02,"l5":0.05,"tc":5.0,"avtc":3.2,"ot":0.95,"fir":2.6},"793636":{"orders_total":2327,"dt":12.2,"rat":0.7,"tv":1.9,"l10":0.02,"l5":0.08,"tc":5.5,"avtc":3.5,"ot":0.92,"fir":2.5},"801850":{"orders_total":1333,"dt":16.3,"rat":0.9,"tv":3.3,"l10":0.04,"l5":0.16,"tc":6.7,"avtc":5.3,"ot":0.84,"fir":2.2}},"l3d":{"619844":{"orders_total":2864,"dt":15.4,"rat":0.7,"tv":2.3,"l10":0.02,"l5":0.09,"tc":7.3,"avtc":4.5,"ot":0.91,"fir":3.0},"619849":{"orders_total":1977,"dt":13.3,"rat":0.7,"tv":1.6,"l10":0.02,"l5":0.07,"tc":7.0,"avtc":3.2,"ot":0.93,"fir":2.8},"620008":{"orders_total":1430,"dt":11.2,"rat":0.4,"tv":1.2,"l10":0.01,"l5":0.05,"tc":5.1,"avtc":3.4,"ot":0.95,"fir":2.5},"655461":{"orders_total":2394,"dt":24.9,"rat":2.2,"tv":4.8,"l10":0.07,"l5":0.2,"tc":10.5,"avtc":8.3,"ot":0.8,"fir":6.2},"717765":{"orders_total":2745,"dt":15.8,"rat":0.9,"tv":1.7,"l10":0.02,"l5":0.06,"tc":7.9,"avtc":4.2,"ot":0.94,"fir":3.5},"760059":{"orders_total":1863,"dt":16.5,"rat":0.9,"tv":2.4,"l10":0.03,"l5":0.09,"tc":7.2,"avtc":5.4,"ot":0.91,"fir":2.9},"783048":{"orders_total":2379,"dt":10.5,"rat":0.4,"tv":1.0,"l10":0.01,"l5":0.04,"tc":4.9,"avtc":3.1,"ot":0.96,"fir":2.5},"793636":{"orders_total":2225,"dt":11.6,"rat":0.6,"tv":1.7,"l10":0.02,"l5":0.07,"tc":5.3,"avtc":3.4,"ot":0.93,"fir":2.4},"801850":{"orders_total":1226,"dt":15.6,"rat":1.0,"tv":3.0,"l10":0.03,"l5":0.15,"tc":6.5,"avtc":5.0,"ot":0.85,"fir":2.1}},"l7d":{"619844":{"orders_total":2838,"dt":15.5,"rat":0.7,"tv":2.3,"l10":0.02,"l5":0.09,"tc":7.3,"avtc":4.5,"ot":0.91,"fir":3.0},"619849":{"orders_total":1988,"dt":13.9,"rat":0.8,"tv":2.1,"l10":0.02,"l5":0.1,"tc":7.1,"avtc":3.3,"ot":0.9,"fir":2.9},"620008":{"orders_total":1519,"dt":11.7,"rat":0.4,"tv":1.4,"l10":0.01,"l5":0.06,"tc":5.3,"avtc":3.6,"ot":0.94,"fir":2.6},"655461":{"orders_total":2328,"dt":23.9,"rat":2.6,"tv":5.2,"l10":0.09,"l5":0.24,"tc":10.4,"avtc":7.1,"ot":0.76,"fir":5.0},"717765":{"orders_total":2701,"dt":15.7,"rat":0.8,"tv":1.6,"l10":0.02,"l5":0.06,"tc":8.0,"avtc":4.1,"ot":0.94,"fir":3.3},"760059":{"orders_total":1936,"dt":16.2,"rat":0.9,"tv":2.5,"l10":0.03,"l5":0.1,"tc":7.1,"avtc":5.2,"ot":0.9,"fir":2.9},"783048":{"orders_total":2409,"dt":10.8,"rat":0.4,"tv":1.0,"l10":0.01,"l5":0.04,"tc":5.1,"avtc":3.2,"ot":0.96,"fir":2.6},"793636":{"orders_total":2227,"dt":11.6,"rat":0.6,"tv":1.5,"l10":0.02,"l5":0.06,"tc":5.2,"avtc":3.5,"ot":0.94,"fir":2.6},"801850":{"orders_total":1223,"dt":15.7,"rat":0.9,"tv":3.1,"l10":0.04,"l5":0.15,"tc":6.6,"avtc":5.1,"ot":0.85,"fir":2.2}},"l14d":{"619844":{"orders_total":2804,"dt":15.7,"rat":0.7,"tv":2.4,"l10":0.02,"l5":0.1,"tc":7.4,"avtc":4.5,"ot":0.9,"fir":3.1},"619849":{"orders_total":2009,"dt":14.1,"rat":0.8,"tv":2.4,"l10":0.03,"l5":0.11,"tc":7.3,"avtc":3.2,"ot":0.89,"fir":2.9},"620008":{"orders_total":1516,"dt":11.6,"rat":0.5,"tv":1.4,"l10":0.01,"l5":0.06,"tc":5.4,"avtc":3.4,"ot":0.94,"fir":2.4},"655461":{"orders_total":2281,"dt":22.6,"rat":2.4,"tv":5.0,"l10":0.09,"l5":0.23,"tc":10.2,"avtc":6.2,"ot":0.77,"fir":3.9},"717765":{"orders_total":2619,"dt":15.8,"rat":0.8,"tv":1.8,"l10":0.02,"l5":0.06,"tc":8.1,"avtc":4.1,"ot":0.94,"fir":3.1},"760059":{"orders_total":1991,"dt":16.1,"rat":0.9,"tv":2.5,"l10":0.03,"l5":0.1,"tc":7.2,"avtc":5.0,"ot":0.9,"fir":2.9},"783048":{"orders_total":2407,"dt":11.0,"rat":0.4,"tv":1.2,"l10":0.01,"l5":0.05,"tc":5.2,"avtc":3.2,"ot":0.95,"fir":2.6},"793636":{"orders_total":2209,"dt":11.7,"rat":0.6,"tv":1.7,"l10":0.02,"l5":0.07,"tc":5.4,"avtc":3.4,"ot":0.93,"fir":2.5},"801850":{"orders_total":1199,"dt":15.7,"rat":0.9,"tv":3.2,"l10":0.04,"l5":0.15,"tc":6.5,"avtc":5.1,"ot":0.85,"fir":2.2}},"mtd":{"619844":{"orders_total":2817,"dt":17.3,"rat":1.0,"tv":3.2,"l10":0.04,"l5":0.15,"tc":7.8,"avtc":4.9,"ot":0.85,"fir":3.1},"619849":{"orders_total":2022,"dt":15.4,"rat":1.3,"tv":3.2,"l10":0.04,"l5":0.16,"tc":7.7,"avtc":3.3,"ot":0.84,"fir":3.0},"620008":{"orders_total":1530,"dt":11.8,"rat":0.6,"tv":1.6,"l10":0.02,"l5":0.07,"tc":5.5,"avtc":3.3,"ot":0.93,"fir":2.3},"655461":{"orders_total":2296,"dt":22.5,"rat":2.5,"tv":5.2,"l10":0.09,"l5":0.24,"tc":10.4,"avtc":5.9,"ot":0.76,"fir":3.5},"717765":{"orders_total":2628,"dt":17.7,"rat":1.1,"tv":2.8,"l10":0.03,"l5":0.1,"tc":8.5,"avtc":4.7,"ot":0.9,"fir":4.2},"760059":{"orders_total":1933,"dt":16.8,"rat":1.3,"tv":3.1,"l10":0.04,"l5":0.14,"tc":7.5,"avtc":5.0,"ot":0.86,"fir":3.2},"783048":{"orders_total":2424,"dt":11.5,"rat":0.6,"tv":1.6,"l10":0.02,"l5":0.07,"tc":5.4,"avtc":3.2,"ot":0.93,"fir":2.5},"793636":{"orders_total":2205,"dt":12.8,"rat":0.9,"tv":2.3,"l10":0.03,"l5":0.11,"tc":5.8,"avtc":3.5,"ot":0.89,"fir":2.5},"801850":{"orders_total":1199,"dt":16.7,"rat":1.3,"tv":4.1,"l10":0.06,"l5":0.22,"tc":6.8,"avtc":5.0,"ot":0.78,"fir":2.2}},"lm":{"619844":{"orders_total":2816,"dt":17.7,"rat":1.3,"tv":3.6,"l10":0.05,"l5":0.18,"tc":8.0,"avtc":4.9,"ot":0.82,"fir":2.9},"619849":{"orders_total":2060,"dt":15.0,"rat":1.0,"tv":2.8,"l10":0.03,"l5":0.14,"tc":7.8,"avtc":3.2,"ot":0.86,"fir":2.7},"620008":{"orders_total":1474,"dt":13.5,"rat":0.8,"tv":2.2,"l10":0.02,"l5":0.09,"tc":6.1,"avtc":4.0,"ot":0.91,"fir":2.5},"655461":{"orders_total":2293,"dt":21.9,"rat":2.3,"tv":4.7,"l10":0.07,"l5":0.21,"tc":10.3,"avtc":5.7,"ot":0.79,"fir":3.4},"717765":{"orders_total":2596,"dt":18.5,"rat":1.2,"tv":3.0,"l10":0.04,"l5":0.11,"tc":8.7,"avtc":5.4,"ot":0.89,"fir":4.5},"760059":{"orders_total":2019,"dt":16.2,"rat":1.0,"tv":2.9,"l10":0.03,"l5":0.12,"tc":7.7,"avtc":4.4,"ot":0.88,"fir":2.9},"783048":{"orders_total":2306,"dt":12.8,"rat":0.9,"tv":2.3,"l10":0.02,"l5":0.09,"tc":5.8,"avtc":3.5,"ot":0.91,"fir":2.3},"793636":{"orders_total":2141,"dt":13.2,"rat":0.9,"tv":2.6,"l10":0.03,"l5":0.12,"tc":6.0,"avtc":3.4,"ot":0.88,"fir":2.2},"801850":{"orders_total":1148,"dt":16.4,"rat":1.0,"tv":3.7,"l10":0.05,"l5":0.19,"tc":6.8,"avtc":5.0,"ot":0.81,"fir":2.2}}},"perf_shift":{"yday":{"10229":{"l10":0.2917,"l5":0.2917},"10216":{"l10":0.1111,"l5":0.1111},"10196":{"l10":0.0758,"l5":0.1061},"10198":{"l10":0.0435,"l5":0.0435},"10219":{"l10":0.0417,"l5":0.0625},"10218":{"l10":0.037,"l5":0.0617},"10230":{"l10":0.0323,"l5":0.0645},"10186":{"l10":0.0196,"l5":0.0588}},"l3d":{"10229":{"l10":0.2778,"l5":0.2917},"10196":{"l10":0.0918,"l5":0.1159},"10218":{"l10":0.0575,"l5":0.069},"10198":{"l10":0.055,"l5":0.0688},"10216":{"l10":0.0481,"l5":0.0481},"10219":{"l10":0.0423,"l5":0.0845},"10230":{"l10":0.0323,"l5":0.043},"10186":{"l10":0.0195,"l5":0.0325}},"l7d":{"10229":{"l10":0.2204,"l5":0.2312},"10216":{"l10":0.0833,"l5":0.0873},"10196":{"l10":0.0762,"l5":0.0982},"10198":{"l10":0.0521,"l5":0.0734},"10218":{"l10":0.0471,"l5":0.0673},"10230":{"l10":0.0427,"l5":0.0474},"10219":{"l10":0.0349,"l5":0.064},"10186":{"l10":0.032,"l5":0.0427}},"l14d":{"10229":{"l10":0.2204,"l5":0.2312},"10216":{"l10":0.0833,"l5":0.0873},"10196":{"l10":0.0762,"l5":0.0982},"10198":{"l10":0.0521,"l5":0.0734},"10218":{"l10":0.0471,"l5":0.0673},"10230":{"l10":0.0427,"l5":0.0474},"10219":{"l10":0.0349,"l5":0.064},"10186":{"l10":0.032,"l5":0.0427}},"mtd":{"10229":{"l10":0.2204,"l5":0.2312},"10216":{"l10":0.0833,"l5":0.0873},"10196":{"l10":0.0762,"l5":0.0982},"10198":{"l10":0.0521,"l5":0.0734},"10218":{"l10":0.0471,"l5":0.0673},"10230":{"l10":0.0427,"l5":0.0474},"10219":{"l10":0.0349,"l5":0.064},"10186":{"l10":0.032,"l5":0.0427}},"lm":{"10229":{"l10":0.2204,"l5":0.2312},"10216":{"l10":0.0833,"l5":0.0873},"10196":{"l10":0.0762,"l5":0.0982},"10198":{"l10":0.0521,"l5":0.0734},"10218":{"l10":0.0471,"l5":0.0673},"10230":{"l10":0.0427,"l5":0.0474},"10219":{"l10":0.0349,"l5":0.064},"10186":{"l10":0.032,"l5":0.0427}}}}
+{
+  "generated": "2026-09-10",
+  "data_date": "2026-09-09",
+  "zone": {
+    "yday": {
+      "label": "Sep 9, 2026",
+      "Nasr city": {
+        "utr": 2.0876,
+        "riders": 1614,
+        "orders": 30513,
+        "delivComp": 30513,
+        "sumHrs": 14616.0,
+        "avgHrs": 9.0558,
+        "lateLogin": 0.0718,
+        "noShow": 0.0306,
+        "breakMin": 67.31,
+        "fill": 0.974,
+        "acceptRate": 0.974,
+        "plannedHrs": 17013.47,
+        "delivTime": 22.0,
+        "rat": 7.5,
+        "toVendor": 3.4,
+        "onTime": 0.816,
+        "failRate": 0.03,
+        "rr": 0.9245
+      },
+      "Heliopolis": {
+        "utr": 2.1691,
+        "riders": 1688,
+        "orders": 29795,
+        "delivComp": 29795,
+        "sumHrs": 13736.0,
+        "avgHrs": 8.1374,
+        "lateLogin": 0.0772,
+        "noShow": 0.0552,
+        "breakMin": 66.63,
+        "fill": 0.978,
+        "acceptRate": 0.978,
+        "plannedHrs": 16335.5,
+        "delivTime": 21.7,
+        "rat": 7.3,
+        "toVendor": 3.4,
+        "onTime": 0.839,
+        "failRate": 0.025,
+        "rr": 0.8575
+      },
+      "Ain shams": {
+        "utr": 1.9916,
+        "riders": 344,
+        "orders": 4756,
+        "delivComp": 4756,
+        "sumHrs": 2388.0,
+        "avgHrs": 6.9419,
+        "lateLogin": 0.0718,
+        "noShow": 0.0536,
+        "breakMin": 48.51,
+        "fill": 0.96,
+        "acceptRate": 0.96,
+        "plannedHrs": 2798.11,
+        "delivTime": 23.5,
+        "rat": 6.6,
+        "toVendor": 3.9,
+        "onTime": 0.803,
+        "failRate": 0.065,
+        "rr": 0.8686
+      }
+    },
+    "wtd": {
+      "label": "Wk 37  Sep 7-9",
+      "short": "Wk 37",
+      "Nasr city": {
+        "utr": 2.0876,
+        "riders": 1614,
+        "orders": 91539,
+        "delivComp": 91539,
+        "sumHrs": 43848.0,
+        "avgHrs": 27.1673,
+        "lateLogin": 0.0718,
+        "noShow": 0.0306,
+        "breakMin": 67.31,
+        "fill": 0.974,
+        "acceptRate": 0.974,
+        "plannedHrs": 51040.41,
+        "delivTime": 22.0,
+        "rat": 7.5,
+        "toVendor": 3.4,
+        "onTime": 0.816,
+        "failRate": 0.03,
+        "rr": 1.029
+      },
+      "Heliopolis": {
+        "utr": 2.1691,
+        "riders": 1688,
+        "orders": 89385,
+        "delivComp": 89385,
+        "sumHrs": 41208.0,
+        "avgHrs": 24.4123,
+        "lateLogin": 0.0772,
+        "noShow": 0.0552,
+        "breakMin": 66.63,
+        "fill": 0.978,
+        "acceptRate": 0.978,
+        "plannedHrs": 49006.5,
+        "delivTime": 21.7,
+        "rat": 7.3,
+        "toVendor": 3.4,
+        "onTime": 0.839,
+        "failRate": 0.025,
+        "rr": 1.009
+      },
+      "Ain shams": {
+        "utr": 1.9916,
+        "riders": 344,
+        "orders": 14268,
+        "delivComp": 14268,
+        "sumHrs": 7164.0,
+        "avgHrs": 20.8256,
+        "lateLogin": 0.0718,
+        "noShow": 0.0536,
+        "breakMin": 48.51,
+        "fill": 0.96,
+        "acceptRate": 0.96,
+        "plannedHrs": 8394.33,
+        "delivTime": 23.5,
+        "rat": 6.6,
+        "toVendor": 3.9,
+        "onTime": 0.803,
+        "failRate": 0.065,
+        "rr": 0.927
+      }
+    },
+    "mtd": {
+      "label": "Sep 2026 (MTD Sep 1-9)",
+      "Nasr city": {
+        "utr": 2.0876,
+        "riders": 1614,
+        "orders": 274617,
+        "delivComp": 274617,
+        "sumHrs": 131544.0,
+        "avgHrs": 81.5019,
+        "lateLogin": 0.0718,
+        "noShow": 0.0306,
+        "breakMin": 67.31,
+        "fill": 0.974,
+        "acceptRate": 0.974,
+        "plannedHrs": 153121.23,
+        "delivTime": 22.0,
+        "rat": 7.5,
+        "toVendor": 3.4,
+        "onTime": 0.816,
+        "failRate": 0.03
+      },
+      "Heliopolis": {
+        "utr": 2.1691,
+        "riders": 1688,
+        "orders": 268155,
+        "delivComp": 268155,
+        "sumHrs": 123624.0,
+        "avgHrs": 73.237,
+        "lateLogin": 0.0772,
+        "noShow": 0.0552,
+        "breakMin": 66.63,
+        "fill": 0.978,
+        "acceptRate": 0.978,
+        "plannedHrs": 147019.5,
+        "delivTime": 21.7,
+        "rat": 7.3,
+        "toVendor": 3.4,
+        "onTime": 0.839,
+        "failRate": 0.025
+      },
+      "Ain shams": {
+        "utr": 1.9916,
+        "riders": 344,
+        "orders": 42804,
+        "delivComp": 42804,
+        "sumHrs": 21492.0,
+        "avgHrs": 62.4767,
+        "lateLogin": 0.0718,
+        "noShow": 0.0536,
+        "breakMin": 48.51,
+        "fill": 0.96,
+        "acceptRate": 0.96,
+        "plannedHrs": 25182.99,
+        "delivTime": 23.5,
+        "rat": 6.6,
+        "toVendor": 3.9,
+        "onTime": 0.803,
+        "failRate": 0.065
+      }
+    }
+  },
+  "dtc_yday": {
+    "ard_golf": [
+      79.1,
+      1274,
+      1611
+    ],
+    "hadeeqa": [
+      84.4,
+      1982,
+      2348
+    ],
+    "hay8": [
+      30.9,
+      673,
+      2177
+    ],
+    "hegaz": [
+      51.5,
+      933,
+      1812
+    ],
+    "masaken_sh": [
+      53.5,
+      1092,
+      2041
+    ],
+    "matareya": [
+      38.0,
+      786,
+      2069
+    ],
+    "omarat": [
+      42.1,
+      516,
+      1225
+    ],
+    "shorouk": [
+      78.1,
+      1653,
+      2117
+    ],
+    "tayaran": [
+      55.6,
+      1576,
+      2834
+    ]
+  },
+  "dtc_mtd": {
+    "ard_golf": [
+      78.3,
+      10130,
+      12943
+    ],
+    "hadeeqa": [
+      79.8,
+      15507,
+      19444
+    ],
+    "hay8": [
+      28.9,
+      5104,
+      17648
+    ],
+    "hegaz": [
+      52.3,
+      8429,
+      16108
+    ],
+    "masaken_sh": [
+      44.3,
+      7252,
+      16378
+    ],
+    "matareya": [
+      33.2,
+      6111,
+      18417
+    ],
+    "omarat": [
+      38.4,
+      3727,
+      9704
+    ],
+    "shorouk": [
+      70.9,
+      13013,
+      18347
+    ],
+    "tayaran": [
+      53.0,
+      11670,
+      22015
+    ]
+  },
+  "offenders": {
+    "Nasr city": [
+      {
+        "id": 2654871,
+        "noShow": 7,
+        "late": 3,
+        "breaks": 2,
+        "avp": 14.3,
+        "shifts": 10
+      },
+      {
+        "id": 4873007,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 3.7,
+        "avp": 21.9,
+        "shifts": 8
+      },
+      {
+        "id": 4871588,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 6
+      },
+      {
+        "id": 4848295,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 6
+      },
+      {
+        "id": 2024855,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 8.9,
+        "avp": 14.2,
+        "shifts": 10
+      },
+      {
+        "id": 4858213,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 6
+      },
+      {
+        "id": 4691849,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 7.1,
+        "avp": 10.2,
+        "shifts": 6
+      },
+      {
+        "id": 2100098,
+        "noShow": 5,
+        "late": 5,
+        "breaks": 13.8,
+        "avp": 35.6,
+        "shifts": 12
+      },
+      {
+        "id": 1432589,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 3996372,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 25.2,
+        "shifts": 6
+      },
+      {
+        "id": 4874024,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 2.5,
+        "avp": 39.4,
+        "shifts": 7
+      },
+      {
+        "id": 4810419,
+        "noShow": 5,
+        "late": 2,
+        "breaks": 1.5,
+        "avp": 21.6,
+        "shifts": 7
+      },
+      {
+        "id": 4825161,
+        "noShow": 5,
+        "late": 1,
+        "breaks": 2,
+        "avp": 2.4,
+        "shifts": 6
+      },
+      {
+        "id": 2077205,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4707745,
+        "noShow": 5,
+        "late": 5,
+        "breaks": 6,
+        "avp": 43.4,
+        "shifts": 11
+      },
+      {
+        "id": 2502574,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4387874,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 5.8,
+        "avp": 11.4,
+        "shifts": 6
+      },
+      {
+        "id": 4310861,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 7.3,
+        "avp": 39.7,
+        "shifts": 11
+      },
+      {
+        "id": 4783238,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 2.1,
+        "avp": 2.5,
+        "shifts": 5
+      },
+      {
+        "id": 4877466,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 1.4,
+        "avp": 18.4,
+        "shifts": 6
+      },
+      {
+        "id": 4877129,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 2023378,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 17.5,
+        "avp": 25.9,
+        "shifts": 12
+      },
+      {
+        "id": 4715947,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 10.6,
+        "avp": 42,
+        "shifts": 10
+      },
+      {
+        "id": 3832699,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 1.5,
+        "avp": 44,
+        "shifts": 8
+      },
+      {
+        "id": 1653982,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4871608,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 5.3,
+        "avp": 14.3,
+        "shifts": 6
+      },
+      {
+        "id": 4864196,
+        "noShow": 4,
+        "late": 1,
+        "breaks": 3.7,
+        "avp": 25.8,
+        "shifts": 6
+      },
+      {
+        "id": 4857443,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4845911,
+        "noShow": 4,
+        "late": 2,
+        "breaks": 4.7,
+        "avp": 35.2,
+        "shifts": 12
+      },
+      {
+        "id": 4842879,
+        "noShow": 4,
+        "late": 4,
+        "breaks": 6.1,
+        "avp": 47.6,
+        "shifts": 12
+      }
+    ],
+    "Heliopolis": [
+      {
+        "id": 2594862,
+        "noShow": 12,
+        "late": 5,
+        "breaks": 4.2,
+        "avp": 21.8,
+        "shifts": 21
+      },
+      {
+        "id": 4840081,
+        "noShow": 8,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 8
+      },
+      {
+        "id": 2254017,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 7
+      },
+      {
+        "id": 4202995,
+        "noShow": 7,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 7
+      },
+      {
+        "id": 4746818,
+        "noShow": 7,
+        "late": 5,
+        "breaks": 10.4,
+        "avp": 21.2,
+        "shifts": 16
+      },
+      {
+        "id": 4773174,
+        "noShow": 6,
+        "late": 10,
+        "breaks": 12.9,
+        "avp": 38.2,
+        "shifts": 21
+      },
+      {
+        "id": 4862144,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 6
+      },
+      {
+        "id": 2814310,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 6
+      },
+      {
+        "id": 4409100,
+        "noShow": 6,
+        "late": 3,
+        "breaks": 7.5,
+        "avp": 25.2,
+        "shifts": 12
+      },
+      {
+        "id": 4764413,
+        "noShow": 6,
+        "late": 1,
+        "breaks": 0,
+        "avp": 39.4,
+        "shifts": 8
+      },
+      {
+        "id": 2113059,
+        "noShow": 6,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 6
+      },
+      {
+        "id": 2366868,
+        "noShow": 6,
+        "late": 2,
+        "breaks": 0.6,
+        "avp": 40.8,
+        "shifts": 10
+      },
+      {
+        "id": 4867296,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 2654856,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 2255094,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 3975484,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4743085,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4793012,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4705344,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4706375,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4855494,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4874985,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4785064,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4870085,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 4746906,
+        "noShow": 5,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 5
+      },
+      {
+        "id": 2507698,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 3974681,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4770539,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4876038,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4877199,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4868490,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4866244,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4857498,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4862039,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4860729,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4860440,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4857519,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4862034,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4860751,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4856882,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4856874,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4855491,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4855386,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4851946,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4847963,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4847960,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4844716,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4844709,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4844706,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4841897,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4841885,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4840082,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4839266,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4839264,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4839251,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4837963,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4837940,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4834946,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4832714,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      },
+      {
+        "id": 4832710,
+        "noShow": 4,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 4
+      }
+    ],
+    "Ain shams": [
+      {
+        "id": 3786199,
+        "noShow": 3,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 3
+      },
+      {
+        "id": 4859753,
+        "noShow": 3,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 3
+      },
+      {
+        "id": 4868882,
+        "noShow": 3,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 3
+      },
+      {
+        "id": 4876079,
+        "noShow": 3,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 3
+      },
+      {
+        "id": 4878163,
+        "noShow": 3,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 3
+      },
+      {
+        "id": 4879088,
+        "noShow": 3,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 3
+      },
+      {
+        "id": 4879265,
+        "noShow": 3,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 3
+      },
+      {
+        "id": 4882167,
+        "noShow": 3,
+        "late": 0,
+        "breaks": 0,
+        "avp": 0,
+        "shifts": 3
+      }
+    ]
+  },
+  "hybrid": {
+    "yday": {
+      "10186": {
+        "utr": 2.073,
+        "dt": 11.916,
+        "onTime": 0.9571,
+        "orders": 1422,
+        "riders": 59,
+        "actHrs": 685.95,
+        "planHrs": 733.25,
+        "avgHrs": 11.626,
+        "noShow": 0.0361,
+        "lateLogin": 0.0964,
+        "breakMin": 11.37,
+        "rat": 0.545,
+        "tv": 0.85,
+        "tc": 5.161
+      },
+      "10196": {
+        "utr": 1.7065,
+        "dt": 16.028,
+        "onTime": 0.9117,
+        "orders": 1767,
+        "riders": 86,
+        "actHrs": 1035.48,
+        "planHrs": 1106.16,
+        "avgHrs": 12.04,
+        "noShow": 0.0368,
+        "lateLogin": 0.0662,
+        "breakMin": 12.63,
+        "rat": 0.852,
+        "tv": 1.182,
+        "tc": 7.088
+      },
+      "10198": {
+        "utr": 1.9698,
+        "dt": 12.254,
+        "onTime": 0.949,
+        "orders": 1825,
+        "riders": 75,
+        "actHrs": 926.48,
+        "planHrs": 988.99,
+        "avgHrs": 12.353,
+        "noShow": 0.031,
+        "lateLogin": 0.0465,
+        "breakMin": 23.33,
+        "rat": 0.667,
+        "tv": 0.828,
+        "tc": 5.351
+      },
+      "10216": {
+        "utr": 1.6666,
+        "dt": 16.46,
+        "onTime": 0.8864,
+        "orders": 819,
+        "riders": 41,
+        "actHrs": 491.42,
+        "planHrs": 530.24,
+        "avgHrs": 11.986,
+        "noShow": 0.0448,
+        "lateLogin": 0.0597,
+        "breakMin": 17.29,
+        "rat": 0.778,
+        "tv": 0.878,
+        "tc": 6.741
+      },
+      "10218": {
+        "utr": 2.1813,
+        "dt": 10.842,
+        "onTime": 0.9582,
+        "orders": 2129,
+        "riders": 79,
+        "actHrs": 976.02,
+        "planHrs": 1032.98,
+        "avgHrs": 12.355,
+        "noShow": 0.0294,
+        "lateLogin": 0.0882,
+        "breakMin": 18.8,
+        "rat": 0.406,
+        "tv": 0.426,
+        "tc": 4.834
+      },
+      "10219": {
+        "utr": 2.0723,
+        "dt": 23.906,
+        "onTime": 0.7967,
+        "orders": 728,
+        "riders": 29,
+        "actHrs": 351.3,
+        "planHrs": 371.8,
+        "avgHrs": 12.114,
+        "noShow": 0.0426,
+        "lateLogin": 0.0426,
+        "breakMin": 21.2,
+        "rat": 1.772,
+        "tv": 1.396,
+        "tc": 9.711
+      },
+      "10229": {
+        "utr": 1.0252,
+        "dt": 17.094,
+        "onTime": 0.8831,
+        "orders": 325,
+        "riders": 29,
+        "actHrs": 317,
+        "planHrs": 401.7,
+        "avgHrs": 10.931,
+        "noShow": 0.1892,
+        "lateLogin": 0.2162,
+        "breakMin": 31.97,
+        "rat": 1.052,
+        "tv": 1.537,
+        "tc": 6.911
+      },
+      "10230": {
+        "utr": 1.9839,
+        "dt": 15.346,
+        "onTime": 0.931,
+        "orders": 696,
+        "riders": 30,
+        "actHrs": 350.82,
+        "planHrs": 443.99,
+        "avgHrs": 11.694,
+        "noShow": 0.1702,
+        "lateLogin": 0.0851,
+        "breakMin": 33.94,
+        "rat": 1.023,
+        "tv": 0.977,
+        "tc": 5.602
+      }
+    },
+    "wtd": {
+      "10186": {
+        "utr": 2.0284,
+        "dt": 11.916,
+        "onTime": 0.9571,
+        "orders": 1422,
+        "riders": 32,
+        "actHrs": 701.055,
+        "planHrs": 742.12,
+        "avgHrs": 21.908,
+        "noShow": 0.0229,
+        "lateLogin": 0.1029,
+        "breakMin": 13.83,
+        "rat": 0.545,
+        "tv": 0.85,
+        "tc": 5.161
+      },
+      "10196": {
+        "utr": 1.7698,
+        "dt": 16.028,
+        "onTime": 0.9117,
+        "orders": 1767,
+        "riders": 44,
+        "actHrs": 998.43,
+        "planHrs": 1064.955,
+        "avgHrs": 22.692,
+        "noShow": 0.0311,
+        "lateLogin": 0.0739,
+        "breakMin": 16.75,
+        "rat": 0.852,
+        "tv": 1.182,
+        "tc": 7.088
+      },
+      "10198": {
+        "utr": 1.9893,
+        "dt": 12.254,
+        "onTime": 0.949,
+        "orders": 1825,
+        "riders": 40,
+        "actHrs": 917.4,
+        "planHrs": 982.01,
+        "avgHrs": 22.935,
+        "noShow": 0.0286,
+        "lateLogin": 0.049,
+        "breakMin": 28.93,
+        "rat": 0.667,
+        "tv": 0.828,
+        "tc": 5.351
+      },
+      "10216": {
+        "utr": 1.6931,
+        "dt": 16.46,
+        "onTime": 0.8864,
+        "orders": 819,
+        "riders": 22,
+        "actHrs": 483.73,
+        "planHrs": 528.62,
+        "avgHrs": 21.988,
+        "noShow": 0.0458,
+        "lateLogin": 0.0611,
+        "breakMin": 24.115,
+        "rat": 0.778,
+        "tv": 0.878,
+        "tc": 6.741
+      },
+      "10218": {
+        "utr": 2.118,
+        "dt": 10.842,
+        "onTime": 0.9582,
+        "orders": 2129,
+        "riders": 43,
+        "actHrs": 1005.205,
+        "planHrs": 1074.69,
+        "avgHrs": 23.377,
+        "noShow": 0.0295,
+        "lateLogin": 0.0996,
+        "breakMin": 17.825,
+        "rat": 0.406,
+        "tv": 0.426,
+        "tc": 4.834
+      },
+      "10219": {
+        "utr": 2.0776,
+        "dt": 23.906,
+        "onTime": 0.7967,
+        "orders": 728,
+        "riders": 16,
+        "actHrs": 350.4,
+        "planHrs": 377.355,
+        "avgHrs": 21.9,
+        "noShow": 0.0316,
+        "lateLogin": 0.0421,
+        "breakMin": 23.815,
+        "rat": 1.772,
+        "tv": 1.396,
+        "tc": 9.711
+      },
+      "10229": {
+        "utr": 1.0909,
+        "dt": 17.094,
+        "onTime": 0.8831,
+        "orders": 325,
+        "riders": 16,
+        "actHrs": 297.91,
+        "planHrs": 398.335,
+        "avgHrs": 18.619,
+        "noShow": 0.2535,
+        "lateLogin": 0.1972,
+        "breakMin": 29.23,
+        "rat": 1.052,
+        "tv": 1.537,
+        "tc": 6.911
+      },
+      "10230": {
+        "utr": 1.904,
+        "dt": 15.346,
+        "onTime": 0.931,
+        "orders": 696,
+        "riders": 18,
+        "actHrs": 365.545,
+        "planHrs": 456.405,
+        "avgHrs": 20.308,
+        "noShow": 0.1613,
+        "lateLogin": 0.1398,
+        "breakMin": 33.815,
+        "rat": 1.023,
+        "tv": 0.977,
+        "tc": 5.602
+      }
+    },
+    "mtd": {
+      "10186": {
+        "utr": 2.4202,
+        "dt": 11.916,
+        "onTime": 0.9571,
+        "orders": 1422,
+        "riders": 8,
+        "actHrs": 587.543,
+        "planHrs": 622.094,
+        "avgHrs": 73.443,
+        "noShow": 0.0274,
+        "lateLogin": 0.0995,
+        "breakMin": 20.645,
+        "rat": 0.545,
+        "tv": 0.85,
+        "tc": 5.161
+      },
+      "10196": {
+        "utr": 2.0064,
+        "dt": 16.028,
+        "onTime": 0.9117,
+        "orders": 1767,
+        "riders": 12,
+        "actHrs": 880.699,
+        "planHrs": 914.256,
+        "avgHrs": 73.392,
+        "noShow": 0.0264,
+        "lateLogin": 0.0539,
+        "breakMin": 15.627,
+        "rat": 0.852,
+        "tv": 1.182,
+        "tc": 7.088
+      },
+      "10198": {
+        "utr": 2.3237,
+        "dt": 12.254,
+        "onTime": 0.949,
+        "orders": 1825,
+        "riders": 10,
+        "actHrs": 785.375,
+        "planHrs": 816.893,
+        "avgHrs": 78.537,
+        "noShow": 0.0094,
+        "lateLogin": 0.034,
+        "breakMin": 23.797,
+        "rat": 0.667,
+        "tv": 0.828,
+        "tc": 5.351
+      },
+      "10216": {
+        "utr": 1.8389,
+        "dt": 16.46,
+        "onTime": 0.8864,
+        "orders": 819,
+        "riders": 6,
+        "actHrs": 445.377,
+        "planHrs": 470.379,
+        "avgHrs": 74.23,
+        "noShow": 0.0409,
+        "lateLogin": 0.0603,
+        "breakMin": 20.679,
+        "rat": 0.778,
+        "tv": 0.878,
+        "tc": 6.741
+      },
+      "10218": {
+        "utr": 2.572,
+        "dt": 10.842,
+        "onTime": 0.9582,
+        "orders": 2129,
+        "riders": 11,
+        "actHrs": 827.77,
+        "planHrs": 864.624,
+        "avgHrs": 75.252,
+        "noShow": 0.0152,
+        "lateLogin": 0.0986,
+        "breakMin": 19.485,
+        "rat": 0.406,
+        "tv": 0.426,
+        "tc": 4.834
+      },
+      "10219": {
+        "utr": 2.4497,
+        "dt": 23.906,
+        "onTime": 0.7967,
+        "orders": 728,
+        "riders": 4,
+        "actHrs": 297.179,
+        "planHrs": 307.424,
+        "avgHrs": 74.295,
+        "noShow": 0.0094,
+        "lateLogin": 0.0345,
+        "breakMin": 17.977,
+        "rat": 1.772,
+        "tv": 1.396,
+        "tc": 9.711
+      },
+      "10229": {
+        "utr": 1.2965,
+        "dt": 17.094,
+        "onTime": 0.8831,
+        "orders": 325,
+        "riders": 4,
+        "actHrs": 250.684,
+        "planHrs": 322.114,
+        "avgHrs": 62.671,
+        "noShow": 0.1575,
+        "lateLogin": 0.1612,
+        "breakMin": 41.734,
+        "rat": 1.052,
+        "tv": 1.537,
+        "tc": 6.911
+      },
+      "10230": {
+        "utr": 2.1261,
+        "dt": 15.346,
+        "onTime": 0.931,
+        "orders": 696,
+        "riders": 5,
+        "actHrs": 327.354,
+        "planHrs": 375.2,
+        "avgHrs": 65.471,
+        "noShow": 0.0724,
+        "lateLogin": 0.1086,
+        "breakMin": 34.072,
+        "rat": 1.023,
+        "tv": 0.977,
+        "tc": 5.602
+      }
+    }
+  },
+  "perf": {
+    "yday": {
+      "619844": {
+        "orders_total": 2972,
+        "dt": 16.2,
+        "rat": 0.8,
+        "tv": 2.5,
+        "l10": 0.02,
+        "l5": 0.09,
+        "tc": 7.5,
+        "avtc": 4.8,
+        "ot": 0.91,
+        "fir": 3.1
+      },
+      "619849": {
+        "orders_total": 2091,
+        "dt": 13.4,
+        "rat": 0.6,
+        "tv": 1.5,
+        "l10": 0.02,
+        "l5": 0.06,
+        "tc": 7.1,
+        "avtc": 3.2,
+        "ot": 0.94,
+        "fir": 2.8
+      },
+      "620008": {
+        "orders_total": 1748,
+        "dt": 11.5,
+        "rat": 0.5,
+        "tv": 1.6,
+        "l10": 0.01,
+        "l5": 0.05,
+        "tc": 5.2,
+        "avtc": 3.3,
+        "ot": 0.95,
+        "fir": 2.7
+      },
+      "655461": {
+        "orders_total": 2321,
+        "dt": 26.8,
+        "rat": 2.4,
+        "tv": 5.1,
+        "l10": 0.08,
+        "l5": 0.2,
+        "tc": 10.5,
+        "avtc": 9.5,
+        "ot": 0.8,
+        "fir": 6.9
+      },
+      "717765": {
+        "orders_total": 2830,
+        "dt": 16.8,
+        "rat": 1.0,
+        "tv": 1.8,
+        "l10": 0.02,
+        "l5": 0.06,
+        "tc": 8.1,
+        "avtc": 4.7,
+        "ot": 0.94,
+        "fir": 4.1
+      },
+      "760059": {
+        "orders_total": 2171,
+        "dt": 16.4,
+        "rat": 0.7,
+        "tv": 2.0,
+        "l10": 0.02,
+        "l5": 0.07,
+        "tc": 7.2,
+        "avtc": 5.7,
+        "ot": 0.93,
+        "fir": 3.2
+      },
+      "783048": {
+        "orders_total": 2529,
+        "dt": 11.0,
+        "rat": 0.5,
+        "tv": 1.2,
+        "l10": 0.02,
+        "l5": 0.05,
+        "tc": 5.0,
+        "avtc": 3.2,
+        "ot": 0.95,
+        "fir": 2.6
+      },
+      "793636": {
+        "orders_total": 2327,
+        "dt": 12.2,
+        "rat": 0.7,
+        "tv": 1.9,
+        "l10": 0.02,
+        "l5": 0.08,
+        "tc": 5.5,
+        "avtc": 3.5,
+        "ot": 0.92,
+        "fir": 2.5
+      },
+      "801850": {
+        "orders_total": 1333,
+        "dt": 16.3,
+        "rat": 0.9,
+        "tv": 3.3,
+        "l10": 0.04,
+        "l5": 0.16,
+        "tc": 6.7,
+        "avtc": 5.3,
+        "ot": 0.84,
+        "fir": 2.2
+      }
+    },
+    "l3d": {
+      "619844": {
+        "orders_total": 2864,
+        "dt": 15.4,
+        "rat": 0.7,
+        "tv": 2.3,
+        "l10": 0.02,
+        "l5": 0.09,
+        "tc": 7.3,
+        "avtc": 4.5,
+        "ot": 0.91,
+        "fir": 3.0
+      },
+      "619849": {
+        "orders_total": 1977,
+        "dt": 13.3,
+        "rat": 0.7,
+        "tv": 1.6,
+        "l10": 0.02,
+        "l5": 0.07,
+        "tc": 7.0,
+        "avtc": 3.2,
+        "ot": 0.93,
+        "fir": 2.8
+      },
+      "620008": {
+        "orders_total": 1430,
+        "dt": 11.2,
+        "rat": 0.4,
+        "tv": 1.2,
+        "l10": 0.01,
+        "l5": 0.05,
+        "tc": 5.1,
+        "avtc": 3.4,
+        "ot": 0.95,
+        "fir": 2.5
+      },
+      "655461": {
+        "orders_total": 2394,
+        "dt": 24.9,
+        "rat": 2.2,
+        "tv": 4.8,
+        "l10": 0.07,
+        "l5": 0.2,
+        "tc": 10.5,
+        "avtc": 8.3,
+        "ot": 0.8,
+        "fir": 6.2
+      },
+      "717765": {
+        "orders_total": 2745,
+        "dt": 15.8,
+        "rat": 0.9,
+        "tv": 1.7,
+        "l10": 0.02,
+        "l5": 0.06,
+        "tc": 7.9,
+        "avtc": 4.2,
+        "ot": 0.94,
+        "fir": 3.5
+      },
+      "760059": {
+        "orders_total": 1863,
+        "dt": 16.5,
+        "rat": 0.9,
+        "tv": 2.4,
+        "l10": 0.03,
+        "l5": 0.09,
+        "tc": 7.2,
+        "avtc": 5.4,
+        "ot": 0.91,
+        "fir": 2.9
+      },
+      "783048": {
+        "orders_total": 2379,
+        "dt": 10.5,
+        "rat": 0.4,
+        "tv": 1.0,
+        "l10": 0.01,
+        "l5": 0.04,
+        "tc": 4.9,
+        "avtc": 3.1,
+        "ot": 0.96,
+        "fir": 2.5
+      },
+      "793636": {
+        "orders_total": 2225,
+        "dt": 11.6,
+        "rat": 0.6,
+        "tv": 1.7,
+        "l10": 0.02,
+        "l5": 0.07,
+        "tc": 5.3,
+        "avtc": 3.4,
+        "ot": 0.93,
+        "fir": 2.4
+      },
+      "801850": {
+        "orders_total": 1226,
+        "dt": 15.6,
+        "rat": 1.0,
+        "tv": 3.0,
+        "l10": 0.03,
+        "l5": 0.15,
+        "tc": 6.5,
+        "avtc": 5.0,
+        "ot": 0.85,
+        "fir": 2.1
+      }
+    },
+    "l7d": {
+      "619844": {
+        "orders_total": 2838,
+        "dt": 15.5,
+        "rat": 0.7,
+        "tv": 2.3,
+        "l10": 0.02,
+        "l5": 0.09,
+        "tc": 7.3,
+        "avtc": 4.5,
+        "ot": 0.91,
+        "fir": 3.0
+      },
+      "619849": {
+        "orders_total": 1988,
+        "dt": 13.9,
+        "rat": 0.8,
+        "tv": 2.1,
+        "l10": 0.02,
+        "l5": 0.1,
+        "tc": 7.1,
+        "avtc": 3.3,
+        "ot": 0.9,
+        "fir": 2.9
+      },
+      "620008": {
+        "orders_total": 1519,
+        "dt": 11.7,
+        "rat": 0.4,
+        "tv": 1.4,
+        "l10": 0.01,
+        "l5": 0.06,
+        "tc": 5.3,
+        "avtc": 3.6,
+        "ot": 0.94,
+        "fir": 2.6
+      },
+      "655461": {
+        "orders_total": 2328,
+        "dt": 23.9,
+        "rat": 2.6,
+        "tv": 5.2,
+        "l10": 0.09,
+        "l5": 0.24,
+        "tc": 10.4,
+        "avtc": 7.1,
+        "ot": 0.76,
+        "fir": 5.0
+      },
+      "717765": {
+        "orders_total": 2701,
+        "dt": 15.7,
+        "rat": 0.8,
+        "tv": 1.6,
+        "l10": 0.02,
+        "l5": 0.06,
+        "tc": 8.0,
+        "avtc": 4.1,
+        "ot": 0.94,
+        "fir": 3.3
+      },
+      "760059": {
+        "orders_total": 1936,
+        "dt": 16.2,
+        "rat": 0.9,
+        "tv": 2.5,
+        "l10": 0.03,
+        "l5": 0.1,
+        "tc": 7.1,
+        "avtc": 5.2,
+        "ot": 0.9,
+        "fir": 2.9
+      },
+      "783048": {
+        "orders_total": 2409,
+        "dt": 10.8,
+        "rat": 0.4,
+        "tv": 1.0,
+        "l10": 0.01,
+        "l5": 0.04,
+        "tc": 5.1,
+        "avtc": 3.2,
+        "ot": 0.96,
+        "fir": 2.6
+      },
+      "793636": {
+        "orders_total": 2227,
+        "dt": 11.6,
+        "rat": 0.6,
+        "tv": 1.5,
+        "l10": 0.02,
+        "l5": 0.06,
+        "tc": 5.2,
+        "avtc": 3.5,
+        "ot": 0.94,
+        "fir": 2.6
+      },
+      "801850": {
+        "orders_total": 1223,
+        "dt": 15.7,
+        "rat": 0.9,
+        "tv": 3.1,
+        "l10": 0.04,
+        "l5": 0.15,
+        "tc": 6.6,
+        "avtc": 5.1,
+        "ot": 0.85,
+        "fir": 2.2
+      }
+    },
+    "l14d": {
+      "619844": {
+        "orders_total": 2804,
+        "dt": 15.7,
+        "rat": 0.7,
+        "tv": 2.4,
+        "l10": 0.02,
+        "l5": 0.1,
+        "tc": 7.4,
+        "avtc": 4.5,
+        "ot": 0.9,
+        "fir": 3.1
+      },
+      "619849": {
+        "orders_total": 2009,
+        "dt": 14.1,
+        "rat": 0.8,
+        "tv": 2.4,
+        "l10": 0.03,
+        "l5": 0.11,
+        "tc": 7.3,
+        "avtc": 3.2,
+        "ot": 0.89,
+        "fir": 2.9
+      },
+      "620008": {
+        "orders_total": 1516,
+        "dt": 11.6,
+        "rat": 0.5,
+        "tv": 1.4,
+        "l10": 0.01,
+        "l5": 0.06,
+        "tc": 5.4,
+        "avtc": 3.4,
+        "ot": 0.94,
+        "fir": 2.4
+      },
+      "655461": {
+        "orders_total": 2281,
+        "dt": 22.6,
+        "rat": 2.4,
+        "tv": 5.0,
+        "l10": 0.09,
+        "l5": 0.23,
+        "tc": 10.2,
+        "avtc": 6.2,
+        "ot": 0.77,
+        "fir": 3.9
+      },
+      "717765": {
+        "orders_total": 2619,
+        "dt": 15.8,
+        "rat": 0.8,
+        "tv": 1.8,
+        "l10": 0.02,
+        "l5": 0.06,
+        "tc": 8.1,
+        "avtc": 4.1,
+        "ot": 0.94,
+        "fir": 3.1
+      },
+      "760059": {
+        "orders_total": 1991,
+        "dt": 16.1,
+        "rat": 0.9,
+        "tv": 2.5,
+        "l10": 0.03,
+        "l5": 0.1,
+        "tc": 7.2,
+        "avtc": 5.0,
+        "ot": 0.9,
+        "fir": 2.9
+      },
+      "783048": {
+        "orders_total": 2407,
+        "dt": 11.0,
+        "rat": 0.4,
+        "tv": 1.2,
+        "l10": 0.01,
+        "l5": 0.05,
+        "tc": 5.2,
+        "avtc": 3.2,
+        "ot": 0.95,
+        "fir": 2.6
+      },
+      "793636": {
+        "orders_total": 2209,
+        "dt": 11.7,
+        "rat": 0.6,
+        "tv": 1.7,
+        "l10": 0.02,
+        "l5": 0.07,
+        "tc": 5.4,
+        "avtc": 3.4,
+        "ot": 0.93,
+        "fir": 2.5
+      },
+      "801850": {
+        "orders_total": 1199,
+        "dt": 15.7,
+        "rat": 0.9,
+        "tv": 3.2,
+        "l10": 0.04,
+        "l5": 0.15,
+        "tc": 6.5,
+        "avtc": 5.1,
+        "ot": 0.85,
+        "fir": 2.2
+      }
+    },
+    "mtd": {
+      "619844": {
+        "orders_total": 2817,
+        "dt": 17.3,
+        "rat": 1.0,
+        "tv": 3.2,
+        "l10": 0.04,
+        "l5": 0.15,
+        "tc": 7.8,
+        "avtc": 4.9,
+        "ot": 0.85,
+        "fir": 3.1
+      },
+      "619849": {
+        "orders_total": 2022,
+        "dt": 15.4,
+        "rat": 1.3,
+        "tv": 3.2,
+        "l10": 0.04,
+        "l5": 0.16,
+        "tc": 7.7,
+        "avtc": 3.3,
+        "ot": 0.84,
+        "fir": 3.0
+      },
+      "620008": {
+        "orders_total": 1530,
+        "dt": 11.8,
+        "rat": 0.6,
+        "tv": 1.6,
+        "l10": 0.02,
+        "l5": 0.07,
+        "tc": 5.5,
+        "avtc": 3.3,
+        "ot": 0.93,
+        "fir": 2.3
+      },
+      "655461": {
+        "orders_total": 2296,
+        "dt": 22.5,
+        "rat": 2.5,
+        "tv": 5.2,
+        "l10": 0.09,
+        "l5": 0.24,
+        "tc": 10.4,
+        "avtc": 5.9,
+        "ot": 0.76,
+        "fir": 3.5
+      },
+      "717765": {
+        "orders_total": 2628,
+        "dt": 17.7,
+        "rat": 1.1,
+        "tv": 2.8,
+        "l10": 0.03,
+        "l5": 0.1,
+        "tc": 8.5,
+        "avtc": 4.7,
+        "ot": 0.9,
+        "fir": 4.2
+      },
+      "760059": {
+        "orders_total": 1933,
+        "dt": 16.8,
+        "rat": 1.3,
+        "tv": 3.1,
+        "l10": 0.04,
+        "l5": 0.14,
+        "tc": 7.5,
+        "avtc": 5.0,
+        "ot": 0.86,
+        "fir": 3.2
+      },
+      "783048": {
+        "orders_total": 2424,
+        "dt": 11.5,
+        "rat": 0.6,
+        "tv": 1.6,
+        "l10": 0.02,
+        "l5": 0.07,
+        "tc": 5.4,
+        "avtc": 3.2,
+        "ot": 0.93,
+        "fir": 2.5
+      },
+      "793636": {
+        "orders_total": 2205,
+        "dt": 12.8,
+        "rat": 0.9,
+        "tv": 2.3,
+        "l10": 0.03,
+        "l5": 0.11,
+        "tc": 5.8,
+        "avtc": 3.5,
+        "ot": 0.89,
+        "fir": 2.5
+      },
+      "801850": {
+        "orders_total": 1199,
+        "dt": 16.7,
+        "rat": 1.3,
+        "tv": 4.1,
+        "l10": 0.06,
+        "l5": 0.22,
+        "tc": 6.8,
+        "avtc": 5.0,
+        "ot": 0.78,
+        "fir": 2.2
+      }
+    },
+    "lm": {
+      "619844": {
+        "orders_total": 2816,
+        "dt": 17.7,
+        "rat": 1.3,
+        "tv": 3.6,
+        "l10": 0.05,
+        "l5": 0.18,
+        "tc": 8.0,
+        "avtc": 4.9,
+        "ot": 0.82,
+        "fir": 2.9
+      },
+      "619849": {
+        "orders_total": 2060,
+        "dt": 15.0,
+        "rat": 1.0,
+        "tv": 2.8,
+        "l10": 0.03,
+        "l5": 0.14,
+        "tc": 7.8,
+        "avtc": 3.2,
+        "ot": 0.86,
+        "fir": 2.7
+      },
+      "620008": {
+        "orders_total": 1474,
+        "dt": 13.5,
+        "rat": 0.8,
+        "tv": 2.2,
+        "l10": 0.02,
+        "l5": 0.09,
+        "tc": 6.1,
+        "avtc": 4.0,
+        "ot": 0.91,
+        "fir": 2.5
+      },
+      "655461": {
+        "orders_total": 2293,
+        "dt": 21.9,
+        "rat": 2.3,
+        "tv": 4.7,
+        "l10": 0.07,
+        "l5": 0.21,
+        "tc": 10.3,
+        "avtc": 5.7,
+        "ot": 0.79,
+        "fir": 3.4
+      },
+      "717765": {
+        "orders_total": 2596,
+        "dt": 18.5,
+        "rat": 1.2,
+        "tv": 3.0,
+        "l10": 0.04,
+        "l5": 0.11,
+        "tc": 8.7,
+        "avtc": 5.4,
+        "ot": 0.89,
+        "fir": 4.5
+      },
+      "760059": {
+        "orders_total": 2019,
+        "dt": 16.2,
+        "rat": 1.0,
+        "tv": 2.9,
+        "l10": 0.03,
+        "l5": 0.12,
+        "tc": 7.7,
+        "avtc": 4.4,
+        "ot": 0.88,
+        "fir": 2.9
+      },
+      "783048": {
+        "orders_total": 2306,
+        "dt": 12.8,
+        "rat": 0.9,
+        "tv": 2.3,
+        "l10": 0.02,
+        "l5": 0.09,
+        "tc": 5.8,
+        "avtc": 3.5,
+        "ot": 0.91,
+        "fir": 2.3
+      },
+      "793636": {
+        "orders_total": 2141,
+        "dt": 13.2,
+        "rat": 0.9,
+        "tv": 2.6,
+        "l10": 0.03,
+        "l5": 0.12,
+        "tc": 6.0,
+        "avtc": 3.4,
+        "ot": 0.88,
+        "fir": 2.2
+      },
+      "801850": {
+        "orders_total": 1148,
+        "dt": 16.4,
+        "rat": 1.0,
+        "tv": 3.7,
+        "l10": 0.05,
+        "l5": 0.19,
+        "tc": 6.8,
+        "avtc": 5.0,
+        "ot": 0.81,
+        "fir": 2.2
+      }
+    }
+  },
+  "perf_shift": {
+    "yday": {
+      "10229": {
+        "l10": 0.2917,
+        "l5": 0.2917
+      },
+      "10216": {
+        "l10": 0.1111,
+        "l5": 0.1111
+      },
+      "10196": {
+        "l10": 0.0758,
+        "l5": 0.1061
+      },
+      "10198": {
+        "l10": 0.0435,
+        "l5": 0.0435
+      },
+      "10219": {
+        "l10": 0.0417,
+        "l5": 0.0625
+      },
+      "10218": {
+        "l10": 0.037,
+        "l5": 0.0617
+      },
+      "10230": {
+        "l10": 0.0323,
+        "l5": 0.0645
+      },
+      "10186": {
+        "l10": 0.0196,
+        "l5": 0.0588
+      }
+    },
+    "l3d": {
+      "10229": {
+        "l10": 0.2778,
+        "l5": 0.2917
+      },
+      "10196": {
+        "l10": 0.0918,
+        "l5": 0.1159
+      },
+      "10218": {
+        "l10": 0.0575,
+        "l5": 0.069
+      },
+      "10198": {
+        "l10": 0.055,
+        "l5": 0.0688
+      },
+      "10216": {
+        "l10": 0.0481,
+        "l5": 0.0481
+      },
+      "10219": {
+        "l10": 0.0423,
+        "l5": 0.0845
+      },
+      "10230": {
+        "l10": 0.0323,
+        "l5": 0.043
+      },
+      "10186": {
+        "l10": 0.0195,
+        "l5": 0.0325
+      }
+    },
+    "l7d": {
+      "10229": {
+        "l10": 0.2204,
+        "l5": 0.2312
+      },
+      "10216": {
+        "l10": 0.0833,
+        "l5": 0.0873
+      },
+      "10196": {
+        "l10": 0.0762,
+        "l5": 0.0982
+      },
+      "10198": {
+        "l10": 0.0521,
+        "l5": 0.0734
+      },
+      "10218": {
+        "l10": 0.0471,
+        "l5": 0.0673
+      },
+      "10230": {
+        "l10": 0.0427,
+        "l5": 0.0474
+      },
+      "10219": {
+        "l10": 0.0349,
+        "l5": 0.064
+      },
+      "10186": {
+        "l10": 0.032,
+        "l5": 0.0427
+      }
+    },
+    "l14d": {
+      "10229": {
+        "l10": 0.2204,
+        "l5": 0.2312
+      },
+      "10216": {
+        "l10": 0.0833,
+        "l5": 0.0873
+      },
+      "10196": {
+        "l10": 0.0762,
+        "l5": 0.0982
+      },
+      "10198": {
+        "l10": 0.0521,
+        "l5": 0.0734
+      },
+      "10218": {
+        "l10": 0.0471,
+        "l5": 0.0673
+      },
+      "10230": {
+        "l10": 0.0427,
+        "l5": 0.0474
+      },
+      "10219": {
+        "l10": 0.0349,
+        "l5": 0.064
+      },
+      "10186": {
+        "l10": 0.032,
+        "l5": 0.0427
+      }
+    },
+    "mtd": {
+      "10229": {
+        "l10": 0.2204,
+        "l5": 0.2312
+      },
+      "10216": {
+        "l10": 0.0833,
+        "l5": 0.0873
+      },
+      "10196": {
+        "l10": 0.0762,
+        "l5": 0.0982
+      },
+      "10198": {
+        "l10": 0.0521,
+        "l5": 0.0734
+      },
+      "10218": {
+        "l10": 0.0471,
+        "l5": 0.0673
+      },
+      "10230": {
+        "l10": 0.0427,
+        "l5": 0.0474
+      },
+      "10219": {
+        "l10": 0.0349,
+        "l5": 0.064
+      },
+      "10186": {
+        "l10": 0.032,
+        "l5": 0.0427
+      }
+    },
+    "lm": {
+      "10229": {
+        "l10": 0.2204,
+        "l5": 0.2312
+      },
+      "10216": {
+        "l10": 0.0833,
+        "l5": 0.0873
+      },
+      "10196": {
+        "l10": 0.0762,
+        "l5": 0.0982
+      },
+      "10198": {
+        "l10": 0.0521,
+        "l5": 0.0734
+      },
+      "10218": {
+        "l10": 0.0471,
+        "l5": 0.0673
+      },
+      "10230": {
+        "l10": 0.0427,
+        "l5": 0.0474
+      },
+      "10219": {
+        "l10": 0.0349,
+        "l5": 0.064
+      },
+      "10186": {
+        "l10": 0.032,
+        "l5": 0.0427
+      }
+    }
+  }
+}
