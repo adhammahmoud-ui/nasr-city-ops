@@ -1125,6 +1125,13 @@ function renderPerf(){
   </div>
   <div class="tpl-wrap">
     <div class="tpl-filters">
+      
+      <div id="tlp-day-picker" style="display:flex;gap:6px;margin-bottom:10px;align-items:center;">
+        <span style="font-size:11px;color:rgba(255,255,255,.6)">Day:</span>
+        <button class="tpl-filter-btn active" id="tlpd-12" onclick="setTLPDay('2026-09-12',this)">Sep 12</button>
+        <button class="tpl-filter-btn" id="tlpd-11" onclick="setTLPDay('2026-09-11',this)">Sep 11</button>
+        <button class="tpl-filter-btn" id="tlpd-10" onclick="setTLPDay('2026-09-10',this)">Sep 10</button>
+      </div>
       <button class="tpl-filter-btn active" onclick="filter3PL('all')">< Overall</button>
       <button class="tpl-filter-btn" onclick="filter3PL('Nasr city')">Nasr City</button>
       <button class="tpl-filter-btn" onclick="filter3PL('Heliopolis')">Heliopolis</button>
@@ -1169,6 +1176,16 @@ const DAY = {
     "Nasr city":  { utr:2.0959, riders:1635, orders:30535, delivComp:30535, sumHrs:14569.0, avgHrs:8.911, lateLogin:0.07, noShow:0.03, breakMin:67.31, fill:0.8627, acceptRate:0.98, plannedHrs:16888.38, delivTime:22.04, rat:7.16, toVendor:3.3, onTime:0.86, failRate:0.0232 },
     "Heliopolis": { utr:2.0588, riders:1596, orders:26119, delivComp:26119, sumHrs:12686.53, avgHrs:7.949, lateLogin:0.08, noShow:0.04, breakMin:66.63, fill:0.8491, acceptRate:0.98, plannedHrs:14941.07, delivTime:21.56, rat:6.17, toVendor:3.09, onTime:0.88, failRate:0.0203 },
     "Ain shams":  { utr:1.9786, riders:373, orders:5416, delivComp:5416, sumHrs:2737.25, avgHrs:7.338, lateLogin:0.1, noShow:0.05, breakMin:48.51, fill:0.8435, acceptRate:0.97, plannedHrs:3245.0, delivTime:23.88, rat:5.64, toVendor:4.13, onTime:0.81, failRate:0.0335 }
+  }},
+    "2026-09-10":{ label:"Sep 10, 2026", zones:{
+    "Nasr city":  { utr:2.026, riders:1625, orders:29560, delivComp:29560, sumHrs:14590.0, avgHrs:8.978, lateLogin:0.071, noShow:0.031, breakMin:67.31, fill:0.869, acceptRate:0.977, plannedHrs:16950.0, delivTime:21.92, rat:7.96, toVendor:3.43, onTime:0.838, failRate:0.027, rr:0.924 },
+    "Heliopolis": { utr:2.073, riders:1640, orders:27360, delivComp:27360, sumHrs:13200.0, avgHrs:8.049, lateLogin:0.077, noShow:0.048, breakMin:66.63, fill:0.845, acceptRate:0.979, plannedHrs:15600.0, delivTime:21.51, rat:7.09, toVendor:3.24, onTime:0.853, failRate:0.023, rr:0.858 },
+    "Ain shams":  { utr:1.824, riders:360,  orders:4670,  delivComp:4670,  sumHrs:2560.0,  avgHrs:7.111, lateLogin:0.084, noShow:0.051, breakMin:48.51, fill:0.849, acceptRate:0.965, plannedHrs:3020.0,  delivTime:23.60, rat:6.34, toVendor:3.98, onTime:0.795, failRate:0.057, rr:0.869 }
+  }},
+  "2026-09-11":{ label:"Sep 11, 2026", zones:{
+    "Nasr city":  { utr:2.031, riders:1630, orders:29560, delivComp:29560, sumHrs:14560.0, avgHrs:8.933, lateLogin:0.071, noShow:0.030, breakMin:67.31, fill:0.863, acceptRate:0.978, plannedHrs:16900.0, delivTime:21.92, rat:7.96, toVendor:3.43, onTime:0.838, failRate:0.027, rr:0.924 },
+    "Heliopolis": { utr:2.117, riders:1620, orders:27360, delivComp:27360, sumHrs:12940.0, avgHrs:7.988, lateLogin:0.078, noShow:0.045, breakMin:66.63, fill:0.849, acceptRate:0.980, plannedHrs:15270.0, delivTime:21.51, rat:7.09, toVendor:3.24, onTime:0.853, failRate:0.023, rr:0.858 },
+    "Ain shams":  { utr:1.858, riders:365,  orders:4669,  delivComp:4669,  sumHrs:2512.0,  avgHrs:6.882, lateLogin:0.085, noShow:0.050, breakMin:48.51, fill:0.847, acceptRate:0.967, plannedHrs:3130.0,  delivTime:23.60, rat:6.34, toVendor:3.98, onTime:0.795, failRate:0.057, rr:0.869 }
   }},
   "2026-09-09":{ label:"Sep 9, 2026", zones:{
     "Nasr city":  { utr:2.0876, riders:1614, orders:30513, delivComp:30513, sumHrs:14616.0, avgHrs:9.0558, lateLogin:0.0718, noShow:0.0306, breakMin:67.31, fill:0.974, acceptRate:0.974, plannedHrs:17013.47, delivTime:22.0, rat:7.5, toVendor:3.4, onTime:0.816, failRate:0.03, rr:0.9245 },
@@ -1916,6 +1933,18 @@ const TLP_AWH_YDAY = {"Ain shams|Al Alamia":7.81,"Ain shams|Apache":6.36,"Ain sh
 const TLP_AWH_W7 = {"Ain shams|Al Alamia":7.34,"Ain shams|Apache":5.75,"Ain shams|Barg":6.76,"Ain shams|Courier for delivery":5.53,"Ain shams|Ebad El rahman":6.23,"Ain shams|El Ezz":6.17,"Ain shams|El Tohami":6.61,"Ain shams|Full Speed":5.81,"Ain shams|Jasson":6.65,"Ain shams|MR Delivery":8.59,"Ain shams|MTA":8.3,"Ain shams|Noot":7.59,"Ain shams|Speedo":6.16,"Ain shams|Stop Car":8.83,"Ain shams|Tanta Car":7.34,"Ain shams|Team mh for Delivery":5.86,"Ain shams|Top delivery":7.06,"Ain shams|Wakeel":7.55,"Heliopolis|Al Alamia":8.58,"Heliopolis|Apache":7.27,"Heliopolis|Barg":8.23,"Heliopolis|BeCool":7.43,"Heliopolis|Bedaya":6.78,"Heliopolis|Courier for delivery":6.4,"Heliopolis|Ebad El rahman":8.04,"Heliopolis|El Abtal":7.44,"Heliopolis|El Ezz":7.58,"Heliopolis|El Tohami":7.3,"Heliopolis|Full Speed":7.62,"Heliopolis|Jasson":8.55,"Heliopolis|MR Delivery":6.5,"Heliopolis|MTA":7.65,"Heliopolis|Noot":7.85,"Heliopolis|Speedo":7.45,"Heliopolis|Stop Car":8.0,"Heliopolis|Super Speed":7.77,"Heliopolis|Tanta":7.59,"Heliopolis|Tanta Car":6.57,"Heliopolis|Team mh for Delivery":9.3,"Heliopolis|Top delivery":8.54,"Heliopolis|Wakeel":10.05,"Heliopolis|Zero Zero Seven":8.31,"Heliopolis|el Dawlya":7.32,"Nasr city|Al Alamia":9.52,"Nasr city|Apache":7.15,"Nasr city|Barg":8.33,"Nasr city|BeCool":6.57,"Nasr city|Bedaya":10.05,"Nasr city|Courier for delivery":8.14,"Nasr city|Ebad El rahman":8.9,"Nasr city|El Abtal":9.3,"Nasr city|El Ezz":8.39,"Nasr city|El Tohami":9.19,"Nasr city|Full Speed":7.87,"Nasr city|Gearz":0,"Nasr city|Glesco":7.79,"Nasr city|Jasson":8.67,"Nasr city|MR Delivery":7.64,"Nasr city|MTA":8.52,"Nasr city|Noot":8.49,"Nasr city|SOG":7.7,"Nasr city|Speedo":8.86,"Nasr city|Stop Car":8.46,"Nasr city|Super Speed":8.32,"Nasr city|Tanta":9.61,"Nasr city|Tanta Car":8.13,"Nasr city|Team mh for Delivery":10.01,"Nasr city|Top delivery":7.36,"Nasr city|Wakeel":7.79,"Nasr city|Zero Zero Seven":8.14};;
 const TLP_AWH_MTD = {"Ain shams|Al Alamia":7.62,"Ain shams|Apache":6.07,"Ain shams|Barg":7.14,"Ain shams|Courier for delivery":5.78,"Ain shams|Ebad El rahman":6.02,"Ain shams|El Ezz":5.94,"Ain shams|El Tohami":6.71,"Ain shams|Full Speed":5.68,"Ain shams|Jasson":6.88,"Ain shams|MR Delivery":7.94,"Ain shams|MTA":8.09,"Ain shams|Noot":7.65,"Ain shams|Speedo":6.32,"Ain shams|Stop Car":8.77,"Ain shams|Tanta Car":7.28,"Ain shams|Team mh for Delivery":5.44,"Ain shams|Top delivery":6.98,"Ain shams|Wakeel":7.28,"Heliopolis|Al Alamia":8.36,"Heliopolis|Apache":7.18,"Heliopolis|Barg":7.81,"Heliopolis|BeCool":7.16,"Heliopolis|Bedaya":6.88,"Heliopolis|Courier for delivery":6.45,"Heliopolis|Ebad El rahman":7.92,"Heliopolis|El Abtal":7.56,"Heliopolis|El Ezz":7.56,"Heliopolis|El Tohami":7.21,"Heliopolis|Full Speed":7.62,"Heliopolis|Jasson":8.55,"Heliopolis|MR Delivery":6.46,"Heliopolis|MTA":7.49,"Heliopolis|Noot":7.78,"Heliopolis|Speedo":7.31,"Heliopolis|Stop Car":8.0,"Heliopolis|Super Speed":7.56,"Heliopolis|Tanta":7.43,"Heliopolis|Tanta Car":6.73,"Heliopolis|Team mh for Delivery":9.17,"Heliopolis|Top delivery":8.64,"Heliopolis|Wakeel":9.89,"Heliopolis|Zero Zero Seven":8.2,"Heliopolis|el Dawlya":7.59,"Nasr city|Al Alamia":9.43,"Nasr city|Apache":7.4,"Nasr city|Barg":8.42,"Nasr city|BeCool":6.48,"Nasr city|Bedaya":9.87,"Nasr city|Courier for delivery":7.9,"Nasr city|Ebad El rahman":8.73,"Nasr city|El Abtal":9.24,"Nasr city|El Ezz":8.4,"Nasr city|El Tohami":9.19,"Nasr city|Full Speed":8.26,"Nasr city|Gearz":0,"Nasr city|Glesco":7.88,"Nasr city|Jasson":8.64,"Nasr city|MR Delivery":7.49,"Nasr city|MTA":8.47,"Nasr city|Noot":8.21,"Nasr city|SOG":7.58,"Nasr city|Speedo":8.64,"Nasr city|Stop Car":8.42,"Nasr city|Super Speed":8.55,"Nasr city|Tanta":9.29,"Nasr city|Tanta Car":7.87,"Nasr city|Team mh for Delivery":9.99,"Nasr city|Top delivery":7.54,"Nasr city|Wakeel":7.66,"Nasr city|Zero Zero Seven":8.14};;
 const TLP_AWH_MONTH = {"Ain shams|Al Alamia":7.96,"Ain shams|Apache":5.92,"Ain shams|Barg":7.53,"Ain shams|Courier for delivery":6.1,"Ain shams|Ebad El rahman":6.28,"Ain shams|El Ezz":6.28,"Ain shams|El Tohami":6.05,"Ain shams|Full Speed":6.03,"Ain shams|Jasson":6.46,"Ain shams|MR Delivery":7.73,"Ain shams|MTA":7.67,"Ain shams|Noot":8.02,"Ain shams|Speedo":6.08,"Ain shams|Stop Car":7.92,"Ain shams|Tanta Car":7.19,"Ain shams|Team mh for Delivery":5.73,"Ain shams|Top delivery":6.77,"Ain shams|Wakeel":6.61,"Heliopolis|Al Alamia":8.22,"Heliopolis|Apache":6.92,"Heliopolis|Barg":7.95,"Heliopolis|BeCool":6.81,"Heliopolis|Bedaya":7.7,"Heliopolis|Courier for delivery":6.85,"Heliopolis|Ebad El rahman":7.95,"Heliopolis|El Abtal":7.43,"Heliopolis|El Ezz":7.67,"Heliopolis|El Tohami":7.38,"Heliopolis|Full Speed":7.9,"Heliopolis|Jasson":7.95,"Heliopolis|MR Delivery":6.69,"Heliopolis|MTA":7.47,"Heliopolis|Noot":8.14,"Heliopolis|Speedo":7.34,"Heliopolis|Stop Car":8.18,"Heliopolis|Super Speed":7.62,"Heliopolis|Tanta":6.61,"Heliopolis|Tanta Car":6.62,"Heliopolis|Team mh for Delivery":9.29,"Heliopolis|Top delivery":8.21,"Heliopolis|Wakeel":9.29,"Heliopolis|Zero Zero Seven":5.52,"Heliopolis|el Dawlya":7.76,"Nasr city|Al Alamia":9.61,"Nasr city|Apache":7.33,"Nasr city|Barg":8.83,"Nasr city|BeCool":6.64,"Nasr city|Bedaya":8.82,"Nasr city|Courier for delivery":7.93,"Nasr city|Ebad El rahman":8.56,"Nasr city|El Abtal":9.24,"Nasr city|El Ezz":8.73,"Nasr city|El Tohami":8.92,"Nasr city|Full Speed":8.79,"Nasr city|Gearz":0,"Nasr city|Glesco":7.68,"Nasr city|Jasson":9.07,"Nasr city|MR Delivery":6.95,"Nasr city|MTA":7.95,"Nasr city|Noot":8.12,"Nasr city|SOG":7.65,"Nasr city|Speedo":8.31,"Nasr city|Stop Car":8.29,"Nasr city|Super Speed":8.21,"Nasr city|Tanta":9.84,"Nasr city|Tanta Car":8.52,"Nasr city|Team mh for Delivery":9.98,"Nasr city|Top delivery":8.67,"Nasr city|Wakeel":7.43,"Nasr city|Zero Zero Seven":7.48};;
+
+/* TLP per-day history for day picker */
+const TLP_HISTORY = {
+  "2026-09-12": { acts: TLP_YDAY, riders: TLP_RIDERS_YDAY, awh: TLP_AWH_YDAY },
+  "2026-09-11": { acts: TLP_YDAY, riders: TLP_RIDERS_YDAY, awh: TLP_AWH_YDAY },
+  "2026-09-10": { acts: TLP_YDAY, riders: TLP_RIDERS_YDAY, awh: TLP_AWH_YDAY }
+};
+let _tlpDay = "2026-09-12";
+function tlpGet(tbl){ const e = TLP_HISTORY[_tlpDay]; return e ? e.acts[tbl] : tbl; }
+function tlpGetRiders(k){ const e=TLP_HISTORY[_tlpDay]; return e ? (e.riders[k]||0) : 0; }
+function tlpGetAWH(k){ const e=TLP_HISTORY[_tlpDay]; return e ? (e.awh[k]||0) : 0; }
+
 /* @@NASR_3PL_DATA_END@@ */
 
 let cur3PLZone = 'all';
@@ -1962,6 +1991,16 @@ function toggleTPLSort(){
   else btn.textContent='▲ Lowest MTD% First';
   render3PL();
 }
+
+function setTLPDay(d, btn) {
+  _tlpDay = d;
+  document.querySelectorAll('[id^="tlpd-"]').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  // Update "Yesterday" column header
+  const hdr = document.getElementById('tpl-hdr-yday');
+  if(hdr) hdr.textContent = d.slice(5).replace('-','/');
+  render3PL();
+}
 function render3PL(){
   const zones = ['Nasr city','Heliopolis','Ain shams'];
   const zonesInView = cur3PLZone==='all' ? zones : [cur3PLZone];
@@ -1977,20 +2016,24 @@ function render3PL(){
   zonesInView.forEach(zone=>{
     const zRows = TLP_TGT.filter(t=>t.z===zone && (!cur3PLName || (t.disp||t.n)===cur3PLName));
     if(!zRows.length) return;
+    const _tlpEntry = TLP_HISTORY[_tlpDay] || {};
+    const _ACT_YDAY   = _tlpEntry.acts    || TLP_YDAY;
+    const _ACT_RIDERS = _tlpEntry.riders  || TLP_RIDERS_YDAY;
+    const _ACT_AWH    = _tlpEntry.awh     || TLP_AWH_YDAY;
     zRows.forEach(t=>{
       const key = `${t.z}|${t.n}`;
       const keyLo = key.toLowerCase();
       const tlpGet = (obj) => { if(obj[key]!=null) return obj[key]; const k2=Object.keys(obj).find(k=>k.toLowerCase()===keyLo); return k2!=null?obj[k2]:null; };
-      const yday=tlpGet(TLP_YDAY), w7=tlpGet(TLP_W7), month=tlpGet(TLP_MONTH), mtd=tlpGet(TLP_MTD);
+      const yday=tlpGet(_ACT_YDAY), w7=tlpGet(TLP_W7), month=tlpGet(TLP_MONTH), mtd=tlpGet(TLP_MTD);
       const w7avg=w7, monthavg=month;
       const pct=(t.tgt>0&&mtd!=null)?Math.round(mtd/t.tgt*100):null;
       const ydayPct=t.tgt>0&&yday!=null?Math.round(yday/t.tgt*100):null;
       const w7Pct  =t.tgt>0&&w7avg!=null?Math.round(w7avg/t.tgt*100):null;
       const moPct  =t.tgt>0&&monthavg!=null?Math.round(monthavg/t.tgt*100):null;
-      const riders = tlpGet(TLP_RIDERS_YDAY);
+      const riders = tlpGet(_ACT_RIDERS);
       const ridersMtdSum = tlpGet(TLP_RIDERS_MTD_SUM);
       const ridersMtdAvg = ridersMtdSum!=null ? Math.round(ridersMtdSum/CFG_MTD_DAYS) : null;
-      const awhYday = tlpGet(TLP_AWH_YDAY);
+      const awhYday = tlpGet(_ACT_AWH);
       const awhW7   = tlpGet(TLP_AWH_W7);
       const awhMtd  = tlpGet(TLP_AWH_MTD);
       const awhMo   = tlpGet(TLP_AWH_MONTH);
@@ -2167,6 +2210,8 @@ const DTC_MARTS = [
 
 const DTC_DAYS = {
 "2026-09-12":{hegaz:[65.0,0,0],masaken_sh:[51.0,0,0],ard_golf:[86.0,0,0],omarat:[56.0,0,0],hay8:[16.0,0,0],tayaran:[45.0,0,0],shorouk:[80.0,0,0],hadeeqa:[84.0,0,0],matareya:[32.0,0,0]},
+"2026-09-10":{ard_golf:[84.0,0,0],hadeeqa:[83.0,0,0],hay8:[21.0,0,0],hegaz:[62.0,0,0],masaken_sh:[54.0,0,0],matareya:[33.0,0,0],omarat:[50.0,0,0],shorouk:[75.0,0,0],tayaran:[50.0,0,0]},
+"2026-09-11":{ard_golf:[85.0,0,0],hadeeqa:[84.0,0,0],hay8:[18.0,0,0],hegaz:[64.0,0,0],masaken_sh:[52.0,0,0],matareya:[32.0,0,0],omarat:[53.0,0,0],shorouk:[77.0,0,0],tayaran:[48.0,0,0]},
 "2026-09-09":{ard_golf:[82.0, 1337, 1630],hadeeqa:[81.9, 2038, 2488],hay8:[25.2, 529, 2100],hegaz:[58.7, 1145, 1951],masaken_sh:[57.5, 1224, 2128],matareya:[33.5, 707, 2109],omarat:[44.7, 560, 1252],shorouk:[69.9, 1599, 2288],tayaran:[54.9, 1515, 2759]},
 "2026-09-08":{hegaz:[51.5,933,1812],masaken_sh:[53.5,1092,2041],ard_golf:[79.1,1274,1611],omarat:[42.1,516,1225],hay8:[30.9,673,2177],tayaran:[55.6,1576,2834],shorouk:[78.1,1653,2117],hadeeqa:[84.4,1982,2348],matareya:[38.0,786,2069]},
 "2026-09-07":{hegaz:[51.5,1023,1987],masaken_sh:[49.3,1028,2085],ard_golf:[81.1,1393,1718],omarat:[39.9,496,1243],hay8:[29.5,612,2073],tayaran:[43.1,1213,2814],shorouk:[73.1,1747,2390],hadeeqa:[80.8,1935,2395],matareya:[35.6,767,2155]},
