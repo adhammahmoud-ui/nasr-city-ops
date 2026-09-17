@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-16",
-  "data_date": "2026-09-15",
+  "generated": "2026-09-17",
+  "data_date": "2026-09-16",
   "zone": {
     "yday": {
-      "label": "Sep 15, 2026",
+      "label": "Sep 16, 2026",
       "Nasr city": {
         "riders": 1680,
         "orders": 29085,
@@ -54,7 +54,7 @@
       }
     },
     "wtd": {
-      "label": "Wk 38  Sep 14-15",
+      "label": "Wk 38  Sep 14-16",
       "short": "Wk 38",
       "Nasr city": {
         "riders": 1634,
@@ -71,7 +71,7 @@
         "toVendor": 3.11,
         "onTime": 0.865,
         "failRate": 0.0231,
-        "rr": 0.995
+        "rr": 1.029
       },
       "Heliopolis": {
         "riders": 1619,
@@ -88,7 +88,7 @@
         "toVendor": 3.21,
         "onTime": 0.885,
         "failRate": 0.0191,
-        "rr": 0.961
+        "rr": 1.009
       },
       "Ain shams": {
         "riders": 331,
@@ -105,11 +105,11 @@
         "toVendor": 3.92,
         "onTime": 0.81,
         "failRate": 0.0279,
-        "rr": 0.921
+        "rr": 0.927
       }
     },
     "mtd": {
-      "label": "Sep 2026 (MTD Sep 1-15)",
+      "label": "Sep 2026 (MTD Sep 1-16)",
       "Nasr city": {
         "riders": 2769,
         "orders": 450345,
