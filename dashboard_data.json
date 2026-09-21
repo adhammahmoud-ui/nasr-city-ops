@@ -1,16 +1,16 @@
 {
-  "generated": "2026-09-20",
-  "data_date": "2026-09-19",
+  "generated": "2026-09-21",
+  "data_date": "2026-09-20",
   "tableau_fallback": true,
   "zone": {
     "yday": {
       "Nasr city": {
-        "orders": 30468,
+        "orders": 29124,
         "delivTime": 21.776,
         "toVendor": 2.776,
         "onTime": 0.8836,
         "failRate": 0.0163,
-        "sumHrs": 15553.07,
+        "sumHrs": 15590.0,
         "riders": 1714,
         "noShow": 0.0287,
         "lateLogin": 0.0539,
@@ -18,15 +18,15 @@
         "acceptRate": 0.9056,
         "plannedHrs": 19044.06,
         "rat": 0,
-        "rr": 0.9676
+        "rr": 1.0331
       },
       "Heliopolis": {
-        "orders": 25480,
+        "orders": 27220,
         "delivTime": 21.565,
         "toVendor": 2.647,
         "onTime": 0.901,
         "failRate": 0.0154,
-        "sumHrs": 13421.13,
+        "sumHrs": 14549.0,
         "riders": 1677,
         "noShow": 0.0342,
         "lateLogin": 0.0645,
@@ -34,15 +34,15 @@
         "acceptRate": 0.8858,
         "plannedHrs": 16210.53,
         "rat": 0,
-        "rr": 0.9754
+        "rr": 0.9942
       },
       "Ain shams": {
-        "orders": 5495,
+        "orders": 4862,
         "delivTime": 22.937,
         "toVendor": 3.828,
         "onTime": 0.8411,
         "failRate": 0.023,
-        "sumHrs": 2711.97,
+        "sumHrs": 2488.0,
         "riders": 356,
         "noShow": 0.0639,
         "lateLogin": 0.0701,
@@ -50,7 +50,7 @@
         "acceptRate": 0.9186,
         "plannedHrs": 3152.78,
         "rat": 0,
-        "rr": 0.8257
+        "rr": 0.8853
       }
     },
     "wtd": {
@@ -153,69 +153,69 @@
   },
   "dtc_yday": {
     "ard_golf": [
-      88,
+      86,
       0,
       0
     ],
     "hegaz": [
-      70,
+      76,
       0,
       0
     ],
     "matareya": [
-      45,
+      58,
       0,
       0
     ],
     "hadeeqa": [
-      88,
+      90,
       0,
       0
     ],
     "tayaran": [
-      49,
+      52,
       0,
       0
     ],
     "hay8": [
-      46,
+      54,
       0,
       0
     ],
     "shorouk": [
-      84,
+      74,
       0,
       0
     ],
     "masaken_sh": [
-      53,
+      68,
       0,
       0
     ],
     "omarat": [
-      70,
+      71,
       0,
       0
     ]
   },
   "dtc_mtd": {
     "ard_golf": [
-      81.4,
+      81.6,
       0,
       0
     ],
     "hegaz": [
-      58.3,
+      59.2,
       0,
       0
     ],
     "matareya": [
-      38.9,
+      39.9,
       0,
       0
     ],
     "hadeeqa": [
-      82.3,
+      82.7,
       0,
       0
     ],
@@ -225,22 +225,22 @@
       0
     ],
     "hay8": [
-      32.8,
+      33.9,
       0,
       0
     ],
     "shorouk": [
-      75.8,
+      75.7,
       0,
       0
     ],
     "masaken_sh": [
-      51.5,
+      52.4,
       0,
       0
     ],
     "omarat": [
-      48.3,
+      49.5,
       0,
       0
     ]
