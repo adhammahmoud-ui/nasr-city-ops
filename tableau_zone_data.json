@@ -1,0 +1,26 @@
+{
+  "yday": {
+    "label": "Yesterday (Sep 23)",
+    "zones": {
+      "Nasr city": {"orders": 29246, "failRate": 2.0, "utr": 1.883, "delivTime": 22.9, "toVendor": 2.8, "rat": 5.2, "onTime": 88.5},
+      "Heliopolis": {"orders": 28574, "failRate": 2.2, "utr": 1.963, "delivTime": 22.3, "toVendor": 2.8, "rat": 4.6, "onTime": 90.1},
+      "Ain shams":  {"orders": 4644,  "failRate": 3.5, "utr": 1.914, "delivTime": 24.2, "toVendor": 3.7, "rat": 5.1, "onTime": 83.4}
+    }
+  },
+  "wtd": {
+    "label": "WTD (Sep 21-23)",
+    "zones": {
+      "Nasr city": {"orders": 86985,  "failRate": 2.0, "utr": 1.898, "delivTime": 22.7, "toVendor": 2.7, "rat": 5.1, "onTime": 88.9},
+      "Heliopolis": {"orders": 84039,  "failRate": 2.0, "utr": 1.946, "delivTime": 22.0, "toVendor": 2.7, "rat": 4.4, "onTime": 90.3},
+      "Ain shams":  {"orders": 13930,  "failRate": 3.2, "utr": 1.974, "delivTime": 24.6, "toVendor": 3.8, "rat": 5.5, "onTime": 82.9}
+    }
+  },
+  "mtd": {
+    "label": "MTD (Sep 1-23)",
+    "zones": {
+      "Nasr city": {"orders": 687064,  "failRate": 2.6, "utr": 2.038, "delivTime": 25.3, "toVendor": 3.2, "rat": 7.0, "onTime": 85.4},
+      "Heliopolis": {"orders": 642480,  "failRate": 2.4, "utr": 2.098, "delivTime": 24.5, "toVendor": 3.1, "rat": 6.5, "onTime": 86.7},
+      "Ain shams":  {"orders": 113812,  "failRate": 5.1, "utr": 1.982, "delivTime": 26.0, "toVendor": 3.9, "rat": 6.1, "onTime": 81.1}
+    }
+  }
+}
