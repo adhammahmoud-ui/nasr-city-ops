@@ -2367,13 +2367,20 @@ function getISOWeek(dateStr) {
 }
 
 function getCurrentMonthKey() {
-  const now = new Date();
-  return now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
+  // Use the latest date in DTC_DAYS, not today's calendar month,
+  // so the tab keeps working after month-end before new data arrives.
+  const keys = Object.keys(DTC_DAYS).sort();
+  if (keys.length === 0) {
+    const now = new Date();
+    return now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0');
+  }
+  return keys[keys.length - 1].substring(0, 7);
 }
 
 function getLastMonthKey() {
-  const now = new Date();
-  const d = new Date(now.getFullYear(), now.getMonth()-1, 1);
+  const mKey = getCurrentMonthKey();
+  const [y, m] = mKey.split('-').map(Number);
+  const d = new Date(y, m - 2, 1);
   return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0');
 }
 
